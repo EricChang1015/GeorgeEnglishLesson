@@ -1,0 +1,39 @@
+---
+description: 教材 HTML 設計規範（ORT 2-3、發音、feedback）
+globs: lessons/**/*.html
+alwaysApply: false
+---
+
+# Lesson Design Rules
+
+## Language (ORT Stage 2–3)
+- 1–2 short sentences per story page
+- Prefer sight words and previously taught vocabulary
+- Sentence length: roughly 3–8 words; avoid complex clauses
+- New words: max ~6–8 per lesson; introduce with picture + audio first
+- Tone: friendly adventure; dragons OK if gentle and playful
+
+## Required lesson structure
+1. Cover (title, character, Start)
+2. Vocabulary preview (picture + word; tap to hear)
+3. Story pages (illustration + clickable words)
+4. Comprehension quiz (instant correct/incorrect feedback + praise)
+5. Sight-word practice (tap / match / say)
+6. Follow-up notes for tutor/parent (checkboxes + comments; `localStorage`)
+
+## Technical
+- Single self-contained HTML per lesson (inline CSS/JS OK); shared assets only as images
+- Pronunciation: Web Speech API (`speechSynthesis`), rate ~0.75–0.85, prefer en-US/en-GB child-friendly voice if available
+- Tap any word → speak that word + highlight
+- 「Read to me」→ read sentence by sentence with highlight sync
+- Large fonts (story text ≥ 28px), big tap targets, high contrast
+- UI suitable for a 5-year-old: big buttons, simple icons, short labels
+- No external paid APIs; works offline once loaded (except first image load)
+
+## Visuals
+- Picture-book style illustrations, consistent character design across a lesson
+- Store images in `lessons/assets/lesson-XX/`
+- Alt text in English, simple
+
+## Index
+- Root `index.html` lists all lessons for the tutor with clear links and short descriptions

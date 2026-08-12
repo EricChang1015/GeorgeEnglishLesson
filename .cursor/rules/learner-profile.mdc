@@ -1,0 +1,33 @@
+---
+description: George 學習者檔案與專案目標（每次對話套用）
+alwaysApply: true
+---
+
+# Learner Profile: George
+
+## Who
+- Name: George
+- Birthday: 2021-06-23 (age ~5)
+- First language: Chinese (Traditional); English is a second language
+
+## Interests
+- TV / video: Paw Patrol, Doctor Binocs
+- Books: bedtime stories, Oxford Reading Tree, recently Dragon Masters (read aloud to him)
+- Theme preference for lessons: dragons and adventure (primary); rescue squad / fun science as secondary
+
+## Current reading level
+- Listening comprehension is stronger than independent reading
+- Parents usually read aloud; he is beginning to try reading himself
+- Target difficulty: Oxford Reading Tree Stage 2–3 (short complete sentences, high-frequency words)
+- Needs heavy pronunciation support (tap-to-speak, slow TTS)
+
+## Teaching goals
+- Move from listen-only to guided independent reading
+- Every lesson must include: vocabulary preview, story, comprehension with instant feedback, sight-word practice, and a teacher/parent follow-up notes area
+- Keep language warm, encouraging, and age-appropriate (no scary or violent content)
+
+## Project workflow
+- Lessons live under `lessons/` as self-contained HTML
+- Images under `lessons/assets/lesson-XX/`
+- Publish via GitHub Pages (repo root); fixed URL for the tutor
+- When user says「發佈」or「publish」: commit lesson changes and push to `main` so Pages updates

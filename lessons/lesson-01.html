@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 1: Ben and the Little Dragon</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --card: #ffffff;
+      --ink: #2b2b2b;
+      --accent: #3d8bfd;
+      --accent-dark: #1f5fc9;
+      --good: #2f9e44;
+      --bad: #e03131;
+      --soft: #ffe8c2;
+      --dragon: #4caf50;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Comic Sans MS", "Nunito", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, #ffe9b8 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #c9e7ff 0, transparent 35%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    .app {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 16px 16px 48px;
+    }
+
+    header.top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--accent-dark);
+    }
+
+    .nav-links a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .progress {
+      background: #eee;
+      border-radius: 999px;
+      height: 12px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+    .progress > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #6dd47e, #3d8bfd);
+      transition: width 0.3s ease;
+    }
+
+    .screen {
+      display: none;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      animation: fadeIn 0.25s ease;
+    }
+    .screen.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    h1, h2 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+    h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
+
+    .hero {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto 16px;
+      max-height: 420px;
+      object-fit: cover;
+      background: #f3f3f3;
+    }
+
+    .story-text {
+      font-size: clamp(1.6rem, 3.5vw, 2rem);
+      line-height: 1.55;
+      font-weight: 700;
+      text-align: center;
+      margin: 8px 0 18px;
+    }
+
+    .word {
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 0 4px;
+      transition: background 0.15s ease, color 0.15s ease;
+      display: inline-block;
+    }
+    .word:hover { background: #e7f1ff; }
+    .word.speaking {
+      background: #ffef9f;
+      color: #8a5a00;
+      outline: 2px solid #f0c000;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    button, .btn {
+      appearance: none;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.1s ease, background 0.15s ease;
+    }
+    button:active { transform: scale(0.97); }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: var(--soft); color: #7a4b00; }
+    .btn-ghost { background: #eef2f7; color: #334; }
+    .btn-good { background: #d3f9d8; color: #2b8a3e; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .hint {
+      text-align: center;
+      color: #666;
+      font-size: 1rem;
+      margin: 0 0 10px;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .vocab-card {
+      background: #f8fbff;
+      border: 3px solid #dce9ff;
+      border-radius: 16px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.15s ease, transform 0.1s ease;
+    }
+    .vocab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .vocab-card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .vocab-card .label {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .quiz-options button {
+      width: 100%;
+      text-align: left;
+      background: #f4f8ff;
+      color: var(--ink);
+      border: 3px solid #d7e6ff;
+      border-radius: 16px;
+      font-size: 1.25rem;
+    }
+    .quiz-options button.correct {
+      background: #d3f9d8;
+      border-color: var(--good);
+    }
+    .quiz-options button.wrong {
+      background: #ffe3e3;
+      border-color: var(--bad);
+    }
+
+    .feedback {
+      min-height: 1.5em;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin: 8px 0 4px;
+    }
+    .feedback.good { color: var(--good); }
+    .feedback.bad { color: var(--bad); }
+
+    .sight-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 18px 0;
+    }
+    .sight-word {
+      min-width: 110px;
+      font-size: 1.5rem;
+      background: #fff;
+      border: 3px dashed #9ec5ff;
+      color: var(--accent-dark);
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+    .sight-word.done {
+      border-style: solid;
+      background: #e7f5ff;
+    }
+
+    .notes label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+    .notes textarea {
+      width: 100%;
+      min-height: 110px;
+      border-radius: 14px;
+      border: 2px solid #d7e6ff;
+      padding: 12px;
+      font-size: 1.05rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    .save-msg {
+      color: var(--good);
+      font-weight: 700;
+      min-height: 1.2em;
+    }
+
+    .page-meta {
+      text-align: center;
+      color: #888;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    footer.note {
+      margin-top: 18px;
+      text-align: center;
+      color: #777;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">🐉 George English · Lesson 1</div>
+      <nav class="nav-links">
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <!-- 0 Cover -->
+    <section class="screen active" data-screen="0">
+      <img class="hero" src="assets/lesson-01/cover.png" alt="Ben and a little green dragon on a hill" />
+      <h1>Ben and the Little Dragon</h1>
+      <p class="hint">ORT Stage 2–3 · Tap words to hear · Read with your tutor</p>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-speak-text="Ben and the Little Dragon">🔊 Title</button>
+      </div>
+    </section>
+
+    <!-- 1 Vocab -->
+    <section class="screen" data-screen="1">
+      <h2>New Words</h2>
+      <p class="hint">Tap a card to hear the word</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Story ▶</button>
+      </div>
+    </section>
+
+    <!-- Story screens 2-9 -->
+    <section class="screen" data-screen="2" data-story="0"></section>
+    <section class="screen" data-screen="3" data-story="1"></section>
+    <section class="screen" data-screen="4" data-story="2"></section>
+    <section class="screen" data-screen="5" data-story="3"></section>
+    <section class="screen" data-screen="6" data-story="4"></section>
+    <section class="screen" data-screen="7" data-story="5"></section>
+    <section class="screen" data-screen="8" data-story="6"></section>
+    <section class="screen" data-screen="9" data-story="7"></section>
+
+    <!-- 10 Quiz -->
+    <section class="screen" data-screen="10">
+      <h2>Let's Check!</h2>
+      <p class="hint">Choose the best answer</p>
+      <div id="quizArea"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next id="quizNext" disabled>Next ▶</button>
+      </div>
+    </section>
+
+    <!-- 11 Sight words -->
+    <section class="screen" data-screen="11">
+      <h2>Sight Words</h2>
+      <p class="hint">Tap each word. Say it with Ben!</p>
+      <div class="sight-grid" id="sightGrid"></div>
+      <p class="feedback" id="sightFeedback"></p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Notes ▶</button>
+      </div>
+    </section>
+
+    <!-- 12 Follow-up -->
+    <section class="screen" data-screen="12">
+      <h2>Follow-up Notes</h2>
+      <p class="hint">For tutor / parent (saved on this device)</p>
+      <div class="notes" id="notesForm">
+        <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
+        <label><input type="checkbox" data-note="tapped_words" /> Used tap-to-speak</label>
+        <label><input type="checkbox" data-note="knew_vocab" /> Knew most new words</label>
+        <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
+        <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
+        <p style="margin:14px 0 6px;font-weight:800;">Comments</p>
+        <textarea id="noteComment" placeholder="What went well? What to practice next?"></textarea>
+        <div class="controls" style="margin-top:14px;">
+          <button class="btn-good" type="button" id="saveNotes">💾 Save notes</button>
+          <button class="btn-secondary" type="button" id="clearNotes">Clear</button>
+          <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+        </div>
+        <p class="save-msg" id="saveMsg"></p>
+      </div>
+      <footer class="note">Great job, George! 🌟</footer>
+    </section>
+  </div>
+
+  <script>
+    const ASSET = "assets/lesson-01/";
+    const STORAGE_KEY = "george-lesson-01-notes";
+
+    const vocab = [
+      { word: "dragon", img: "vocab-dragon.png", alt: "a little green dragon" },
+      { word: "hill", img: "vocab-hill.png", alt: "a green hill" },
+      { word: "cave", img: "vocab-cave.png", alt: "a cave" },
+      { word: "egg", img: "vocab-egg.png", alt: "a red egg" },
+      { word: "happy", img: "vocab-happy.png", alt: "happy faces" },
+      { word: "green", img: "story-02.png", alt: "a green dragon" }
+    ];
+
+    const story = [
+      { img: "story-01.png", alt: "Ben sees a little dragon", text: "Ben sees a little dragon." },
+      { img: "story-02.png", alt: "The dragon is green", text: "The dragon is green." },
+      { img: "story-03.png", alt: "Ben says hello", text: '"Hello," says Ben.' },
+      { img: "story-04.png", alt: "The dragon smiles", text: "The dragon smiles." },
+      { img: "story-05.png", alt: "They go up the hill", text: "They go up the hill." },
+      { img: "story-06.png", alt: "They see a big cave", text: "They see a big cave." },
+      { img: "story-07.png", alt: "A red egg in the cave", text: "Look! A red egg!" },
+      { img: "story-08.png", alt: "Ben and the dragon are happy", text: "Ben and the dragon are happy." }
+    ];
+
+    const quiz = [
+      {
+        q: "What does Ben see?",
+        options: ["A little dragon", "A big dog", "A red car"],
+        answer: 0
+      },
+      {
+        q: "What color is the dragon?",
+        options: ["Blue", "Green", "Yellow"],
+        answer: 1
+      },
+      {
+        q: "What do they find in the cave?",
+        options: ["A red egg", "A cake", "A boat"],
+        answer: 0
+      }
+    ];
+
+    const sightWords = ["the", "a", "and", "see", "is", "up", "look", "they"];
+
+    const screens = [...document.querySelectorAll(".screen")];
+    let current = 0;
+    let quizDone = false;
+
+    function preferVoice() {
+      const voices = speechSynthesis.getVoices();
+      return (
+        voices.find(v => /en(-|_)GB/i.test(v.lang) && /female|child|samantha|google/i.test(v.name)) ||
+        voices.find(v => /en(-|_)US/i.test(v.lang) && /female|samantha|google|zira/i.test(v.name)) ||
+        voices.find(v => /^en/i.test(v.lang)) ||
+        null
+      );
+    }
+
+    function speak(text, onEnd) {
+      if (!("speechSynthesis" in window)) {
+        if (onEnd) onEnd();
+        return;
+      }
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.8;
+      u.pitch = 1.05;
+      const voice = preferVoice();
+      if (voice) u.voice = voice;
+      u.onend = () => { if (onEnd) onEnd(); };
+      u.onerror = () => { if (onEnd) onEnd(); };
+      speechSynthesis.speak(u);
+    }
+
+    function clearSpeaking() {
+      document.querySelectorAll(".word.speaking").forEach(el => el.classList.remove("speaking"));
+    }
+
+    function wrapWords(sentence) {
+      // Keep punctuation attached visually but speak clean words
+      return sentence.split(/(\s+)/).map(token => {
+        if (/^\s+$/.test(token)) return token;
+        const match = token.match(/^([A-Za-z']+)([^A-Za-z']*)$/);
+        if (!match) return token;
+        const word = match[1];
+        const punct = match[2] || "";
+        return `<span class="word" data-word="${word.replace(/"/g, "&quot;")}">${word}</span>${punct}`;
+      }).join("");
+    }
+
+    function buildStoryScreens() {
+      document.querySelectorAll("[data-story]").forEach(sec => {
+        const i = Number(sec.dataset.story);
+        const page = story[i];
+        sec.innerHTML = `
+          <div class="page-meta">Story ${i + 1} / ${story.length}</div>
+          <img class="hero" src="${ASSET}${page.img}" alt="${page.alt}" />
+          <p class="story-text">${wrapWords(page.text)}</p>
+          <p class="hint">Tap a word · or Read to me</p>
+          <div class="controls">
+            <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+            <button class="btn-secondary" type="button" data-read-page>🔊 Read to me</button>
+            <button class="btn-primary" type="button" data-next>Next ▶</button>
+          </div>
+        `;
+      });
+    }
+
+    function buildVocab() {
+      const grid = document.getElementById("vocabGrid");
+      grid.innerHTML = vocab.map(v => `
+        <button class="vocab-card" type="button" data-speak-text="${v.word}">
+          <img src="${ASSET}${v.img}" alt="${v.alt}" />
+          <div class="label">${v.word}</div>
+        </button>
+      `).join("");
+    }
+
+    function buildQuiz() {
+      const area = document.getElementById("quizArea");
+      let answered = 0;
+      area.innerHTML = quiz.map((item, qi) => `
+        <div class="quiz-item" data-qi="${qi}" style="margin-bottom:22px;">
+          <h3 style="font-size:1.35rem;margin:0 0 8px;">${qi + 1}. ${item.q}</h3>
+          <div class="quiz-options">
+            ${item.options.map((opt, oi) => `
+              <button type="button" data-qi="${qi}" data-oi="${oi}">${opt}</button>
+            `).join("")}
+          </div>
+          <p class="feedback" data-fb="${qi}"></p>
+        </div>
+      `).join("");
+
+      area.querySelectorAll("button[data-qi]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const qi = Number(btn.dataset.qi);
+          const oi = Number(btn.dataset.oi);
+          const item = quiz[qi];
+          const wrap = area.querySelector(`.quiz-item[data-qi="${qi}"]`);
+          if (wrap.dataset.done === "1") return;
+          wrap.dataset.done = "1";
+          const fb = area.querySelector(`[data-fb="${qi}"]`);
+          wrap.querySelectorAll("button").forEach(b => { b.disabled = true; });
+          if (oi === item.answer) {
+            btn.classList.add("correct");
+            fb.textContent = "Great job! ⭐";
+            fb.className = "feedback good";
+            speak("Great job!");
+          } else {
+            btn.classList.add("wrong");
+            const correctBtn = wrap.querySelector(`button[data-oi="${item.answer}"]`);
+            if (correctBtn) correctBtn.classList.add("correct");
+            fb.textContent = "Nice try! Let's learn it.";
+            fb.className = "feedback bad";
+            speak("Nice try!");
+          }
+          answered += 1;
+          if (answered >= quiz.length) {
+            quizDone = true;
+            document.getElementById("quizNext").disabled = false;
+          }
+        });
+      });
+    }
+
+    function buildSight() {
+      const grid = document.getElementById("sightGrid");
+      const fb = document.getElementById("sightFeedback");
+      let count = 0;
+      grid.innerHTML = sightWords.map(w => `
+        <button class="sight-word" type="button" data-sight="${w}">${w}</button>
+      `).join("");
+      grid.querySelectorAll("[data-sight]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const w = btn.dataset.sight;
+          speak(w);
+          if (!btn.classList.contains("done")) {
+            btn.classList.add("done");
+            count += 1;
+            fb.textContent = count >= sightWords.length ? "You did it! 🎉" : `Nice! ${count}/${sightWords.length}`;
+            fb.className = "feedback good";
+          }
+        });
+      });
+    }
+
+    function updateProgress() {
+      const pct = (current / (screens.length - 1)) * 100;
+      document.getElementById("progressBar").style.width = pct + "%";
+    }
+
+    function showScreen(index) {
+      speechSynthesis.cancel();
+      clearSpeaking();
+      current = Math.max(0, Math.min(screens.length - 1, index));
+      screens.forEach((s, i) => s.classList.toggle("active", i === current));
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function readPage(screenEl) {
+      const words = [...screenEl.querySelectorAll(".word")];
+      if (!words.length) return;
+      let i = 0;
+      clearSpeaking();
+      const next = () => {
+        if (i >= words.length) {
+          clearSpeaking();
+          return;
+        }
+        const el = words[i];
+        clearSpeaking();
+        el.classList.add("speaking");
+        speak(el.dataset.word, () => {
+          i += 1;
+          next();
+        });
+      };
+      next();
+    }
+
+    function loadNotes() {
+      try {
+        const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        document.querySelectorAll("[data-note]").forEach(cb => {
+          cb.checked = !!data[cb.dataset.note];
+        });
+        document.getElementById("noteComment").value = data.comment || "";
+      } catch (_) { /* ignore */ }
+    }
+
+    function saveNotes() {
+      const data = { comment: document.getElementById("noteComment").value };
+      document.querySelectorAll("[data-note]").forEach(cb => {
+        data[cb.dataset.note] = cb.checked;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      const msg = document.getElementById("saveMsg");
+      msg.textContent = "Saved on this device ✓";
+      setTimeout(() => { msg.textContent = ""; }, 2500);
+    }
+
+    // Init
+    buildVocab();
+    buildStoryScreens();
+    buildQuiz();
+    buildSight();
+    loadNotes();
+    updateProgress();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = () => preferVoice();
+    }
+
+    document.addEventListener("click", (e) => {
+      const t = e.target.closest("[data-next],[data-prev],[data-speak-text],[data-read-page],.word");
+      if (!t) return;
+
+      if (t.matches("[data-next]")) {
+        if (current === 10 && !quizDone) return;
+        showScreen(current + 1);
+        return;
+      }
+      if (t.matches("[data-prev]")) {
+        showScreen(current - 1);
+        return;
+      }
+      if (t.matches("[data-speak-text]")) {
+        speak(t.getAttribute("data-speak-text"));
+        return;
+      }
+      if (t.matches("[data-read-page]")) {
+        const screen = t.closest(".screen");
+        readPage(screen);
+        return;
+      }
+      if (t.matches(".word")) {
+        clearSpeaking();
+        t.classList.add("speaking");
+        speak(t.dataset.word, () => t.classList.remove("speaking"));
+      }
+    });
+
+    document.getElementById("saveNotes").addEventListener("click", saveNotes);
+    document.getElementById("clearNotes").addEventListener("click", () => {
+      localStorage.removeItem(STORAGE_KEY);
+      document.querySelectorAll("[data-note]").forEach(cb => { cb.checked = false; });
+      document.getElementById("noteComment").value = "";
+      document.getElementById("saveMsg").textContent = "Cleared";
+    });
+  </script>
+</body>
+</html>

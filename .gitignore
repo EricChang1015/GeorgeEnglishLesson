@@ -1,0 +1,6 @@
+.specstory/
+.DS_Store
+Thumbs.db
+node_modules/
+.cursor/plans/
+*.log

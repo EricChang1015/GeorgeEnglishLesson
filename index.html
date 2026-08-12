@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>George English Lessons</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --ink: #222;
+      --accent: #3d8bfd;
+      --card: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Comic Sans MS", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, #ffe9b8 0, transparent 40%),
+        radial-gradient(circle at 90% 10%, #c9e7ff 0, transparent 40%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+    .sub {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .card {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 18px;
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+      margin-bottom: 16px;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #f0f0f0;
+    }
+    .badge {
+      display: inline-block;
+      background: #e7f1ff;
+      color: #1f5fc9;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.45rem;
+      color: #1f5fc9;
+    }
+    .card p {
+      margin: 0;
+      color: #444;
+      line-height: 1.45;
+    }
+    .tips {
+      margin-top: 28px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px 18px;
+      border: 2px solid #ffe0a8;
+    }
+    .tips h3 { margin: 0 0 8px; }
+    .tips ul { margin: 0; padding-left: 1.2em; line-height: 1.55; }
+    @media (max-width: 640px) {
+      .card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🐉 George English Lessons</h1>
+    <p class="sub">
+      Reading lessons for George (age 5) · ORT Stage 2–3<br />
+      Tap words to hear · Read with the online tutor
+    </p>
+
+    <a class="card" href="lessons/lesson-01.html">
+      <img src="lessons/assets/lesson-01/cover.png" alt="Lesson 1 cover: Ben and the little dragon" />
+      <div>
+        <span class="badge">Lesson 1 · Ready</span>
+        <h2>Ben and the Little Dragon</h2>
+        <p>
+          Ben meets a little green dragon. They go up the hill, find a cave, and see a red egg!
+          Includes vocabulary, story, quiz, sight words, and tutor notes.
+        </p>
+      </div>
+    </a>
+
+    <div class="tips">
+      <h3>For the tutor</h3>
+      <ul>
+        <li>Let George tap words first, then try “Read to me”.</li>
+        <li>Encourage him to echo each sentence after hearing it.</li>
+        <li>Use the Follow-up Notes page at the end (saved in the browser).</li>
+        <li>Target level: short sentences, high-frequency words (ORT 2–3).</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
