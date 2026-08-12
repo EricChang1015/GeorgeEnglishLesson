@@ -33,6 +33,7 @@ npx --yes serve .
 https://ericchang1015.github.io/GeorgeEnglishLesson/
 
 - Lesson 1: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-01.html
+- Lesson 2: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-02.html
 - Repo: https://github.com/EricChang1015/GeorgeEnglishLesson
 
 ## Publish (GitHub Pages)
