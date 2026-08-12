@@ -23,7 +23,7 @@ alwaysApply: false
 
 ## Audio (preferred)
 - Pre-generate neural TTS MP3s with role voices (narrator / George / dragons)
-- George’s voice: boy-like (prefer `en-CA-LiamNeural` with raised pitch, e.g. `+32Hz`, slightly faster rate). Do not use adult-deep male for George.
+- George’s voice: **child boy** — `en-US-AnaNeural`, rate `+12%`, pitch `-10Hz` (Ana child voice, slightly lowered). Parent-approved choice (voice picker option E). Do not use adult male voices for George.
 - Store under `lessons/assets/lesson-XX/audio/`
 - 「Read page」plays full page lines in order with line highlight
 - Tap a line / dialogue bubble → play that line’s AI audio

@@ -9,7 +9,7 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ### Lesson 2 — `lessons/lesson-02.html`
 **The Red Egg Hatches** (ORT Level 6): Ember hatches; George helps; Ember flies a little.  
-George uses a boy-like AI voice (`en-CA-LiamNeural`, raised pitch).
+George uses a child boy AI voice (`en-US-AnaNeural`, rate `+12%`, pitch `-10Hz`).
 
 Features: vocabulary, dialogue story, AI line audio, quiz, key phrases, tutor notes.
 

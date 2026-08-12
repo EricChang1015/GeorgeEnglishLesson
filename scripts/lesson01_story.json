@@ -4,7 +4,7 @@
   "level": "ORT Level 6",
   "voices": {
     "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
-    "george": { "voice": "en-CA-LiamNeural", "rate": "+12%", "pitch": "+32Hz" },
+    "george": { "voice": "en-US-AnaNeural", "rate": "+12%", "pitch": "-10Hz" },
     "pip": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" }
   },
   "vocab": [

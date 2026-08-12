@@ -33,5 +33,6 @@ alwaysApply: true
 ## Project workflow
 - Lessons live under `lessons/` as self-contained HTML
 - Images under `lessons/assets/lesson-XX/`; audio under `lessons/assets/lesson-XX/audio/`
+- **George's AI voice** (fixed): `en-US-AnaNeural`, rate `+12%`, pitch `-10Hz` — set `"george"` in each lesson's story JSON (`scripts/lessonXX_story.json`); see `.cursor/rules/lesson-design.mdc`
 - Publish via GitHub Pages (repo root); fixed URL for the tutor
 - When user says「發佈」or「publish」: commit lesson changes and push to `main` so Pages updates
