@@ -4,14 +4,20 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lesson 1
 
-**Ben and the Little Dragon** — `lessons/lesson-01.html`
+**Ben and the Little Dragon** — `lessons/lesson-01.html` (ORT Level 6)
 
-- Vocabulary with pictures + tap-to-speak
-- Picture story with clickable words
-- “Read to me” (Web Speech API)
+- Vocabulary with pictures + AI voice
+- Dialogue-rich picture story (Narrator / Ben / Pip)
+- Pre-generated neural TTS MP3s (edge-tts); tap a line or “Read page”
 - Comprehension quiz with instant feedback
-- Sight-word practice
+- Key-phrase practice
 - Tutor / parent follow-up notes (`localStorage`)
+
+Regenerate audio after story edits:
+
+```bash
+python scripts/generate_lesson_audio.py
+```
 
 ## Local preview
 

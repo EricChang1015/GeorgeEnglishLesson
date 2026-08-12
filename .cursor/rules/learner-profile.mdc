@@ -18,8 +18,9 @@ alwaysApply: true
 ## Current reading level
 - Listening comprehension is stronger than independent reading
 - Parents usually read aloud; he is beginning to try reading himself
-- Target difficulty: Oxford Reading Tree Stage 2–3 (short complete sentences, high-frequency words)
-- Needs heavy pronunciation support (tap-to-speak, slow TTS)
+- Target difficulty: Oxford Reading Tree Stage / Level 6 (longer sentences, more dialogue, richer plot)
+- Parent note: ORT LV6 is comfortable for him; do not oversimplify below this unless asked
+- Needs strong pronunciation support: prefer pre-generated AI voice audio for full lines/dialogue
 
 ## Teaching goals
 - Move from listen-only to guided independent reading
@@ -28,6 +29,6 @@ alwaysApply: true
 
 ## Project workflow
 - Lessons live under `lessons/` as self-contained HTML
-- Images under `lessons/assets/lesson-XX/`
+- Images under `lessons/assets/lesson-XX/`; audio under `lessons/assets/lesson-XX/audio/`
 - Publish via GitHub Pages (repo root); fixed URL for the tutor
 - When user says「發佈」or「publish」: commit lesson changes and push to `main` so Pages updates
