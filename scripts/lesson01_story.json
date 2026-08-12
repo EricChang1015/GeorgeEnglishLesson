@@ -1,10 +1,10 @@
 {
   "id": "lesson-01",
-  "title": "Ben and the Little Dragon",
+  "title": "George and the Little Dragon",
   "level": "ORT Level 6",
   "voices": {
     "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
-    "ben": { "voice": "en-GB-ThomasNeural", "rate": "-5%", "pitch": "+8Hz" },
+    "george": { "voice": "en-GB-ThomasNeural", "rate": "-5%", "pitch": "+8Hz" },
     "pip": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" }
   },
   "vocab": [
@@ -13,17 +13,17 @@
     { "word": "hill", "img": "vocab-hill.png", "alt": "a green hill", "audio": "vocab-hill.mp3" },
     { "word": "egg", "img": "vocab-egg.png", "alt": "a red egg", "audio": "vocab-egg.mp3" },
     { "word": "friend", "img": "vocab-happy.png", "alt": "happy friends", "audio": "vocab-friend.mp3" },
-    { "word": "lost", "img": "story-03.png", "alt": "Ben meets a lost dragon", "audio": "vocab-lost.mp3" },
+    { "word": "lost", "img": "story-03.png", "alt": "George meets a lost dragon", "audio": "vocab-lost.mp3" },
     { "word": "shine", "img": "vocab-egg.png", "alt": "something shining", "audio": "vocab-shine.mp3" },
     { "word": "together", "img": "story-05.png", "alt": "walking together", "audio": "vocab-together.mp3" }
   ],
   "pages": [
     {
       "img": "story-01.png",
-      "alt": "Ben finds a little dragon in the grass",
+      "alt": "George finds a little dragon in the grass",
       "lines": [
-        { "role": "narrator", "text": "One sunny morning, Ben was walking near the tall grass by the hill.", "audio": "p01-01.mp3" },
-        { "role": "narrator", "text": "Suddenly, something moved. Ben stopped and looked carefully.", "audio": "p01-02.mp3" },
+        { "role": "narrator", "text": "One sunny morning, George was walking near the tall grass by the hill.", "audio": "p01-01.mp3" },
+        { "role": "narrator", "text": "Suddenly, something moved. George stopped and looked carefully.", "audio": "p01-02.mp3" },
         { "role": "narrator", "text": "A little green dragon was sitting quietly in the grass.", "audio": "p01-03.mp3" }
       ]
     },
@@ -33,17 +33,17 @@
       "lines": [
         { "role": "narrator", "text": "The dragon was small and bright green, with tiny wings on his back.", "audio": "p02-01.mp3" },
         { "role": "narrator", "text": "His eyes were kind, and he did not look scary at all.", "audio": "p02-02.mp3" },
-        { "role": "narrator", "text": "Ben smiled, because he had never met a dragon before.", "audio": "p02-03.mp3" }
+        { "role": "narrator", "text": "George smiled, because he had never met a dragon before.", "audio": "p02-03.mp3" }
       ]
     },
     {
       "img": "story-03.png",
-      "alt": "Ben says hello to the dragon",
+      "alt": "George says hello to the dragon",
       "lines": [
-        { "role": "narrator", "text": "Ben took a small step closer and spoke softly.", "audio": "p03-01.mp3" },
-        { "role": "ben", "text": "Hello. Who are you?", "audio": "p03-02.mp3" },
+        { "role": "narrator", "text": "George took a small step closer and spoke softly.", "audio": "p03-01.mp3" },
+        { "role": "george", "text": "Hello. Who are you?", "audio": "p03-02.mp3" },
         { "role": "pip", "text": "I am Pip. I am a little dragon, and I am lost.", "audio": "p03-03.mp3" },
-        { "role": "ben", "text": "Don't worry, Pip. I can help you.", "audio": "p03-04.mp3" }
+        { "role": "george", "text": "Don't worry, Pip. I can help you.", "audio": "p03-04.mp3" }
       ]
     },
     {
@@ -52,15 +52,15 @@
       "lines": [
         { "role": "narrator", "text": "Pip smiled and sat on a warm rock in the sunshine.", "audio": "p04-01.mp3" },
         { "role": "pip", "text": "Can you help me find my home? It is near a big cave.", "audio": "p04-02.mp3" },
-        { "role": "ben", "text": "Yes! I know that hill. We can go there together.", "audio": "p04-03.mp3" }
+        { "role": "george", "text": "Yes! I know that hill. We can go there together.", "audio": "p04-03.mp3" }
       ]
     },
     {
       "img": "story-05.png",
-      "alt": "Ben and Pip walk up the hill",
+      "alt": "George and Pip walk up the hill",
       "lines": [
-        { "role": "narrator", "text": "Ben and Pip walked side by side up the green hill.", "audio": "p05-01.mp3" },
-        { "role": "ben", "text": "Is your home at the top?", "audio": "p05-02.mp3" },
+        { "role": "narrator", "text": "George and Pip walked side by side up the green hill.", "audio": "p05-01.mp3" },
+        { "role": "george", "text": "Is your home at the top?", "audio": "p05-02.mp3" },
         { "role": "pip", "text": "Yes. My family lives in the cave beyond the path.", "audio": "p05-03.mp3" },
         { "role": "narrator", "text": "The wind was cool, but the two new friends felt brave.", "audio": "p05-04.mp3" }
       ]
@@ -70,7 +70,7 @@
       "alt": "They find a big cave",
       "lines": [
         { "role": "narrator", "text": "At the top of the hill, they saw a big, friendly cave.", "audio": "p06-01.mp3" },
-        { "role": "ben", "text": "Is this your home, Pip?", "audio": "p06-02.mp3" },
+        { "role": "george", "text": "Is this your home, Pip?", "audio": "p06-02.mp3" },
         { "role": "pip", "text": "I think so! Come with me. I want to show you something.", "audio": "p06-03.mp3" }
       ]
     },
@@ -79,25 +79,25 @@
       "alt": "They find a shining red egg",
       "lines": [
         { "role": "narrator", "text": "Inside the cave, something began to shine in the soft light.", "audio": "p07-01.mp3" },
-        { "role": "ben", "text": "Look! A red egg!", "audio": "p07-02.mp3" },
+        { "role": "george", "text": "Look! A red egg!", "audio": "p07-02.mp3" },
         { "role": "pip", "text": "That is my sister's egg. She will hatch soon!", "audio": "p07-03.mp3" },
-        { "role": "narrator", "text": "Ben laughed with joy. The egg glowed like a tiny lantern.", "audio": "p07-04.mp3" }
+        { "role": "narrator", "text": "George laughed with joy. The egg glowed like a tiny lantern.", "audio": "p07-04.mp3" }
       ]
     },
     {
       "img": "story-08.png",
-      "alt": "Ben and Pip celebrate as friends",
+      "alt": "George and Pip celebrate as friends",
       "lines": [
-        { "role": "narrator", "text": "Ben and Pip were very happy outside the cave.", "audio": "p08-01.mp3" },
-        { "role": "pip", "text": "Thank you, Ben. You are a true friend.", "audio": "p08-02.mp3" },
-        { "role": "ben", "text": "I am glad I found you, Pip. Let's play again tomorrow!", "audio": "p08-03.mp3" },
-        { "role": "narrator", "text": "And from that day, the boy and the little dragon were friends forever.", "audio": "p08-04.mp3" }
+        { "role": "narrator", "text": "George and Pip were very happy outside the cave.", "audio": "p08-01.mp3" },
+        { "role": "pip", "text": "Thank you, George. You are a true friend.", "audio": "p08-02.mp3" },
+        { "role": "george", "text": "I am glad I found you, Pip. Let's play again tomorrow!", "audio": "p08-03.mp3" },
+        { "role": "narrator", "text": "And from that day, George and the little dragon were friends forever.", "audio": "p08-04.mp3" }
       ]
     }
   ],
   "quiz": [
     {
-      "q": "Why does Pip need Ben's help?",
+      "q": "Why does Pip need George's help?",
       "options": ["Because Pip is lost", "Because Pip is hungry", "Because Pip wants a bike"],
       "answer": 0
     },
@@ -112,7 +112,7 @@
       "answer": 1
     },
     {
-      "q": "What does Pip call Ben at the end?",
+      "q": "What does Pip call George at the end?",
       "options": ["A true friend", "A teacher", "A giant"],
       "answer": 0
     }

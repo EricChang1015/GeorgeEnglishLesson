@@ -38,7 +38,7 @@ async def generate(story_path: Path, audio_dir: Path) -> None:
     praise = [
         ("Great job!", "praise-great.mp3"),
         ("Nice try! Let's learn it.", "praise-try.mp3"),
-        ("Ben and the Little Dragon", "title.mp3"),
+        (data.get("title", "George and the Little Dragon"), "title.mp3"),
     ]
     for text, name in praise:
         cfg = voices["narrator"]

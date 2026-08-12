@@ -4,3 +4,5 @@ Thumbs.db
 node_modules/
 .cursor/plans/
 *.log
+# Private photos of George — do not publish
+lessons/assets/refs/

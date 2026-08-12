@@ -9,6 +9,8 @@ alwaysApply: true
 - Name: George
 - Birthday: 2021-06-23 (age ~5)
 - First language: Chinese (Traditional); English is a second language
+- Story hero: use **George** as the child protagonist (not a fictional substitute name)
+- Appearance reference photos: `lessons/assets/refs/george/` (East Asian boy ~5, short black hair with bangs, round face). Keep likeness consistent across lesson art.
 
 ## Interests
 - TV / video: Paw Patrol, Doctor Binocs
