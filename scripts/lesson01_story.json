@@ -8,14 +8,14 @@
     "pip": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" }
   },
   "vocab": [
-    { "word": "dragon", "img": "vocab-dragon.png", "alt": "a little green dragon", "audio": "vocab-dragon.mp3" },
-    { "word": "cave", "img": "vocab-cave.png", "alt": "a cave", "audio": "vocab-cave.mp3" },
-    { "word": "hill", "img": "vocab-hill.png", "alt": "a green hill", "audio": "vocab-hill.mp3" },
-    { "word": "egg", "img": "vocab-egg.png", "alt": "a red egg", "audio": "vocab-egg.mp3" },
-    { "word": "friend", "img": "vocab-happy.png", "alt": "happy friends", "audio": "vocab-friend.mp3" },
-    { "word": "lost", "img": "story-03.png", "alt": "George meets a lost dragon", "audio": "vocab-lost.mp3" },
-    { "word": "shine", "img": "vocab-egg.png", "alt": "something shining", "audio": "vocab-shine.mp3" },
-    { "word": "together", "img": "story-05.png", "alt": "walking together", "audio": "vocab-together.mp3" }
+    { "word": "dragon", "example": "It's a little green dragon.", "img": "vocab-dragon.png", "alt": "a little green dragon", "audio": "vocab-dragon.mp3", "example_audio": "vocab-dragon-ex.mp3" },
+    { "word": "cave", "example": "Pip's home is in a cave.", "img": "vocab-cave.png", "alt": "a cave", "audio": "vocab-cave.mp3", "example_audio": "vocab-cave-ex.mp3" },
+    { "word": "hill", "example": "They walk up the green hill.", "img": "vocab-hill.png", "alt": "a green hill", "audio": "vocab-hill.mp3", "example_audio": "vocab-hill-ex.mp3" },
+    { "word": "egg", "example": "Look! A red egg!", "img": "vocab-egg.png", "alt": "a red egg", "audio": "vocab-egg.mp3", "example_audio": "vocab-egg-ex.mp3" },
+    { "word": "friend", "example": "You are a true friend.", "img": "vocab-happy.png", "alt": "happy friends", "audio": "vocab-friend.mp3", "example_audio": "vocab-friend-ex.mp3" },
+    { "word": "lost", "example": "Pip is lost.", "img": "story-03.png", "alt": "George meets a lost dragon", "audio": "vocab-lost.mp3", "example_audio": "vocab-lost-ex.mp3" },
+    { "word": "shine", "example": "The red egg begins to shine.", "img": "vocab-egg.png", "alt": "something shining", "audio": "vocab-shine.mp3", "example_audio": "vocab-shine-ex.mp3" },
+    { "word": "together", "example": "We can go there together.", "img": "story-05.png", "alt": "walking together", "audio": "vocab-together.mp3", "example_audio": "vocab-together-ex.mp3" }
   ],
   "pages": [
     {

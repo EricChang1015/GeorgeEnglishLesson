@@ -9,7 +9,7 @@ alwaysApply: true
 - Canonical folder: `lessons/assets/refs/george/`
 - Full tag index: `lessons/assets/refs/george/CATALOG.md`
 - Photos are **private / gitignored**; only `*.md` catalogs are committed
-- New raw drops go in `ref/` (see `ref/README.md`), then rename into the canonical folder
+- Put new photos **directly** into `lessons/assets/refs/george/` and update `CATALOG.md` (do not use `ref/`)
 
 ## Cast ids (use these names in filenames and story art)
 - `george` — boy ~5, lesson hero (short black hair with bangs, round face)
@@ -23,10 +23,11 @@ Example: `george-daddy-outdoors-lifevest-smile.jpg` (George listed first)
 
 ## When generating lesson illustrations
 1. Open `CATALOG.md`, then **Read** the chosen photo(s) before drawing
-2. Default George likeness: `george-solo-bed-smile.jpg` (`priority: primary`)
-3. Match cast + mood tags from the catalog to the story beat
-4. Keep George consistent across the whole lesson; do not invent a different child face
-5. Never embed these private photos in published HTML; only AI/drawn picture-book art goes under `lessons/assets/lesson-XX/`
+2. Default George likeness: `george-solo-bed-smile.jpg` (`priority: primary`); strong face/cover ref: `george-solo-sofa-alphabet-smile.jpg`
+3. Daddy face: `george-daddy-outdoors-pavilion-neutral.jpg`
+4. Match cast + mood tags from the catalog to the story beat
+5. Keep George consistent across the whole lesson; do not invent a different child face
+6. Never embed these private photos in published HTML; only AI/drawn picture-book art goes under `lessons/assets/lesson-XX/`
 
 ## AI voice (paired with likeness)
 - Fixed voice per cast id: see `scripts/voices.json` and `docs/character-voices.md`

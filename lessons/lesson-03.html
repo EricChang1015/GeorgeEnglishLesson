@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 3: George and the Storm on the Hill</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --card: #ffffff;
+      --ink: #2b2b2b;
+      --accent: #3d8bfd;
+      --accent-dark: #1f5fc9;
+      --good: #2f9e44;
+      --bad: #e03131;
+      --soft: #ffe8c2;
+      --george: #e8f1ff;
+      --pip: #e9f8ea;
+      --ember: #ffe4e4;
+      --daddy: #eee6f8;
+      --narrator: #fff7e8;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Comic Sans MS", "Nunito", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, #c9e7ff 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #d0d4e8 0, transparent 35%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+    .app { max-width: 920px; margin: 0 auto; padding: 16px 16px 48px; }
+    header.top {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      align-items: center; justify-content: space-between; margin-bottom: 12px;
+    }
+    .brand { font-weight: 800; font-size: 1.1rem; color: var(--accent-dark); }
+    .nav-links a { color: var(--accent-dark); text-decoration: none; font-weight: 700; margin-left: 10px; }
+    .progress {
+      background: #eee; border-radius: 999px; height: 12px;
+      overflow: hidden; margin-bottom: 14px;
+    }
+    .progress > span {
+      display: block; height: 100%; width: 0%;
+      background: linear-gradient(90deg, #6c8cff, #3d8bfd);
+      transition: width 0.3s ease;
+    }
+    .screen {
+      display: none; background: var(--card); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 20px; animation: fadeIn 0.25s ease;
+    }
+    .screen.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: none; }
+    }
+    h1, h2 { margin: 0 0 12px; line-height: 1.2; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+    h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
+    .hero {
+      width: 100%; border-radius: 16px; display: block;
+      margin: 0 auto 16px; max-height: 380px; object-fit: cover; background: #f3f3f3;
+    }
+    .hint { text-align: center; color: #666; font-size: 1rem; margin: 0 0 10px; }
+    .page-meta { text-align: center; color: #888; font-weight: 700; margin-bottom: 6px; }
+    .voice-key {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      margin: 0 0 12px; font-size: 0.92rem; font-weight: 700;
+    }
+    .voice-key span { padding: 4px 10px; border-radius: 999px; background: #f3f3f3; }
+    .voice-key .george { background: var(--george); color: #1f5fc9; }
+    .voice-key .pip { background: var(--pip); color: #2b8a3e; }
+    .voice-key .ember { background: var(--ember); color: #c92a2a; }
+    .voice-key .daddy { background: var(--daddy); color: #5b3d8a; }
+    .voice-key .narrator { background: var(--narrator); color: #8a5a00; }
+
+    .lines { display: grid; gap: 10px; margin: 8px 0 16px; }
+    .line {
+      border: 3px solid transparent; border-radius: 16px; padding: 12px 14px;
+      cursor: pointer; text-align: left; font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+      line-height: 1.45; font-weight: 700; transition: border-color 0.15s, transform 0.1s, box-shadow 0.15s;
+    }
+    .line:hover { transform: translateY(-1px); }
+    .line.narrator { background: var(--narrator); border-color: #ffe0a0; }
+    .line.george { background: var(--george); border-color: #b7d4ff; }
+    .line.pip { background: var(--pip); border-color: #b6e6b8; }
+    .line.ember { background: var(--ember); border-color: #ffb0b0; }
+    .line.daddy { background: var(--daddy); border-color: #c9b3e8; }
+    .line.playing { box-shadow: 0 0 0 3px #f0c000; border-color: #f0c000 !important; }
+    .line .who {
+      display: block; font-size: 0.85rem; font-weight: 800;
+      letter-spacing: 0.02em; margin-bottom: 4px; opacity: 0.75; text-transform: uppercase;
+    }
+
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 8px;
+    }
+    button, .btn {
+      appearance: none; border: none; border-radius: 999px;
+      padding: 14px 22px; font-size: 1.05rem; font-weight: 800; cursor: pointer;
+      transition: transform 0.1s ease, background 0.15s ease;
+    }
+    button:active { transform: scale(0.97); }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: var(--soft); color: #7a4b00; }
+    .btn-ghost { background: #eef2f7; color: #334; }
+    .btn-good { background: #d3f9d8; color: #2b8a3e; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .vocab-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px; margin: 16px 0;
+    }
+    .vocab-card {
+      background: #f8fbff; border: 3px solid #dce9ff; border-radius: 16px;
+      padding: 10px; text-align: center; cursor: pointer;
+      transition: border-color 0.15s ease, transform 0.1s ease;
+    }
+    .vocab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .vocab-card.playing { border-color: #f0c000; box-shadow: 0 0 0 3px #ffe08a; }
+    .vocab-card img {
+      width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px;
+      display: block; margin-bottom: 8px;
+    }
+    .vocab-card .label { font-size: 1.35rem; font-weight: 800; }
+    .vocab-card .example {
+      margin-top: 6px; font-size: 0.95rem; font-weight: 700; color: #445; line-height: 1.35;
+    }
+
+    .quiz-options { display: grid; gap: 12px; margin: 16px 0; }
+    .quiz-options button {
+      width: 100%; text-align: left; background: #f4f8ff; color: var(--ink);
+      border: 3px solid #d7e6ff; border-radius: 16px; font-size: 1.2rem;
+    }
+    .quiz-options button.correct { background: #d3f9d8; border-color: var(--good); }
+    .quiz-options button.wrong { background: #ffe3e3; border-color: var(--bad); }
+    .feedback {
+      min-height: 1.5em; text-align: center; font-size: 1.25rem;
+      font-weight: 800; margin: 8px 0 4px;
+    }
+    .feedback.good { color: var(--good); }
+    .feedback.bad { color: var(--bad); }
+
+    .sight-grid {
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 18px 0;
+    }
+    .sight-word {
+      min-width: 120px; font-size: 1.2rem; background: #fff;
+      border: 3px dashed #9ec5ff; color: var(--accent-dark);
+      border-radius: 16px; padding: 14px 16px;
+    }
+    .sight-word.done { border-style: solid; background: #e7f5ff; }
+
+    .learning-box {
+      background: #f4f8ff; border: 2px solid #d7e6ff; border-radius: 14px;
+      padding: 12px 14px; margin: 0 0 14px; font-size: 1rem; line-height: 1.5; color: #334;
+    }
+    .learning-box strong { color: var(--accent-dark); }
+    .learning-box ul { margin: 8px 0 0; padding-left: 1.2em; }
+
+    .notes label {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 1.1rem; margin: 8px 0; cursor: pointer;
+    }
+    .notes textarea {
+      width: 100%; min-height: 110px; border-radius: 14px;
+      border: 2px solid #d7e6ff; padding: 12px; font-size: 1.05rem;
+      font-family: inherit; resize: vertical;
+    }
+    .save-msg { color: var(--good); font-weight: 700; min-height: 1.2em; }
+    footer.note { margin-top: 18px; text-align: center; color: #777; font-size: 0.95rem; }
+    .continue {
+      background: #eef2ff; border: 2px solid #c5d0ff; border-radius: 14px;
+      padding: 10px 14px; margin-bottom: 12px; text-align: center; font-weight: 700; color: #3b4a9c;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">🐉 George English · Lesson 3</div>
+      <nav class="nav-links">
+        <a href="lesson-02.html">Lesson 2</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="screen active" data-screen="0">
+      <img class="hero" src="assets/lesson-03/cover.png" alt="George with Pip and Ember under stormy clouds on the hill" />
+      <h1>George and the Storm on the Hill</h1>
+      <div class="continue">Continues from Lesson 2 · George · Pip · Ember · Daddy</div>
+      <p class="hint">ORT Level 6 · Berries · Bear · Shelter · Stay calm</p>
+      <div class="voice-key">
+        <span class="narrator">Narrator</span>
+        <span class="george">George (boy)</span>
+        <span class="pip">Pip</span>
+        <span class="ember">Ember</span>
+        <span class="daddy">Daddy</span>
+      </div>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <h2>New Words</h2>
+      <p class="hint">Tap a card: hear the word, then an example sentence</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Story ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2" data-story="0"></section>
+    <section class="screen" data-screen="3" data-story="1"></section>
+    <section class="screen" data-screen="4" data-story="2"></section>
+    <section class="screen" data-screen="5" data-story="3"></section>
+    <section class="screen" data-screen="6" data-story="4"></section>
+    <section class="screen" data-screen="7" data-story="5"></section>
+    <section class="screen" data-screen="8" data-story="6"></section>
+    <section class="screen" data-screen="9" data-story="7"></section>
+
+    <section class="screen" data-screen="10">
+      <h2>Let's Check!</h2>
+      <p class="hint">Choose the best answer</p>
+      <div id="quizArea"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next id="quizNext" disabled>Next ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="11">
+      <h2>Key Phrases</h2>
+      <p class="hint">Tap each phrase and say it with George &amp; friends</p>
+      <div class="sight-grid" id="sightGrid"></div>
+      <p class="feedback" id="sightFeedback"></p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Notes ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="12">
+      <h2>Follow-up Notes</h2>
+      <p class="hint">For tutor / parent (saved on this device)</p>
+      <div class="learning-box">
+        <strong>Learning focus</strong>
+        <ul>
+          <li>Word → sentence practice (e.g. bear → It's a big brown bear.)</li>
+          <li>Safety: Stay quiet · Don't run · Stay calm · hide / shelter</li>
+          <li>Ask: Where did they wait out the storm? (Pip's cave)</li>
+          <li>Ask: Who climbed the hill to find George? (Daddy)</li>
+        </ul>
+      </div>
+      <div class="notes" id="notesForm">
+        <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
+        <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
+        <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
+        <label><input type="checkbox" data-note="safety_phrases" /> Named safety phrases (Stay quiet / Don't run / Stay calm)</label>
+        <label><input type="checkbox" data-note="bear_talk" /> Talked about the bear calmly</label>
+        <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
+        <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
+        <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
+        <p style="margin:14px 0 6px;font-weight:800;">Comments</p>
+        <textarea id="noteComment" placeholder="What went well? What to practice next?"></textarea>
+        <div class="controls" style="margin-top:14px;">
+          <button class="btn-good" type="button" id="saveNotes">💾 Save notes</button>
+          <button class="btn-secondary" type="button" id="clearNotes">Clear</button>
+          <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+        </div>
+        <p class="save-msg" id="saveMsg"></p>
+      </div>
+      <footer class="note">Great job, George! You stayed calm. 🌟</footer>
+    </section>
+  </div>
+
+  <script>
+    const ASSET = "assets/lesson-03/";
+    const STORAGE_KEY = "george-lesson-03-notes-v2";
+    const ROLE_LABEL = {
+      narrator: "Narrator",
+      george: "George",
+      pip: "Pip",
+      ember: "Ember",
+      daddy: "Daddy"
+    };
+
+    const vocab = [
+      { word: "storm", example: "A big storm is coming.", img: "vocab-storm.png", alt: "dark storm clouds", audio: "audio/vocab-storm.mp3", exampleAudio: "audio/vocab-storm-ex.mp3" },
+      { word: "thunder", example: "I can hear the thunder.", img: "vocab-thunder.png", alt: "thunder and lightning", audio: "audio/vocab-thunder.mp3", exampleAudio: "audio/vocab-thunder-ex.mp3" },
+      { word: "wind", example: "The wind is very strong.", img: "vocab-wind.png", alt: "strong wind", audio: "audio/vocab-wind.mp3", exampleAudio: "audio/vocab-wind-ex.mp3" },
+      { word: "bear", example: "It's a big brown bear.", img: "vocab-bear.png", alt: "a big brown bear", audio: "audio/vocab-bear.mp3", exampleAudio: "audio/vocab-bear-ex.mp3" },
+      { word: "growl", example: "The bear makes a low growl.", img: "vocab-growl.png", alt: "a bear growl", audio: "audio/vocab-growl.mp3", exampleAudio: "audio/vocab-growl-ex.mp3" },
+      { word: "danger", example: "Look out! There is danger ahead.", img: "story-04.png", alt: "danger on the path", audio: "audio/vocab-danger.mp3", exampleAudio: "audio/vocab-danger-ex.mp3" },
+      { word: "quiet", example: "Please stay quiet.", img: "story-05.png", alt: "staying quiet", audio: "audio/vocab-quiet.mp3", exampleAudio: "audio/vocab-quiet-ex.mp3" },
+      { word: "hide", example: "We hide behind a big rock.", img: "story-05.png", alt: "hiding behind a rock", audio: "audio/vocab-hide.mp3", exampleAudio: "audio/vocab-hide-ex.mp3" },
+      { word: "shelter", example: "The cave is a safe shelter.", img: "story-07.png", alt: "cave shelter", audio: "audio/vocab-shelter.mp3", exampleAudio: "audio/vocab-shelter-ex.mp3" },
+      { word: "brave", example: "You were very brave today.", img: "story-08.png", alt: "Daddy praises George", audio: "audio/vocab-brave.mp3", exampleAudio: "audio/vocab-brave-ex.mp3" }
+    ];
+
+    const story = [
+      {
+        img: "story-01.png",
+        alt: "George plays with Pip and Ember outside the cave",
+        lines: [
+          { role: "narrator", text: "The next day, George went back to the cave to play with Pip and Ember.", audio: "audio/p01-01.mp3" },
+          { role: "george", text: "Hello! Shall we look for berries near the cave?", audio: "audio/p01-02.mp3" },
+          { role: "pip", text: "Yes! There are sweet berries just down the little path.", audio: "audio/p01-03.mp3" }
+        ]
+      },
+      {
+        img: "story-02.png",
+        alt: "The friends pick berries on a short path near the cave",
+        lines: [
+          { role: "narrator", text: "They walked a short way down the path and began to pick red berries.", audio: "audio/p02-01.mp3" },
+          { role: "ember", text: "These berries are yummy! I like helping.", audio: "audio/p02-02.mp3" },
+          { role: "narrator", text: "But the sky grew grey, and a cold wind brushed their faces.", audio: "audio/p02-03.mp3" },
+          { role: "pip", text: "Hmm. The wind feels strange. We should not go far.", audio: "audio/p02-04.mp3" }
+        ]
+      },
+      {
+        img: "story-03.png",
+        alt: "Thunder rolls as storm clouds gather",
+        lines: [
+          { role: "narrator", text: "Far away, thunder rumbled like a giant drum.", audio: "audio/p03-01.mp3" },
+          { role: "george", text: "Is a storm coming, Pip?", audio: "audio/p03-02.mp3" },
+          { role: "pip", text: "Yes. Let's take a few berries and go back to the cave soon.", audio: "audio/p03-03.mp3" },
+          { role: "ember", text: "I'm little. I can't fly in strong wind!", audio: "audio/p03-04.mp3" }
+        ]
+      },
+      {
+        img: "story-04.png",
+        alt: "A big brown bear appears on the berry path",
+        lines: [
+          { role: "narrator", text: "Suddenly, George stopped. A huge brown bear was on the path ahead.", audio: "audio/p04-01.mp3" },
+          { role: "narrator", text: "The bear sniffed the berries and made a low, rumbling growl.", audio: "audio/p04-02.mp3" },
+          { role: "ember", text: "George… is that bear dangerous?", audio: "audio/p04-03.mp3" },
+          { role: "george", text: "Yes. Stay quiet. Don't run. That is very important.", audio: "audio/p04-04.mp3" }
+        ]
+      },
+      {
+        img: "story-05.png",
+        alt: "The three friends hide behind a rock",
+        lines: [
+          { role: "narrator", text: "They hid behind a big rock and stayed very still.", audio: "audio/p05-01.mp3" },
+          { role: "pip", text: "Good. Stay calm. The bear is busy with the berries.", audio: "audio/p05-02.mp3" },
+          { role: "narrator", text: "The bear ate a few berries, then walked slowly into the trees.", audio: "audio/p05-03.mp3" },
+          { role: "george", text: "My heart is beating fast, but we stayed quiet.", audio: "audio/p05-04.mp3" }
+        ]
+      },
+      {
+        img: "story-06.png",
+        alt: "Rain begins as they hurry carefully back toward the cave",
+        lines: [
+          { role: "narrator", text: "Then cold rain began to fall, and the path grew dark and wet.", audio: "audio/p06-01.mp3" },
+          { role: "pip", text: "Now! Walk carefully. The cave is close. It is our shelter!", audio: "audio/p06-02.mp3" },
+          { role: "george", text: "Come on, Ember. Stay close to me.", audio: "audio/p06-03.mp3" },
+          { role: "narrator", text: "They hurried carefully back up the short path to the cave door.", audio: "audio/p06-04.mp3" }
+        ]
+      },
+      {
+        img: "story-07.png",
+        alt: "Safe inside the cave while the storm rains outside",
+        lines: [
+          { role: "narrator", text: "Inside the cave, they shook off the rain and listened to the storm.", audio: "audio/p07-01.mp3" },
+          { role: "ember", text: "I was scared, but we are safe now.", audio: "audio/p07-02.mp3" },
+          { role: "pip", text: "Yes. Our cave is a good shelter when thunder is loud.", audio: "audio/p07-03.mp3" },
+          { role: "george", text: "We did it together. We stayed calm!", audio: "audio/p07-04.mp3" }
+        ]
+      },
+      {
+        img: "story-08.png",
+        alt: "Daddy finds George at the cave after the storm",
+        lines: [
+          { role: "narrator", text: "When the rain stopped, Daddy climbed the hill with an umbrella.", audio: "audio/p08-01.mp3" },
+          { role: "daddy", text: "George! I was looking for you. Are you all right?", audio: "audio/p08-02.mp3" },
+          { role: "george", text: "Yes, Daddy. We hid from a big bear, then waited in the cave.", audio: "audio/p08-03.mp3" },
+          { role: "daddy", text: "Well done. You were very brave today.", audio: "audio/p08-04.mp3" }
+        ]
+      }
+    ];
+
+    const quiz = [
+      { q: "Why do the friends want to go back to the cave?", options: ["Because a storm is coming", "Because they want to go shopping", "Because the berries are blue"], answer: 0 },
+      { q: "What animal do they see on the path?", options: ["A big brown bear", "A tiny rabbit", "A goldfish"], answer: 0 },
+      { q: "What should they do when they see the bear?", options: ["Stay quiet and don't run", "Shout and run fast", "Throw rocks at the bear"], answer: 0 },
+      { q: "Who climbs the hill to find George after the storm?", options: ["Daddy", "A bus driver", "A bird"], answer: 0 }
+    ];
+
+    const phrases = [
+      { text: "Stay quiet", audio: "audio/p04-04.mp3" },
+      { text: "Don't run", audio: "audio/p04-04.mp3" },
+      { text: "Stay calm", audio: "audio/p05-02.mp3" },
+      { text: "Stay close", audio: "audio/p06-03.mp3" },
+      { text: "We stayed calm", audio: "audio/p07-04.mp3" },
+      { text: "Well done", audio: "audio/p08-04.mp3" }
+    ];
+
+    const screens = [...document.querySelectorAll(".screen")];
+    let current = 0;
+    let quizDone = false;
+    let audioPlayer = new Audio();
+    let playToken = 0;
+
+    function stopAudio() {
+      playToken += 1;
+      audioPlayer.pause();
+      audioPlayer.removeAttribute("src");
+      audioPlayer.load();
+      document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+    }
+
+    function playSrc(src, onEnd) {
+      const token = ++playToken;
+      document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+      audioPlayer.pause();
+      audioPlayer.src = ASSET + src;
+      const done = () => {
+        if (token !== playToken) return;
+        document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+        if (onEnd) onEnd();
+      };
+      audioPlayer.onended = done;
+      audioPlayer.onerror = done;
+      return audioPlayer.play().catch(done);
+    }
+
+    function playSequence(srcs, highlightEl) {
+      stopAudio();
+      if (highlightEl) highlightEl.classList.add("playing");
+      let i = 0;
+      const next = () => {
+        if (i >= srcs.length) {
+          if (highlightEl) highlightEl.classList.remove("playing");
+          return;
+        }
+        const src = srcs[i++];
+        if (highlightEl) highlightEl.classList.add("playing");
+        playSrc(src, next);
+      };
+      next();
+    }
+
+    function playLineEl(lineEl) {
+      stopAudio();
+      lineEl.classList.add("playing");
+      playSrc(lineEl.dataset.audio);
+    }
+
+    function readPage(screenEl) {
+      const lines = [...screenEl.querySelectorAll(".line")];
+      if (!lines.length) return;
+      stopAudio();
+      let i = 0;
+      const next = () => {
+        if (i >= lines.length) return;
+        const el = lines[i];
+        document.querySelectorAll(".playing").forEach(n => n.classList.remove("playing"));
+        el.classList.add("playing");
+        el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        playSrc(el.dataset.audio, () => { i += 1; next(); });
+      };
+      next();
+    }
+
+    function buildStoryScreens() {
+      document.querySelectorAll("[data-story]").forEach(sec => {
+        const i = Number(sec.dataset.story);
+        const page = story[i];
+        const linesHtml = page.lines.map(line => `
+          <button class="line ${line.role}" type="button" data-audio="${line.audio}">
+            <span class="who">${ROLE_LABEL[line.role]}</span>
+            ${line.text}
+          </button>
+        `).join("");
+        sec.innerHTML = `
+          <div class="page-meta">Story ${i + 1} / ${story.length}</div>
+          <img class="hero" src="${ASSET}${page.img}" alt="${page.alt}" />
+          <div class="voice-key">
+            <span class="narrator">Narrator</span>
+            <span class="george">George</span>
+            <span class="pip">Pip</span>
+            <span class="ember">Ember</span>
+            <span class="daddy">Daddy</span>
+          </div>
+          <div class="lines">${linesHtml}</div>
+          <p class="hint">Tap a line for AI voice · or Read the page</p>
+          <div class="controls">
+            <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+            <button class="btn-secondary" type="button" data-read-page>🔊 Read page</button>
+            <button class="btn-primary" type="button" data-next>Next ▶</button>
+          </div>
+        `;
+      });
+    }
+
+    function buildVocab() {
+      document.getElementById("vocabGrid").innerHTML = vocab.map((v, i) => `
+        <button class="vocab-card" type="button" data-vocab-index="${i}">
+          <img src="${ASSET}${v.img}" alt="${v.alt}" />
+          <div class="label">${v.word}</div>
+          <div class="example">${v.example}</div>
+        </button>
+      `).join("");
+    }
+
+    function buildQuiz() {
+      const area = document.getElementById("quizArea");
+      let answered = 0;
+      area.innerHTML = quiz.map((item, qi) => `
+        <div class="quiz-item" data-qi="${qi}" style="margin-bottom:22px;">
+          <h3 style="font-size:1.3rem;margin:0 0 8px;">${qi + 1}. ${item.q}</h3>
+          <div class="quiz-options">
+            ${item.options.map((opt, oi) => `
+              <button type="button" data-qi="${qi}" data-oi="${oi}">${opt}</button>
+            `).join("")}
+          </div>
+          <p class="feedback" data-fb="${qi}"></p>
+        </div>
+      `).join("");
+
+      area.querySelectorAll("button[data-qi]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const qi = Number(btn.dataset.qi);
+          const oi = Number(btn.dataset.oi);
+          const item = quiz[qi];
+          const wrap = area.querySelector(`.quiz-item[data-qi="${qi}"]`);
+          if (wrap.dataset.done === "1") return;
+          wrap.dataset.done = "1";
+          const fb = area.querySelector(`[data-fb="${qi}"]`);
+          wrap.querySelectorAll("button").forEach(b => { b.disabled = true; });
+          if (oi === item.answer) {
+            btn.classList.add("correct");
+            fb.textContent = "Great job! ⭐";
+            fb.className = "feedback good";
+            playSrc("audio/praise-great.mp3");
+          } else {
+            btn.classList.add("wrong");
+            const correctBtn = wrap.querySelector(`button[data-oi="${item.answer}"]`);
+            if (correctBtn) correctBtn.classList.add("correct");
+            fb.textContent = "Nice try! Let's learn it.";
+            fb.className = "feedback bad";
+            playSrc("audio/praise-try.mp3");
+          }
+          answered += 1;
+          if (answered >= quiz.length) {
+            quizDone = true;
+            document.getElementById("quizNext").disabled = false;
+          }
+        });
+      });
+    }
+
+    function buildPhrases() {
+      const grid = document.getElementById("sightGrid");
+      const fb = document.getElementById("sightFeedback");
+      let count = 0;
+      grid.innerHTML = phrases.map(p => `
+        <button class="sight-word" type="button" data-audio="${p.audio}">${p.text}</button>
+      `).join("");
+      grid.querySelectorAll("[data-audio]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          stopAudio();
+          btn.classList.add("playing");
+          playSrc(btn.dataset.audio, () => btn.classList.remove("playing"));
+          if (!btn.classList.contains("done")) {
+            btn.classList.add("done");
+            count += 1;
+            fb.textContent = count >= phrases.length ? "You did it! 🎉" : `Nice! ${count}/${phrases.length}`;
+            fb.className = "feedback good";
+          }
+        });
+      });
+    }
+
+    function updateProgress() {
+      document.getElementById("progressBar").style.width =
+        ((current / (screens.length - 1)) * 100) + "%";
+    }
+
+    function showScreen(index) {
+      stopAudio();
+      current = Math.max(0, Math.min(screens.length - 1, index));
+      screens.forEach((s, i) => s.classList.toggle("active", i === current));
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function loadNotes() {
+      try {
+        const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        document.querySelectorAll("[data-note]").forEach(cb => {
+          cb.checked = !!data[cb.dataset.note];
+        });
+        document.getElementById("noteComment").value = data.comment || "";
+      } catch (_) { /* ignore */ }
+    }
+
+    function saveNotes() {
+      const data = { comment: document.getElementById("noteComment").value };
+      document.querySelectorAll("[data-note]").forEach(cb => {
+        data[cb.dataset.note] = cb.checked;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      const msg = document.getElementById("saveMsg");
+      msg.textContent = "Saved on this device ✓";
+      setTimeout(() => { msg.textContent = ""; }, 2500);
+    }
+
+    buildVocab();
+    buildStoryScreens();
+    buildQuiz();
+    buildPhrases();
+    loadNotes();
+    updateProgress();
+
+    document.addEventListener("click", (e) => {
+      const vocabCard = e.target.closest("[data-vocab-index]");
+      if (vocabCard) {
+        const item = vocab[Number(vocabCard.dataset.vocabIndex)];
+        playSequence([item.audio, item.exampleAudio], vocabCard);
+        return;
+      }
+
+      const t = e.target.closest("[data-next],[data-prev],[data-audio],[data-read-page]");
+      if (!t) return;
+      if (t.matches("[data-next]")) {
+        if (current === 10 && !quizDone) return;
+        showScreen(current + 1);
+        return;
+      }
+      if (t.matches("[data-prev]")) { showScreen(current - 1); return; }
+      if (t.matches("[data-read-page]")) { readPage(t.closest(".screen")); return; }
+      if (t.matches(".line")) { playLineEl(t); return; }
+      if (t.matches("[data-audio]")) {
+        stopAudio();
+        t.classList.add("playing");
+        playSrc(t.dataset.audio, () => t.classList.remove("playing"));
+      }
+    });
+
+    document.getElementById("saveNotes").addEventListener("click", saveNotes);
+    document.getElementById("clearNotes").addEventListener("click", () => {
+      localStorage.removeItem(STORAGE_KEY);
+      document.querySelectorAll("[data-note]").forEach(cb => { cb.checked = false; });
+      document.getElementById("noteComment").value = "";
+      document.getElementById("saveMsg").textContent = "Cleared";
+    });
+  </script>
+</body>
+</html>

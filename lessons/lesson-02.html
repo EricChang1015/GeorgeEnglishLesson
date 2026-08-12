@@ -125,6 +125,9 @@
       display: block; margin-bottom: 8px;
     }
     .vocab-card .label { font-size: 1.35rem; font-weight: 800; }
+    .vocab-card .example {
+      margin-top: 6px; font-size: 0.95rem; font-weight: 700; color: #445; line-height: 1.35;
+    }
 
     .quiz-options { display: grid; gap: 12px; margin: 16px 0; }
     .quiz-options button {
@@ -197,7 +200,7 @@
 
     <section class="screen" data-screen="1">
       <h2>New Words</h2>
-      <p class="hint">Tap a card to hear the word (AI voice)</p>
+      <p class="hint">Tap a card: hear the word, then an example sentence</p>
       <div class="vocab-grid" id="vocabGrid"></div>
       <div class="controls">
         <button class="btn-ghost" type="button" data-prev>◀ Back</button>
@@ -264,14 +267,14 @@
     const ROLE_LABEL = { narrator: "Narrator", george: "George", pip: "Pip", ember: "Ember" };
 
     const vocab = [
-      { word: "hatch", img: "vocab-hatch.png", alt: "an egg hatching", audio: "audio/vocab-hatch.mp3" },
-      { word: "crack", img: "vocab-crack.png", alt: "a cracked egg", audio: "audio/vocab-crack.mp3" },
-      { word: "sister", img: "vocab-sister.png", alt: "Pip and Ember", audio: "audio/vocab-sister.mp3" },
-      { word: "warm", img: "vocab-warm.png", alt: "warm moss", audio: "audio/vocab-warm.mp3" },
-      { word: "berry", img: "vocab-berry.png", alt: "red berries", audio: "audio/vocab-berry.mp3" },
-      { word: "wings", img: "vocab-wings.png", alt: "tiny wings", audio: "audio/vocab-wings.mp3" },
-      { word: "fly", img: "story-07.png", alt: "Ember flying", audio: "audio/vocab-fly.mp3" },
-      { word: "careful", img: "story-06.png", alt: "being careful", audio: "audio/vocab-careful.mp3" }
+      { word: "hatch", example: "The red egg will hatch soon.", img: "vocab-hatch.png", alt: "an egg hatching", audio: "audio/vocab-hatch.mp3", exampleAudio: "audio/vocab-hatch-ex.mp3" },
+      { word: "crack", example: "Look! The egg has a crack.", img: "vocab-crack.png", alt: "a cracked egg", audio: "audio/vocab-crack.mp3", exampleAudio: "audio/vocab-crack-ex.mp3" },
+      { word: "sister", example: "Ember is Pip's little sister.", img: "vocab-sister.png", alt: "Pip and Ember", audio: "audio/vocab-sister.mp3", exampleAudio: "audio/vocab-sister-ex.mp3" },
+      { word: "warm", example: "Soft moss keeps Ember warm.", img: "vocab-warm.png", alt: "warm moss", audio: "audio/vocab-warm.mp3", exampleAudio: "audio/vocab-warm-ex.mp3" },
+      { word: "berry", example: "These berries are sweet and safe.", img: "vocab-berry.png", alt: "red berries", audio: "audio/vocab-berry.mp3", exampleAudio: "audio/vocab-berry-ex.mp3" },
+      { word: "wings", example: "Ember stretches her little wings.", img: "vocab-wings.png", alt: "tiny wings", audio: "audio/vocab-wings.mp3", exampleAudio: "audio/vocab-wings-ex.mp3" },
+      { word: "fly", example: "Ember can fly a little.", img: "story-07.png", alt: "Ember flying", audio: "audio/vocab-fly.mp3", exampleAudio: "audio/vocab-fly-ex.mp3" },
+      { word: "careful", example: "Be careful when you practice.", img: "story-06.png", alt: "being careful", audio: "audio/vocab-careful.mp3", exampleAudio: "audio/vocab-careful-ex.mp3" }
     ];
 
     const story = [
@@ -399,6 +402,22 @@
       return audioPlayer.play().catch(done);
     }
 
+    function playSequence(srcs, highlightEl) {
+      stopAudio();
+      if (highlightEl) highlightEl.classList.add("playing");
+      let i = 0;
+      const next = () => {
+        if (i >= srcs.length) {
+          if (highlightEl) highlightEl.classList.remove("playing");
+          return;
+        }
+        const src = srcs[i++];
+        if (highlightEl) highlightEl.classList.add("playing");
+        playSrc(src, next);
+      };
+      next();
+    }
+
     function playLineEl(lineEl) {
       stopAudio();
       lineEl.classList.add("playing");
@@ -452,10 +471,11 @@
     }
 
     function buildVocab() {
-      document.getElementById("vocabGrid").innerHTML = vocab.map(v => `
-        <button class="vocab-card" type="button" data-audio="${v.audio}">
+      document.getElementById("vocabGrid").innerHTML = vocab.map((v, i) => `
+        <button class="vocab-card" type="button" data-vocab-index="${i}">
           <img src="${ASSET}${v.img}" alt="${v.alt}" />
           <div class="label">${v.word}</div>
+          <div class="example">${v.example}</div>
         </button>
       `).join("");
     }
@@ -571,6 +591,13 @@
     updateProgress();
 
     document.addEventListener("click", (e) => {
+      const vocabCard = e.target.closest("[data-vocab-index]");
+      if (vocabCard) {
+        const item = vocab[Number(vocabCard.dataset.vocabIndex)];
+        playSequence([item.audio, item.exampleAudio], vocabCard);
+        return;
+      }
+
       const t = e.target.closest("[data-next],[data-prev],[data-audio],[data-read-page]");
       if (!t) return;
       if (t.matches("[data-next]")) {

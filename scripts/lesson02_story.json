@@ -9,14 +9,14 @@
     "ember": { "voice": "en-GB-MaisieNeural", "rate": "+8%", "pitch": "+15Hz" }
   },
   "vocab": [
-    { "word": "hatch", "img": "vocab-hatch.png", "alt": "an egg cracking open", "audio": "vocab-hatch.mp3" },
-    { "word": "crack", "img": "vocab-crack.png", "alt": "a cracked egg shell", "audio": "vocab-crack.mp3" },
-    { "word": "sister", "img": "vocab-sister.png", "alt": "Pip and baby Ember", "audio": "vocab-sister.mp3" },
-    { "word": "warm", "img": "vocab-warm.png", "alt": "warm soft moss", "audio": "vocab-warm.mp3" },
-    { "word": "berry", "img": "vocab-berry.png", "alt": "red berries", "audio": "vocab-berry.mp3" },
-    { "word": "wings", "img": "vocab-wings.png", "alt": "tiny dragon wings", "audio": "vocab-wings.mp3" },
-    { "word": "fly", "img": "story-07.png", "alt": "Ember learning to fly", "audio": "vocab-fly.mp3" },
-    { "word": "careful", "img": "story-06.png", "alt": "being careful", "audio": "vocab-careful.mp3" }
+    { "word": "hatch", "example": "The red egg will hatch soon.", "img": "vocab-hatch.png", "alt": "an egg cracking open", "audio": "vocab-hatch.mp3", "example_audio": "vocab-hatch-ex.mp3" },
+    { "word": "crack", "example": "Look! The egg has a crack.", "img": "vocab-crack.png", "alt": "a cracked egg shell", "audio": "vocab-crack.mp3", "example_audio": "vocab-crack-ex.mp3" },
+    { "word": "sister", "example": "Ember is Pip's little sister.", "img": "vocab-sister.png", "alt": "Pip and baby Ember", "audio": "vocab-sister.mp3", "example_audio": "vocab-sister-ex.mp3" },
+    { "word": "warm", "example": "Soft moss keeps Ember warm.", "img": "vocab-warm.png", "alt": "warm soft moss", "audio": "vocab-warm.mp3", "example_audio": "vocab-warm-ex.mp3" },
+    { "word": "berry", "example": "These berries are sweet and safe.", "img": "vocab-berry.png", "alt": "red berries", "audio": "vocab-berry.mp3", "example_audio": "vocab-berry-ex.mp3" },
+    { "word": "wings", "example": "Ember stretches her little wings.", "img": "vocab-wings.png", "alt": "tiny dragon wings", "audio": "vocab-wings.mp3", "example_audio": "vocab-wings-ex.mp3" },
+    { "word": "fly", "example": "Ember can fly a little.", "img": "story-07.png", "alt": "Ember learning to fly", "audio": "vocab-fly.mp3", "example_audio": "vocab-fly-ex.mp3" },
+    { "word": "careful", "example": "Be careful when you practice.", "img": "story-06.png", "alt": "being careful", "audio": "vocab-careful.mp3", "example_audio": "vocab-careful-ex.mp3" }
   ],
   "pages": [
     {

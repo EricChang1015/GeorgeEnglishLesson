@@ -1,10 +1,12 @@
-# Photo drop zone (private)
+# Deprecated drop zone
 
-Put new family / George likeness photos here temporarily.
+**Do not put photos here.**
 
-Then organize into:
+Put new family / George likeness photos **directly** into:
 
 `lessons/assets/refs/george/`
+
+Then update `lessons/assets/refs/george/CATALOG.md` with people + tags + `use_for`.
 
 Naming:
 
@@ -14,6 +16,4 @@ Naming:
 
 Subjects (George first): `george`, `daddy`, `mummy`, `sylvia`
 
-Update `lessons/assets/refs/george/CATALOG.md` with people + tags + `use_for`.
-
-Photos under `ref/` and `lessons/assets/refs/**/*.jpg` are gitignored and must not be published.
+Private photos under `lessons/assets/refs/**` are gitignored (only `*.md` catalogs are committed) and must not be published.

@@ -16,17 +16,18 @@ Private likeness refs for lesson illustration. **Do not publish these photos** (
 | Id | Role | Appearance notes |
 |----|------|------------------|
 | `george` | Boy ~5, story hero | East Asian; short black hair with bangs; round face |
-| `daddy` | Father | East Asian adult; short dark hair; usually thin round/oval glasses |
+| `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`) |
 | `mummy` | Mother | Adult woman; glasses in close-up refs |
 | `sylvia` | Older sister | Dark hair (often ponytail); often baseball cap / sunglasses outdoors |
 
 ## How agents should pick refs
 
 1. **George face / likeness (required for any George art):** start with `priority: primary` photos, especially `george-solo-bed-smile.jpg`.
-2. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
-3. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
-4. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
-5. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
+2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole).
+3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
+4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
+5. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
+6. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
 
 ## Photos
 
@@ -36,6 +37,20 @@ Private likeness refs for lesson illustration. **Do not publish these photos** (
 - **tags:** solo, face-closeup, smile, joyful, indoors, bed, home
 - **use_for:** best default George face + body proportions; happy expression
 - **notes:** Clear front-facing smile; grey raglan long sleeves; cream pants
+
+### george-solo-sofa-alphabet-smile.jpg
+- **priority:** high
+- **people:** george
+- **tags:** solo, face-closeup, smile, indoors, sofa, home, learning, alphabet, front-facing
+- **use_for:** strong George face likeness for covers / close portraits; Lesson 3 cover
+- **notes:** Round face, short black bangs, large dark eyes, open-mouth smile showing teeth, prominent ears; white quilted top with tiny red/blue motifs; holding alphabet practice paper (A–N). Prefer face only — do not copy the alphabet paper into story art unless the scene needs it.
+
+### george-daddy-outdoors-pavilion-neutral.jpg
+- **priority:** primary
+- **people:** george, daddy
+- **tags:** outdoors, daytime, pavilion, travel, closeup, daddy-face, glasses, backpack, george-profile, neutral
+- **use_for:** best default **Daddy face** likeness (front-facing); Lesson 3 ending / Daddy reunion scenes
+- **notes:** Daddy: short thick black hair with volume on top; thin round dark-metal glasses; small mole on lower left chin; light grey athletic tee; black backpack straps. George in profile (navy tee) — prefer other refs for George face.
 
 ### george-daddy-bed-selfie-smile.jpg
 - **priority:** high

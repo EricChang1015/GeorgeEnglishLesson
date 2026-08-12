@@ -28,6 +28,10 @@ async def generate(story_path: Path, audio_dir: Path) -> None:
     for item in data.get("vocab", []):
         cfg = voices["narrator"]
         jobs.append((item["word"], cfg["voice"], cfg["rate"], cfg["pitch"], audio_dir / item["audio"]))
+        example = item.get("example")
+        example_audio = item.get("example_audio")
+        if example and example_audio:
+            jobs.append((example, cfg["voice"], cfg["rate"], cfg["pitch"], audio_dir / example_audio))
 
     for page in data["pages"]:
         for line in page["lines"]:

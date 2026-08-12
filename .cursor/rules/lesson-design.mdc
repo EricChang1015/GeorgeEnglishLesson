@@ -10,12 +10,13 @@ alwaysApply: false
 - About 2–4 sentences per story page; include real dialogue between characters
 - Sentence length can be longer (roughly 8–16 words); past tense and simple compound sentences OK
 - New words: about 8–12 per lesson; preview with picture + audio
+- Each vocab word needs one short **example sentence** (ORT-friendly); tap plays word then sentence
 - Prefer natural storybook dialogue over isolated word drills
 - Tone: friendly adventure; dragons OK if gentle and playful
 
 ## Required lesson structure
 1. Cover (title, character, Start)
-2. Vocabulary preview (picture + word; play AI audio)
+2. Vocabulary preview (picture + word + example sentence; play AI audio)
 3. Story pages (illustration + dialogue lines; play full-line AI audio)
 4. Comprehension quiz (instant correct/incorrect feedback + praise)
 5. Sight-word / key-phrase practice
