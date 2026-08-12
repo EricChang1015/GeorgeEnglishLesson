@@ -21,6 +21,13 @@ Open `index.html` in a browser, or serve the folder:
 npx --yes serve .
 ```
 
+## Live site
+
+https://ericchang1015.github.io/GeorgeEnglishLesson/
+
+- Lesson 1: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-01.html
+- Repo: https://github.com/EricChang1015/GeorgeEnglishLesson
+
 ## Publish (GitHub Pages)
 
 Push to `main`. Site root is the repository root.
