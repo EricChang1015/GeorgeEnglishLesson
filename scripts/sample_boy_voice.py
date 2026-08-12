@@ -1,6 +1,6 @@
 """Generate short boy-voice samples for George.
 
-Chosen voice (parent-approved): en-US-AnaNeural, +12%, -10Hz — see lesson-design.mdc.
+Chosen voice (parent-approved): en-US-AnaNeural, +12%, -10Hz — see scripts/voices.json.
 """
 import asyncio
 from pathlib import Path

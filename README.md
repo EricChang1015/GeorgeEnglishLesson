@@ -8,10 +8,20 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 **George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
 
 ### Lesson 2 — `lessons/lesson-02.html`
-**The Red Egg Hatches** (ORT Level 6): Ember hatches; George helps; Ember flies a little.  
-George uses a child boy AI voice (`en-US-AnaNeural`, rate `+12%`, pitch `-10Hz`).
+**The Red Egg Hatches** (ORT Level 6): Ember hatches; George helps; Ember flies a little.
 
 Features: vocabulary, dialogue story, AI line audio, quiz, key phrases, tutor notes.
+
+## Character AI voices
+
+Each story character has a fixed Edge TTS voice (George, Pip, Ember, Daddy, narrator, …).  
+**Do not change per lesson** — copy from the canonical file when writing a new lesson.
+
+| Doc | Purpose |
+|-----|---------|
+| `scripts/voices.json` | Machine-readable voice settings per role |
+| `docs/character-voices.md` | Full table, checklist, reserved roles |
+| `.cursor/rules/character-voices.mdc` | Agent rule for consistent casting |
 
 Regenerate audio after story edits:
 

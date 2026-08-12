@@ -1,0 +1,56 @@
+{
+  "engine": "edge-tts",
+  "updated": "2026-08-12",
+  "notes": "Canonical role voices. Copy the full roles block into each lesson story JSON under \"voices\". Do not change a role without parent approval.",
+  "roles": {
+    "narrator": {
+      "voice": "en-GB-SoniaNeural",
+      "rate": "-10%",
+      "pitch": "+0Hz",
+      "character": "Narrator",
+      "kind": "adult",
+      "locale": "British English",
+      "notes": "Story narration and vocabulary word audio."
+    },
+    "george": {
+      "voice": "en-US-AnaNeural",
+      "rate": "+12%",
+      "pitch": "-10Hz",
+      "character": "George",
+      "kind": "child-boy",
+      "locale": "American English",
+      "notes": "Lesson hero (~5). Parent-approved voice-picker option E. Do not use adult male voices."
+    },
+    "pip": {
+      "voice": "en-US-AnaNeural",
+      "rate": "+5%",
+      "pitch": "+20Hz",
+      "character": "Pip",
+      "kind": "dragon-child",
+      "locale": "American English",
+      "notes": "Little green dragon, George's friend. Same base voice as George but higher pitch."
+    },
+    "ember": {
+      "voice": "en-GB-MaisieNeural",
+      "rate": "+8%",
+      "pitch": "+15Hz",
+      "character": "Ember",
+      "kind": "dragon-child",
+      "locale": "British English",
+      "notes": "Pip's little sister; red baby dragon. Introduced Lesson 2."
+    },
+    "daddy": {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-5%",
+      "pitch": "-5Hz",
+      "character": "Daddy",
+      "kind": "adult",
+      "locale": "British English",
+      "notes": "George's father. First used Lesson 3."
+    }
+  },
+  "reserved": {
+    "mummy": "Not yet cast — pick a warm adult female voice; do not reuse narrator (Sonia).",
+    "sylvia": "Not yet cast — older sister (~7); pick a child/teen girl voice distinct from George and Ember."
+  }
+}

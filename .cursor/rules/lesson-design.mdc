@@ -22,8 +22,8 @@ alwaysApply: false
 6. Follow-up notes for tutor/parent (checkboxes + comments; `localStorage`)
 
 ## Audio (preferred)
-- Pre-generate neural TTS MP3s with role voices (narrator / George / dragons)
-- George’s voice: **child boy** — `en-US-AnaNeural`, rate `+12%`, pitch `-10Hz` (Ana child voice, slightly lowered). Parent-approved choice (voice picker option E). Do not use adult male voices for George.
+- Pre-generate neural TTS MP3s with role voices (narrator / George / dragons / family)
+- **Character voices:** copy from `scripts/voices.json` into each lesson story JSON — see `docs/character-voices.md` and `.cursor/rules/character-voices.mdc`
 - Store under `lessons/assets/lesson-XX/audio/`
 - 「Read page」plays full page lines in order with line highlight
 - Tap a line / dialogue bubble → play that line’s AI audio

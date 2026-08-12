@@ -1,0 +1,38 @@
+---
+description: 角色 AI 語音設定（George、龍、家人）— 新課程、新角色台詞、重錄音檔時套用
+alwaysApply: true
+---
+
+# Character AI voices
+
+## Source of truth
+- **`scripts/voices.json`** — canonical `{ voice, rate, pitch }` per role key
+- **`docs/character-voices.md`** — human-readable table and checklist
+
+When a character speaks in a lesson, their `"voices"` entry in `scripts/lessonXX_story.json` **must match** `scripts/voices.json` exactly. Do not invent new rate/pitch per lesson.
+
+## Established roles (do not change without parent approval)
+
+| Role key | Character | Voice | Rate | Pitch |
+|----------|-----------|-------|------|-------|
+| `narrator` | Narrator | `en-GB-SoniaNeural` | `-10%` | `+0Hz` |
+| `george` | George (~5) | `en-US-AnaNeural` | `+12%` | `-10Hz` |
+| `pip` | Pip (green dragon) | `en-US-AnaNeural` | `+5%` | `+20Hz` |
+| `ember` | Ember (red dragon) | `en-GB-MaisieNeural` | `+8%` | `+15Hz` |
+| `daddy` | Daddy | `en-GB-RyanNeural` | `-5%` | `-5Hz` |
+
+George and Pip share the Ana child base voice but **must keep different rate/pitch** so they stay distinguishable.
+
+## New or returning characters
+1. If role exists in `scripts/voices.json` → copy settings into the lesson story JSON.
+2. If role is under `reserved` (e.g. `mummy`, `sylvia`) → ask parent before casting; then add to `voices.json` and `docs/character-voices.md`.
+3. Regenerate MP3s: `python scripts/generate_lesson_audio.py --story ... --out ...`
+
+## New dragons
+- Use the same child-dragon pattern as Pip/Ember (child neural voice + tuned rate/pitch).
+- Do **not** reuse Pip's or Ember's exact settings for a new dragon — give each dragon a distinct but still child-like voice.
+
+## Forbidden
+- Adult male voices for George
+- Different voice settings for the same role across lessons
+- Reusing the narrator voice (`Sonia`) for a speaking character
