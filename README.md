@@ -4,19 +4,20 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lesson 1
 
-**George and the Little Dragon** — `lessons/lesson-01.html` (ORT Level 6)
+### Lesson 1 — `lessons/lesson-01.html`
+**George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
 
-- Vocabulary with pictures + AI voice
-- Dialogue-rich picture story (Narrator / George / Pip)
-- Pre-generated neural TTS MP3s (edge-tts); tap a line or “Read page”
-- Comprehension quiz with instant feedback
-- Key-phrase practice
-- Tutor / parent follow-up notes (`localStorage`)
+### Lesson 2 — `lessons/lesson-02.html`
+**The Red Egg Hatches** (ORT Level 6): Ember hatches; George helps; Ember flies a little.  
+George uses a boy-like AI voice (`en-CA-LiamNeural`, raised pitch).
+
+Features: vocabulary, dialogue story, AI line audio, quiz, key phrases, tutor notes.
 
 Regenerate audio after story edits:
 
 ```bash
-python scripts/generate_lesson_audio.py
+python scripts/generate_lesson_audio.py --story scripts/lesson01_story.json --out lessons/assets/lesson-01/audio
+python scripts/generate_lesson_audio.py --story scripts/lesson02_story.json --out lessons/assets/lesson-02/audio
 ```
 
 ## Local preview

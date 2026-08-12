@@ -6,3 +6,7 @@ node_modules/
 *.log
 # Private photos of George — do not publish
 lessons/assets/refs/
+
+lessons/assets/lesson-02/voice-tests/
+lessons/assets/**/voice-tests/
+

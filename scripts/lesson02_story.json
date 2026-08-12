@@ -1,0 +1,123 @@
+{
+  "id": "lesson-02",
+  "title": "The Red Egg Hatches",
+  "level": "ORT Level 6",
+  "voices": {
+    "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
+    "george": { "voice": "en-CA-LiamNeural", "rate": "+12%", "pitch": "+32Hz" },
+    "pip": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" },
+    "ember": { "voice": "en-GB-MaisieNeural", "rate": "+8%", "pitch": "+15Hz" }
+  },
+  "vocab": [
+    { "word": "hatch", "img": "vocab-hatch.png", "alt": "an egg cracking open", "audio": "vocab-hatch.mp3" },
+    { "word": "crack", "img": "vocab-crack.png", "alt": "a cracked egg shell", "audio": "vocab-crack.mp3" },
+    { "word": "sister", "img": "vocab-sister.png", "alt": "Pip and baby Ember", "audio": "vocab-sister.mp3" },
+    { "word": "warm", "img": "vocab-warm.png", "alt": "warm soft moss", "audio": "vocab-warm.mp3" },
+    { "word": "berry", "img": "vocab-berry.png", "alt": "red berries", "audio": "vocab-berry.mp3" },
+    { "word": "wings", "img": "vocab-wings.png", "alt": "tiny dragon wings", "audio": "vocab-wings.mp3" },
+    { "word": "fly", "img": "story-07.png", "alt": "Ember learning to fly", "audio": "vocab-fly.mp3" },
+    { "word": "careful", "img": "story-06.png", "alt": "being careful", "audio": "vocab-careful.mp3" }
+  ],
+  "pages": [
+    {
+      "img": "story-01.png",
+      "alt": "George returns to the cave the next morning",
+      "lines": [
+        { "role": "narrator", "text": "The next morning, George ran back up the green hill to Pip's cave.", "audio": "p01-01.mp3" },
+        { "role": "george", "text": "Pip! I'm here! How is the red egg today?", "audio": "p01-02.mp3" },
+        { "role": "pip", "text": "Come quickly, George! Something wonderful is happening!", "audio": "p01-03.mp3" }
+      ]
+    },
+    {
+      "img": "story-02.png",
+      "alt": "The red egg begins to crack",
+      "lines": [
+        { "role": "narrator", "text": "Inside the cave, the red egg shook gently on the soft moss.", "audio": "p02-01.mp3" },
+        { "role": "narrator", "text": "Then a tiny crack appeared across the shiny shell.", "audio": "p02-02.mp3" },
+        { "role": "george", "text": "Look! The egg is cracking. Stay close, Pip!", "audio": "p02-03.mp3" }
+      ]
+    },
+    {
+      "img": "story-03.png",
+      "alt": "A tiny red dragon hatches",
+      "lines": [
+        { "role": "narrator", "text": "Crack! The shell opened, and a tiny red dragon peeked out.", "audio": "p03-01.mp3" },
+        { "role": "ember", "text": "Peep? Where am I?", "audio": "p03-02.mp3" },
+        { "role": "pip", "text": "This is my little sister! Her name is Ember.", "audio": "p03-03.mp3" },
+        { "role": "george", "text": "Hello, Ember. Welcome to the world!", "audio": "p03-04.mp3" }
+      ]
+    },
+    {
+      "img": "story-04.png",
+      "alt": "Ember feels cold and hungry",
+      "lines": [
+        { "role": "narrator", "text": "Ember shivered and rubbed her tiny red wings together.", "audio": "p04-01.mp3" },
+        { "role": "ember", "text": "I feel cold. And I think I am hungry too.", "audio": "p04-02.mp3" },
+        { "role": "george", "text": "Don't worry. We can help you feel warm and full.", "audio": "p04-03.mp3" }
+      ]
+    },
+    {
+      "img": "story-05.png",
+      "alt": "George and Pip gather moss and berries",
+      "lines": [
+        { "role": "narrator", "text": "George gathered soft moss, and Pip found bright red berries nearby.", "audio": "p05-01.mp3" },
+        { "role": "pip", "text": "Here, Ember. These berries are sweet and safe.", "audio": "p05-02.mp3" },
+        { "role": "george", "text": "And this moss will keep you warm like a blanket.", "audio": "p05-03.mp3" },
+        { "role": "ember", "text": "Thank you! You are both so kind.", "audio": "p05-04.mp3" }
+      ]
+    },
+    {
+      "img": "story-06.png",
+      "alt": "Ember tries her tiny wings",
+      "lines": [
+        { "role": "narrator", "text": "After her snack, Ember stretched her little wings carefully.", "audio": "p06-01.mp3" },
+        { "role": "ember", "text": "Can I fly like you one day, Pip?", "audio": "p06-02.mp3" },
+        { "role": "pip", "text": "Yes! But first we practice slowly. Be careful.", "audio": "p06-03.mp3" },
+        { "role": "george", "text": "I will watch you. You can do it, Ember!", "audio": "p06-04.mp3" }
+      ]
+    },
+    {
+      "img": "story-07.png",
+      "alt": "Ember flies a little for the first time",
+      "lines": [
+        { "role": "narrator", "text": "Ember flapped once, then twice, and rose a little into the air.", "audio": "p07-01.mp3" },
+        { "role": "ember", "text": "I'm flying! Just a little, but I'm flying!", "audio": "p07-02.mp3" },
+        { "role": "george", "text": "Wow! That was amazing, Ember!", "audio": "p07-03.mp3" },
+        { "role": "pip", "text": "Well done, little sister. You were very brave.", "audio": "p07-04.mp3" }
+      ]
+    },
+    {
+      "img": "story-08.png",
+      "alt": "George, Pip and Ember celebrate together",
+      "lines": [
+        { "role": "narrator", "text": "Outside the cave, the three friends laughed in the warm sunlight.", "audio": "p08-01.mp3" },
+        { "role": "ember", "text": "Will you visit us again tomorrow, George?", "audio": "p08-02.mp3" },
+        { "role": "george", "text": "Of course! We are a team now.", "audio": "p08-03.mp3" },
+        { "role": "narrator", "text": "And George knew that the best adventures are the ones you share.", "audio": "p08-04.mp3" }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What happens to the red egg?",
+      "options": ["It hatches", "It rolls away", "It turns blue"],
+      "answer": 0
+    },
+    {
+      "q": "Who is Ember?",
+      "options": ["Pip's little sister", "George's dog", "A big bird"],
+      "answer": 0
+    },
+    {
+      "q": "How do George and Pip help Ember?",
+      "options": ["They give her moss and berries", "They buy a car", "They close the cave"],
+      "answer": 0
+    },
+    {
+      "q": "What does Ember do for the first time?",
+      "options": ["She flies a little", "She cooks dinner", "She reads a book"],
+      "answer": 0
+    }
+  ],
+  "phrases": ["Come quickly", "Don't worry", "Be careful", "Well done", "Of course", "We are a team"]
+}

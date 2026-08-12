@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 2: The Red Egg Hatches</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --card: #ffffff;
+      --ink: #2b2b2b;
+      --accent: #3d8bfd;
+      --accent-dark: #1f5fc9;
+      --good: #2f9e44;
+      --bad: #e03131;
+      --soft: #ffe8c2;
+      --george: #e8f1ff;
+      --pip: #e9f8ea;
+      --ember: #ffe4e4;
+      --narrator: #fff7e8;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Comic Sans MS", "Nunito", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, #ffe9b8 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #ffd0d0 0, transparent 35%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+    .app { max-width: 920px; margin: 0 auto; padding: 16px 16px 48px; }
+    header.top {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      align-items: center; justify-content: space-between; margin-bottom: 12px;
+    }
+    .brand { font-weight: 800; font-size: 1.1rem; color: var(--accent-dark); }
+    .nav-links a { color: var(--accent-dark); text-decoration: none; font-weight: 700; margin-left: 10px; }
+    .progress {
+      background: #eee; border-radius: 999px; height: 12px;
+      overflow: hidden; margin-bottom: 14px;
+    }
+    .progress > span {
+      display: block; height: 100%; width: 0%;
+      background: linear-gradient(90deg, #ff8a8a, #3d8bfd);
+      transition: width 0.3s ease;
+    }
+    .screen {
+      display: none; background: var(--card); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 20px; animation: fadeIn 0.25s ease;
+    }
+    .screen.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: none; }
+    }
+    h1, h2 { margin: 0 0 12px; line-height: 1.2; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+    h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
+    .hero {
+      width: 100%; border-radius: 16px; display: block;
+      margin: 0 auto 16px; max-height: 380px; object-fit: cover; background: #f3f3f3;
+    }
+    .hint { text-align: center; color: #666; font-size: 1rem; margin: 0 0 10px; }
+    .page-meta { text-align: center; color: #888; font-weight: 700; margin-bottom: 6px; }
+    .voice-key {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      margin: 0 0 12px; font-size: 0.92rem; font-weight: 700;
+    }
+    .voice-key span { padding: 4px 10px; border-radius: 999px; background: #f3f3f3; }
+    .voice-key .george { background: var(--george); color: #1f5fc9; }
+    .voice-key .pip { background: var(--pip); color: #2b8a3e; }
+    .voice-key .ember { background: var(--ember); color: #c92a2a; }
+    .voice-key .narrator { background: var(--narrator); color: #8a5a00; }
+
+    .lines { display: grid; gap: 10px; margin: 8px 0 16px; }
+    .line {
+      border: 3px solid transparent; border-radius: 16px; padding: 12px 14px;
+      cursor: pointer; text-align: left; font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+      line-height: 1.45; font-weight: 700; transition: border-color 0.15s, transform 0.1s, box-shadow 0.15s;
+    }
+    .line:hover { transform: translateY(-1px); }
+    .line.narrator { background: var(--narrator); border-color: #ffe0a0; }
+    .line.george { background: var(--george); border-color: #b7d4ff; }
+    .line.pip { background: var(--pip); border-color: #b6e6b8; }
+    .line.ember { background: var(--ember); border-color: #ffb0b0; }
+    .line.playing { box-shadow: 0 0 0 3px #f0c000; border-color: #f0c000 !important; }
+    .line .who {
+      display: block; font-size: 0.85rem; font-weight: 800;
+      letter-spacing: 0.02em; margin-bottom: 4px; opacity: 0.75; text-transform: uppercase;
+    }
+
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 8px;
+    }
+    button, .btn {
+      appearance: none; border: none; border-radius: 999px;
+      padding: 14px 22px; font-size: 1.05rem; font-weight: 800; cursor: pointer;
+      transition: transform 0.1s ease, background 0.15s ease;
+    }
+    button:active { transform: scale(0.97); }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: var(--soft); color: #7a4b00; }
+    .btn-ghost { background: #eef2f7; color: #334; }
+    .btn-good { background: #d3f9d8; color: #2b8a3e; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .vocab-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px; margin: 16px 0;
+    }
+    .vocab-card {
+      background: #f8fbff; border: 3px solid #dce9ff; border-radius: 16px;
+      padding: 10px; text-align: center; cursor: pointer;
+      transition: border-color 0.15s ease, transform 0.1s ease;
+    }
+    .vocab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .vocab-card.playing { border-color: #f0c000; box-shadow: 0 0 0 3px #ffe08a; }
+    .vocab-card img {
+      width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px;
+      display: block; margin-bottom: 8px;
+    }
+    .vocab-card .label { font-size: 1.35rem; font-weight: 800; }
+
+    .quiz-options { display: grid; gap: 12px; margin: 16px 0; }
+    .quiz-options button {
+      width: 100%; text-align: left; background: #f4f8ff; color: var(--ink);
+      border: 3px solid #d7e6ff; border-radius: 16px; font-size: 1.2rem;
+    }
+    .quiz-options button.correct { background: #d3f9d8; border-color: var(--good); }
+    .quiz-options button.wrong { background: #ffe3e3; border-color: var(--bad); }
+    .feedback {
+      min-height: 1.5em; text-align: center; font-size: 1.25rem;
+      font-weight: 800; margin: 8px 0 4px;
+    }
+    .feedback.good { color: var(--good); }
+    .feedback.bad { color: var(--bad); }
+
+    .sight-grid {
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 18px 0;
+    }
+    .sight-word {
+      min-width: 120px; font-size: 1.2rem; background: #fff;
+      border: 3px dashed #9ec5ff; color: var(--accent-dark);
+      border-radius: 16px; padding: 14px 16px;
+    }
+    .sight-word.done { border-style: solid; background: #e7f5ff; }
+
+    .notes label {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 1.1rem; margin: 8px 0; cursor: pointer;
+    }
+    .notes textarea {
+      width: 100%; min-height: 110px; border-radius: 14px;
+      border: 2px solid #d7e6ff; padding: 12px; font-size: 1.05rem;
+      font-family: inherit; resize: vertical;
+    }
+    .save-msg { color: var(--good); font-weight: 700; min-height: 1.2em; }
+    footer.note { margin-top: 18px; text-align: center; color: #777; font-size: 0.95rem; }
+    .continue {
+      background: #fff4e6; border: 2px solid #ffd8a8; border-radius: 14px;
+      padding: 10px 14px; margin-bottom: 12px; text-align: center; font-weight: 700; color: #9c5a00;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">🐉 George English · Lesson 2</div>
+      <nav class="nav-links">
+        <a href="lesson-01.html">Lesson 1</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="screen active" data-screen="0">
+      <img class="hero" src="assets/lesson-02/cover.png" alt="George with Pip and baby Ember outside the cave" />
+      <h1>The Red Egg Hatches</h1>
+      <div class="continue">Continues from Lesson 1 · George · Pip · Ember</div>
+      <p class="hint">ORT Level 6 · George uses a boy-like AI voice</p>
+      <div class="voice-key">
+        <span class="narrator">Narrator</span>
+        <span class="george">George (boy)</span>
+        <span class="pip">Pip</span>
+        <span class="ember">Ember</span>
+      </div>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <h2>New Words</h2>
+      <p class="hint">Tap a card to hear the word (AI voice)</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Story ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2" data-story="0"></section>
+    <section class="screen" data-screen="3" data-story="1"></section>
+    <section class="screen" data-screen="4" data-story="2"></section>
+    <section class="screen" data-screen="5" data-story="3"></section>
+    <section class="screen" data-screen="6" data-story="4"></section>
+    <section class="screen" data-screen="7" data-story="5"></section>
+    <section class="screen" data-screen="8" data-story="6"></section>
+    <section class="screen" data-screen="9" data-story="7"></section>
+
+    <section class="screen" data-screen="10">
+      <h2>Let's Check!</h2>
+      <p class="hint">Choose the best answer</p>
+      <div id="quizArea"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next id="quizNext" disabled>Next ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="11">
+      <h2>Key Phrases</h2>
+      <p class="hint">Tap each phrase and say it with George &amp; friends</p>
+      <div class="sight-grid" id="sightGrid"></div>
+      <p class="feedback" id="sightFeedback"></p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Notes ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="12">
+      <h2>Follow-up Notes</h2>
+      <p class="hint">For tutor / parent (saved on this device)</p>
+      <div class="notes" id="notesForm">
+        <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
+        <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
+        <label><input type="checkbox" data-note="knew_vocab" /> Knew most new words</label>
+        <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
+        <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
+        <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
+        <p style="margin:14px 0 6px;font-weight:800;">Comments</p>
+        <textarea id="noteComment" placeholder="What went well? What to practice next?"></textarea>
+        <div class="controls" style="margin-top:14px;">
+          <button class="btn-good" type="button" id="saveNotes">💾 Save notes</button>
+          <button class="btn-secondary" type="button" id="clearNotes">Clear</button>
+          <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+        </div>
+        <p class="save-msg" id="saveMsg"></p>
+      </div>
+      <footer class="note">Great job, George! 🌟</footer>
+    </section>
+  </div>
+
+  <script>
+    const ASSET = "assets/lesson-02/";
+    const STORAGE_KEY = "george-lesson-02-notes-v1";
+    const ROLE_LABEL = { narrator: "Narrator", george: "George", pip: "Pip", ember: "Ember" };
+
+    const vocab = [
+      { word: "hatch", img: "vocab-hatch.png", alt: "an egg hatching", audio: "audio/vocab-hatch.mp3" },
+      { word: "crack", img: "vocab-crack.png", alt: "a cracked egg", audio: "audio/vocab-crack.mp3" },
+      { word: "sister", img: "vocab-sister.png", alt: "Pip and Ember", audio: "audio/vocab-sister.mp3" },
+      { word: "warm", img: "vocab-warm.png", alt: "warm moss", audio: "audio/vocab-warm.mp3" },
+      { word: "berry", img: "vocab-berry.png", alt: "red berries", audio: "audio/vocab-berry.mp3" },
+      { word: "wings", img: "vocab-wings.png", alt: "tiny wings", audio: "audio/vocab-wings.mp3" },
+      { word: "fly", img: "story-07.png", alt: "Ember flying", audio: "audio/vocab-fly.mp3" },
+      { word: "careful", img: "story-06.png", alt: "being careful", audio: "audio/vocab-careful.mp3" }
+    ];
+
+    const story = [
+      {
+        img: "story-01.png",
+        alt: "George returns to the cave",
+        lines: [
+          { role: "narrator", text: "The next morning, George ran back up the green hill to Pip's cave.", audio: "audio/p01-01.mp3" },
+          { role: "george", text: "Pip! I'm here! How is the red egg today?", audio: "audio/p01-02.mp3" },
+          { role: "pip", text: "Come quickly, George! Something wonderful is happening!", audio: "audio/p01-03.mp3" }
+        ]
+      },
+      {
+        img: "story-02.png",
+        alt: "The red egg begins to crack",
+        lines: [
+          { role: "narrator", text: "Inside the cave, the red egg shook gently on the soft moss.", audio: "audio/p02-01.mp3" },
+          { role: "narrator", text: "Then a tiny crack appeared across the shiny shell.", audio: "audio/p02-02.mp3" },
+          { role: "george", text: "Look! The egg is cracking. Stay close, Pip!", audio: "audio/p02-03.mp3" }
+        ]
+      },
+      {
+        img: "story-03.png",
+        alt: "Ember hatches from the egg",
+        lines: [
+          { role: "narrator", text: "Crack! The shell opened, and a tiny red dragon peeked out.", audio: "audio/p03-01.mp3" },
+          { role: "ember", text: "Peep? Where am I?", audio: "audio/p03-02.mp3" },
+          { role: "pip", text: "This is my little sister! Her name is Ember.", audio: "audio/p03-03.mp3" },
+          { role: "george", text: "Hello, Ember. Welcome to the world!", audio: "audio/p03-04.mp3" }
+        ]
+      },
+      {
+        img: "story-04.png",
+        alt: "Ember feels cold and hungry",
+        lines: [
+          { role: "narrator", text: "Ember shivered and rubbed her tiny red wings together.", audio: "audio/p04-01.mp3" },
+          { role: "ember", text: "I feel cold. And I think I am hungry too.", audio: "audio/p04-02.mp3" },
+          { role: "george", text: "Don't worry. We can help you feel warm and full.", audio: "audio/p04-03.mp3" }
+        ]
+      },
+      {
+        img: "story-05.png",
+        alt: "They gather moss and berries",
+        lines: [
+          { role: "narrator", text: "George gathered soft moss, and Pip found bright red berries nearby.", audio: "audio/p05-01.mp3" },
+          { role: "pip", text: "Here, Ember. These berries are sweet and safe.", audio: "audio/p05-02.mp3" },
+          { role: "george", text: "And this moss will keep you warm like a blanket.", audio: "audio/p05-03.mp3" },
+          { role: "ember", text: "Thank you! You are both so kind.", audio: "audio/p05-04.mp3" }
+        ]
+      },
+      {
+        img: "story-06.png",
+        alt: "Ember tries her wings",
+        lines: [
+          { role: "narrator", text: "After her snack, Ember stretched her little wings carefully.", audio: "audio/p06-01.mp3" },
+          { role: "ember", text: "Can I fly like you one day, Pip?", audio: "audio/p06-02.mp3" },
+          { role: "pip", text: "Yes! But first we practice slowly. Be careful.", audio: "audio/p06-03.mp3" },
+          { role: "george", text: "I will watch you. You can do it, Ember!", audio: "audio/p06-04.mp3" }
+        ]
+      },
+      {
+        img: "story-07.png",
+        alt: "Ember flies a little",
+        lines: [
+          { role: "narrator", text: "Ember flapped once, then twice, and rose a little into the air.", audio: "audio/p07-01.mp3" },
+          { role: "ember", text: "I'm flying! Just a little, but I'm flying!", audio: "audio/p07-02.mp3" },
+          { role: "george", text: "Wow! That was amazing, Ember!", audio: "audio/p07-03.mp3" },
+          { role: "pip", text: "Well done, little sister. You were very brave.", audio: "audio/p07-04.mp3" }
+        ]
+      },
+      {
+        img: "story-08.png",
+        alt: "Three friends celebrate",
+        lines: [
+          { role: "narrator", text: "Outside the cave, the three friends laughed in the warm sunlight.", audio: "audio/p08-01.mp3" },
+          { role: "ember", text: "Will you visit us again tomorrow, George?", audio: "audio/p08-02.mp3" },
+          { role: "george", text: "Of course! We are a team now.", audio: "audio/p08-03.mp3" },
+          { role: "narrator", text: "And George knew that the best adventures are the ones you share.", audio: "audio/p08-04.mp3" }
+        ]
+      }
+    ];
+
+    const quiz = [
+      { q: "What happens to the red egg?", options: ["It hatches", "It rolls away", "It turns blue"], answer: 0 },
+      { q: "Who is Ember?", options: ["Pip's little sister", "George's dog", "A big bird"], answer: 0 },
+      { q: "How do George and Pip help Ember?", options: ["They give her moss and berries", "They buy a car", "They close the cave"], answer: 0 },
+      { q: "What does Ember do for the first time?", options: ["She flies a little", "She cooks dinner", "She reads a book"], answer: 0 }
+    ];
+
+    const phrases = [
+      { text: "Come quickly", audio: "audio/p01-03.mp3" },
+      { text: "Don't worry", audio: "audio/p04-03.mp3" },
+      { text: "Be careful", audio: "audio/p06-03.mp3" },
+      { text: "Well done", audio: "audio/p07-04.mp3" },
+      { text: "Of course", audio: "audio/p08-03.mp3" },
+      { text: "We are a team", audio: "audio/p08-03.mp3" }
+    ];
+
+    const screens = [...document.querySelectorAll(".screen")];
+    let current = 0;
+    let quizDone = false;
+    let audioPlayer = new Audio();
+    let playToken = 0;
+
+    function stopAudio() {
+      playToken += 1;
+      audioPlayer.pause();
+      audioPlayer.removeAttribute("src");
+      audioPlayer.load();
+      document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+    }
+
+    function playSrc(src, onEnd) {
+      const token = ++playToken;
+      document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+      audioPlayer.pause();
+      audioPlayer.src = ASSET + src;
+      const done = () => {
+        if (token !== playToken) return;
+        document.querySelectorAll(".playing").forEach(el => el.classList.remove("playing"));
+        if (onEnd) onEnd();
+      };
+      audioPlayer.onended = done;
+      audioPlayer.onerror = done;
+      return audioPlayer.play().catch(done);
+    }
+
+    function playLineEl(lineEl) {
+      stopAudio();
+      lineEl.classList.add("playing");
+      playSrc(lineEl.dataset.audio);
+    }
+
+    function readPage(screenEl) {
+      const lines = [...screenEl.querySelectorAll(".line")];
+      if (!lines.length) return;
+      stopAudio();
+      let i = 0;
+      const next = () => {
+        if (i >= lines.length) return;
+        const el = lines[i];
+        document.querySelectorAll(".playing").forEach(n => n.classList.remove("playing"));
+        el.classList.add("playing");
+        el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        playSrc(el.dataset.audio, () => { i += 1; next(); });
+      };
+      next();
+    }
+
+    function buildStoryScreens() {
+      document.querySelectorAll("[data-story]").forEach(sec => {
+        const i = Number(sec.dataset.story);
+        const page = story[i];
+        const linesHtml = page.lines.map(line => `
+          <button class="line ${line.role}" type="button" data-audio="${line.audio}">
+            <span class="who">${ROLE_LABEL[line.role]}</span>
+            ${line.text}
+          </button>
+        `).join("");
+        sec.innerHTML = `
+          <div class="page-meta">Story ${i + 1} / ${story.length}</div>
+          <img class="hero" src="${ASSET}${page.img}" alt="${page.alt}" />
+          <div class="voice-key">
+            <span class="narrator">Narrator</span>
+            <span class="george">George</span>
+            <span class="pip">Pip</span>
+            <span class="ember">Ember</span>
+          </div>
+          <div class="lines">${linesHtml}</div>
+          <p class="hint">Tap a line for AI voice · or Read the page</p>
+          <div class="controls">
+            <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+            <button class="btn-secondary" type="button" data-read-page>🔊 Read page</button>
+            <button class="btn-primary" type="button" data-next>Next ▶</button>
+          </div>
+        `;
+      });
+    }
+
+    function buildVocab() {
+      document.getElementById("vocabGrid").innerHTML = vocab.map(v => `
+        <button class="vocab-card" type="button" data-audio="${v.audio}">
+          <img src="${ASSET}${v.img}" alt="${v.alt}" />
+          <div class="label">${v.word}</div>
+        </button>
+      `).join("");
+    }
+
+    function buildQuiz() {
+      const area = document.getElementById("quizArea");
+      let answered = 0;
+      area.innerHTML = quiz.map((item, qi) => `
+        <div class="quiz-item" data-qi="${qi}" style="margin-bottom:22px;">
+          <h3 style="font-size:1.3rem;margin:0 0 8px;">${qi + 1}. ${item.q}</h3>
+          <div class="quiz-options">
+            ${item.options.map((opt, oi) => `
+              <button type="button" data-qi="${qi}" data-oi="${oi}">${opt}</button>
+            `).join("")}
+          </div>
+          <p class="feedback" data-fb="${qi}"></p>
+        </div>
+      `).join("");
+
+      area.querySelectorAll("button[data-qi]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const qi = Number(btn.dataset.qi);
+          const oi = Number(btn.dataset.oi);
+          const item = quiz[qi];
+          const wrap = area.querySelector(`.quiz-item[data-qi="${qi}"]`);
+          if (wrap.dataset.done === "1") return;
+          wrap.dataset.done = "1";
+          const fb = area.querySelector(`[data-fb="${qi}"]`);
+          wrap.querySelectorAll("button").forEach(b => { b.disabled = true; });
+          if (oi === item.answer) {
+            btn.classList.add("correct");
+            fb.textContent = "Great job! ⭐";
+            fb.className = "feedback good";
+            playSrc("audio/praise-great.mp3");
+          } else {
+            btn.classList.add("wrong");
+            const correctBtn = wrap.querySelector(`button[data-oi="${item.answer}"]`);
+            if (correctBtn) correctBtn.classList.add("correct");
+            fb.textContent = "Nice try! Let's learn it.";
+            fb.className = "feedback bad";
+            playSrc("audio/praise-try.mp3");
+          }
+          answered += 1;
+          if (answered >= quiz.length) {
+            quizDone = true;
+            document.getElementById("quizNext").disabled = false;
+          }
+        });
+      });
+    }
+
+    function buildPhrases() {
+      const grid = document.getElementById("sightGrid");
+      const fb = document.getElementById("sightFeedback");
+      let count = 0;
+      grid.innerHTML = phrases.map(p => `
+        <button class="sight-word" type="button" data-audio="${p.audio}">${p.text}</button>
+      `).join("");
+      grid.querySelectorAll("[data-audio]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          stopAudio();
+          btn.classList.add("playing");
+          playSrc(btn.dataset.audio, () => btn.classList.remove("playing"));
+          if (!btn.classList.contains("done")) {
+            btn.classList.add("done");
+            count += 1;
+            fb.textContent = count >= phrases.length ? "You did it! 🎉" : `Nice! ${count}/${phrases.length}`;
+            fb.className = "feedback good";
+          }
+        });
+      });
+    }
+
+    function updateProgress() {
+      document.getElementById("progressBar").style.width =
+        ((current / (screens.length - 1)) * 100) + "%";
+    }
+
+    function showScreen(index) {
+      stopAudio();
+      current = Math.max(0, Math.min(screens.length - 1, index));
+      screens.forEach((s, i) => s.classList.toggle("active", i === current));
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function loadNotes() {
+      try {
+        const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        document.querySelectorAll("[data-note]").forEach(cb => {
+          cb.checked = !!data[cb.dataset.note];
+        });
+        document.getElementById("noteComment").value = data.comment || "";
+      } catch (_) { /* ignore */ }
+    }
+
+    function saveNotes() {
+      const data = { comment: document.getElementById("noteComment").value };
+      document.querySelectorAll("[data-note]").forEach(cb => {
+        data[cb.dataset.note] = cb.checked;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      const msg = document.getElementById("saveMsg");
+      msg.textContent = "Saved on this device ✓";
+      setTimeout(() => { msg.textContent = ""; }, 2500);
+    }
+
+    buildVocab();
+    buildStoryScreens();
+    buildQuiz();
+    buildPhrases();
+    loadNotes();
+    updateProgress();
+
+    document.addEventListener("click", (e) => {
+      const t = e.target.closest("[data-next],[data-prev],[data-audio],[data-read-page]");
+      if (!t) return;
+      if (t.matches("[data-next]")) {
+        if (current === 10 && !quizDone) return;
+        showScreen(current + 1);
+        return;
+      }
+      if (t.matches("[data-prev]")) { showScreen(current - 1); return; }
+      if (t.matches("[data-read-page]")) { readPage(t.closest(".screen")); return; }
+      if (t.matches(".line")) { playLineEl(t); return; }
+      if (t.matches("[data-audio]")) {
+        stopAudio();
+        t.classList.add("playing");
+        playSrc(t.dataset.audio, () => t.classList.remove("playing"));
+      }
+    });
+
+    document.getElementById("saveNotes").addEventListener("click", saveNotes);
+    document.getElementById("clearNotes").addEventListener("click", () => {
+      localStorage.removeItem(STORAGE_KEY);
+      document.querySelectorAll("[data-note]").forEach(cb => { cb.checked = false; });
+      document.getElementById("noteComment").value = "";
+      document.getElementById("saveMsg").textContent = "Cleared";
+    });
+  </script>
+</body>
+</html>

@@ -22,12 +22,12 @@ alwaysApply: false
 6. Follow-up notes for tutor/parent (checkboxes + comments; `localStorage`)
 
 ## Audio (preferred)
-- Pre-generate neural TTS MP3s with role voices (narrator / child hero / dragon or other characters)
+- Pre-generate neural TTS MP3s with role voices (narrator / George / dragons)
+- George’s voice: boy-like (prefer `en-CA-LiamNeural` with raised pitch, e.g. `+32Hz`, slightly faster rate). Do not use adult-deep male for George.
 - Store under `lessons/assets/lesson-XX/audio/`
-- 「Read to me」plays full page lines in order with line highlight
+- 「Read page」plays full page lines in order with line highlight
 - Tap a line / dialogue bubble → play that line’s AI audio
-- Tap individual words may still use browser speech as light support, but story reading must use AI audio
-- Generate with `scripts/generate_lesson_audio.py` (edge-tts) when story text changes
+- Generate with `scripts/generate_lesson_audio.py --story ... --out ...` when story text changes
 
 ## Technical
 - Single self-contained HTML per lesson (inline CSS/JS OK)
