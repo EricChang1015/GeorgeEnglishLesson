@@ -20,6 +20,20 @@ python scripts/generate_lesson_audio.py --story scripts/lesson01_story.json --ou
 python scripts/generate_lesson_audio.py --story scripts/lesson02_story.json --out lessons/assets/lesson-02/audio
 ```
 
+## Character reference photos (private)
+
+Likeness refs for consistent lesson art live locally at:
+
+`lessons/assets/refs/george/`
+
+- Tag index: `lessons/assets/refs/george/CATALOG.md`
+- Agent rule: `.cursor/rules/character-refs.mdc`
+- Cast ids: `george`, `daddy`, `mummy`, `sylvia`
+- Naming: `{subjects}-{setting}-{pose-or-mood}.jpg` (George first)
+- Default George face: `george-solo-bed-smile.jpg`
+
+Photos are gitignored (only `*.md` catalogs are committed). Drop new raw photos in `ref/`, then rename into the catalog folder and update `CATALOG.md`. Never publish private photos into lesson HTML.
+
 ## Local preview
 
 Open `index.html` in a browser, or serve the folder:

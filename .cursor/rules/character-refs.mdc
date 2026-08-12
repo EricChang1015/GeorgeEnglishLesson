@@ -1,0 +1,29 @@
+---
+description: George 家人外貌參考圖路徑、命名與選圖規則（繪製課文插圖時套用）
+alwaysApply: true
+---
+
+# Character reference photos
+
+## Location
+- Canonical folder: `lessons/assets/refs/george/`
+- Full tag index: `lessons/assets/refs/george/CATALOG.md`
+- Photos are **private / gitignored**; only `*.md` catalogs are committed
+- New raw drops go in `ref/` (see `ref/README.md`), then rename into the canonical folder
+
+## Cast ids (use these names in filenames and story art)
+- `george` — boy ~5, lesson hero (short black hair with bangs, round face)
+- `daddy` — father (short dark hair, usually thin glasses)
+- `mummy` — mother
+- `sylvia` — older sister (often cap / ponytail)
+
+## Filename pattern
+`{subjects}-{setting}-{pose-or-mood}[-variant].jpg`  
+Example: `george-daddy-outdoors-lifevest-smile.jpg` (George listed first)
+
+## When generating lesson illustrations
+1. Open `CATALOG.md`, then **Read** the chosen photo(s) before drawing
+2. Default George likeness: `george-solo-bed-smile.jpg` (`priority: primary`)
+3. Match cast + mood tags from the catalog to the story beat
+4. Keep George consistent across the whole lesson; do not invent a different child face
+5. Never embed these private photos in published HTML; only AI/drawn picture-book art goes under `lessons/assets/lesson-XX/`

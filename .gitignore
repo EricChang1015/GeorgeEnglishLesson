@@ -4,8 +4,14 @@ Thumbs.db
 node_modules/
 .cursor/plans/
 *.log
-# Private photos of George — do not publish
-lessons/assets/refs/
+# Private photos of George — do not publish (track markdown catalogs only)
+lessons/assets/refs/**
+!lessons/assets/refs/**/
+!lessons/assets/refs/**/*.md
+
+# Drop zone for new private photos before organizing into lessons/assets/refs/
+ref/**
+!ref/README.md
 
 lessons/assets/lesson-02/voice-tests/
 lessons/assets/**/voice-tests/

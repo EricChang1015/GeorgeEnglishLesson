@@ -37,7 +37,8 @@ alwaysApply: false
 
 ## Visuals
 - Picture-book style illustrations, consistent character design across a lesson
-- Store images in `lessons/assets/lesson-XX/`
+- Match George (and family) to private refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
+- Store published lesson images in `lessons/assets/lesson-XX/` (never embed the private ref photos)
 - Alt text in English, simple
 
 ## Index
