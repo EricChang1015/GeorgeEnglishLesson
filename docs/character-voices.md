@@ -47,6 +47,8 @@ When a new family member speaks for the first time: agree voice with parent → 
    python scripts/generate_lesson_audio.py --story scripts/lessonXX_story.json --out lessons/assets/lesson-XX/audio
    ```
 
+   Quiz question/option audio is included; use `--quiz-only` to regenerate just those MP3s.
+
 4. In lesson HTML, keep the **voice-key** legend colours aligned with roles (George = blue, Pip = green, Ember = red, Daddy = purple, narrator = gold, etc.).
 5. Vocab: each word should have an `example` sentence + `example_audio`; the lesson page plays **word → sentence**.
 

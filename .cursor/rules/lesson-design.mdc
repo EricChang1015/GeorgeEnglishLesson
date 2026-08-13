@@ -1,6 +1,6 @@
 ---
-description: 教材 HTML 設計規範（ORT LV6、分角色 AI 語音、feedback）
-globs: lessons/**/*.html
+description: 教材 HTML 設計規範（ORT LV6、分角色 AI 語音、WebP 分頁載入、feedback）
+globs: lessons/**/*.{html,js,css}
 alwaysApply: false
 ---
 
@@ -28,19 +28,27 @@ alwaysApply: false
 - Store under `lessons/assets/lesson-XX/audio/`
 - 「Read page」plays full page lines in order with line highlight
 - Tap a line / dialogue bubble → play that line’s AI audio
-- Generate with `scripts/generate_lesson_audio.py --story ... --out ...` when story text changes
+- Quiz: narrator reads the question, then A / B / C; options stay disabled until that finishes
+- Generate with `scripts/generate_lesson_audio.py --story ... --out ...` when story or quiz text changes (`--quiz-only` to refresh Q&A clips)
 
 ## Technical
-- Single self-contained HTML per lesson (inline CSS/JS OK)
+- Lesson HTML holds cover/notes markup + `window.LESSON` data
+- Shared player: `lessons/css/lesson.css` + `lessons/js/lesson-player.js` (do not fork a second copy per lesson)
 - Large fonts (story text ≥ 24–28px), big tap targets, high contrast
 - UI suitable for a 5-year-old: big buttons, short labels
-- Works offline once assets are loaded
+- Works offline once the current page’s assets are loaded
+- Load **one page at a time** (current + preload next). Never put all story PNG/WebP `src`s in the initial HTML
+- Player features to keep: swipe / arrow keys, **Go to** page jump, hash (`#story=3`, `#quiz`), **Auto read**
 
 ## Visuals
 - Picture-book style illustrations, consistent character design across a lesson
 - Match George (and family) to private refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
 - Store published lesson images in `lessons/assets/lesson-XX/` (never embed the private ref photos)
+- Keep original PNG for redraws; **HTML/player must load `.webp` only** (no JPG copies, no PNG at runtime)
+- After adding or replacing a PNG: `python scripts/optimize_lesson_images.py --lesson lesson-XX`
+- Story/cover WebP width ≈ 1000px; vocab cards ≈ 800px; keep aspect ratio
 - Alt text in English, simple
+- How-to: `docs/lesson-player.md`
 
 ## Index
 - Root `index.html` lists all lessons for the tutor with clear links and short descriptions

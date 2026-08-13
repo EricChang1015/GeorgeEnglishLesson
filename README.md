@@ -13,7 +13,9 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 ### Lesson 3 — `lessons/lesson-03.html`
 **George and the Storm on the Hill** (ORT Level 6): berry path, storm, bear, cave shelter; Daddy climbs up. Safety phrases + Daddy voice.
 
-Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz, key phrases, tutor notes.
+Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz with A/B/C voice, Auto read, swipe / jump-to-page, tutor notes.
+
+Pages load **WebP** one screen at a time (original PNGs stay in the folder but are not fetched). Player how-to: [`docs/lesson-player.md`](docs/lesson-player.md).
 
 ## Character AI voices
 
@@ -34,7 +36,13 @@ python scripts/generate_lesson_audio.py --story scripts/lesson02_story.json --ou
 python scripts/generate_lesson_audio.py --story scripts/lesson03_story.json --out lessons/assets/lesson-03/audio
 ```
 
-Vocab entries may include `example` + `example_audio`; the generator speaks the word, then the example sentence (narrator voice).
+Vocab entries may include `example` + `example_audio`; the generator speaks the word, then the example sentence (narrator voice). Quiz A/B/C clips are generated from the `quiz` block (`--quiz-only` to refresh those only).
+
+After new or replaced PNG art:
+
+```bash
+python scripts/optimize_lesson_images.py
+```
 
 ## Character reference photos (private)
 
