@@ -67,3 +67,4 @@ Deep links (updated as the child moves):
 3. Point cover / index images at `.webp`.
 4. Put vocab, story, quiz, and phrases on `window.LESSON`; do not duplicate player JS.
 5. Generate audio (including quiz) when text changes.
+6. Browser smoke test (cover + Story 1 + Quiz, clean console) before commit. See `.cursor/rules/delivery.mdc`.

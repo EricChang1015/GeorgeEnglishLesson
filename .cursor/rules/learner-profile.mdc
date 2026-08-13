@@ -36,4 +36,5 @@ alwaysApply: true
 - Audio under `lessons/assets/lesson-XX/audio/`
 - **Character AI voices:** fixed per role in `scripts/voices.json` — see `docs/character-voices.md`
 - Publish via GitHub Pages (repo root); fixed URL for the tutor
-- When user says「發佈」or「publish」: commit lesson changes and push to `main` so Pages updates
+- **Test before done:** browser smoke + clean console — see `.cursor/rules/delivery.mdc`
+- When user says「發佈」or「publish」: smoke-test first, then commit lesson changes and push to `main` so Pages updates

@@ -1,0 +1,25 @@
+---
+description: 改完教材必須先測再開交付（console、進頁、翻頁、問答）
+alwaysApply: true
+---
+
+# Delivery: test before done
+
+Do **not** treat a lesson or player change as finished, and do **not** commit/push, until a real browser smoke test passes.
+
+`node --check` is not enough. This player is browser JS; a missing `let` only shows up as a console `ReferenceError` after the page loads.
+
+## Minimum smoke (every lesson HTML you touched, plus `lesson-player.js` / `lesson.css`)
+
+1. Serve the repo (`npx serve .` or existing local server). Do not rely on a stale tab.
+2. Open `lessons/lesson-XX.html` (cover). Confirm the title, cover WebP, **Start**, **Go to**, and **Auto read** are visible.
+3. Open DevTools console (or CDP). **Zero** errors on load.
+4. **Go to** → Story 1: illustration appears (`.webp`, not `.png`).
+5. **Go to** → Quiz: question + A/B/C; options disabled until Read; no console error.
+6. If you changed Auto read / swipe / hash: spot-check `#story=2` and one swipe or Next.
+
+If any step fails, fix and re-test. Only then commit/push when the user asked to publish.
+
+## After publish
+
+Hard-refresh the live Pages URL and repeat steps 2–3 on at least one lesson.

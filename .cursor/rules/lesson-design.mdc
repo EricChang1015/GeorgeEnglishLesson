@@ -49,6 +49,7 @@ alwaysApply: false
 - Story/cover WebP width ≈ 1000px; vocab cards ≈ 800px; keep aspect ratio
 - Alt text in English, simple
 - How-to: `docs/lesson-player.md`
+- After edits: browser smoke test before commit — `.cursor/rules/delivery.mdc`
 
 ## Index
 - Root `index.html` lists all lessons for the tutor with clear links and short descriptions

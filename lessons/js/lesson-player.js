@@ -13,6 +13,7 @@
 
   const screens = [...document.querySelectorAll(".screen")];
   let current = 0;
+  let quizIndex = 0;
   const quizChosen = quiz.map(() => null);
   let autoMode = false;
   let audioPlayer = new Audio();
