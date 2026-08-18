@@ -4,6 +4,7 @@ Thumbs.db
 node_modules/
 .cursor/plans/
 *.log
+.env.local
 # Private photos of George — do not publish (track markdown catalogs only)
 lessons/assets/refs/**
 !lessons/assets/refs/**/
@@ -15,4 +16,15 @@ ref/**
 
 lessons/assets/lesson-02/voice-tests/
 lessons/assets/**/voice-tests/
+
+# Local-only experiments (failed pilots, pending AI video, etc.) — never publish
+_local/
+
+# Generated lesson videos (local until approved for git)
+lessons/assets/**/video/*.mp4
+
+# Poe API scratch / usage logs
+scripts/_poe_test.png
+scripts/poe_usage.jsonl
+scripts/__pycache__/
 

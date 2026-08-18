@@ -9,6 +9,8 @@
   const story = L.story || [];
   const quiz = L.quiz || [];
   const phrases = L.phrases || [];
+  const videoPages = L.videoPages || null;
+  const videoDir = L.videoDir || "video/";
   const LETTERS = ["A", "B", "C"];
 
   const screens = [...document.querySelectorAll(".screen")];
@@ -39,6 +41,32 @@
     return `<img class="${className}" data-src="${esc(webpSrc(name))}" alt="${esc(alt || "")}" />`;
   }
 
+  function hasVideoFor(name) {
+    if (!videoPages) return false;
+    const base = displayName(name);
+    return videoPages.some((v) => displayName(v) === base);
+  }
+
+  function videoSrc(name) {
+    return ASSET + videoDir + displayName(name) + ".mp4";
+  }
+
+  function videoTag(name, className, alt) {
+    const poster = esc(webpSrc(name));
+    const src = esc(videoSrc(name));
+    return `<div class="video-wrap">
+      <video class="${className}" muted loop playsinline poster="${poster}"
+        data-video-base="${esc(displayName(name))}" data-fallback-alt="${esc(alt || "")}">
+        <source src="${src}" type="video/mp4" />
+      </video>
+    </div>`;
+  }
+
+  function mediaTag(name, className, alt) {
+    if (hasVideoFor(name)) return videoTag(name, className, alt);
+    return imgTag(name, className, alt);
+  }
+
   function hydrateImages(root) {
     if (!root) return;
     root.querySelectorAll("img[data-src]").forEach((img) => {
@@ -50,6 +78,46 @@
         img.classList.add("loaded");
       };
       img.src = img.dataset.src;
+    });
+  }
+
+  function fallbackVideoToImage(video) {
+    if (video.dataset.fallbackDone === "1") return;
+    video.dataset.fallbackDone = "1";
+    const base = video.dataset.videoBase;
+    const alt = video.dataset.fallbackAlt || "";
+    const wrap = video.closest(".video-wrap");
+    const img = document.createElement("img");
+    img.className = "hero";
+    img.dataset.src = ASSET + base + ".webp";
+    img.alt = alt;
+    if (wrap) wrap.replaceChildren(img);
+    else video.replaceWith(img);
+    hydrateImages(wrap || video.parentElement);
+  }
+
+  function hydrateVideos(root) {
+    if (!root) return;
+    root.querySelectorAll("video.hero[data-video-base]").forEach((video) => {
+      if (video.dataset.hydrated === "1") return;
+      video.dataset.hydrated = "1";
+      video.addEventListener("error", () => fallbackVideoToImage(video), { once: true });
+      const playAttempt = video.play();
+      if (playAttempt && typeof playAttempt.catch === "function") {
+        playAttempt.catch(() => { /* autoplay blocked until gesture */ });
+      }
+    });
+  }
+
+  function syncStoryVideos(root, playing) {
+    if (!root) return;
+    root.querySelectorAll("video.hero").forEach((video) => {
+      if (playing) {
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
+      } else {
+        video.pause();
+      }
     });
   }
 
@@ -113,6 +181,8 @@
   function playLineEl(lineEl) {
     stopAuto({ silent: true });
     stopAudio();
+    const screenEl = lineEl.closest(".screen");
+    syncStoryVideos(screenEl, true);
     playSrc(lineEl.dataset.audio, null, lineEl);
   }
 
@@ -123,6 +193,7 @@
       return;
     }
     stopAudio();
+    syncStoryVideos(screenEl, true);
     let i = 0;
     const next = () => {
       if (i >= lines.length) {
@@ -159,7 +230,7 @@
       `).join("");
       sec.innerHTML = `
         <div class="page-meta">Story ${i + 1} / ${story.length}</div>
-        ${imgTag(page.img, "hero", page.alt)}
+        ${mediaTag(page.img, "hero", page.alt)}
         ${voiceKeyHtml()}
         <div class="lines">${linesHtml}</div>
         <p class="hint">Tap a line for AI voice · or Read the page · swipe to turn</p>
@@ -513,6 +584,8 @@
     const active = screens[current];
     active.classList.add(slideDir === "prev" ? "slide-prev" : "slide-next");
     hydrateImages(active);
+    hydrateVideos(active);
+    if (isStoryScreen(current)) syncStoryVideos(active, autoMode);
     preloadScreen(current + 1);
     updateProgress();
     updateJump();
@@ -792,6 +865,8 @@
       if (/\.png$/i.test(src)) img.src = src.replace(/\.png$/i, ".webp");
     });
   }
+
+  if (videoPages) document.body.classList.add("video-mode");
 
   buildVocab();
   buildStoryScreens();

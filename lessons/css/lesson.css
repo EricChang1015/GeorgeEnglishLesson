@@ -225,3 +225,24 @@ footer.note { margin-top: 18px; text-align: center; color: #777; font-size: 0.95
   .jump select { max-width: 140px; }
   .hero { max-height: 240px; }
 }
+
+/* Video mode (AI story clips) */
+body.video-mode .video-wrap {
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 0 auto 16px;
+  max-height: 380px;
+  background: #f3f3f3;
+}
+body.video-mode .video-wrap video.hero {
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  display: block;
+  border-radius: 16px;
+  background: #111;
+}
+@media (max-width: 640px) {
+  body.video-mode .video-wrap,
+  body.video-mode .video-wrap video.hero { max-height: 240px; }
+}
