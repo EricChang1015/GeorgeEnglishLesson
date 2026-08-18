@@ -9,6 +9,8 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import mimetypes
+import re
 import sys
 import time
 import urllib.error
@@ -23,6 +25,39 @@ USAGE_LOG = ROOT / "scripts" / "poe_usage.jsonl"
 
 POE_BASE = "https://api.poe.com/v1"
 DEFAULT_VIDEO_MODEL = "Veo-3.1-Fast"
+KLING_CHAT_MODEL = "Kling-O3"
+
+
+def file_to_data_url(path: Path) -> str:
+    mt, _ = mimetypes.guess_type(str(path))
+    b64 = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"data:{mt or 'application/octet-stream'};base64,{b64}"
+
+
+def _download_url(url: str) -> bytes:
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0 (GeorgeEnglishLesson/1.0)"},
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=300) as resp:
+        return resp.read()
+
+
+def _extract_urls(text: str) -> list[str]:
+    return re.findall(r"https?://[^\s\"')\]]+", text)
+
+
+def _message_text(content: str | list | None) -> str:
+    if content is None:
+        return ""
+    if isinstance(content, str):
+        return content
+    parts: list[str] = []
+    for part in content:
+        if isinstance(part, dict) and part.get("type") == "text":
+            parts.append(part.get("text", ""))
+    return "\n".join(parts)
 
 
 @dataclass
@@ -169,6 +204,7 @@ class PoeClient:
         model: str = DEFAULT_VIDEO_MODEL,
         seconds: int = 6,
         size: str = "1280x720",
+        timeout_seconds: float = 900.0,
     ) -> Path:
         print(f"Creating video ({model}, {seconds}s)...")
         vid = self.create_video(
@@ -178,8 +214,75 @@ class PoeClient:
             size=size,
             input_image=input_image,
         )
-        self.wait_for_video(vid)
+        self.wait_for_video(vid, timeout_seconds=timeout_seconds)
         return self.download_video(vid, out_path)
+
+    def generate_video_kling_chat(
+        self,
+        prompt: str,
+        out_path: Path,
+        *,
+        input_image: Path,
+        model: str = KLING_CHAT_MODEL,
+        seconds: int = 5,
+        aspect_ratio: str = "16:9",
+        timeout_seconds: float = 2400.0,
+    ) -> Path:
+        """Legacy: Kling via Poe chat — retired (see docs/ai-video-lessons-learned.md)."""
+        print(f"Creating video via chat ({model}, {seconds}s)...")
+        body = {
+            "model": model,
+            "stream": False,
+            "messages": [{
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {"type": "image_url", "image_url": {"url": file_to_data_url(input_image)}},
+                ],
+            }],
+            "extra_body": {"aspect_ratio": aspect_ratio, "duration": seconds},
+        }
+        _, _, data = self._request("POST", "/chat/completions", json_body=body, timeout=int(timeout_seconds))
+        if not data:
+            raise RuntimeError("Empty chat completion response")
+        choice = (data.get("choices") or [{}])[0]
+        message = choice.get("message", {})
+        text = _message_text(message.get("content"))
+        urls = [u for u in _extract_urls(text) if "poecdn.net" in u or u.endswith(".mp4")]
+        if not urls:
+            raise RuntimeError(f"No video URL in Kling response: {json.dumps(data)[:800]}")
+        url = urls[0].rstrip(")'\"")
+        print(f"  downloading {url[:72]}...")
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(_download_url(url))
+        print(f"  saved video -> {out_path}")
+        log_usage(UsageRecord("video_chat", model, prompt, data.get("usage"), str(out_path.name)))
+        return out_path
+
+    def generate_video_auto(
+        self,
+        prompt: str,
+        out_path: Path,
+        *,
+        input_image: Path | None = None,
+        model: str = DEFAULT_VIDEO_MODEL,
+        seconds: int = 6,
+        size: str = "1280x720",
+        timeout_seconds: float = 900.0,
+    ) -> Path:
+        if "kling" in model.lower():
+            raise RuntimeError(
+                "Kling API is retired for this project. See docs/ai-video-lessons-learned.md"
+            )
+        return self.generate_video(
+            prompt,
+            out_path,
+            input_image=input_image,
+            model=model,
+            seconds=seconds,
+            size=size,
+            timeout_seconds=timeout_seconds,
+        )
 
 
 def cmd_test(_: argparse.Namespace) -> int:

@@ -25,18 +25,26 @@ The pilot videos are **not usable** for teaching. Failures came from **both** ou
 3. **Static or very slow camera** — `static camera` or `very slow push-in`. Moving the camera forces the model to invent off-frame content.
 4. **Large, clear subjects in the first frame** — tiny background characters get replaced (bird vs dragon).
 5. **Pilot one clip, watch the whole file, then batch** — not just “file exists”.
-6. **Poe `/v1/videos`**: only one reference image; no character ref pack. For consistency, evaluate **Veo reference mode** (Poe bot) or **Kling reference-to-video** separately.
+6. **Poe `/v1/videos`**: only one reference image; no character ref pack. For consistency, evaluate **Veo reference mode** (Poe bot) before batching.
 7. **Loop intent**: ask for `seamless loop, end pose similar to start` if the player loops the clip.
 
 ## Poe API scope for this project
 
-- **Use:** `POST /v1/videos` (image-to-video) only.
+- **Use:** `POST /v1/videos` for **Veo-3.1-Fast** (or Veo-3.1) image-to-video — default for any new clips.
 - **Do not use:** Poe image generation (Nano-Banana / chat image bots) for lesson art — lesson illustrations stay as existing PNG/WebP assets.
+- **Do not use: Kling API (retired for this project).** Lesson 3 story-02 was a one-off pilot. Quality was unsatisfactory and Poe point cost was very high vs Veo Fast. Keep the committed MP4 for reference only; do not regenerate via Kling.
 
 ## Cost note
 
 - 8 × 6s Veo-3.1-Fast ≈ **$4.8** equivalent (order of ~16k points at typical Poe pricing).
+- **Kling-O3 (Lesson 3 story-02 pilot, ~5s, one-time):** very high point cost vs Veo Fast; **parent decision: no further Kling use.**
 - Poe video responses often return `usage: null` — reconcile points in the Poe account UI, not only from `scripts/poe_usage.jsonl`.
+
+## Lesson 3 hybrid pilot (kept, not approved)
+
+- `lessons/assets/lesson-03/video/story-02.mp4` — Kling-O3, Story 2 only in `videoPages`.
+- Quality not satisfactory; retained for comparison. Other story pages stay static WebP.
+- Approved lesson videos live under `lessons/assets/lesson-NN/video/` and **are tracked in git** (not gitignored).
 
 ## Local archive (this machine only)
 
@@ -53,10 +61,12 @@ Open locally after `npx serve .` from repo root:
 
 `lessons/js/lesson-player.js` keeps optional `videoPages` / `videoDir` for a future successful pilot. Standard lessons are unchanged.
 
-## Regenerate (future, video only)
+## Regenerate (Veo only)
 
 ```bash
+python scripts/generate_lesson_video.py --lesson 3 --page 2 --model Veo-3.1-Fast
+# or batch Lesson 2:
 python scripts/generate_lesson02_videos.py --page 3 --out-dir _local/pending-videos/lesson-02
 ```
 
-Output defaults to a gitignored local folder until quality is approved.
+Output for lesson clips: `lessons/assets/lesson-NN/video/story-PP.mp4` (tracked in git).

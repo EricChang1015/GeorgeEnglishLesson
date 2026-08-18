@@ -20,9 +20,6 @@ lessons/assets/**/voice-tests/
 # Local-only experiments (failed pilots, pending AI video, etc.) — never publish
 _local/
 
-# Generated lesson videos (local until approved for git)
-lessons/assets/**/video/*.mp4
-
 # Poe API scratch / usage logs
 scripts/_poe_test.png
 scripts/poe_usage.jsonl
