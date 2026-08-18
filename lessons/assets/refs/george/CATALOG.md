@@ -45,6 +45,13 @@ Private likeness refs for lesson illustration. **Do not publish these photos** (
 - **use_for:** strong George face likeness for covers / close portraits; Lesson 3 cover
 - **notes:** Round face, short black bangs, large dark eyes, open-mouth smile showing teeth, prominent ears; white quilted top with tiny red/blue motifs; holding alphabet practice paper (A–N). Prefer face only — do not copy the alphabet paper into story art unless the scene needs it.
 
+### george-solo-park-dragon-sculpture-smile.jpg
+- **priority:** high
+- **people:** george
+- **tags:** solo, smile, outdoors, park, play, dragon-sculpture, daytime, front-facing
+- **use_for:** strong George face + full-body proportions; Lesson 3 Story 1 likeness
+- **notes:** Round face, short black bangs, large dark eyes, bright toothy smile; grey graphic tee, blue camo pants, blue sneakers. Sitting on a red playground dragon. Use face/body only — do not copy the park sculpture or photo clothes into story art unless the scene needs them.
+
 ### george-daddy-outdoors-pavilion-neutral.jpg
 - **priority:** primary
 - **people:** george, daddy
