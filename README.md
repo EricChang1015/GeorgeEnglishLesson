@@ -70,15 +70,19 @@ npx --yes serve .
 
 ## Live site
 
-https://ericchang1015.github.io/GeorgeEnglishLesson/
+**https://george.macau-tech.com/**
 
-- Lesson 1: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-01.html
-- Lesson 2: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-02.html
-- Lesson 3: https://ericchang1015.github.io/GeorgeEnglishLesson/lessons/lesson-03.html
+- Lesson 1: https://george.macau-tech.com/lessons/lesson-01.html
+- Lesson 2: https://george.macau-tech.com/lessons/lesson-02.html
+- Lesson 3: https://george.macau-tech.com/lessons/lesson-03.html
 - Repo: https://github.com/EricChang1015/GeorgeEnglishLesson
+
+Legacy GitHub Pages URL (still works): https://ericchang1015.github.io/GeorgeEnglishLesson/
+
+Custom domain setup (Cloudflare + GitHub): [`docs/custom-domain.md`](docs/custom-domain.md)
 
 ## Publish (GitHub Pages)
 
 Push to `main`. Site root is the repository root.
 
-When updating a lesson before class: edit → commit → push. The Pages URL stays the same; the tutor only needs to refresh.
+When updating a lesson before class: edit → commit → push, then hard-refresh **https://george.macau-tech.com/**.

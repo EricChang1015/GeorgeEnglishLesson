@@ -22,4 +22,4 @@ If any step fails, fix and re-test. Only then commit/push when the user asked to
 
 ## After publish
 
-Hard-refresh the live Pages URL and repeat steps 2–3 on at least one lesson.
+Hard-refresh **https://george.macau-tech.com/** (or local `npx serve .`) and repeat steps 2–3 on at least one lesson.
