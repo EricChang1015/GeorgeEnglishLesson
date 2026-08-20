@@ -5,12 +5,8 @@ node_modules/
 .cursor/plans/
 *.log
 .env.local
-# Private photos of George — do not publish (track markdown catalogs only)
-lessons/assets/refs/**
-!lessons/assets/refs/**/
-!lessons/assets/refs/**/*.md
 
-# Drop zone for new private photos before organizing into lessons/assets/refs/
+# Deprecated drop zone — do not store photos here (use lessons/assets/refs/george/)
 ref/**
 !ref/README.md
 
@@ -24,4 +20,3 @@ _local/
 scripts/_poe_test.png
 scripts/poe_usage.jsonl
 scripts/__pycache__/
-

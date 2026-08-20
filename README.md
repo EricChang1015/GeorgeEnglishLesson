@@ -44,9 +44,9 @@ After new or replaced PNG art:
 python scripts/optimize_lesson_images.py
 ```
 
-## Character reference photos (private)
+## Character reference photos
 
-Likeness refs for consistent lesson art live locally at:
+Likeness refs for consistent lesson art:
 
 `lessons/assets/refs/george/`
 
@@ -58,7 +58,7 @@ Likeness refs for consistent lesson art live locally at:
 - Cover / close face: `george-solo-sofa-alphabet-smile.jpg`
 - Daddy face: `george-daddy-outdoors-pavilion-neutral.jpg`
 
-Photos are gitignored (only `*.md` catalogs are committed). Put new photos **directly** into `lessons/assets/refs/george/` and update `CATALOG.md`. Do not use `ref/` for new drops. Never publish private photos into lesson HTML.
+Photos in `lessons/assets/refs/george/` are **tracked in git**. Put new photos there and update `CATALOG.md`. Do not use `ref/` for new drops. Do not embed raw ref photos in published lesson HTML — only drawn/AI lesson art goes under `lessons/assets/lesson-XX/`.
 
 ## Local preview
 

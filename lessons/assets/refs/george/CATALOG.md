@@ -1,6 +1,6 @@
 # Character reference catalog — George family
 
-Private likeness refs for lesson illustration. **Do not publish these photos** (folder is gitignored except this catalog).
+Likeness refs for lesson illustration. Photos in this folder are **tracked in git**. Do not embed raw photos in published lesson HTML — generate picture-book art under `lessons/assets/lesson-XX/` instead.
 
 ## Naming
 

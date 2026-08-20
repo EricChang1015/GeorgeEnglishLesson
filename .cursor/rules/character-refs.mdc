@@ -8,7 +8,7 @@ alwaysApply: true
 ## Location
 - Canonical folder: `lessons/assets/refs/george/`
 - Full tag index: `lessons/assets/refs/george/CATALOG.md`
-- Photos are **private / gitignored**; only `*.md` catalogs are committed
+- Photos in this folder are **tracked in git** (for shared agent / illustrator access)
 - Put new photos **directly** into `lessons/assets/refs/george/` and update `CATALOG.md` (do not use `ref/`)
 
 ## Cast ids (use these names in filenames and story art)

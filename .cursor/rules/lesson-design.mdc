@@ -42,8 +42,8 @@ alwaysApply: false
 
 ## Visuals
 - Picture-book style illustrations, consistent character design across a lesson
-- Match George (and family) to private refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
-- Store published lesson images in `lessons/assets/lesson-XX/` (never embed the private ref photos)
+- Match George (and family) to refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
+- Store published lesson images in `lessons/assets/lesson-XX/` (do not embed raw ref photos in lesson HTML)
 - Keep original PNG for redraws; **HTML/player must load `.webp` only** (no JPG copies, no PNG at runtime)
 - After adding or replacing a PNG: `python scripts/optimize_lesson_images.py --lesson lesson-XX`
 - Story/cover WebP width ≈ 1000px; vocab cards ≈ 800px; keep aspect ratio

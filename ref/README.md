@@ -16,4 +16,4 @@ Naming:
 
 Subjects (George first): `george`, `daddy`, `mummy`, `sylvia`
 
-Private photos under `lessons/assets/refs/**` are gitignored (only `*.md` catalogs are committed) and must not be published.
+Photos under `lessons/assets/refs/george/` are tracked in the repo. Do not put new drops in this `ref/` folder.
