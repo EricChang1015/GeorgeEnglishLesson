@@ -10,15 +10,17 @@ alwaysApply: false
 - About 2–4 sentences per story page; include real dialogue between characters
 - Sentence length can be longer (roughly 8–16 words); past tense and simple compound sentences OK
 - New words: about 8–12 per lesson; preview with picture + audio
+- Listening is already easy for George — do **not** fill the list with obvious words (`hill`, `egg`, `friend`). Mix 1–3 story-needed words and 1–2 short phrases; example sentences a half-step harder than the word
 - Each vocab word needs one short **example sentence** (ORT-friendly); tap plays word then sentence
 - Prefer natural storybook dialogue over isolated word drills
 - Tone: friendly adventure; dragons OK if gentle and playful
+- Parent review of Lessons 1–3: `docs/lesson-01-03-review.md`
 
 ## Required lesson structure
 1. Cover (title, character, Start)
 2. Vocabulary preview (picture + word + example sentence; play AI audio)
 3. Story pages (illustration + dialogue lines; play full-line AI audio)
-4. Comprehension quiz (instant correct/incorrect feedback + praise)
+4. Comprehension quiz — keep a pool of **8–12** items; the player should present **5 random** questions per visit (instant feedback + praise)
 5. Sight-word / key-phrase practice
 6. Follow-up notes for tutor/parent (checkboxes + comments; `localStorage`)
 
@@ -26,6 +28,7 @@ alwaysApply: false
 - Pre-generate neural TTS MP3s with role voices (narrator / George / dragons / family)
 - **Character voices:** copy from `scripts/voices.json` into each lesson story JSON — see `docs/character-voices.md` and `.cursor/rules/character-voices.mdc`
 - Store under `lessons/assets/lesson-XX/audio/`
+- Story lines should carry an `emotion` tag that matches the beat (wonder, worried, whisper, happy, calm…). Role voice stays fixed; delivery must not stay flat across a picture-book scene
 - 「Read page」plays full page lines in order with line highlight
 - Tap a line / dialogue bubble → play that line’s AI audio
 - Quiz: narrator reads the question, then A / B / C; options stay disabled until that finishes
@@ -41,7 +44,8 @@ alwaysApply: false
 - Player features to keep: swipe / arrow keys, **Go to** page jump, hash (`#story=3`, `#quiz`), **Auto read**
 
 ## Visuals
-- Picture-book style illustrations, consistent character design across a lesson
+- **Bible first:** read `docs/cast-bible.md` and the `picture-book-consistency` skill before any new or redrawn art
+- Picture-book style illustrations; lock Pip / Ember **scale vs George** (Pip waist–chest, Ember knee-high)
 - Match George (and family) to refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
 - Store published lesson images in `lessons/assets/lesson-XX/` (do not embed raw ref photos in lesson HTML)
 - Keep original PNG for redraws; **HTML/player must load `.webp` only** (no JPG copies, no PNG at runtime)
@@ -52,4 +56,4 @@ alwaysApply: false
 - After edits: browser smoke test before commit — `.cursor/rules/delivery.mdc`
 
 ## Index
-- Root `index.html` lists all lessons for the tutor with clear links and short descriptions
+- Root `index.html` groups related lessons into **chapters**. Lessons 1–3 are one chapter (Pip and Ember), not three equal top-level cards

@@ -46,6 +46,8 @@ Quiz clips (narrator): `quiz-01.mp3`, `quiz-01-a.mp3` … `quiz-01-c.mp3`, plus 
 
 On the quiz page, **Read question** speaks the question, then A/B/C. Options stay disabled until that finishes.
 
+If `window.LESSON.quizPick` is set (Lesson 3 uses `5`), the player shuffles the pool and shows that many questions per visit. Audio files stay numbered by **pool order** (`quiz-01` …), not session order. Lessons without `quizPick` still play the full list.
+
 ## Navigation
 
 | Control | Behaviour |

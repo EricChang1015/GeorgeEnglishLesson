@@ -15,7 +15,7 @@ Engine: [Microsoft Edge TTS](https://github.com/rany2/edge-tts) via `edge-tts` (
 | Role key | Character | Voice | Rate | Pitch | Sound |
 |----------|-----------|-------|------|-------|-------|
 | `narrator` | Narrator | `en-GB-SoniaNeural` | `-10%` | `+0Hz` | Calm British adult; reads story + vocab words |
-| `george` | George (~5) | `en-US-AnaNeural` | `+12%` | `-10Hz` | Child boy (parent-approved picker **E**) |
+| `george` | George (~5) | MiniMax `cute_boy` (L3+) / Edge Ana (L1–2) | `1.30` / `+12%` | `0` / `-10Hz` | L3 lock **F2** · baseline **1.30×** (2026-08-21) |
 | `pip` | Pip (green dragon) | `en-US-AnaNeural` | `+5%` | `+20Hz` | Young dragon; brighter/higher than George |
 | `ember` | Ember (red dragon) | `en-GB-MaisieNeural` | `+8%` | `+15Hz` | Baby sister dragon; soft British child |
 | `daddy` | Daddy | `en-GB-RyanNeural` | `-5%` | `-5Hz` | Warm British adult male |
@@ -51,6 +51,18 @@ When a new family member speaks for the first time: agree voice with parent → 
 
 4. In lesson HTML, keep the **voice-key** legend colours aligned with roles (George = blue, Pip = green, Ember = red, Daddy = purple, narrator = gold, etc.).
 5. Vocab: each word should have an `example` sentence + `example_audio`; the lesson page plays **word → sentence**.
+
+---
+
+## Line emotion (not yet in the generator)
+
+Parent review (Lessons 1–3): role voices are stable, but **speed / tone / feeling often miss the beat**. Picture-book lines need a clear emotion.
+
+- Plan: add per-line `emotion` in each `scripts/lessonXX_story.json` (`wonder`, `worried`, `whisper`, `happy`, …).
+- **Lesson 3 George:** MiniMax `cute_boy` F2 · baseline speed **1.30×** + optional per-line `delivery`. Use **`delivery.segments`** for clause-level speed (intonation); keep **pitch at ±1–2** only. Whisper/tense = fearful + slightly lower volume, not deep pitch.
+- Edge TTS has no usable custom `express-as` SSML.
+
+Full notes: `docs/lesson-01-03-review.md`.
 
 ---
 

@@ -23,7 +23,8 @@ alwaysApply: true
 - Parents usually read aloud; he is beginning to try reading himself
 - Target difficulty: Oxford Reading Tree Stage / Level 6 (longer sentences, more dialogue, richer plot)
 - Parent note: ORT LV6 is comfortable for him; do not oversimplify below this unless asked
-- Needs strong pronunciation support: prefer pre-generated AI voice audio for full lines/dialogue
+- **2026-08-21:** listening is easy — vocab should be a **slight** step up (story words + short phrases), not another pass of obvious nouns. See `docs/lesson-01-03-review.md`
+- Needs strong pronunciation support: prefer pre-generated AI voice audio for full lines/dialogue; delivery should match story emotion, not a flat read
 
 ## Teaching goals
 - Move from listen-only to guided independent reading

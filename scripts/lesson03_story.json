@@ -22,7 +22,14 @@
   },
   "voices": {
     "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
-    "george": { "voice": "en-US-AnaNeural", "rate": "+12%", "pitch": "-10Hz" },
+    "george": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "cute_boy",
+      "voice": "cute_boy",
+      "speed": 1.30,
+      "pitch": 0,
+      "volume": 1.0
+    },
     "pip": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" },
     "ember": { "voice": "en-GB-MaisieNeural", "rate": "+8%", "pitch": "+15Hz" },
     "daddy": { "voice": "en-GB-RyanNeural", "rate": "-5%", "pitch": "-5Hz" }
@@ -114,82 +121,106 @@
       "img": "story-01.png",
       "alt": "George plays with Pip and Ember outside the cave",
       "lines": [
-        { "role": "narrator", "text": "The next day, George went back to the cave to play with Pip and Ember.", "audio": "p01-01.mp3" },
-        { "role": "george", "text": "Hello! Shall we look for berries near the cave?", "audio": "p01-02.mp3" },
-        { "role": "pip", "text": "Yes! There are sweet berries just down the little path.", "audio": "p01-03.mp3" }
+        { "role": "narrator", "text": "The next day, George went back to the cave to play with Pip and Ember.", "audio": "p01-01.mp3", "emotion": "happy" },
+        { "role": "george", "text": "Hello! Shall we look for berries near the cave?", "audio": "p01-02.mp3", "emotion": "excited", "delivery": { "minimax_emotion": "happy", "segments": [
+          { "text": "Hello!", "speed": 1.40, "pitch": 1 },
+          { "text": "Shall we look for berries near the cave?", "speed": 1.30, "pitch": 0 }
+        ] } },
+        { "role": "pip", "text": "Yes! There are sweet berries just down the little path.", "audio": "p01-03.mp3", "emotion": "happy" }
       ]
     },
     {
       "img": "story-02.png",
       "alt": "The friends pick berries on a short path near the cave",
       "lines": [
-        { "role": "narrator", "text": "They walked a short way down the path and began to pick red berries.", "audio": "p02-01.mp3" },
-        { "role": "ember", "text": "These berries are yummy! I like helping.", "audio": "p02-02.mp3" },
-        { "role": "narrator", "text": "But the sky grew grey, and a cold wind brushed their faces.", "audio": "p02-03.mp3" },
-        { "role": "pip", "text": "Hmm. The wind feels strange. We should not go far.", "audio": "p02-04.mp3" }
+        { "role": "narrator", "text": "They walked a short way down the path and began to pick red berries.", "audio": "p02-01.mp3", "emotion": "happy" },
+        { "role": "ember", "text": "These berries are yummy! I like helping.", "audio": "p02-02.mp3", "emotion": "happy" },
+        { "role": "narrator", "text": "But the sky grew grey, and a cold wind brushed their faces.", "audio": "p02-03.mp3", "emotion": "worried" },
+        { "role": "pip", "text": "Hmm. The wind feels strange. We should not go far.", "audio": "p02-04.mp3", "emotion": "worried" }
       ]
     },
     {
       "img": "story-03.png",
       "alt": "Thunder rolls as storm clouds gather",
       "lines": [
-        { "role": "narrator", "text": "Far away, thunder rumbled like a giant drum.", "audio": "p03-01.mp3" },
-        { "role": "george", "text": "Is a storm coming, Pip?", "audio": "p03-02.mp3" },
-        { "role": "pip", "text": "Yes. Let's take a few berries and go back to the cave soon.", "audio": "p03-03.mp3" },
-        { "role": "ember", "text": "I'm little. I can't fly in strong wind!", "audio": "p03-04.mp3" }
+        { "role": "narrator", "text": "Far away, thunder rumbled like a giant drum.", "audio": "p03-01.mp3", "emotion": "worried" },
+        { "role": "george", "text": "Is a storm coming, Pip?", "audio": "p03-02.mp3", "emotion": "worried", "delivery": { "minimax_emotion": "fearful", "segments": [
+          { "text": "Is a storm coming,", "speed": 1.30, "pitch": 1 },
+          { "text": "Pip?", "speed": 1.18, "pitch": 0, "volume": 0.86 }
+        ] } },
+        { "role": "pip", "text": "Yes. Let's take a few berries and go back to the cave soon.", "audio": "p03-03.mp3", "emotion": "worried" },
+        { "role": "ember", "text": "I'm little. I can't fly in strong wind!", "audio": "p03-04.mp3", "emotion": "fearful" }
       ]
     },
     {
       "img": "story-04.png",
       "alt": "A big brown bear appears on the berry path",
       "lines": [
-        { "role": "narrator", "text": "Suddenly, George stopped. A huge brown bear was on the path ahead.", "audio": "p04-01.mp3" },
-        { "role": "narrator", "text": "The bear sniffed the berries and made a low, rumbling growl.", "audio": "p04-02.mp3" },
-        { "role": "ember", "text": "George… is that bear dangerous?", "audio": "p04-03.mp3" },
-        { "role": "george", "text": "Yes. Stay quiet. Don't run. That is very important.", "audio": "p04-04.mp3" }
+        { "role": "narrator", "text": "Suddenly, George stopped. A huge brown bear was on the path ahead.", "audio": "p04-01.mp3", "emotion": "surprised" },
+        { "role": "narrator", "text": "The bear sniffed the berries and made a low, rumbling growl.", "audio": "p04-02.mp3", "emotion": "worried" },
+        { "role": "ember", "text": "George… is that bear dangerous?", "audio": "p04-03.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "Yes. Stay quiet. Don't run. That is very important.", "audio": "p04-04.mp3", "emotion": "whisper", "delivery": { "minimax_emotion": "fearful", "segments": [
+          { "text": "Yes.", "speed": 1.17, "pitch": 0, "volume": 0.86 },
+          { "text": "Stay quiet.", "speed": 0.95, "pitch": -1, "volume": 0.78 },
+          { "text": "Don't run.", "speed": 1.07, "pitch": 0, "volume": 0.80 },
+          { "text": "That is very important.", "speed": 0.99, "pitch": -1, "volume": 0.76 }
+        ] } }
       ]
     },
     {
       "img": "story-05.png",
       "alt": "The three friends hide behind a rock",
       "lines": [
-        { "role": "narrator", "text": "They hid behind a big rock and stayed very still.", "audio": "p05-01.mp3" },
-        { "role": "pip", "text": "Good. Stay calm. The bear is busy with the berries.", "audio": "p05-02.mp3" },
-        { "role": "narrator", "text": "The bear ate a few berries, then walked slowly into the trees.", "audio": "p05-03.mp3" },
-        { "role": "george", "text": "My heart is beating fast, but we stayed quiet.", "audio": "p05-04.mp3" }
+        { "role": "narrator", "text": "They hid behind a big rock and stayed very still.", "audio": "p05-01.mp3", "emotion": "whisper" },
+        { "role": "pip", "text": "Good. Stay calm. The bear is busy with the berries.", "audio": "p05-02.mp3", "emotion": "whisper" },
+        { "role": "narrator", "text": "The bear ate a few berries, then walked slowly into the trees.", "audio": "p05-03.mp3", "emotion": "calm" },
+        { "role": "george", "text": "My heart is beating fast, but we stayed quiet.", "audio": "p05-04.mp3", "emotion": "whisper", "delivery": { "minimax_emotion": "fearful", "segments": [
+          { "text": "My heart is beating fast,", "speed": 1.23, "pitch": 1, "volume": 0.86 },
+          { "text": "but we stayed quiet.", "speed": 1.01, "pitch": -1, "volume": 0.76 }
+        ] } }
       ]
     },
     {
       "img": "story-06.png",
       "alt": "Rain begins as they hurry carefully back toward the cave",
       "lines": [
-        { "role": "narrator", "text": "Then cold rain began to fall, and the path grew dark and wet.", "audio": "p06-01.mp3" },
-        { "role": "pip", "text": "Now! Walk carefully. The cave is close. It is our shelter!", "audio": "p06-02.mp3" },
-        { "role": "george", "text": "Come on, Ember. Stay close to me.", "audio": "p06-03.mp3" },
-        { "role": "narrator", "text": "They hurried carefully back up the short path to the cave door.", "audio": "p06-04.mp3" }
+        { "role": "narrator", "text": "Then cold rain began to fall, and the path grew dark and wet.", "audio": "p06-01.mp3", "emotion": "worried" },
+        { "role": "pip", "text": "Now! Walk carefully. The cave is close. It is our shelter!", "audio": "p06-02.mp3", "emotion": "worried" },
+        { "role": "george", "text": "Come on, Ember. Stay close to me.", "audio": "p06-03.mp3", "emotion": "soft", "delivery": { "minimax_emotion": "fearful", "segments": [
+          { "text": "Come on, Ember.", "speed": 1.36, "pitch": 0, "volume": 0.88 },
+          { "text": "Stay close to me.", "speed": 1.30, "pitch": 0, "volume": 0.85 }
+        ] } },
+        { "role": "narrator", "text": "They hurried carefully back up the short path to the cave door.", "audio": "p06-04.mp3", "emotion": "worried" }
       ]
     },
     {
       "img": "story-07.png",
       "alt": "Safe inside the cave while the storm rains outside",
       "lines": [
-        { "role": "narrator", "text": "Inside the cave, they shook off the rain and listened to the storm.", "audio": "p07-01.mp3" },
-        { "role": "ember", "text": "I was scared, but we are safe now.", "audio": "p07-02.mp3" },
-        { "role": "pip", "text": "Yes. Our cave is a good shelter when thunder is loud.", "audio": "p07-03.mp3" },
-        { "role": "george", "text": "We did it together. We stayed calm!", "audio": "p07-04.mp3" }
+        { "role": "narrator", "text": "Inside the cave, they shook off the rain and listened to the storm.", "audio": "p07-01.mp3", "emotion": "calm" },
+        { "role": "ember", "text": "I was scared, but we are safe now.", "audio": "p07-02.mp3", "emotion": "soft" },
+        { "role": "pip", "text": "Yes. Our cave is a good shelter when thunder is loud.", "audio": "p07-03.mp3", "emotion": "calm" },
+        { "role": "george", "text": "We did it together. We stayed calm!", "audio": "p07-04.mp3", "emotion": "happy", "delivery": { "minimax_emotion": "happy", "segments": [
+          { "text": "We did it together.", "speed": 1.30, "pitch": 0 },
+          { "text": "We stayed calm!", "speed": 1.36, "pitch": 1 }
+        ] } }
       ]
     },
     {
       "img": "story-08.png",
       "alt": "Daddy finds George at the cave after the storm",
       "lines": [
-        { "role": "narrator", "text": "When the rain stopped, Daddy climbed the hill with an umbrella.", "audio": "p08-01.mp3" },
-        { "role": "daddy", "text": "George! I was looking for you. Are you all right?", "audio": "p08-02.mp3" },
-        { "role": "george", "text": "Yes, Daddy. We hid from a big bear, then waited in the cave.", "audio": "p08-03.mp3" },
-        { "role": "daddy", "text": "Well done. You were very brave today.", "audio": "p08-04.mp3" }
+        { "role": "narrator", "text": "When the rain stopped, Daddy climbed the hill with an umbrella.", "audio": "p08-01.mp3", "emotion": "calm" },
+        { "role": "daddy", "text": "George! I was looking for you. Are you all right?", "audio": "p08-02.mp3", "emotion": "worried" },
+        { "role": "george", "text": "Yes, Daddy. We hid from a big bear, then waited in the cave.", "audio": "p08-03.mp3", "emotion": "calm", "delivery": { "minimax_emotion": "calm", "segments": [
+          { "text": "Yes, Daddy.", "speed": 1.30, "pitch": 0 },
+          { "text": "We hid from a big bear, then waited in the cave.", "speed": 1.30, "pitch": 0 }
+        ] } },
+        { "role": "daddy", "text": "Well done. You were very brave today.", "audio": "p08-04.mp3", "emotion": "proud" }
       ]
     }
   ],
+  "quizPick": 5,
   "quiz": [
     {
       "q": "Why do the friends want to go back to the cave?",
@@ -198,18 +229,48 @@
     },
     {
       "q": "What animal do they see on the path?",
-      "options": ["A big brown bear", "A tiny rabbit", "A goldfish"],
-      "answer": 0
+      "options": ["A tiny rabbit", "A big brown bear", "A goldfish"],
+      "answer": 1
     },
     {
       "q": "What should they do when they see the bear?",
-      "options": ["Stay quiet and don't run", "Shout and run fast", "Throw rocks at the bear"],
-      "answer": 0
+      "options": ["Shout and run fast", "Throw rocks at the bear", "Stay quiet and don't run"],
+      "answer": 2
     },
     {
       "q": "Who climbs the hill to find George after the storm?",
-      "options": ["Daddy", "A bus driver", "A bird"],
+      "options": ["A bus driver", "Daddy", "A bird"],
+      "answer": 1
+    },
+    {
+      "q": "Who cannot fly in strong wind?",
+      "options": ["Ember", "Daddy", "The bear"],
       "answer": 0
+    },
+    {
+      "q": "Where do they hide from the bear?",
+      "options": ["In a boat", "Behind a big rock", "Under a table"],
+      "answer": 1
+    },
+    {
+      "q": "What is the cave for them in the storm?",
+      "options": ["A shop", "A school", "A safe shelter"],
+      "answer": 2
+    },
+    {
+      "q": "What does George tell Ember on the wet path?",
+      "options": ["Stay close to me", "Fly away now", "Pick more berries"],
+      "answer": 0
+    },
+    {
+      "q": "What does Daddy say George was today?",
+      "options": ["Too slow", "Very brave", "Very noisy"],
+      "answer": 1
+    },
+    {
+      "q": "What do they hear far away, like a giant drum?",
+      "options": ["A piano", "A bicycle", "Thunder"],
+      "answer": 2
     }
   ],
   "phrases": ["Stay quiet", "Don't run", "Stay calm", "Stay close", "We stayed calm", "Well done"]

@@ -4,6 +4,8 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lessons
 
+Lessons 1–3 are one story chapter (**Pip and Ember**). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md).
+
 ### Lesson 1 — `lessons/lesson-01.html`
 **George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
 

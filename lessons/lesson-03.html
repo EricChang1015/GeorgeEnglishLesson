@@ -64,7 +64,7 @@
 
     <section class="screen" data-screen="10">
       <h2>Let's Check!</h2>
-      <p class="hint">Listen, then choose A, B or C</p>
+      <p class="hint">5 questions this time · Listen, then choose A, B or C</p>
       <div id="quizArea"></div>
       <div class="controls">
         <button class="btn-ghost" type="button" data-prev>◀ Back</button>
@@ -122,7 +122,7 @@
       asset: "assets/lesson-03/",
       storageKey: "george-lesson-03-notes-v2",
       videoDir: "video/",
-      videoPages: ["story-02"],
+      videoPages: [],
       roleLabel: { narrator: "Narrator", george: "George", pip: "Pip", ember: "Ember", daddy: "Daddy" },
       vocab: [
         { word: "storm", example: "A big storm is coming.", img: "vocab-storm.png", alt: "dark storm clouds", audio: "audio/vocab-storm.mp3", exampleAudio: "audio/vocab-storm-ex.mp3" },
@@ -217,11 +217,18 @@
           ]
         }
       ],
+      quizPick: 5,
       quiz: [
         { q: "Why do the friends want to go back to the cave?", options: ["Because a storm is coming", "Because they want to go shopping", "Because the berries are blue"], answer: 0 },
-        { q: "What animal do they see on the path?", options: ["A big brown bear", "A tiny rabbit", "A goldfish"], answer: 0 },
-        { q: "What should they do when they see the bear?", options: ["Stay quiet and don't run", "Shout and run fast", "Throw rocks at the bear"], answer: 0 },
-        { q: "Who climbs the hill to find George after the storm?", options: ["Daddy", "A bus driver", "A bird"], answer: 0 }
+        { q: "What animal do they see on the path?", options: ["A tiny rabbit", "A big brown bear", "A goldfish"], answer: 1 },
+        { q: "What should they do when they see the bear?", options: ["Shout and run fast", "Throw rocks at the bear", "Stay quiet and don't run"], answer: 2 },
+        { q: "Who climbs the hill to find George after the storm?", options: ["A bus driver", "Daddy", "A bird"], answer: 1 },
+        { q: "Who cannot fly in strong wind?", options: ["Ember", "Daddy", "The bear"], answer: 0 },
+        { q: "Where do they hide from the bear?", options: ["In a boat", "Behind a big rock", "Under a table"], answer: 1 },
+        { q: "What is the cave for them in the storm?", options: ["A shop", "A school", "A safe shelter"], answer: 2 },
+        { q: "What does George tell Ember on the wet path?", options: ["Stay close to me", "Fly away now", "Pick more berries"], answer: 0 },
+        { q: "What does Daddy say George was today?", options: ["Too slow", "Very brave", "Very noisy"], answer: 1 },
+        { q: "What do they hear far away, like a giant drum?", options: ["A piano", "A bicycle", "Thunder"], answer: 2 }
       ],
       phrases: [
         { text: "Stay quiet", audio: "audio/p04-04.mp3" },
@@ -233,6 +240,6 @@
       ]
     };
   </script>
-  <script src="js/lesson-player.js?v=3"></script>
+  <script src="js/lesson-player.js?v=4"></script>
 </body>
 </html>

@@ -27,8 +27,9 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
 5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
-6. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
-7. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
+6. **Bedroom / bedtime scene:** use `mike-plush-bedroom-bed-scattered.jpg` for George's actual bed layout, curtains, cream blanket, and plush placement; use `george-daddy-bedtime-reading.jpg` for bedtime reading posture.
+7. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
+8. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
 
 ## Photos
 
@@ -111,6 +112,13 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **tags:** smile, indoors, bed, selfie, closeup, affectionate
 - **use_for:** George + Daddy warm indoor scenes; George face from slightly side/close angle
 - **notes:** Daddy: grey tee, thin metal glasses; George leaning on Daddy
+
+#### george-daddy-bedtime-reading.jpg
+- **priority:** high
+- **people:** george, daddy
+- **tags:** indoors, bed, bedtime, reading, phone, cozy, daddy, blanket
+- **use_for:** bedtime story / shared reading posture; Daddy and George tucked in together; warm evening room mood
+- **notes:** Beige padded headboard with wood trim; Daddy in glasses and blue-grey raglan sleep shirt; George beside him under a white blanket with animal print. Use posture, closeness, bed setup, and bedtime mood. Do not copy phone UI, timestamp, or exact blanket artwork into published story art.
 
 #### george-daddy-outdoors-lifevest-smile.jpg
 - **priority:** high
@@ -203,3 +211,19 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, pajamas
 - **use_for:** Mike resting on George’s chest while he sleeps
 - **notes:** On his back, arms up; white pajamas with light-blue cuffs; Mike on chest near the neck. Eyes closed — do not use for George face likeness.
+
+#### george-solo-bed-mike-plush-side-sleep.jpg
+- **priority:** high
+- **people:** george
+- **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, hug, pajamas, side-sleep
+- **use_for:** strongest bedtime sleeping pose with one well-loved Big Eye / Mike plush; George hugging the toy against his face; blanket partly covering him
+- **notes:** Side-sleeping on pale blue sheet with car-print pillow; white short-sleeve pajamas with tiny colorful prints; green blanket and cream quilt nearby. Use pose, bedding palette, and plush-hugging comfort beat. Eyes closed — do not use for George face likeness.
+
+### Bedroom / bedtime scene anchors
+
+#### mike-plush-bedroom-bed-scattered.jpg
+- **priority:** high
+- **people:** none
+- **tags:** bedroom, bed, bedtime, home, mike-wazowski, plush, favorite-toy, cream-blanket, grey-curtains, scene-anchor
+- **use_for:** George bedroom layout; cream bedsheet / blanket texture; grey curtains; bed surface for "blanket mountain" dream transition; multiple Big Eye plush placement
+- **notes:** Wide bed view with beige padded headboard, cream sheet/blanket, grey curtains, and two lime-green one-eyed plush toys lying apart. Use as the real bedroom anchor before the room transforms. Do not copy clutter literally; simplify into a cozy picture-book bedroom.

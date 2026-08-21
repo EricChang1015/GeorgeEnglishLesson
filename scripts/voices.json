@@ -19,7 +19,7 @@
       "character": "George",
       "kind": "child-boy",
       "locale": "American English",
-      "notes": "Lesson hero (~5). Parent-approved voice-picker option E. Do not use adult male voices."
+      "notes": "Lesson hero (~5). Lessons 1–2 still use Edge Ana. Lesson 3+ published voice is MiniMax cute_boy F2 (see minimax_voices.json). Do not use adult male voices."
     },
     "pip": {
       "voice": "en-US-AnaNeural",

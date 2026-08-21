@@ -2,16 +2,16 @@
   "engine": "minimax-speech-2.8",
   "via": "poe",
   "updated": "2026-08-21",
-  "notes": "Story dialogue only. Always send voice_id (plain voice is ignored by Poe). Vocab/quiz stay on Edge TTS. Do not change published lesson-03 until parent asks.",
+  "notes": "Story dialogue only. Always send voice_id (plain voice is ignored by Poe). Vocab/quiz stay on Edge TTS. Lesson 3 George lines use this lock (parent pick F2, 2026-08-21).",
   "roles": {
     "george": {
       "voice_id": "cute_boy",
-      "speed": 1.1,
+      "speed": 1.30,
       "pitch": 0,
       "volume": 1.0,
       "character": "George",
       "kind": "child-boy",
-      "notes": "Parent pick 2026-08-21: F2. Speed 1.1, pitch 0."
+      "notes": "Parent pick F2 cute_boy. Base speed 1.30 (2026-08-21); per-line delivery in story JSON overrides."
     }
   }
 }

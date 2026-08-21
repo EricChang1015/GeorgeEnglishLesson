@@ -7,11 +7,31 @@
   const ROLE_LABEL = L.roleLabel || {};
   const vocab = L.vocab || [];
   const story = L.story || [];
-  const quiz = L.quiz || [];
+  const quizPool = L.quiz || [];
   const phrases = L.phrases || [];
   const videoPages = L.videoPages || null;
   const videoDir = L.videoDir || "video/";
   const LETTERS = ["A", "B", "C"];
+
+  function shufflePick(items, n) {
+    const idx = items.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = idx[i];
+      idx[i] = idx[j];
+      idx[j] = tmp;
+    }
+    const take = Math.min(Math.max(1, n), items.length);
+    return idx.slice(0, take).map((poolIndex) => ({
+      ...items[poolIndex],
+      poolIndex
+    }));
+  }
+
+  const quizPick = Number(L.quizPick);
+  const quiz = (quizPick > 0 && quizPick < quizPool.length)
+    ? shufflePick(quizPool, quizPick)
+    : quizPool.map((item, poolIndex) => ({ ...item, poolIndex }));
 
   const screens = [...document.querySelectorAll(".screen")];
   let current = 0;
@@ -256,7 +276,8 @@
   }
 
   function quizAudio(index) {
-    const nn = String(index + 1).padStart(2, "0");
+    const poolIndex = quiz[index] && quiz[index].poolIndex != null ? quiz[index].poolIndex : index;
+    const nn = String(poolIndex + 1).padStart(2, "0");
     return {
       q: `audio/quiz-${nn}.mp3`,
       opts: LETTERS.map((_, oi) => `audio/quiz-${nn}-${"abc"[oi]}.mp3`),
