@@ -105,7 +105,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 ---
 
-## Lesson 4 — 故事全文（12 頁 + 對白）
+## Lesson 4 — 故事全文（12 頁，每頁 3–4 句）
+
+敘事規則：George 與 Big Eye **不知道這是夢境**。角色只描述眼前發生的事；直到早晨留下蕨葉，真實與夢境仍沒有答案。
 
 ### Page 1 — Bedtime reading
 
@@ -115,10 +117,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 | Role | Line | Emotion |
 |------|------|---------|
 | narrator | It was late, and George was tucked under his warm blanket in the big bed. | calm |
-| narrator | Daddy sat beside him and opened one more story on the phone. | calm |
+| narrator | Daddy sat beside him and read one last story from the phone. | calm |
 | daddy | "Just one more chapter, George. Then it is time to sleep." | soft |
 | george | "Can Big Eye listen too? He likes adventures." | happy |
-| daddy | "Of course. Good night soon, my brave boy." | soft |
 
 ### Page 2 — Lights out
 
@@ -127,11 +128,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Daddy turned off the main light, and the room became quiet and still. | calm |
-| narrator | Only the little star night-light glowed softly on the table. | calm |
-| george | "Good night, Daddy." | soft |
-| daddy | "Sleep well, George. I will see you in the morning." | soft |
-| narrator | George pulled Big Eye close and closed his eyes, but he did not let go. | calm |
+| narrator | When the story ended, Daddy kissed George good night and turned off the main light. | calm |
+| narrator | Only the little star lamp was left, glowing softly beside the bed. | calm |
+| george | "Good night, Big Eye. Hold my hand until I fall asleep." | calm |
 
 ### Page 3 — Thump under the blanket
 
@@ -140,11 +139,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Then, under the cream blanket, something went thump, thump, thump. | surprised |
-| bigeye | "George! Did you hear that? Something is moving under the blanket!" | fearful |
-| george | "I heard it, Big Eye. My feet are still. It is not me." | worried |
-| bigeye | "What if it is a huge monster with sharp teeth?" | fearful |
-| george | "Wait. Let us look again before we get scared." | calm |
+| narrator | George had almost closed his eyes when something under the blanket went thump, thump, thump. | surprised |
+| bigeye | "George, did you hear that? Something is moving under the blanket!" | fearful |
+| george | "My feet did not move. Let us look again, very carefully." | worried |
 
 ### Page 4 — Three blinks
 
@@ -153,11 +150,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Big Eye's one big eye opened wide, and he blinked once. | wonder |
-| narrator | The grey curtains turned silver in the moonlight, and the blanket rose like a little hill. | wonder |
-| bigeye | "I can see something… Blink twice… blink three times…" | whisper |
-| narrator | On the third blink, the whole bed began to change. | wonder |
-| george | "Whoa! Our room is turning into a dream!" | surprised |
+| narrator | Big Eye blinked once, twice, then three times, and a soft green light filled the room. | wonder |
+| narrator | The grey curtains shone like silver trees, and the blanket rose beneath them like a hill. | wonder |
+| george | "Big Eye, what is happening to our room?" | surprised |
 
 ### Page 5 — Blanket mountain
 
@@ -166,11 +161,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | The cream blanket became a soft green mountain, and the pillow became a pale cave. | wonder |
-| narrator | Tiny ferns pushed up beside the sheet, but George could still see his bedroom hiding inside the dream. | wonder |
-| bigeye | "I can see footprints on the mountain! Something small ran this way!" | excited |
-| george | "Then we should follow them. Stay close to me, Big Eye." | calm |
-| bigeye | "Me? Follow a monster's footprints? Oh no…" | fearful |
+| narrator | The blanket had become a soft green mountain, with a pillow cave at the very top. | wonder |
+| narrator | Small green ferns grew beside the sheet, and tiny footprints led up the slope. | wonder |
+| bigeye | "Look! I can see tiny footprints on the mountain!" | surprised |
+| george | "We should follow them. Stay close to me, Big Eye." | calm |
 
 ### Page 6 — Behind the fold
 
@@ -179,11 +173,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Another thump came from behind a fold in the blanket mountain. | worried |
-| bigeye | "It is thumping again! I do not want to look!" | fearful |
-| george | "I will look first. Hold my hand, and breathe slowly." | soft |
-| narrator | George bent down carefully and lifted one corner of the blanket hill. | calm |
-| bigeye | "I am holding your hand… I am still looking with my big eye…" | whisper |
+| narrator | They climbed a little way when another thump came from behind a fold in the blanket. | worried |
+| george | "Hold my hand, Big Eye. I will look first, and you can stay right behind me." | calm |
+| bigeye | "All right, but please do not let go of my hand." | whisper |
 
 ### Page 7 — Not a monster
 
@@ -192,11 +184,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | A tiny dinosaur peeked out with round, worried eyes. | surprised |
-| bigeye | "A dinosaur! I knew it! It will eat us!" | fearful |
-| george | "No, Big Eye. Look carefully. It is no bigger than my knee." | calm |
-| nibble | "Peep… peep…" | soft |
-| george | "Hello, little one. Are you lost? You look very frightened." | soft |
+| narrator | George lifted the fold gently, and a tiny dinosaur peeked out with round, worried eyes. | surprised |
+| bigeye | "A dinosaur! George, it might be a monster!" | fearful |
+| george | "Look carefully, Big Eye. It is little, and it looks frightened, not fierce." | calm |
 
 ### Page 8 — The lost little dinosaur
 
@@ -205,11 +195,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| nibble | "Peep! I cannot find my nest!" | worried |
-| bigeye | "It can talk! George, it is talking to us!" | surprised |
-| george | "Do not worry. We will help you. Where did you come from?" | calm |
-| nibble | "I was sleeping under the warm blanket. Then everything moved!" | worried |
-| george | "I think the dream moved you, not the other way. We can find your nest together." | calm |
+| nibble | "Peep! Peep! I cannot find my nest anywhere!" | worried |
+| george | "Do not worry, little one. We will help you. Which way is home?" | calm |
+| nibble | "My nest smells like warm leaves, near a pale cave at the top of the hill." | soft |
 
 ### Page 9 — Footprints and star light
 
@@ -218,11 +206,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| bigeye | "I can see more footprints! They go toward the curtain forest!" | excited |
-| george | "Good spotting, Big Eye. You have the best eyes in the dream." | happy |
-| narrator | George held the star night-light high, and a tiny beam pointed toward the grey curtains. | wonder |
-| nibble | "My nest smells like warm leaves. I think it is near the pillow cave!" | soft |
-| george | "Then that is where we are going. One step at a time." | calm |
+| bigeye | "The footprints go towards the curtain forest! I can see them clearly." | excited |
+| narrator | George raised the star lamp high, and its warm beam lit a narrow path between the curtains. | wonder |
+| george | "One step at a time. Nibble, follow the footprints with us." | calm |
 
 ### Page 10 — Brave whisper
 
@@ -231,11 +217,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Near the curtain forest, the dream room grew darker, and Big Eye began to tremble. | worried |
-| bigeye | "It is too dark! What if something big is hiding in there?" | fearful |
-| george | "We can be quiet, but we can still be brave. Look — I am here." | whisper |
-| george | "Big Eye, you found the footprints. That was very brave already." | soft |
-| bigeye | "Really? Then… then I will look one more time." | soft |
+| narrator | Beneath the tall curtains, the path grew darker, and Big Eye began to tremble. | worried |
+| bigeye | "It is too dark in here! What if something big is hiding in the curtain forest?" | fearful |
+| george | "We can be quiet, but we can still be brave. I am right beside you." | whisper |
 
 ### Page 11 — The warm nest
 
@@ -244,11 +228,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | At last, behind the pillow cave, they found a nest of soft leaves and moonlit threads. | happy |
-| nibble | "My nest! I can smell the warm leaves!" | happy |
-| narrator | The little dinosaur climbed in, tucked its nose under one leaf, and gave a happy little hum. | calm |
-| george | "You are home now, Nibble. Sleep well." | soft |
-| bigeye | "George… I was scared, but we did it. I think I am a little brave too." | happy |
+| narrator | At last they reached the pillow cave, where a nest of warm leaves waited in the moonlight. | wonder |
+| nibble | "My nest! We found it! Peep, peep!" | happy |
+| george | "You are home now, Nibble. Sleep well in your warm nest." | calm |
+| bigeye | "I was scared, but I kept looking, and we found the way." | happy |
 
 ### Page 12 — Morning proof
 
@@ -257,12 +240,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | In the morning, George woke up in his own bed with Big Eye under his chin. | calm |
-| daddy | "Good morning, George. Did you sleep well?" | soft |
-| george | "I think I had an adventure with Big Eye and a tiny dinosaur." | calm |
-| daddy | "Did you? Show me." | soft |
-| narrator | George lifted the flat blanket. Near his pillow lay one tiny green fern leaf. | wonder |
-| george | "It was real… wasn't it?" | wonder |
+| narrator | In the morning, George woke beside Big Eye and found a tiny green fern leaf on the blanket. | wonder |
+| george | "Daddy, look! Where did this leaf come from? It was not here last night." | surprised |
+| daddy | "I do not know, George. It looks very strange. Do you know where it came from?" | wonder |
 
 ---
 
@@ -279,7 +259,7 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 | fern | A green fern grew beside the sheet. |
 | nest | Nibble could not find her warm nest. |
 | brave | We can be quiet, but we can still be brave. |
-| lost | The little dinosaur was lost in the dream. |
+| lost | The little dinosaur was lost under the blanket. |
 | glow | The star night-light glowed softly. |
 | adventure | I think I had an adventure last night. |
 

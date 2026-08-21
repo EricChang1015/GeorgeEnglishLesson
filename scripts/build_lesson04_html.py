@@ -7,11 +7,11 @@ ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / "scripts/lesson04_story.json").read_text(encoding="utf-8"))
 
 phrase_map = {
-    "Hold my hand": "p06-03.mp3",
+    "Hold my hand": "p06-02.mp3",
     "Look carefully": "p07-03.mp3",
     "Stay close to me": "p05-04.mp3",
-    "You are home now": "p11-04.mp3",
-    "Let us look again": "p03-05.mp3",
+    "You are home now": "p11-02.mp3",
+    "Let us look again": "p03-03.mp3",
     "We can still be brave": "p10-03.mp3",
 }
 
@@ -156,7 +156,7 @@ html = f"""<!DOCTYPE html>
         <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
         <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
         <label><input type="checkbox" data-note="bedtime_phrases" /> Practised key phrases (Hold my hand / Look carefully)</label>
-        <label><input type="checkbox" data-note="dream_talk" /> Talked about the dream adventure</label>
+        <label><input type="checkbox" data-note="mystery_talk" /> Talked about the mysterious adventure</label>
         <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
         <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
         <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
