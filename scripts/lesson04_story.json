@@ -1,0 +1,306 @@
+{
+  "id": "lesson-04",
+  "title": "George and the Dinosaur Under the Blanket",
+  "level": "ORT Level 6",
+  "chapter": "Big Eye Dreams",
+  "learning": {
+    "summary_zh": "睡前 George 與膽小的 Big Eye 發現棉被下有聲響；房間變成夢境，幫迷路的小恐龍 Nibble 找巢；醒來枕邊留下蕨葉。",
+    "focus_en": [
+      "Bedtime words: blanket, whisper, glow, adventure",
+      "Observation: footprint, look carefully, I can see",
+      "Feelings: tremble, lost, brave, frightened",
+      "Key phrases: Hold my hand. Stay close to me. You are home now."
+    ],
+    "tutor_prompts_zh": [
+      "問：棉被下面的 thump 是什麼？（小恐龍 Nibble，不是怪獸）",
+      "問：Big Eye 很怕的時候，George 說了什麼？（Hold my hand / Look carefully / We can still be brave）",
+      "問：他們怎麼找到 nest？（腳印 + 星星夜燈 + Big Eye 幫忙看）",
+      "問：醒來後留下什麼證據？（一片小蕨葉）"
+    ]
+  },
+  "voices": {
+    "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
+    "george": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "cute_boy",
+      "voice": "cute_boy",
+      "speed": 1.30,
+      "pitch": 0,
+      "volume": 1.0
+    },
+    "daddy": { "voice": "en-GB-RyanNeural", "rate": "-5%", "pitch": "-5Hz" },
+    "bigeye": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" },
+    "nibble": { "voice": "en-GB-MaisieNeural", "rate": "+12%", "pitch": "+8Hz" }
+  },
+  "vocab": [
+    {
+      "word": "blanket",
+      "example": "Something moved under the blanket.",
+      "img": "story-03.png",
+      "alt": "a cream blanket on George's bed",
+      "audio": "vocab-blanket.mp3",
+      "example_audio": "vocab-blanket-ex.mp3"
+    },
+    {
+      "word": "whisper",
+      "example": "Big Eye spoke in a soft whisper.",
+      "img": "vocab-whisper.png",
+      "alt": "Big Eye whispering to George",
+      "audio": "vocab-whisper.mp3",
+      "example_audio": "vocab-whisper-ex.mp3"
+    },
+    {
+      "word": "tremble",
+      "example": "Big Eye began to tremble in the dark.",
+      "img": "vocab-tremble.png",
+      "alt": "Big Eye trembling near the curtain forest",
+      "audio": "vocab-tremble.mp3",
+      "example_audio": "vocab-tremble-ex.mp3"
+    },
+    {
+      "word": "footprint",
+      "example": "I can see tiny footprints on the mountain.",
+      "img": "story-09.png",
+      "alt": "tiny footprints on the blanket mountain",
+      "audio": "vocab-footprint.mp3",
+      "example_audio": "vocab-footprint-ex.mp3"
+    },
+    {
+      "word": "fern",
+      "example": "A green fern grew beside the sheet.",
+      "img": "story-12.png",
+      "alt": "small green ferns in the dream bedroom",
+      "audio": "vocab-fern.mp3",
+      "example_audio": "vocab-fern-ex.mp3"
+    },
+    {
+      "word": "nest",
+      "example": "Nibble could not find her warm nest.",
+      "img": "story-11.png",
+      "alt": "a warm nest of soft leaves near the pillow cave",
+      "audio": "vocab-nest.mp3",
+      "example_audio": "vocab-nest-ex.mp3"
+    },
+    {
+      "word": "brave",
+      "example": "We can be quiet, but we can still be brave.",
+      "img": "story-10.png",
+      "alt": "George encouraging Big Eye to be brave",
+      "audio": "vocab-brave.mp3",
+      "example_audio": "vocab-brave-ex.mp3"
+    },
+    {
+      "word": "lost",
+      "example": "The little dinosaur was lost in the dream.",
+      "img": "story-08.png",
+      "alt": "Nibble looking lost behind the blanket fold",
+      "audio": "vocab-lost.mp3",
+      "example_audio": "vocab-lost-ex.mp3"
+    },
+    {
+      "word": "glow",
+      "example": "The star night-light glowed softly.",
+      "img": "story-02.png",
+      "alt": "a star night-light glowing in the bedroom",
+      "audio": "vocab-glow.mp3",
+      "example_audio": "vocab-glow-ex.mp3"
+    },
+    {
+      "word": "adventure",
+      "example": "I think I had an adventure last night.",
+      "img": "story-12.png",
+      "alt": "George telling Daddy about his dream adventure",
+      "audio": "vocab-adventure.mp3",
+      "example_audio": "vocab-adventure-ex.mp3"
+    }
+  ],
+  "pages": [
+    {
+      "img": "story-01.png",
+      "alt": "Daddy reads a bedtime story while George holds Big Eye",
+      "lines": [
+        { "role": "narrator", "text": "It was late, and George was tucked under his warm blanket in the big bed.", "audio": "p01-01.mp3", "emotion": "calm" },
+        { "role": "narrator", "text": "Daddy sat beside him and opened one more story on the phone.", "audio": "p01-02.mp3", "emotion": "calm" },
+        { "role": "daddy", "text": "Just one more chapter, George. Then it is time to sleep.", "audio": "p01-03.mp3", "emotion": "soft" },
+        { "role": "george", "text": "Can Big Eye listen too? He likes adventures.", "audio": "p01-04.mp3", "emotion": "happy" },
+        { "role": "daddy", "text": "Of course. Good night soon, my brave boy.", "audio": "p01-05.mp3", "emotion": "soft" }
+      ]
+    },
+    {
+      "img": "story-02.png",
+      "alt": "George hugs Big Eye as the room grows dark",
+      "lines": [
+        { "role": "narrator", "text": "Daddy turned off the main light, and the room became quiet and still.", "audio": "p02-01.mp3", "emotion": "calm" },
+        { "role": "narrator", "text": "Only the little star night-light glowed softly on the table.", "audio": "p02-02.mp3", "emotion": "calm" },
+        { "role": "george", "text": "Good night, Daddy.", "audio": "p02-03.mp3", "emotion": "soft" },
+        { "role": "daddy", "text": "Sleep well, George. I will see you in the morning.", "audio": "p02-04.mp3", "emotion": "soft" },
+        { "role": "narrator", "text": "George pulled Big Eye close and closed his eyes, but he did not let go.", "audio": "p02-05.mp3", "emotion": "calm" }
+      ]
+    },
+    {
+      "img": "story-03.png",
+      "alt": "Something thumps under the cream blanket",
+      "lines": [
+        { "role": "narrator", "text": "Then, under the cream blanket, something went thump, thump, thump.", "audio": "p03-01.mp3", "emotion": "surprised" },
+        { "role": "bigeye", "text": "George! Did you hear that? Something is moving under the blanket!", "audio": "p03-02.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "I heard it, Big Eye. My feet are still. It is not me.", "audio": "p03-03.mp3", "emotion": "worried" },
+        { "role": "bigeye", "text": "What if it is a huge monster with sharp teeth?", "audio": "p03-04.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "Wait. Let us look again before we get scared.", "audio": "p03-05.mp3", "emotion": "calm" }
+      ]
+    },
+    {
+      "img": "story-04.png",
+      "alt": "Big Eye blinks three times and the room begins to change",
+      "lines": [
+        { "role": "narrator", "text": "Big Eye's one big eye opened wide, and he blinked once.", "audio": "p04-01.mp3", "emotion": "wonder" },
+        { "role": "narrator", "text": "The grey curtains turned silver in the moonlight, and the blanket rose like a little hill.", "audio": "p04-02.mp3", "emotion": "wonder" },
+        { "role": "bigeye", "text": "I can see something… Blink twice… blink three times…", "audio": "p04-03.mp3", "emotion": "whisper" },
+        { "role": "narrator", "text": "On the third blink, the whole bed began to change.", "audio": "p04-04.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "Whoa! Our room is turning into a dream!", "audio": "p04-05.mp3", "emotion": "surprised" }
+      ]
+    },
+    {
+      "img": "story-05.png",
+      "alt": "The blanket becomes a mountain with ferns growing beside the sheet",
+      "lines": [
+        { "role": "narrator", "text": "The cream blanket became a soft green mountain, and the pillow became a pale cave.", "audio": "p05-01.mp3", "emotion": "wonder" },
+        { "role": "narrator", "text": "Tiny ferns pushed up beside the sheet, but George could still see his bedroom hiding inside the dream.", "audio": "p05-02.mp3", "emotion": "wonder" },
+        { "role": "bigeye", "text": "I can see footprints on the mountain! Something small ran this way!", "audio": "p05-03.mp3", "emotion": "excited" },
+        { "role": "george", "text": "Then we should follow them. Stay close to me, Big Eye.", "audio": "p05-04.mp3", "emotion": "calm" },
+        { "role": "bigeye", "text": "Me? Follow a monster's footprints? Oh no…", "audio": "p05-05.mp3", "emotion": "fearful" }
+      ]
+    },
+    {
+      "img": "story-06.png",
+      "alt": "George lifts a fold in the blanket mountain while Big Eye hides behind him",
+      "lines": [
+        { "role": "narrator", "text": "Another thump came from behind a fold in the blanket mountain.", "audio": "p06-01.mp3", "emotion": "worried" },
+        { "role": "bigeye", "text": "It is thumping again! I do not want to look!", "audio": "p06-02.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "I will look first. Hold my hand, and breathe slowly.", "audio": "p06-03.mp3", "emotion": "soft" },
+        { "role": "narrator", "text": "George bent down carefully and lifted one corner of the blanket hill.", "audio": "p06-04.mp3", "emotion": "calm" },
+        { "role": "bigeye", "text": "I am holding your hand… I am still looking with my big eye…", "audio": "p06-05.mp3", "emotion": "whisper" }
+      ]
+    },
+    {
+      "img": "story-07.png",
+      "alt": "A tiny dinosaur peeks out from behind the blanket",
+      "lines": [
+        { "role": "narrator", "text": "A tiny dinosaur peeked out with round, worried eyes.", "audio": "p07-01.mp3", "emotion": "surprised" },
+        { "role": "bigeye", "text": "A dinosaur! I knew it! It will eat us!", "audio": "p07-02.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "No, Big Eye. Look carefully. It is no bigger than my knee.", "audio": "p07-03.mp3", "emotion": "calm" },
+        { "role": "nibble", "text": "Peep… peep…", "audio": "p07-04.mp3", "emotion": "soft" },
+        { "role": "george", "text": "Hello, little one. Are you lost? You look very frightened.", "audio": "p07-05.mp3", "emotion": "soft" }
+      ]
+    },
+    {
+      "img": "story-08.png",
+      "alt": "Nibble tells George she cannot find her nest",
+      "lines": [
+        { "role": "nibble", "text": "Peep! I cannot find my nest!", "audio": "p08-01.mp3", "emotion": "worried" },
+        { "role": "bigeye", "text": "It can talk! George, it is talking to us!", "audio": "p08-02.mp3", "emotion": "surprised" },
+        { "role": "george", "text": "Do not worry. We will help you. Where did you come from?", "audio": "p08-03.mp3", "emotion": "calm" },
+        { "role": "nibble", "text": "I was sleeping under the warm blanket. Then everything moved!", "audio": "p08-04.mp3", "emotion": "worried" },
+        { "role": "george", "text": "I think the dream moved you, not the other way. We can find your nest together.", "audio": "p08-05.mp3", "emotion": "calm" }
+      ]
+    },
+    {
+      "img": "story-09.png",
+      "alt": "George holds the star night-light while Big Eye spots footprints",
+      "lines": [
+        { "role": "bigeye", "text": "I can see more footprints! They go toward the curtain forest!", "audio": "p09-01.mp3", "emotion": "excited" },
+        { "role": "george", "text": "Good spotting, Big Eye. You have the best eyes in the dream.", "audio": "p09-02.mp3", "emotion": "happy" },
+        { "role": "narrator", "text": "George held the star night-light high, and a tiny beam pointed toward the grey curtains.", "audio": "p09-03.mp3", "emotion": "wonder" },
+        { "role": "nibble", "text": "My nest smells like warm leaves. I think it is near the pillow cave!", "audio": "p09-04.mp3", "emotion": "soft" },
+        { "role": "george", "text": "Then that is where we are going. One step at a time.", "audio": "p09-05.mp3", "emotion": "calm" }
+      ]
+    },
+    {
+      "img": "story-10.png",
+      "alt": "George and Big Eye walk through the darker curtain forest",
+      "lines": [
+        { "role": "narrator", "text": "Near the curtain forest, the dream room grew darker, and Big Eye began to tremble.", "audio": "p10-01.mp3", "emotion": "worried" },
+        { "role": "bigeye", "text": "It is too dark! What if something big is hiding in there?", "audio": "p10-02.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "We can be quiet, but we can still be brave. Look — I am here.", "audio": "p10-03.mp3", "emotion": "whisper" },
+        { "role": "george", "text": "Big Eye, you found the footprints. That was very brave already.", "audio": "p10-04.mp3", "emotion": "soft" },
+        { "role": "bigeye", "text": "Really? Then… then I will look one more time.", "audio": "p10-05.mp3", "emotion": "soft" }
+      ]
+    },
+    {
+      "img": "story-11.png",
+      "alt": "Nibble curls up in her nest near the pillow cave",
+      "lines": [
+        { "role": "narrator", "text": "At last, behind the pillow cave, they found a nest of soft leaves and moonlit threads.", "audio": "p11-01.mp3", "emotion": "happy" },
+        { "role": "nibble", "text": "My nest! I can smell the warm leaves!", "audio": "p11-02.mp3", "emotion": "happy" },
+        { "role": "narrator", "text": "The little dinosaur climbed in, tucked its nose under one leaf, and gave a happy little hum.", "audio": "p11-03.mp3", "emotion": "calm" },
+        { "role": "george", "text": "You are home now, Nibble. Sleep well.", "audio": "p11-04.mp3", "emotion": "soft" },
+        { "role": "bigeye", "text": "George… I was scared, but we did it. I think I am a little brave too.", "audio": "p11-05.mp3", "emotion": "happy" }
+      ]
+    },
+    {
+      "img": "story-12.png",
+      "alt": "George wakes up and finds a tiny fern leaf on his blanket",
+      "lines": [
+        { "role": "narrator", "text": "In the morning, George woke up in his own bed with Big Eye under his chin.", "audio": "p12-01.mp3", "emotion": "calm" },
+        { "role": "daddy", "text": "Good morning, George. Did you sleep well?", "audio": "p12-02.mp3", "emotion": "soft" },
+        { "role": "george", "text": "I think I had an adventure with Big Eye and a tiny dinosaur.", "audio": "p12-03.mp3", "emotion": "calm" },
+        { "role": "daddy", "text": "Did you? Show me.", "audio": "p12-04.mp3", "emotion": "soft" },
+        { "role": "narrator", "text": "George lifted the flat blanket. Near his pillow lay one tiny green fern leaf.", "audio": "p12-05.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "It was real… wasn't it?", "audio": "p12-06.mp3", "emotion": "wonder" }
+      ]
+    }
+  ],
+  "quizPick": 5,
+  "quiz": [
+    {
+      "q": "What sound did George hear under the blanket?",
+      "options": ["Thump, thump, thump", "Ring, ring, ring", "Splash, splash, splash"],
+      "answer": 0
+    },
+    {
+      "q": "What does Big Eye do before the room changes?",
+      "options": ["He sings a song", "He blinks three times", "He jumps off the bed"],
+      "answer": 1
+    },
+    {
+      "q": "How big is the dinosaur Nibble?",
+      "options": ["Bigger than Daddy", "No bigger than George's knee", "As small as a fly"],
+      "answer": 1
+    },
+    {
+      "q": "Who finds the footprints first?",
+      "options": ["Daddy", "Big Eye", "A bird"],
+      "answer": 1
+    },
+    {
+      "q": "What helps them find the way to the nest?",
+      "options": ["A big bus", "The star night-light", "A shopping bag"],
+      "answer": 1
+    },
+    {
+      "q": "What is Nibble looking for?",
+      "options": ["Her warm nest", "A pizza", "A red car"],
+      "answer": 0
+    },
+    {
+      "q": "What does George say when Big Eye is afraid in the dark?",
+      "options": ["Run away now", "We can still be brave", "Shout as loud as you can"],
+      "answer": 1
+    },
+    {
+      "q": "What is left on the blanket in the morning?",
+      "options": ["A tiny green fern leaf", "A big muddy boot", "A gold coin"],
+      "answer": 0
+    },
+    {
+      "q": "Who reads with George before sleep?",
+      "options": ["Daddy", "A bus driver", "Nibble"],
+      "answer": 0
+    },
+    {
+      "q": "At the end, Big Eye thinks he is…",
+      "options": ["A little brave too", "Very hungry", "Too tall"],
+      "answer": 0
+    }
+  ],
+  "phrases": ["Hold my hand", "Look carefully", "Stay close to me", "You are home now", "Let us look again", "We can still be brave"]
+}

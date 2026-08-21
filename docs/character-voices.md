@@ -19,10 +19,25 @@ Engine: [Microsoft Edge TTS](https://github.com/rany2/edge-tts) via `edge-tts` (
 | `pip` | Pip (green dragon) | `en-US-AnaNeural` | `+5%` | `+20Hz` | Young dragon; brighter/higher than George |
 | `ember` | Ember (red dragon) | `en-GB-MaisieNeural` | `+8%` | `+15Hz` | Baby sister dragon; soft British child |
 | `daddy` | Daddy | `en-GB-RyanNeural` | `-5%` | `-5Hz` | Warm British adult male |
+| `bigeye` | Big Eye (plush) | `en-US-AnaNeural` | `+5%` | `+20Hz` | Same lock as Pip (different chapter) |
+| `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` | Soft peep-like baby dinosaur |
 
 ### Distinguishing similar voices
 
-George and Pip both use `en-US-AnaNeural` but **different rate/pitch** — always keep both settings exact so listeners can tell them apart.
+George and Pip (and Big Eye) use `en-US-AnaNeural` — George keeps his own settings; **Pip and Big Eye share the same rate/pitch** (`+5%` / `+20Hz`). Distinguish them by story context and per-line `emotion`, not a different voice lock.
+
+| Role | Rate | Pitch |
+|------|------|-------|
+| George (Edge fallback) | `+12%` | `-10Hz` |
+| Pip | `+5%` | `+20Hz` |
+| Big Eye | `+5%` | `+20Hz` |
+
+Ember and Nibble both use `en-GB-MaisieNeural` but **different rate/pitch**:
+
+| Role | Rate | Pitch |
+|------|------|-------|
+| Ember | `+8%` | `+15Hz` |
+| Nibble | `+12%` | `+8Hz` |
 
 ---
 
@@ -81,3 +96,4 @@ Full notes: `docs/lesson-01-03-review.md`.
 | 1 | narrator, george, pip |
 | 2 | narrator, george, pip, ember |
 | 3 | narrator, george, pip, ember, daddy |
+| 4 | narrator, george, daddy, bigeye, nibble |
