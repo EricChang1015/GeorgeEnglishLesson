@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiniMax Speech 2.8 試聽 · Lesson 3</title>
+  <style>
+    body { font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem 3rem; background: #f6f1e6; color: #222; }
+    h1 { font-size: 1.3rem; }
+    .hint { color: #555; font-size: .95rem; }
+    section { background: #fff; border-radius: 12px; padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: 0 1px 4px #0001; }
+    h2 { font-size: 1.05rem; margin: 0 0 .3rem; }
+    .meta { color: #666; font-size: .85rem; margin: 0 0 .4rem; }
+    .line { margin: 0 0 .8rem; }
+    button.play { font-size: 1.05rem; padding: .55rem 1rem; border: 0; border-radius: 10px; background: #2b6cb0; color: #fff; cursor: pointer; }
+    button.play.playing { background: #c05621; }
+    button.play:disabled { opacity: .5; cursor: wait; }
+    .err { color: #a00; font-size: .9rem; margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <h1>MiniMax：George 男童候選（voice_id 第三輪）</h1>
+  <p class="hint">請用 Chrome / Edge。PlayfulGirl 已確認是小孩但偏女生；下面改測男童／少年。同一句方便比較。</p>
+  <div id="list"></div>
+  <script>
+    const BASE = "assets/lesson-03/voice-tests/";
+    const GEORGE_LINE = "Hello! Shall we look for berries near the cave? Don't worry, I can help you.";
+    const clips = [
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-a-strong-0.mp3", title: "A · Strong-WilledBoy", meta: "英文男童，原音高", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-b-strong-p3.mp3", title: "B · Strong-WilledBoy +3", meta: "同一把，略抬高偏奶", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-c-sadteen-0.mp3", title: "C · SadTeen", meta: "英文少年男聲", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-d-sadteen-p3.mp3", title: "D · SadTeen +3", meta: "少年男，略抬高", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-e-jp-innocent.mp3", title: "E · Japanese InnocentBoy", meta: "純真男童，英語可能帶口音", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-f-cute-boy.mp3", title: "F · cute_boy（原版 0.88 / +1）", meta: "上一輪你選的底", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-f2-cute-fast.mp3", title: "F2 · 稍快 1.05 / pitch 0", meta: "比 F 快一點、音高降一點", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-f2-lock.mp3", title: "F2 定稿 · 語速 1.1 / pitch 0", meta: "cute_boy（已鎖定）", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-f3-cute-fast-low.mp3", title: "F3 · 再快 1.10 / pitch -2", meta: "再快一點、再低一點", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-g-kr-innocent.mp3", title: "G · Korean InnocentBoy", meta: "韓系純真男童", text: GEORGE_LINE },
+      { group: "George 男童候選（voice_id 第三輪）", file: "gb-h-pure-boy.mp3", title: "H · Pure-hearted Boy", meta: "清澈鄰家弟弟", text: GEORGE_LINE },
+      { group: "對照：偏女生童聲", file: "san-id-playful.mp3", title: "PlayfulGirl（上一輪 1）", meta: "小孩但偏女生，作對照", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-default.mp3", title: "0 · 不指定 voice", meta: "Poe 預設，多半是成人聲", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-id-playful.mp3", title: "1 · voice_id = PlayfulGirl", meta: "官方童聲卡通", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-id-deep.mp3", title: "2 · voice_id = ManWithDeepVoice", meta: "超低成人男聲，應差很多", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-id-radiant.mp3", title: "3 · voice_id = radiant_girl", meta: "年輕女聲", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-id-lyrical.mp3", title: "4 · voice_id = Lyrical_Voice", meta: "Poe 網頁預設那把", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "音色測試（同一句、只換參數寫法）", file: "san-voice-playful.mp3", title: "5 · voice = PlayfulGirl（舊寫法）", meta: "上一輪用的 key，可能沒生效", text: "Hello! Shall we look for berries near the cave?" },
+      { group: "George 候選（上一輪，標籤可能不准）", file: "g1-strong-boy-p6.mp3", title: "A · Strong-WilledBoy + 高音", meta: "男童底聲，拉高音", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g2-sad-teen-p5.mp3", title: "B · SadTeen + 高音", meta: "少年男聲，拉高", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g3-playful-girl-low.mp3", title: "C · PlayfulGirl 略降", meta: "童聲卡通，略降成男孩感", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g4-soft-spoken-girl.mp3", title: "D · Soft-spokenGirl", meta: "軟、輕，偏奶", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g5-sweet-girl.mp3", title: "E · Sweet Girl", meta: "甜、幼", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g6-lovely-girl.mp3", title: "F · LovelyGirl", meta: "可愛", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g7-jp-innocent-boy.mp3", title: "G · Japanese InnocentBoy", meta: "純真男童（英語可能帶口音）", text: GEORGE_LINE },
+      { group: "George 候選（5 歲、偏奶音）", file: "g8-cute-boy.mp3", title: "H · cute_boy", meta: "可愛男童模板（英語可能帶口音）", text: GEORGE_LINE },
+      { group: "語速對照（同一把 PlayfulGirl）", file: "spd-slow.mp3", title: "慢 0.70×", meta: "給五歲聽的慢速", text: GEORGE_LINE },
+      { group: "語速對照（同一把 PlayfulGirl）", file: "spd-fast.mp3", title: "快 1.55×", meta: "興奮／趕路用", text: GEORGE_LINE }
+    ];
+    const player = new Audio();
+    let currentBtn = null;
+    const list = document.getElementById("list");
+    let lastGroup = "";
+    clips.forEach((clip) => {
+      if (clip.group && clip.group !== lastGroup) {
+        lastGroup = clip.group;
+        const h = document.createElement("h2");
+        h.textContent = clip.group;
+        h.style.marginTop = "1.6rem";
+        list.appendChild(h);
+      }
+      const sec = document.createElement("section");
+      sec.innerHTML = "<h2></h2><p class='meta'></p><p class='line'></p><button class='play' type='button'>▶ 播放</button><p class='err'></p>";
+      sec.querySelector("h2").textContent = clip.title;
+      sec.querySelector(".meta").textContent = clip.meta + " · " + clip.file;
+      sec.querySelector(".line").textContent = "「" + clip.text + "」";
+      const btn = sec.querySelector(".play");
+      const err = sec.querySelector(".err");
+      btn.addEventListener("click", () => {
+        err.textContent = "";
+        if (currentBtn === btn && !player.paused) {
+          player.pause();
+          btn.textContent = "▶ 播放";
+          btn.classList.remove("playing");
+          currentBtn = null;
+          return;
+        }
+        document.querySelectorAll("button.play").forEach((b) => {
+          b.textContent = "▶ 播放";
+          b.classList.remove("playing");
+        });
+        player.pause();
+        player.src = BASE + clip.file + "?v=f2lock";
+        player.play().then(() => {
+          btn.textContent = "■ 停止";
+          btn.classList.add("playing");
+          currentBtn = btn;
+        }).catch((e) => {
+          err.textContent = "無法播放：請用 Chrome / Edge 打開 http://localhost:3456/lessons/minimax-listen.html （" + e.message + "）";
+        });
+      });
+      player.addEventListener("ended", () => {
+        if (currentBtn) {
+          currentBtn.textContent = "▶ 播放";
+          currentBtn.classList.remove("playing");
+          currentBtn = null;
+        }
+      });
+      list.appendChild(sec);
+    });
+  </script>
+</body>
+</html>
