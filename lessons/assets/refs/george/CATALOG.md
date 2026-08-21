@@ -26,8 +26,9 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole).
 3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
-5. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
-6. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
+5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
+6. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
+7. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
 
 ## Photos
 
@@ -156,3 +157,49 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **tags:** outdoors, travel, mountains, bridge, selfie, daytime
 - **use_for:** George + Daddy + Sylvia outing / travel
 - **notes:** Overlook with green suspension bridge; Sylvia light cap + sunglasses
+
+### Favorite toy — Mike Wazowski
+
+George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters, Inc.*). He often sleeps hugging one (sometimes several). Draw the toy as a soft spherical green monster with one large eye, two small grey horns, a simple smile, and long thin limbs — not a dragon, and not a new character unless the lesson is about him.
+
+#### mike-plush-indoor-closeup.jpg
+- **priority:** primary
+- **people:** none
+- **tags:** mike-wazowski, plush, favorite-toy, doll, green, one-eye, horns, closeup, indoors
+- **use_for:** default Mike doll look (shape, eye, horns, smile, thin arms/legs)
+- **notes:** Seated lime-green sphere; large white eye with teal-blue iris; thin stitched smile; two small grey horns; grey claw tips. Cropped from a phone screenshot — use the toy only, ignore any leftover background clutter.
+
+#### mike-plush-bed-collection.jpg
+- **priority:** high
+- **people:** none
+- **tags:** mike-wazowski, plush, favorite-toy, doll, collection, bed, indoors
+- **use_for:** size/texture variants of the same doll (he owns more than one)
+- **notes:** Three lime-green Mike plushes on a car-print pillow. Top: shaggy/open-mouth. Middle + bottom: smoother fabric, stitched smile. Bottom has a Tokyo Disney Resort tag and a tiny brown teddy on its belly. Do not copy the pillow pattern into story art.
+
+#### george-solo-sofa-mike-plush-smile.jpg
+- **priority:** high
+- **people:** george
+- **tags:** solo, smile, indoors, sofa, home, mike-wazowski, plush, favorite-toy, drawing, front-facing
+- **use_for:** George holding his Mike doll; toy scale vs George; a calm front-facing face
+- **notes:** Dark green padded vest; holds a lime-green Mike plush in one hand and a hand-drawn Mike on paper. Prefer face + doll — do not copy the paper drawing into story art unless the scene is about his picture.
+
+#### george-solo-bed-mike-plush-sleep.jpg
+- **priority:** medium
+- **people:** george
+- **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, hug
+- **use_for:** bedtime / comfort; George asleep surrounded by Mike dolls
+- **notes:** Side-sleeping, hugging one Mike to his face, another on his shoulder, a larger green plush along his torso. Eyes closed — do not use for George face likeness.
+
+#### george-solo-bed-mike-plush-sleep-chin.jpg
+- **priority:** medium
+- **people:** george
+- **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, pajamas
+- **use_for:** one well-loved Mike tucked under George’s chin
+- **notes:** Light blue/white pajamas; cream quilt; Mike’s eye and grey horns clear beside his face. Eyes closed — do not use for George face likeness.
+
+#### george-solo-bed-mike-plush-sleep-chest.jpg
+- **priority:** medium
+- **people:** george
+- **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, pajamas
+- **use_for:** Mike resting on George’s chest while he sleeps
+- **notes:** On his back, arms up; white pajamas with light-blue cuffs; Mike on chest near the neck. Eyes closed — do not use for George face likeness.
