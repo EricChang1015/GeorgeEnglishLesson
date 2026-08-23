@@ -104,7 +104,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
 .voice-key .pip { background: var(--pip); color: #2b8a3e; }
 .voice-key .ember { background: var(--ember); color: #c92a2a; }
 .voice-key .daddy { background: var(--daddy); color: #5b3d8a; }
-.voice-key .bigeye { background: var(--pip); color: #2b8a3e; }
+.voice-key .mike { background: var(--pip); color: #2b8a3e; }
 .voice-key .nibble { background: var(--ember); color: #c92a2a; }
 .voice-key .narrator { background: var(--narrator); color: #8a5a00; }
 
@@ -120,7 +120,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
 .line.pip { background: var(--pip); border-color: #b6e6b8; }
 .line.ember { background: var(--ember); border-color: #ffb0b0; }
 .line.daddy { background: var(--daddy); border-color: #c9b3e8; }
-.line.bigeye { background: var(--pip); border-color: #b6e6b8; }
+.line.mike { background: var(--pip); border-color: #b6e6b8; }
 .line.nibble { background: var(--ember); border-color: #ffb0b0; }
 .line.playing, .vocab-card.playing, .sight-word.playing, .quiz-opt.playing {
   box-shadow: 0 0 0 3px #f0c000; border-color: #f0c000 !important;

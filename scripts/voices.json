@@ -48,14 +48,14 @@
       "locale": "British English",
       "notes": "George's father. First used Lesson 3."
     },
-    "bigeye": {
+    "mike": {
       "voice": "en-US-AnaNeural",
       "rate": "+5%",
       "pitch": "+20Hz",
-      "character": "Big Eye",
+      "character": "Mike",
       "kind": "plush-friend",
       "locale": "American English",
-      "notes": "George's one-eyed plush (Big Eye Dreams chapter). Same voice lock as Pip (+5% / +20Hz). First used Lesson 4."
+      "notes": "George's Mike Wazowski plush (Mike Dreams chapter). Same voice lock as Pip (+5% / +20Hz). First used Lesson 4."
     },
     "nibble": {
       "voice": "en-GB-MaisieNeural",
@@ -64,7 +64,7 @@
       "character": "Nibble",
       "kind": "dino-baby",
       "locale": "British English",
-      "notes": "Tiny lost baby dinosaur (Big Eye Dreams chapter). Soft peep-like child voice; lower pitch than Ember. First used Lesson 4."
+      "notes": "Tiny lost baby dinosaur (Mike Dreams chapter). Soft peep-like child voice; lower pitch than Ember. First used Lesson 4."
     }
   },
   "reserved": {

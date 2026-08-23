@@ -89,14 +89,14 @@ html = f"""<!DOCTYPE html>
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
     <section class="screen active" data-screen="0">
-      <img class="hero" src="assets/lesson-04/cover.webp" alt="George with Big Eye on a cozy bed, blanket moving underneath" />
+      <img class="hero" src="assets/lesson-04/cover.webp" alt="George with Mike on a cozy bed, blanket moving underneath" />
       <h1>George and the Dinosaur Under the Blanket</h1>
-      <div class="continue">Big Eye Dreams · George · Big Eye · Nibble · Daddy</div>
+      <div class="continue">Mike Dreams · George · Mike · Nibble · Daddy</div>
       <p class="hint">ORT Level 6 · Bedtime · Blanket mountain · Brave whisper</p>
       <div class="voice-key">
         <span class="narrator">Narrator</span>
         <span class="george">George (boy)</span>
-        <span class="bigeye">Big Eye</span>
+        <span class="mike">Mike</span>
         <span class="nibble">Nibble</span>
         <span class="daddy">Daddy</span>
       </div>
@@ -130,7 +130,7 @@ html = f"""<!DOCTYPE html>
 
     <section class="screen" data-screen="{phrases_screen}">
       <h2>Key Phrases</h2>
-      <p class="hint">Tap each phrase and say it with George &amp; Big Eye</p>
+      <p class="hint">Tap each phrase and say it with George &amp; Mike</p>
       <div class="sight-grid" id="sightGrid"></div>
       <p class="feedback" id="sightFeedback"></p>
       <div class="controls">
@@ -179,7 +179,7 @@ html = f"""<!DOCTYPE html>
       storageKey: "george-lesson-04-notes-v1",
       videoDir: "video/",
       videoPages: [],
-      roleLabel: {{ narrator: "Narrator", george: "George", bigeye: "Big Eye", nibble: "Nibble", daddy: "Daddy" }},
+      roleLabel: {{ narrator: "Narrator", george: "George", mike: "Mike", nibble: "Nibble", daddy: "Daddy" }},
       vocab: [
 {chr(10).join(vocab_js)}
       ],

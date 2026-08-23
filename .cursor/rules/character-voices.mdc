@@ -20,10 +20,10 @@ When a character speaks in a lesson, their `"voices"` entry in `scripts/lessonXX
 | `pip` | Pip (green dragon) | `en-US-AnaNeural` | `+5%` | `+20Hz` |
 | `ember` | Ember (red dragon) | `en-GB-MaisieNeural` | `+8%` | `+15Hz` |
 | `daddy` | Daddy | `en-GB-RyanNeural` | `-5%` | `-5Hz` |
-| `bigeye` | Big Eye (plush) | `en-US-AnaNeural` | `+5%` | `+20Hz` |
+| `mike` | Mike (plush) | `en-US-AnaNeural` | `+5%` | `+20Hz` |
 | `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` |
 
-George uses his own Ana / MiniMax lock. **Pip and Big Eye share the same Ana settings** (`+5%` / `+20Hz`); tell them apart by scene and per-line `emotion`.
+George uses his own Ana / MiniMax lock. **Pip and Mike share the same Ana settings** (`+5%` / `+20Hz`); tell them apart by scene and per-line `emotion`.
 
 ## New or returning characters
 1. If role exists in `scripts/voices.json` → copy settings into the lesson story JSON.
@@ -33,7 +33,7 @@ George uses his own Ana / MiniMax lock. **Pip and Big Eye share the same Ana set
 ## New dragons / dream creatures
 - Use the same child-dragon pattern as Pip/Ember (child neural voice + tuned rate/pitch).
 - Do **not** reuse Pip's or Ember's exact settings for a new dragon — give each dragon a distinct but still child-like voice.
-- Big Eye Dreams chapter: see `docs/big-eye-chapter.md` for `bigeye` and `nibble` locks.
+- Mike Dreams chapter: see `docs/big-eye-chapter.md` for `mike` and `nibble` locks.
 
 ## Delivery (emotion)
 - Role `{ voice, rate, pitch }` stays fixed across lessons.

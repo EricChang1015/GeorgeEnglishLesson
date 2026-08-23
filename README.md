@@ -4,7 +4,7 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lessons
 
-Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts a new chapter (**Big Eye Dreams**). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md). Big Eye chapter: [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
+Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts a new chapter (**Mike Dreams**). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md). Mike chapter: [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
 
 ### Lesson 1 — `lessons/lesson-01.html`
 **George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
@@ -16,7 +16,7 @@ Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts a n
 **George and the Storm on the Hill** (ORT Level 6): berry path, storm, bear, cave shelter; Daddy climbs up. Safety phrases + Daddy voice.
 
 ### Lesson 4 — `lessons/lesson-04.html`
-**George and the Dinosaur Under the Blanket** (ORT Level 6, **Big Eye Dreams** ch.1): bedtime with Big Eye, blanket thump, dream adventure, help Nibble find her nest; morning fern leaf. See [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
+**George and the Dinosaur Under the Blanket** (ORT Level 6, **Mike Dreams** ch.1): bedtime with Mike, blanket thump, dream adventure, help Nibble find her nest; morning fern leaf. See [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
 
 Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz with A/B/C voice, Auto read, swipe / jump-to-page, tutor notes.
 

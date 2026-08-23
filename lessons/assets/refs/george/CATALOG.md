@@ -216,7 +216,7 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **priority:** high
 - **people:** george
 - **tags:** solo, sleep, bedtime, indoors, bed, home, mike-wazowski, plush, favorite-toy, hug, pajamas, side-sleep
-- **use_for:** strongest bedtime sleeping pose with one well-loved Big Eye / Mike plush; George hugging the toy against his face; blanket partly covering him
+- **use_for:** strongest bedtime sleeping pose with George's Mike plush; George hugging the toy against his face; blanket partly covering him
 - **notes:** Side-sleeping on pale blue sheet with car-print pillow; white short-sleeve pajamas with tiny colorful prints; green blanket and cream quilt nearby. Use pose, bedding palette, and plush-hugging comfort beat. Eyes closed — do not use for George face likeness.
 
 ### Bedroom / bedtime scene anchors
@@ -225,5 +225,5 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **priority:** high
 - **people:** none
 - **tags:** bedroom, bed, bedtime, home, mike-wazowski, plush, favorite-toy, cream-blanket, grey-curtains, scene-anchor
-- **use_for:** George bedroom layout; cream bedsheet / blanket texture; grey curtains; bed surface for "blanket mountain" dream transition; multiple Big Eye plush placement
+- **use_for:** George bedroom layout; cream bedsheet / blanket texture; grey curtains; bed surface for "blanket mountain" dream transition; multiple Mike plush placement
 - **notes:** Wide bed view with beige padded headboard, cream sheet/blanket, grey curtains, and two lime-green one-eyed plush toys lying apart. Use as the real bedroom anchor before the room transforms. Do not copy clutter literally; simplify into a cozy picture-book bedroom.

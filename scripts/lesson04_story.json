@@ -2,9 +2,9 @@
   "id": "lesson-04",
   "title": "George and the Dinosaur Under the Blanket",
   "level": "ORT Level 6",
-  "chapter": "Big Eye Dreams",
+  "chapter": "Mike Dreams",
   "learning": {
-    "summary_zh": "睡前 George 與膽小的 Big Eye 發現棉被下有聲響；房間不可思議地變了，他們幫迷路的小恐龍 Nibble 找巢；早晨棉被上留下一片蕨葉。",
+    "summary_zh": "睡前 George 與膽小的 Mike 發現棉被下有聲響；房間不可思議地變了，他們幫迷路的小恐龍 Nibble 找巢；早晨棉被上留下一片蕨葉。",
     "focus_en": [
       "Bedtime words: blanket, whisper, glow, adventure",
       "Observation: footprint, look carefully, I can see",
@@ -13,8 +13,8 @@
     ],
     "tutor_prompts_zh": [
       "問：棉被下面的 thump 是什麼？（小恐龍 Nibble，不是怪獸）",
-      "問：Big Eye 很怕的時候，George 說了什麼？（Hold my hand / Look carefully / We can still be brave）",
-      "問：他們怎麼找到 nest？（腳印 + 星星夜燈 + Big Eye 幫忙看）",
+      "問：Mike 很怕的時候，George 說了什麼？（Hold my hand / Look carefully / We can still be brave）",
+      "問：他們怎麼找到 nest？（腳印 + 星星夜燈 + Mike 幫忙看）",
       "問：醒來後留下什麼證據？（一片小蕨葉）"
     ]
   },
@@ -29,7 +29,7 @@
       "volume": 1.0
     },
     "daddy": { "voice": "en-GB-RyanNeural", "rate": "-5%", "pitch": "-5Hz" },
-    "bigeye": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" },
+    "mike": { "voice": "en-US-AnaNeural", "rate": "+5%", "pitch": "+20Hz" },
     "nibble": { "voice": "en-GB-MaisieNeural", "rate": "+12%", "pitch": "+8Hz" }
   },
   "vocab": [
@@ -43,17 +43,17 @@
     },
     {
       "word": "whisper",
-      "example": "Big Eye spoke in a soft whisper.",
+      "example": "Mike spoke in a soft whisper.",
       "img": "vocab-whisper.png",
-      "alt": "Big Eye whispering to George",
+      "alt": "Mike whispering to George",
       "audio": "vocab-whisper.mp3",
       "example_audio": "vocab-whisper-ex.mp3"
     },
     {
       "word": "tremble",
-      "example": "Big Eye began to tremble in the dark.",
+      "example": "Mike began to tremble in the dark.",
       "img": "vocab-tremble.png",
-      "alt": "Big Eye trembling near the curtain forest",
+      "alt": "Mike trembling near the curtain forest",
       "audio": "vocab-tremble.mp3",
       "example_audio": "vocab-tremble-ex.mp3"
     },
@@ -85,7 +85,7 @@
       "word": "brave",
       "example": "We can be quiet, but we can still be brave.",
       "img": "story-10.png",
-      "alt": "George encouraging Big Eye to be brave",
+      "alt": "George encouraging Mike to be brave",
       "audio": "vocab-brave.mp3",
       "example_audio": "vocab-brave-ex.mp3"
     },
@@ -117,21 +117,21 @@
   "pages": [
     {
       "img": "story-01.png",
-      "alt": "Daddy reads a bedtime story while George holds Big Eye",
+      "alt": "Daddy reads a bedtime story while George holds Mike",
       "lines": [
         { "role": "narrator", "text": "It was late, and George was tucked under his warm blanket in the big bed.", "audio": "p01-01.mp3", "emotion": "calm" },
-        { "role": "narrator", "text": "Daddy sat beside him and read one last story from the phone.", "audio": "p01-02.mp3", "emotion": "calm" },
+        { "role": "narrator", "text": "Daddy sat beside him and read one last story from a picture book.", "audio": "p01-02.mp3", "emotion": "calm" },
         { "role": "daddy", "text": "Just one more chapter, George. Then it is time to sleep.", "audio": "p01-03.mp3", "emotion": "soft" },
-        { "role": "george", "text": "Can Big Eye listen too? He likes adventures.", "audio": "p01-04.mp3", "emotion": "happy" }
+        { "role": "george", "text": "Can Mike listen too? He likes adventures.", "audio": "p01-04.mp3", "emotion": "happy" }
       ]
     },
     {
       "img": "story-02.png",
-      "alt": "George hugs Big Eye as the room grows dark",
+      "alt": "George sleeps hugging Mike with only the star lamp glowing",
       "lines": [
-        { "role": "narrator", "text": "When the story ended, Daddy kissed George good night and turned off the main light.", "audio": "p02-01.mp3", "emotion": "calm" },
+        { "role": "narrator", "text": "When the story ended, Daddy kissed George good night and switched off the main light.", "audio": "p02-01.mp3", "emotion": "calm" },
         { "role": "narrator", "text": "Only the little star lamp was left, glowing softly beside the bed.", "audio": "p02-02.mp3", "emotion": "calm" },
-        { "role": "george", "text": "Good night, Big Eye. Hold my hand until I fall asleep.", "audio": "p02-03.mp3", "emotion": "calm" }
+        { "role": "narrator", "text": "George lay on his side, hugging Mike under the warm blanket, and soon he was fast asleep.", "audio": "p02-03.mp3", "emotion": "calm" }
       ]
     },
     {
@@ -139,17 +139,17 @@
       "alt": "Something thumps under the cream blanket",
       "lines": [
         { "role": "narrator", "text": "George had almost closed his eyes when something under the blanket went thump, thump, thump.", "audio": "p03-01.mp3", "emotion": "surprised" },
-        { "role": "bigeye", "text": "George, did you hear that? Something is moving under the blanket!", "audio": "p03-02.mp3", "emotion": "fearful" },
+        { "role": "mike", "text": "George, did you hear that? Something is moving under the blanket!", "audio": "p03-02.mp3", "emotion": "fearful" },
         { "role": "george", "text": "My feet did not move. Let us look again, very carefully.", "audio": "p03-03.mp3", "emotion": "worried" }
       ]
     },
     {
       "img": "story-04.png",
-      "alt": "Big Eye blinks three times and the room begins to change",
+      "alt": "Mike blinks three times while George holds him in the moonlit bed",
       "lines": [
-        { "role": "narrator", "text": "Big Eye blinked once, twice, then three times, and a soft green light filled the room.", "audio": "p04-01.mp3", "emotion": "wonder" },
-        { "role": "narrator", "text": "The grey curtains shone like silver trees, and the blanket rose beneath them like a hill.", "audio": "p04-02.mp3", "emotion": "wonder" },
-        { "role": "george", "text": "Big Eye, what is happening to our room?", "audio": "p04-03.mp3", "emotion": "surprised" }
+        { "role": "narrator", "text": "George sat up in bed and held Mike close in the quiet, moonlit room.", "audio": "p04-01.mp3", "emotion": "calm" },
+        { "role": "narrator", "text": "Mike blinked once, twice, then three times, and his big eye shone with a soft green light.", "audio": "p04-02.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "Mike, what is happening to our room?", "audio": "p04-03.mp3", "emotion": "surprised" }
       ]
     },
     {
@@ -157,18 +157,18 @@
       "alt": "The blanket becomes a mountain with ferns growing beside the sheet",
       "lines": [
         { "role": "narrator", "text": "The blanket had become a soft green mountain, with a pillow cave at the very top.", "audio": "p05-01.mp3", "emotion": "wonder" },
-        { "role": "narrator", "text": "Small green ferns grew beside the sheet, and tiny footprints led up the slope.", "audio": "p05-02.mp3", "emotion": "wonder" },
-        { "role": "bigeye", "text": "Look! I can see tiny footprints on the mountain!", "audio": "p05-03.mp3", "emotion": "surprised" },
-        { "role": "george", "text": "We should follow them. Stay close to me, Big Eye.", "audio": "p05-04.mp3", "emotion": "calm" }
+        { "role": "narrator", "text": "The grey curtains hung like silver trees, and tiny footprints led up the green slope.", "audio": "p05-02.mp3", "emotion": "wonder" },
+        { "role": "mike", "text": "Look! I can see tiny footprints on the mountain!", "audio": "p05-03.mp3", "emotion": "surprised" },
+        { "role": "george", "text": "We should follow them. Stay close to me, Mike.", "audio": "p05-04.mp3", "emotion": "calm" }
       ]
     },
     {
       "img": "story-06.png",
-      "alt": "George lifts a fold in the blanket mountain while Big Eye hides behind him",
+      "alt": "George lifts a fold in the blanket mountain while Mike stays close beside him",
       "lines": [
-        { "role": "narrator", "text": "They climbed a little way when another thump came from behind a fold in the blanket.", "audio": "p06-01.mp3", "emotion": "worried" },
-        { "role": "george", "text": "Hold my hand, Big Eye. I will look first, and you can stay right behind me.", "audio": "p06-02.mp3", "emotion": "calm" },
-        { "role": "bigeye", "text": "All right, but please do not let go of my hand.", "audio": "p06-03.mp3", "emotion": "whisper" }
+        { "role": "narrator", "text": "George lifted a fold in the blanket mountain, and a soft green glow shone from underneath.", "audio": "p06-01.mp3", "emotion": "worried" },
+        { "role": "george", "text": "Hold my hand, Mike. I will look first, and you can stay right behind me.", "audio": "p06-02.mp3", "emotion": "calm" },
+        { "role": "mike", "text": "All right, but please do not let go of my hand.", "audio": "p06-03.mp3", "emotion": "whisper" }
       ]
     },
     {
@@ -176,8 +176,8 @@
       "alt": "A tiny dinosaur peeks out from behind the blanket",
       "lines": [
         { "role": "narrator", "text": "George lifted the fold gently, and a tiny dinosaur peeked out with round, worried eyes.", "audio": "p07-01.mp3", "emotion": "surprised" },
-        { "role": "bigeye", "text": "A dinosaur! George, it might be a monster!", "audio": "p07-02.mp3", "emotion": "fearful" },
-        { "role": "george", "text": "Look carefully, Big Eye. It is little, and it looks frightened, not fierce.", "audio": "p07-03.mp3", "emotion": "calm" }
+        { "role": "mike", "text": "A dinosaur! George, it might be a monster!", "audio": "p07-02.mp3", "emotion": "fearful" },
+        { "role": "george", "text": "Look carefully, Mike. It is little, and it looks frightened, not fierce.", "audio": "p07-03.mp3", "emotion": "calm" }
       ]
     },
     {
@@ -191,19 +191,19 @@
     },
     {
       "img": "story-09.png",
-      "alt": "George holds the star night-light while Big Eye spots footprints",
+      "alt": "George holds the star night-light while Mike spots footprints",
       "lines": [
-        { "role": "bigeye", "text": "The footprints go towards the curtain forest! I can see them clearly.", "audio": "p09-01.mp3", "emotion": "excited" },
+        { "role": "mike", "text": "The footprints go towards the curtain forest! I can see them clearly.", "audio": "p09-01.mp3", "emotion": "excited" },
         { "role": "narrator", "text": "George raised the star lamp high, and its warm beam lit a narrow path between the curtains.", "audio": "p09-02.mp3", "emotion": "wonder" },
         { "role": "george", "text": "One step at a time. Nibble, follow the footprints with us.", "audio": "p09-03.mp3", "emotion": "calm" }
       ]
     },
     {
       "img": "story-10.png",
-      "alt": "George and Big Eye walk through the darker curtain forest",
+      "alt": "George and Mike walk through the darker curtain forest",
       "lines": [
-        { "role": "narrator", "text": "Beneath the tall curtains, the path grew darker, and Big Eye began to tremble.", "audio": "p10-01.mp3", "emotion": "worried" },
-        { "role": "bigeye", "text": "It is too dark in here! What if something big is hiding in the curtain forest?", "audio": "p10-02.mp3", "emotion": "fearful" },
+        { "role": "narrator", "text": "Beneath the tall curtains, the path grew darker, and Mike began to tremble.", "audio": "p10-01.mp3", "emotion": "worried" },
+        { "role": "mike", "text": "It is too dark in here! What if something big is hiding in the curtain forest?", "audio": "p10-02.mp3", "emotion": "fearful" },
         { "role": "george", "text": "We can be quiet, but we can still be brave. I am right beside you.", "audio": "p10-03.mp3", "emotion": "whisper" }
       ]
     },
@@ -214,16 +214,16 @@
         { "role": "narrator", "text": "At last they reached the pillow cave, where a nest of warm leaves waited in the moonlight.", "audio": "p11-01.mp3", "emotion": "wonder" },
         { "role": "nibble", "text": "My nest! We found it! Peep, peep!", "audio": "p11-02.mp3", "emotion": "happy" },
         { "role": "george", "text": "You are home now, Nibble. Sleep well in your warm nest.", "audio": "p11-03.mp3", "emotion": "calm" },
-        { "role": "bigeye", "text": "I was scared, but I kept looking, and we found the way.", "audio": "p11-04.mp3", "emotion": "happy" }
+        { "role": "mike", "text": "I was scared, but I kept looking, and we found the way.", "audio": "p11-04.mp3", "emotion": "happy" }
       ]
     },
     {
       "img": "story-12.png",
-      "alt": "George wakes up and finds a tiny fern leaf on his blanket",
+      "alt": "George wakes beside Mike and finds a tiny fern leaf on the blanket",
       "lines": [
-        { "role": "narrator", "text": "In the morning, George woke beside Big Eye and found a tiny green fern leaf on the blanket.", "audio": "p12-01.mp3", "emotion": "wonder" },
-        { "role": "george", "text": "Daddy, look! Where did this leaf come from? It was not here last night.", "audio": "p12-02.mp3", "emotion": "surprised" },
-        { "role": "daddy", "text": "I do not know, George. It looks very strange. Do you know where it came from?", "audio": "p12-03.mp3", "emotion": "wonder" }
+        { "role": "narrator", "text": "In the morning, George woke beside Mike and found a tiny green fern leaf on the blanket.", "audio": "p12-01.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "Mike, look! Where did this leaf come from? It was not here last night.", "audio": "p12-02.mp3", "emotion": "surprised" },
+        { "role": "narrator", "text": "George held the fern leaf up to the light, but neither of them could explain it.", "audio": "p12-03.mp3", "emotion": "wonder" }
       ]
     }
   ],
@@ -235,7 +235,7 @@
       "answer": 0
     },
     {
-      "q": "What does Big Eye do before the room changes?",
+      "q": "What does Mike do before the room changes?",
       "options": ["He sings a song", "He blinks three times", "He jumps off the bed"],
       "answer": 1
     },
@@ -246,7 +246,7 @@
     },
     {
       "q": "Who finds the footprints first?",
-      "options": ["Daddy", "Big Eye", "A bird"],
+      "options": ["Daddy", "Mike", "A bird"],
       "answer": 1
     },
     {
@@ -260,7 +260,7 @@
       "answer": 0
     },
     {
-      "q": "What does George say when Big Eye is afraid in the dark?",
+      "q": "What does George say when Mike is afraid in the dark?",
       "options": ["Run away now", "We can still be brave", "Shout as loud as you can"],
       "answer": 1
     },
@@ -275,7 +275,7 @@
       "answer": 0
     },
     {
-      "q": "What did Big Eye do even though he was scared?",
+      "q": "What did Mike do even though he was scared?",
       "options": ["He kept looking", "He ran away", "He went to sleep"],
       "answer": 0
     }
