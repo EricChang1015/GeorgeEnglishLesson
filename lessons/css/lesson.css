@@ -91,6 +91,11 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
   width: 100%; border-radius: 16px; display: block;
   margin: 0 auto 16px; max-height: 380px; object-fit: cover; background: #f3f3f3;
 }
+.hero-full {
+  object-fit: contain;
+  max-height: 420px;
+  background: #f7f0e6;
+}
 .hero.is-loading { min-height: 200px; }
 .hero.loaded { animation: fadeIn 0.2s ease; }
 .hint { text-align: center; color: #666; font-size: 1rem; margin: 0 0 10px; }

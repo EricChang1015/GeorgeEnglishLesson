@@ -139,9 +139,12 @@ def resolve_minimax_delivery(job: dict) -> dict:
     tag = (job.get("emotion") or "calm").lower()
     preset = MINIMAX_DELIVERY.get(tag, MINIMAX_DELIVERY["calm"])
     override = job.get("delivery") or {}
+    base_speed = float(cfg.get("speed", 1.30))
+    scale = base_speed / 1.30
+    preset_speed = float(preset.get("speed", base_speed)) * scale
     return {
         "minimax_emotion": override.get("minimax_emotion") or preset["minimax_emotion"],
-        "speed": float(override.get("speed", preset.get("speed", cfg.get("speed", 1.30)))),
+        "speed": float(override.get("speed", preset_speed)),
         "pitch": int(override.get("pitch", preset.get("pitch", cfg.get("pitch", 0)))),
         "volume": float(override.get("volume", preset.get("volume", cfg.get("volume", 1.0)))),
     }

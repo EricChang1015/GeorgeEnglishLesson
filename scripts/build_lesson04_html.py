@@ -10,8 +10,8 @@ phrase_map = {
     "Hold my hand": "p06-02.mp3",
     "Look carefully": "p07-03.mp3",
     "Stay close to me": "p05-04.mp3",
-    "You are home now": "p11-02.mp3",
-    "Let us look again": "p03-03.mp3",
+    "You are home now": "p11-03.mp3",
+    "Let us look again": "p04-03.mp3",
     "We can still be brave": "p10-03.mp3",
 }
 
@@ -80,7 +80,7 @@ html = f"""<!DOCTYPE html>
 <body>
   <div class="app">
     <header class="top">
-      <div class="brand">👁 George English · Lesson 4</div>
+      <div class="brand">🐉 George English · Lesson 4</div>
       <nav class="nav-links">
         <a href="lesson-03.html">Lesson 3</a>
         <a href="../index.html">All lessons</a>
@@ -89,10 +89,10 @@ html = f"""<!DOCTYPE html>
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
     <section class="screen active" data-screen="0">
-      <img class="hero" src="assets/lesson-04/cover.webp" alt="George with Mike on a cozy bed, blanket moving underneath" />
+      <img class="hero hero-full" src="assets/lesson-04/cover.webp" alt="George smiles in bed holding a small Mike plush" />
       <h1>George and the Dinosaur Under the Blanket</h1>
       <div class="continue">Mike Dreams · George · Mike · Nibble · Daddy</div>
-      <p class="hint">ORT Level 6 · Bedtime · Blanket mountain · Brave whisper</p>
+      <p class="hint">ORT Level 6 · Bedtime · Blanket hill · Brave whisper</p>
       <div class="voice-key">
         <span class="narrator">Narrator</span>
         <span class="george">George (boy)</span>
@@ -148,7 +148,7 @@ html = f"""<!DOCTYPE html>
           <li>Word → sentence practice (e.g. blanket → Something moved under the blanket.)</li>
           <li>Observation: footprint · Look carefully · I can see</li>
           <li>Ask: What was under the blanket? (Nibble, not a monster)</li>
-          <li>Ask: What proof was left in the morning? (a tiny fern leaf)</li>
+          <li>Ask: What proof was left in the morning? (a tiny fern leaf, like Nibble's nest)</li>
         </ul>
       </div>
       <div class="notes" id="notesForm">

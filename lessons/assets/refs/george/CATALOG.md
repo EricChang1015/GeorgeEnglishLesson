@@ -27,7 +27,7 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
 5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
-6. **Bedroom / bedtime scene:** use `mike-plush-bedroom-bed-scattered.jpg` for George's actual bed layout, curtains, cream blanket, and plush placement; use `george-daddy-bedtime-reading.jpg` for bedtime reading posture.
+6. **Bedroom / bedtime scene:** use `mike-plush-bedroom-bed-scattered.jpg` for George's actual bed layout, cream blanket, far-wall grey curtains, and plush placement; use `george-daddy-bedtime-reading.jpg` for bedtime reading posture **and the left-of-bed wall** (plain cream wall + beige headboard, **no window/curtains** on that side).
 7. Read the photo with the Read tool before generating art; keep likeness consistent across a lesson.
 8. Never copy a photo into a published lesson page; generate new picture-book illustrations inspired by these refs.
 
@@ -117,8 +117,8 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **priority:** high
 - **people:** george, daddy
 - **tags:** indoors, bed, bedtime, reading, phone, cozy, daddy, blanket
-- **use_for:** bedtime story / shared reading posture; Daddy and George tucked in together; warm evening room mood
-- **notes:** Beige padded headboard with wood trim; Daddy in glasses and blue-grey raglan sleep shirt; George beside him under a white blanket with animal print. Use posture, closeness, bed setup, and bedtime mood. Do not copy phone UI, timestamp, or exact blanket artwork into published story art.
+- **use_for:** bedtime story / shared reading posture; Daddy and George tucked in together; **Lesson 4 p1 room layout** (left of bed)
+- **notes:** Beige padded headboard with dark-wood curved trim against a **plain cream wall**. **No window and no curtains on the left of this camera** — that wall is solid. Daddy in glasses and blue-grey raglan sleep shirt; George beside him. Use posture, closeness, bed setup, and bedtime mood. Do not copy phone UI, timestamp, or exact blanket artwork into published story art. Grey curtains belong on the far wall only (see `mike-plush-bedroom-bed-scattered.jpg`), not beside the headboard.
 
 #### george-daddy-outdoors-lifevest-smile.jpg
 - **priority:** high
@@ -225,5 +225,12 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **priority:** high
 - **people:** none
 - **tags:** bedroom, bed, bedtime, home, mike-wazowski, plush, favorite-toy, cream-blanket, grey-curtains, scene-anchor
-- **use_for:** George bedroom layout; cream bedsheet / blanket texture; grey curtains; bed surface for "blanket mountain" dream transition; multiple Mike plush placement
+- **use_for:** George bedroom layout; cream bedsheet / blanket texture; grey curtains; bed surface for "blanket hill" dream transition; multiple Mike plush placement
 - **notes:** Wide bed view with beige padded headboard, cream sheet/blanket, grey curtains, and two lime-green one-eyed plush toys lying apart. Use as the real bedroom anchor before the room transforms. Do not copy clutter literally; simplify into a cozy picture-book bedroom.
+
+#### george-bedroom-bird-lamp-product.jpg
+- **priority:** high
+- **people:** none
+- **tags:** bedroom, lamp, night-light, bird-lamp, alarm-clock, prop, scene-anchor
+- **use_for:** George's little lamp in RealBedroom and dream scenes; replace star night-light
+- **notes:** Chubby glowing bird body, tiny black dot eyes, small yellow-orange beak, three-prong fan tail, white clock panel on lower belly. Scale lock: fist-sized / ankle-high vs standing George (see `lessons/assets/refs/cast/mike-nibble-sheet.png`). In Hill/Forest dream art: keep fist-sized, hide clock digits. No bedside table lamp in story art.

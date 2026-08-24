@@ -75,6 +75,7 @@ Parent review (Lessons 1–3): role voices are stable, but **speed / tone / feel
 
 - Plan: add per-line `emotion` in each `scripts/lessonXX_story.json` (`wonder`, `worried`, `whisper`, `happy`, …).
 - **Lesson 3 George:** MiniMax `cute_boy` F2 · baseline speed **1.30×** + optional per-line `delivery`. Use **`delivery.segments`** for clause-level speed (intonation); keep **pitch at ±1–2** only. Whisper/tense = fearful + slightly lower volume, not deep pitch.
+- **Lesson 4 George:** same MiniMax `cute_boy` F2 lock, baseline speed **1.50×** in `scripts/lesson04_story.json` (L3 stays 1.30×). The generator scales per-line delivery speed from this baseline.
 - Edge TTS has no usable custom `express-as` SSML.
 
 Full notes: `docs/lesson-01-03-review.md`.
