@@ -1,0 +1,12 @@
+---
+description: 建課／改故事必守的產線閘門（先分鏡簽核，後圖後音）
+alwaysApply: true
+---
+
+# Lesson pipeline gates
+
+建新課或改故事時，先讀並遵守 `.cursor/skills/lesson-production-pipeline/SKILL.md`。三條硬規則：
+
+1. **GATE 1：** 12 頁分鏡（含逐頁對白、emotion、圖上必見證據）未經家長逐頁確認前，**不准**產生課文插圖或整包 TTS。角色名字在分鏡前定案，之後不改。
+2. **改文動到畫面 → 預設重畫受影響頁**，不准保舊圖造成圖文脫節；任何改動先列影響表（圖／音／quiz／docs），一批做完、同一 commit 同步篇章 doc。
+3. 出圖一律 bible-first、逐頁 QA（`.cursor/skills/picture-book-consistency/SKILL.md`）；比例尺或新角色先給家長看 sheet 再畫內頁。

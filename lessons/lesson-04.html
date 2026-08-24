@@ -94,7 +94,7 @@
         <strong>Learning focus</strong>
         <ul>
           <li>Word → sentence practice (e.g. blanket → Something moved under the blanket.)</li>
-          <li>Observation: footprint · Look carefully · I can see</li>
+          <li>Observation: footprint · tiny footprints · I can see</li>
           <li>Ask: What was under the blanket? (Nibble, not a monster)</li>
           <li>Ask: What proof was left in the morning? (a tiny fern leaf, like Nibble's nest)</li>
         </ul>
@@ -103,7 +103,7 @@
         <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
         <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
         <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
-        <label><input type="checkbox" data-note="bedtime_phrases" /> Practised key phrases (Hold my hand / Look carefully)</label>
+        <label><input type="checkbox" data-note="bedtime_phrases" /> Practised key phrases (Hold my hand / Stay close to me)</label>
         <label><input type="checkbox" data-note="mystery_talk" /> Talked about the mysterious adventure</label>
         <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
         <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
@@ -133,10 +133,10 @@
         { word: "whisper", example: "Mike spoke in a soft whisper.", img: "story-03.png", alt: "Mike softly waking George on the bed", audio: "audio/vocab-whisper.mp3", exampleAudio: "audio/vocab-whisper-ex.mp3" },
         { word: "tremble", example: "Mike began to tremble in the dark.", img: "vocab-tremble.png", alt: "Mike trembling near the curtain forest", audio: "audio/vocab-tremble.mp3", exampleAudio: "audio/vocab-tremble-ex.mp3" },
         { word: "footprint", example: "I can see tiny footprints on the hill.", img: "story-05.png", alt: "tiny footprints on the green blanket hill", audio: "audio/vocab-footprint.mp3", exampleAudio: "audio/vocab-footprint-ex.mp3" },
-        { word: "fern", example: "The nest was made of soft green ferns.", img: "story-12.png", alt: "a tiny green fern leaf on the morning blanket", audio: "audio/vocab-fern.mp3", exampleAudio: "audio/vocab-fern-ex.mp3" },
+        { word: "fern", example: "The nest was made of soft green ferns.", img: "vocab-fern.png", alt: "a green fern frond with feathery leaflets", audio: "audio/vocab-fern.mp3", exampleAudio: "audio/vocab-fern-ex.mp3" },
         { word: "nest", example: "Nibble could not find her warm nest.", img: "story-11.png", alt: "a warm nest of green ferns in the curtain forest", audio: "audio/vocab-nest.mp3", exampleAudio: "audio/vocab-nest-ex.mp3" },
-        { word: "brave", example: "We can be quiet, but we can still be brave.", img: "story-10.png", alt: "George encouraging Mike to be brave", audio: "audio/vocab-brave.mp3", exampleAudio: "audio/vocab-brave-ex.mp3" },
-        { word: "lost", example: "The little dinosaur was lost under the blanket.", img: "story-08.png", alt: "Nibble looking lost behind the blanket fold", audio: "audio/vocab-lost.mp3", exampleAudio: "audio/vocab-lost-ex.mp3" },
+        { word: "brave", example: "We can be brave together.", img: "story-10.png", alt: "George encouraging Mike to be brave", audio: "audio/vocab-brave.mp3", exampleAudio: "audio/vocab-brave-ex.mp3" },
+        { word: "lost", example: "My name is Nibble, and I am lost.", img: "story-08.png", alt: "Nibble looking lost behind the blanket fold", audio: "audio/vocab-lost.mp3", exampleAudio: "audio/vocab-lost-ex.mp3" },
         { word: "glow", example: "The little lamp glowed softly.", img: "story-02.png", alt: "the little bird lamp glowing in the bedroom", audio: "audio/vocab-glow.mp3", exampleAudio: "audio/vocab-glow-ex.mp3" },
         { word: "adventure", example: "I think I had an adventure last night.", img: "story-09.png", alt: "George, Mike and Nibble follow footprints on an adventure", audio: "audio/vocab-adventure.mp3", exampleAudio: "audio/vocab-adventure-ex.mp3" },
       ],
@@ -164,83 +164,85 @@
           img: "story-03.png",
           alt: "George sleeps hugging Mike while Mike gently pats his cheek to wake him",
           lines: [
-            { role: "narrator", text: "George was fast asleep, hugging Mike in the quiet, moonlit room.", audio: "audio/p03-01.mp3" },
-            { role: "narrator", text: "Then Mike gently patted George's cheek.", audio: "audio/p03-02.mp3" },
-            { role: "mike", text: "George, wake up. Something is changing.", audio: "audio/p03-03.mp3" },
+            { role: "narrator", text: "George was fast asleep, hugging Mike in the quiet room.", audio: "audio/p03-01.mp3" },
+            { role: "narrator", text: "Then Mike gently patted George's cheek with his soft little hand.", audio: "audio/p03-02.mp3" },
+            { role: "mike", text: "George, wake up. I heard a strange sound.", audio: "audio/p03-03.mp3" },
           ]
         },
         {
           img: "story-04.png",
           alt: "George sits up as something thumps under the cream blanket",
           lines: [
-            { role: "narrator", text: "George sat up. Something under the blanket went thump, thump, thump.", audio: "audio/p04-01.mp3" },
-            { role: "mike", text: "George, did you hear that? Something is moving under the blanket!", audio: "audio/p04-02.mp3" },
-            { role: "george", text: "My feet did not move. Let us look again, very carefully.", audio: "audio/p04-03.mp3" },
+            { role: "narrator", text: "George sat up fast. Something under the blanket went thump, thump, thump.", audio: "audio/p04-01.mp3" },
+            { role: "mike", text: "George, look! The blanket is moving!", audio: "audio/p04-02.mp3" },
+            { role: "george", text: "What is that? I am a little scared too.", audio: "audio/p04-03.mp3" },
+            { role: "george", text: "Let us count to three and peek. One... two... three!", audio: "audio/p04-04.mp3" },
           ]
         },
         {
           img: "story-05.png",
           alt: "The blanket becomes a soft green hill with footprints leading under a fold",
           lines: [
-            { role: "narrator", text: "The blanket had become a soft green hill, rising in gentle folds.", audio: "audio/p05-01.mp3" },
-            { role: "narrator", text: "The grey curtains hung like silver trees. Tiny footprints led under a soft fold in the hill.", audio: "audio/p05-02.mp3" },
-            { role: "mike", text: "Look! I can see tiny footprints on the hill!", audio: "audio/p05-03.mp3" },
-            { role: "george", text: "They go under this fold. Stay close to me, Mike.", audio: "audio/p05-04.mp3" },
+            { role: "narrator", text: "George pulled back the blanket \u2014 and it grew into a soft green hill!", audio: "audio/p05-01.mp3" },
+            { role: "narrator", text: "The grey curtains stood tall around the hill, like silver trees.", audio: "audio/p05-02.mp3" },
+            { role: "mike", text: "George, look! Tiny footprints! Something small walked up the hill.", audio: "audio/p05-03.mp3" },
+            { role: "george", text: "Let us follow them. Stay close to me, Mike.", audio: "audio/p05-04.mp3" },
           ]
         },
         {
           img: "story-06.png",
           alt: "George lifts a fold in the green blanket hill while Mike stays close",
           lines: [
-            { role: "narrator", text: "George lifted a fold in the blanket hill, and something small moved underneath.", audio: "audio/p06-01.mp3" },
-            { role: "george", text: "Hold my hand, Mike. I will look first, and you can stay right behind me.", audio: "audio/p06-02.mp3" },
-            { role: "mike", text: "All right, but please do not let go of my hand.", audio: "audio/p06-03.mp3" },
+            { role: "narrator", text: "The tiny footprints stopped at a soft fold in the hill.", audio: "audio/p06-01.mp3" },
+            { role: "mike", text: "Something is hiding in there. I can hear it move!", audio: "audio/p06-02.mp3" },
+            { role: "george", text: "Let us whisper, so we do not scare it. I will look first.", audio: "audio/p06-03.mp3" },
           ]
         },
         {
           img: "story-07.png",
           alt: "A tiny dinosaur peeks out from behind the blanket",
           lines: [
-            { role: "narrator", text: "George lifted the fold gently, and a tiny dinosaur peeked out with round, worried eyes.", audio: "audio/p07-01.mp3" },
-            { role: "mike", text: "A dinosaur! George, it might be a monster!", audio: "audio/p07-02.mp3" },
-            { role: "george", text: "Look carefully, Mike. It is little, and it looks frightened, not fierce.", audio: "audio/p07-03.mp3" },
+            { role: "narrator", text: "George lifted the fold, and a tiny dinosaur peeked out!", audio: "audio/p07-01.mp3" },
+            { role: "mike", text: "A monster! George, hide!", audio: "audio/p07-02.mp3" },
+            { role: "nibble", text: "Peep... peep...", audio: "audio/p07-03.mp3" },
+            { role: "george", text: "Mike, look. It is a baby dinosaur, and he is shaking. He is more scared than us.", audio: "audio/p07-04.mp3" },
           ]
         },
         {
           img: "story-08.png",
           alt: "Nibble tells George she cannot find her nest",
           lines: [
-            { role: "nibble", text: "Peep! Peep! I cannot find my nest anywhere!", audio: "audio/p08-01.mp3" },
-            { role: "george", text: "Do not worry, little one. We will help you.", audio: "audio/p08-02.mp3" },
-            { role: "nibble", text: "My nest smells like warm ferns. I do not know the way.", audio: "audio/p08-03.mp3" },
+            { role: "nibble", text: "Peep! My name is Nibble, and I am lost. I cannot find my nest.", audio: "audio/p08-01.mp3" },
+            { role: "george", text: "Do not cry, little one. We will help you find it.", audio: "audio/p08-02.mp3" },
+            { role: "nibble", text: "My nest is warm and soft. It smells like green ferns.", audio: "audio/p08-03.mp3" },
           ]
         },
         {
           img: "story-09.png",
-          alt: "George holds the little lamp while Mike points along footprints toward the curtain trees",
+          alt: "George holds the chick lamp at the curtain forest edge; Mike points at tiny glowing footprints leading into the grey curtain trees",
           lines: [
-            { role: "mike", text: "Look! The footprints go this way, towards the tall grey trees!", audio: "audio/p09-01.mp3" },
-            { role: "narrator", text: "George raised the little lamp, and the warm light followed the tiny footprints.", audio: "audio/p09-02.mp3" },
-            { role: "george", text: "One step at a time. We will follow them together.", audio: "audio/p09-03.mp3" },
+            { role: "mike", text: "Look! More footprints! They go this way, into the curtain forest.", audio: "audio/p09-01.mp3" },
+            { role: "narrator", text: "George picked up the little lamp, and its warm glow lit up the footprints.", audio: "audio/p09-02.mp3" },
+            { role: "george", text: "One step at a time. We will go together.", audio: "audio/p09-03.mp3" },
           ]
         },
         {
           img: "story-10.png",
           alt: "George, Mike and Nibble walk through the darker curtain forest",
           lines: [
-            { role: "narrator", text: "Beneath the tall curtains, the path grew darker, and Mike began to tremble.", audio: "audio/p10-01.mp3" },
-            { role: "mike", text: "It is too dark in here! What if something big is hiding in the curtain forest?", audio: "audio/p10-02.mp3" },
-            { role: "george", text: "We can be quiet, but we can still be brave. I am right beside you.", audio: "audio/p10-03.mp3" },
+            { role: "narrator", text: "In the curtain forest, the path grew darker, and Mike began to tremble.", audio: "audio/p10-01.mp3" },
+            { role: "mike", text: "I do not like the dark. What if I get lost too?", audio: "audio/p10-02.mp3" },
+            { role: "george", text: "Hold my hand. The lamp is with us, and we can be brave together.", audio: "audio/p10-03.mp3" },
           ]
         },
         {
           img: "story-11.png",
           alt: "Nibble curls up in a small nest of green ferns in the curtain forest",
           lines: [
-            { role: "narrator", text: "Deep in the curtain forest, they found a small nest of soft green ferns.", audio: "audio/p11-01.mp3" },
-            { role: "nibble", text: "My nest! We found it! Peep, peep!", audio: "audio/p11-02.mp3" },
-            { role: "george", text: "You are home now, Nibble. Sleep well in your warm nest.", audio: "audio/p11-03.mp3" },
-            { role: "mike", text: "I was scared, but I kept looking, and we found the way.", audio: "audio/p11-04.mp3" },
+            { role: "narrator", text: "Behind the last curtain, they found a little nest of soft green ferns.", audio: "audio/p11-01.mp3" },
+            { role: "nibble", text: "My nest! My nest! Peep, peep!", audio: "audio/p11-02.mp3" },
+            { role: "george", text: "You are home now, Nibble. Sleep well.", audio: "audio/p11-03.mp3" },
+            { role: "mike", text: "We did it! We really found it!", audio: "audio/p11-04.mp3" },
           ]
         },
         {
@@ -257,22 +259,22 @@
       quiz: [
         { q: "What sound did George hear under the blanket?", options: ["Thump, thump, thump", "Ring, ring, ring", "Splash, splash, splash"], answer: 0 },
         { q: "What does Mike do to wake George?", options: ["He sings a song", "He gently pats George's cheek", "He jumps off the bed"], answer: 1 },
-        { q: "What does George say about the little dinosaur?", options: ["It is little, and it looks frightened", "It is a fierce monster", "It is bigger than Daddy"], answer: 0 },
+        { q: "What does George say about the little dinosaur?", options: ["He is more scared than us", "It is a fierce monster", "It is bigger than Daddy"], answer: 0 },
         { q: "Who finds the footprints first?", options: ["Daddy", "Mike", "A bird"], answer: 1 },
         { q: "What helps them find the way to the nest?", options: ["A big bus", "The little lamp", "A shopping bag"], answer: 1 },
         { q: "What is Nibble looking for?", options: ["Her warm nest", "A pizza", "A red car"], answer: 0 },
-        { q: "What does George say when Mike is afraid in the dark?", options: ["Run away now", "We can still be brave", "Shout as loud as you can"], answer: 1 },
+        { q: "What does George say when Mike is afraid in the dark?", options: ["Run away now", "We can be brave together", "Shout as loud as you can"], answer: 1 },
         { q: "What is left on the blanket in the morning?", options: ["A tiny green fern leaf", "A big muddy boot", "A gold coin"], answer: 0 },
         { q: "Who reads with George before sleep?", options: ["Daddy", "A bus driver", "Nibble"], answer: 0 },
-        { q: "What did Mike do even though he was scared?", options: ["He kept looking", "He ran away", "He went to sleep"], answer: 0 },
+        { q: "What does Mike say when they find the nest?", options: ["We did it! We really found it!", "He ran away", "He went to sleep"], answer: 0 },
       ],
       phrases: [
-        { text: "Hold my hand", audio: "audio/p06-02.mp3" },
-        { text: "Look carefully", audio: "audio/p07-03.mp3" },
+        { text: "Hold my hand", audio: "audio/p10-03.mp3" },
         { text: "Stay close to me", audio: "audio/p05-04.mp3" },
         { text: "You are home now", audio: "audio/p11-03.mp3" },
-        { text: "Let us look again", audio: "audio/p04-03.mp3" },
-        { text: "We can still be brave", audio: "audio/p10-03.mp3" },
+        { text: "One step at a time", audio: "audio/p09-03.mp3" },
+        { text: "I heard a strange sound", audio: "audio/p03-03.mp3" },
+        { text: "We can be brave together", audio: "audio/p10-03.mp3" },
       ]
     };
   </script>

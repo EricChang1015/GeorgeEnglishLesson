@@ -7,12 +7,12 @@ ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT / "scripts/lesson04_story.json").read_text(encoding="utf-8"))
 
 phrase_map = {
-    "Hold my hand": "p06-02.mp3",
-    "Look carefully": "p07-03.mp3",
+    "Hold my hand": "p10-03.mp3",
     "Stay close to me": "p05-04.mp3",
     "You are home now": "p11-03.mp3",
-    "Let us look again": "p04-03.mp3",
-    "We can still be brave": "p10-03.mp3",
+    "One step at a time": "p09-03.mp3",
+    "I heard a strange sound": "p03-03.mp3",
+    "We can be brave together": "p10-03.mp3",
 }
 
 vocab_js = []
@@ -146,7 +146,7 @@ html = f"""<!DOCTYPE html>
         <strong>Learning focus</strong>
         <ul>
           <li>Word → sentence practice (e.g. blanket → Something moved under the blanket.)</li>
-          <li>Observation: footprint · Look carefully · I can see</li>
+          <li>Observation: footprint · tiny footprints · I can see</li>
           <li>Ask: What was under the blanket? (Nibble, not a monster)</li>
           <li>Ask: What proof was left in the morning? (a tiny fern leaf, like Nibble's nest)</li>
         </ul>
@@ -155,7 +155,7 @@ html = f"""<!DOCTYPE html>
         <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
         <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
         <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
-        <label><input type="checkbox" data-note="bedtime_phrases" /> Practised key phrases (Hold my hand / Look carefully)</label>
+        <label><input type="checkbox" data-note="bedtime_phrases" /> Practised key phrases (Hold my hand / Stay close to me)</label>
         <label><input type="checkbox" data-note="mystery_talk" /> Talked about the mysterious adventure</label>
         <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
         <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>

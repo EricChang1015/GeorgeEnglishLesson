@@ -1,7 +1,7 @@
 # Mike Dreams — 篇章定稿 v0
 
 獨立新篇章，**不**接 Lesson 1–3（Pip / Ember）。  
-狀態：2026-08-24 — **Lesson 4 空間鎖定 v3 已重畫，故事／錄音／插畫已對齊**（George and the Dinosaur Under the Blanket）。待家長確認後發佈。
+狀態：2026-08-24 — **文案 v4 + story-9 重繪 + vocab fern 卡已對齊**；已發佈至 GitHub Pages。
 
 ---
 
@@ -96,7 +96,7 @@ Mike 看得很清楚，但很容易害怕；George 要觀察、推理、溫柔�
 |------|-----|------|------|
 | RealBedroom | p1–4, p12 | 光鳥在床邊；米色軟墊床頭＋素奶油牆 | 星形燈、床頭櫃檯燈；**p1 床頭左側禁止窗戶／窗簾**（該牆是實牆，見 `george-daddy-bedtime-reading.jpg`） |
 | HillZone | p5–8 | 同一綠草丘、腳印、小光鳥 | pillow cave、白帳篷 |
-| Threshold | p9 | 丘→林交界 | 床頭櫃 |
+| Threshold | p9 | 丘邊→**curtain forest** 入口；極小三趾腳印；George 捧雞形光鳥燈（同 p10） | 床頭櫃、白平窗簾牆 |
 | ForestZone | p10–11 | George+Mike+Nibble；**p11 蕨葉巢**（無洞穴） | 床、pillow cave、第二個 George |
 
 ### Prompt 重複句（每頁複製）
@@ -160,9 +160,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | George was fast asleep, hugging Mike in the quiet, moonlit room. | calm |
-| narrator | Then Mike gently patted George's cheek. | soft |
-| mike | "George, wake up. Something is changing." | whisper |
+| narrator | George was fast asleep, hugging Mike in the quiet room. | calm |
+| narrator | Then Mike gently patted George's cheek with his soft little hand. | soft |
+| mike | "George, wake up. I heard a strange sound." | whisper |
 
 ### Page 4 — Thump under the blanket
 
@@ -171,9 +171,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | George sat up. Something under the blanket went thump, thump, thump. | surprised |
-| mike | "George, did you hear that? Something is moving under the blanket!" | fearful |
-| george | "My feet did not move. Let us look again, very carefully." | worried |
+| narrator | George sat up fast. Something under the blanket went thump, thump, thump. | surprised |
+| mike | "George, look! The blanket is moving!" | fearful |
+| george | "What is that? I am a little scared too." | worried |
+| george | "Let us count to three and peek. One... two... three!" | worried |
 
 ### Page 5 — Blanket hill
 
@@ -182,10 +183,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | The blanket had become a soft green hill, rising in gentle folds. | wonder |
-| narrator | The grey curtains hung like silver trees. Tiny footprints led under a soft fold in the hill. | wonder |
-| mike | "Look! I can see tiny footprints on the hill!" | surprised |
-| george | "They go under this fold. Stay close to me, Mike." | calm |
+| narrator | George pulled back the blanket — and it grew into a soft green hill! | wonder |
+| narrator | The grey curtains stood tall around the hill, like silver trees. | wonder |
+| mike | "George, look! Tiny footprints! Something small walked up the hill." | surprised |
+| george | "Let us follow them. Stay close to me, Mike." | calm |
 
 ### Page 6 — Behind the fold
 
@@ -194,9 +195,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | George lifted a fold in the blanket hill, and something small moved underneath. | worried |
-| george | "Hold my hand, Mike. I will look first, and you can stay right behind me." | calm |
-| mike | "All right, but please do not let go of my hand." | whisper |
+| narrator | The tiny footprints stopped at a soft fold in the hill. | wonder |
+| mike | "Something is hiding in there. I can hear it move!" | whisper |
+| george | "Let us whisper, so we do not scare it. I will look first." | whisper |
 
 ### Page 7 — Not a monster
 
@@ -205,9 +206,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | George lifted the fold gently, and a tiny dinosaur peeked out with round, worried eyes. | surprised |
-| mike | "A dinosaur! George, it might be a monster!" | fearful |
-| george | "Look carefully, Mike. It is little, and it looks frightened, not fierce." | calm |
+| narrator | George lifted the fold, and a tiny dinosaur peeked out! | surprised |
+| mike | "A monster! George, hide!" | fearful |
+| nibble | "Peep... peep..." | fearful |
+| george | "Mike, look. It is a baby dinosaur, and he is shaking. He is more scared than us." | calm |
 
 ### Page 8 — The lost little dinosaur
 
@@ -216,20 +218,20 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| nibble | "Peep! Peep! I cannot find my nest anywhere!" | worried |
-| george | "Do not worry, little one. We will help you." | calm |
-| nibble | "My nest smells like warm ferns. I do not know the way." | soft |
+| nibble | "Peep! My name is Nibble, and I am lost. I cannot find my nest." | worried |
+| george | "Do not cry, little one. We will help you find it." | calm |
+| nibble | "My nest is warm and soft. It smells like green ferns." | soft |
 
 ### Page 9 — Footprints and lamp light
 
-**Illustration:** George 舉 **小光鳥燈**；Mike 指腳印；丘→林交界。腳印腳尖、Mike 手指、三人步伐**同一方向朝右／窗簾縫**。  
-**Refs:** bird lamp (small, no digits in dream)
+**Illustration:** George 捧 **小光鳥燈**（與 p10 同款）；Mike 指腳印；丘邊→**curtain forest** 入口（灰藍窗簾如高樹幹，非白平窗簾）。**極小**三趾恐龍腳印（約 Nibble 腳一半大）朝窗簾林縫隙延伸；腳印方向與 Mike 手指一致。  
+**Refs:** `story-10.webp`（窗簾林風格鎖定）；bird lamp chick shape
 
 | Role | Line | Emotion |
 |------|------|---------|
-| mike | "Look! The footprints go this way, towards the tall grey trees!" | excited |
-| narrator | George raised the little lamp, and the warm light followed the tiny footprints. | wonder |
-| george | "One step at a time. We will follow them together." | calm |
+| mike | "Look! More footprints! They go this way, into the curtain forest." | excited |
+| narrator | George picked up the little lamp, and its warm glow lit up the footprints. | wonder |
+| george | "One step at a time. We will go together." | calm |
 
 ### Page 10 — Brave whisper
 
@@ -238,9 +240,9 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Beneath the tall curtains, the path grew darker, and Mike began to tremble. | worried |
-| mike | "It is too dark in here! What if something big is hiding in the curtain forest?" | fearful |
-| george | "We can be quiet, but we can still be brave. I am right beside you." | whisper |
+| narrator | In the curtain forest, the path grew darker, and Mike began to tremble. | worried |
+| mike | "I do not like the dark. What if I get lost too?" | fearful |
+| george | "Hold my hand. The lamp is with us, and we can be brave together." | whisper |
 
 ### Page 11 — The warm nest
 
@@ -249,10 +251,10 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | Deep in the curtain forest, they found a small nest of soft green ferns. | wonder |
-| nibble | "My nest! We found it! Peep, peep!" | happy |
-| george | "You are home now, Nibble. Sleep well in your warm nest." | calm |
-| mike | "I was scared, but I kept looking, and we found the way." | happy |
+| narrator | Behind the last curtain, they found a little nest of soft green ferns. | wonder |
+| nibble | "My nest! My nest! Peep, peep!" | happy |
+| george | "You are home now, Nibble. Sleep well." | calm |
+| mike | "We did it! We really found it!" | happy |
 
 ### Page 12 — Morning proof
 
@@ -279,16 +281,17 @@ Warm watercolor bedtime picture-book. George (East Asian boy ~5, short black ban
 | footprint | I can see tiny footprints on the hill. |
 | fern | The nest was made of soft green ferns. |
 | nest | Nibble could not find her warm nest. |
-| brave | We can be quiet, but we can still be brave. |
-| lost | The little dinosaur was lost under the blanket. |
+| brave | We can be brave together. |
+| lost | My name is Nibble, and I am lost. |
 | glow | The little lamp glowed softly. |
 | adventure | I think I had an adventure last night. |
 
-**Key phrases:** `Hold my hand.` · `Look carefully.` · `Stay close to me.` · `Let us look again.` · `You are home now.`
+**Key phrases:** `Hold my hand.` · `Stay close to me.` · `One step at a time.` · `You are home now.` · `We can be brave together.`
 
 ---
 
-## 下一步
+## 下一步（George 用課）
 
-1. 家長實際瀏覽 `#story=5,6,9,10,11` 確認插畫細節（Nibble 外形、p11 蕨葉巢）
-2. 滿意後說「發佈」→ commit + push 更新 GitHub Pages
+1. 跟 George 從 Cover 聽到 Story 12，留意 p9→p10 curtain forest 連續感
+2. 單字卡 **fern** 已換專用插圖（`vocab-fern.png`）
+3. 若有新回饋，走 `.cursor/skills/lesson-production-pipeline/SKILL.md` 閘門流程再改

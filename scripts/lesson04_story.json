@@ -7,13 +7,13 @@
     "summary_zh": "George 睡著後，Mike 輕拍他的臉頰叫醒他，房間開始變了；他們聽見棉被下的聲響，幫迷路的小恐龍 Nibble 找巢；早晨棉被上留下一片蕨葉。",
     "focus_en": [
       "Bedtime words: blanket, whisper, glow, adventure",
-      "Observation: footprint, look carefully, I can see",
+      "Observation: footprint, tiny footprints, I can see",
       "Feelings: tremble, lost, brave, frightened",
-      "Key phrases: Hold my hand. Stay close to me. You are home now."
+      "Key phrases: Hold my hand. Stay close to me. One step at a time. We can be brave together."
     ],
     "tutor_prompts_zh": [
       "問：棉被下面的 thump 是什麼？（小恐龍 Nibble，不是怪獸）",
-      "問：Mike 很怕的時候，George 說了什麼？（Hold my hand / Look carefully / We can still be brave）",
+      "問：Mike 很怕的時候，George 說了什麼？（Hold my hand / We can be brave together）",
       "問：他們怎麼找到 nest？（腳印 + 小夜燈 + Mike 幫忙看）",
       "問：醒來後留下什麼證據？（一片小蕨葉，像 Nibble 的巢）"
     ]
@@ -84,8 +84,8 @@
     {
       "word": "fern",
       "example": "The nest was made of soft green ferns.",
-      "img": "story-12.png",
-      "alt": "a tiny green fern leaf on the morning blanket",
+      "img": "vocab-fern.png",
+      "alt": "a green fern frond with feathery leaflets",
       "audio": "vocab-fern.mp3",
       "example_audio": "vocab-fern-ex.mp3"
     },
@@ -99,7 +99,7 @@
     },
     {
       "word": "brave",
-      "example": "We can be quiet, but we can still be brave.",
+      "example": "We can be brave together.",
       "img": "story-10.png",
       "alt": "George encouraging Mike to be brave",
       "audio": "vocab-brave.mp3",
@@ -107,7 +107,7 @@
     },
     {
       "word": "lost",
-      "example": "The little dinosaur was lost under the blanket.",
+      "example": "My name is Nibble, and I am lost.",
       "img": "story-08.png",
       "alt": "Nibble looking lost behind the blanket fold",
       "audio": "vocab-lost.mp3",
@@ -191,19 +191,19 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "George was fast asleep, hugging Mike in the quiet, moonlit room.",
+          "text": "George was fast asleep, hugging Mike in the quiet room.",
           "audio": "p03-01.mp3",
           "emotion": "calm"
         },
         {
           "role": "narrator",
-          "text": "Then Mike gently patted George's cheek.",
+          "text": "Then Mike gently patted George's cheek with his soft little hand.",
           "audio": "p03-02.mp3",
           "emotion": "soft"
         },
         {
           "role": "mike",
-          "text": "George, wake up. Something is changing.",
+          "text": "George, wake up. I heard a strange sound.",
           "audio": "p03-03.mp3",
           "emotion": "whisper"
         }
@@ -215,20 +215,26 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "George sat up. Something under the blanket went thump, thump, thump.",
+          "text": "George sat up fast. Something under the blanket went thump, thump, thump.",
           "audio": "p04-01.mp3",
           "emotion": "surprised"
         },
         {
           "role": "mike",
-          "text": "George, did you hear that? Something is moving under the blanket!",
+          "text": "George, look! The blanket is moving!",
           "audio": "p04-02.mp3",
           "emotion": "fearful"
         },
         {
           "role": "george",
-          "text": "My feet did not move. Let us look again, very carefully.",
+          "text": "What is that? I am a little scared too.",
           "audio": "p04-03.mp3",
+          "emotion": "worried"
+        },
+        {
+          "role": "george",
+          "text": "Let us count to three and peek. One... two... three!",
+          "audio": "p04-04.mp3",
           "emotion": "worried"
         }
       ]
@@ -239,25 +245,25 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "The blanket had become a soft green hill, rising in gentle folds.",
+          "text": "George pulled back the blanket — and it grew into a soft green hill!",
           "audio": "p05-01.mp3",
           "emotion": "wonder"
         },
         {
           "role": "narrator",
-          "text": "The grey curtains hung like silver trees. Tiny footprints led under a soft fold in the hill.",
+          "text": "The grey curtains stood tall around the hill, like silver trees.",
           "audio": "p05-02.mp3",
           "emotion": "wonder"
         },
         {
           "role": "mike",
-          "text": "Look! I can see tiny footprints on the hill!",
+          "text": "George, look! Tiny footprints! Something small walked up the hill.",
           "audio": "p05-03.mp3",
           "emotion": "surprised"
         },
         {
           "role": "george",
-          "text": "They go under this fold. Stay close to me, Mike.",
+          "text": "Let us follow them. Stay close to me, Mike.",
           "audio": "p05-04.mp3",
           "emotion": "calm"
         }
@@ -269,19 +275,19 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "George lifted a fold in the blanket hill, and something small moved underneath.",
+          "text": "The tiny footprints stopped at a soft fold in the hill.",
           "audio": "p06-01.mp3",
-          "emotion": "worried"
-        },
-        {
-          "role": "george",
-          "text": "Hold my hand, Mike. I will look first, and you can stay right behind me.",
-          "audio": "p06-02.mp3",
-          "emotion": "calm"
+          "emotion": "wonder"
         },
         {
           "role": "mike",
-          "text": "All right, but please do not let go of my hand.",
+          "text": "Something is hiding in there. I can hear it move!",
+          "audio": "p06-02.mp3",
+          "emotion": "whisper"
+        },
+        {
+          "role": "george",
+          "text": "Let us whisper, so we do not scare it. I will look first.",
           "audio": "p06-03.mp3",
           "emotion": "whisper"
         }
@@ -293,20 +299,26 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "George lifted the fold gently, and a tiny dinosaur peeked out with round, worried eyes.",
+          "text": "George lifted the fold, and a tiny dinosaur peeked out!",
           "audio": "p07-01.mp3",
           "emotion": "surprised"
         },
         {
           "role": "mike",
-          "text": "A dinosaur! George, it might be a monster!",
+          "text": "A monster! George, hide!",
           "audio": "p07-02.mp3",
           "emotion": "fearful"
         },
         {
-          "role": "george",
-          "text": "Look carefully, Mike. It is little, and it looks frightened, not fierce.",
+          "role": "nibble",
+          "text": "Peep... peep...",
           "audio": "p07-03.mp3",
+          "emotion": "fearful"
+        },
+        {
+          "role": "george",
+          "text": "Mike, look. It is a baby dinosaur, and he is shaking. He is more scared than us.",
+          "audio": "p07-04.mp3",
           "emotion": "calm"
         }
       ]
@@ -317,19 +329,19 @@
       "lines": [
         {
           "role": "nibble",
-          "text": "Peep! Peep! I cannot find my nest anywhere!",
+          "text": "Peep! My name is Nibble, and I am lost. I cannot find my nest.",
           "audio": "p08-01.mp3",
           "emotion": "worried"
         },
         {
           "role": "george",
-          "text": "Do not worry, little one. We will help you.",
+          "text": "Do not cry, little one. We will help you find it.",
           "audio": "p08-02.mp3",
           "emotion": "calm"
         },
         {
           "role": "nibble",
-          "text": "My nest smells like warm ferns. I do not know the way.",
+          "text": "My nest is warm and soft. It smells like green ferns.",
           "audio": "p08-03.mp3",
           "emotion": "soft"
         }
@@ -337,23 +349,23 @@
     },
     {
       "img": "story-09.png",
-      "alt": "George holds the little lamp while Mike points along footprints toward the curtain trees",
+      "alt": "George holds the chick lamp at the curtain forest edge; Mike points at tiny glowing footprints leading into the grey curtain trees",
       "lines": [
         {
           "role": "mike",
-          "text": "Look! The footprints go this way, towards the tall grey trees!",
+          "text": "Look! More footprints! They go this way, into the curtain forest.",
           "audio": "p09-01.mp3",
           "emotion": "excited"
         },
         {
           "role": "narrator",
-          "text": "George raised the little lamp, and the warm light followed the tiny footprints.",
+          "text": "George picked up the little lamp, and its warm glow lit up the footprints.",
           "audio": "p09-02.mp3",
           "emotion": "wonder"
         },
         {
           "role": "george",
-          "text": "One step at a time. We will follow them together.",
+          "text": "One step at a time. We will go together.",
           "audio": "p09-03.mp3",
           "emotion": "calm"
         }
@@ -365,19 +377,19 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "Beneath the tall curtains, the path grew darker, and Mike began to tremble.",
+          "text": "In the curtain forest, the path grew darker, and Mike began to tremble.",
           "audio": "p10-01.mp3",
           "emotion": "worried"
         },
         {
           "role": "mike",
-          "text": "It is too dark in here! What if something big is hiding in the curtain forest?",
+          "text": "I do not like the dark. What if I get lost too?",
           "audio": "p10-02.mp3",
           "emotion": "fearful"
         },
         {
           "role": "george",
-          "text": "We can be quiet, but we can still be brave. I am right beside you.",
+          "text": "Hold my hand. The lamp is with us, and we can be brave together.",
           "audio": "p10-03.mp3",
           "emotion": "whisper"
         }
@@ -389,25 +401,25 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "Deep in the curtain forest, they found a small nest of soft green ferns.",
+          "text": "Behind the last curtain, they found a little nest of soft green ferns.",
           "audio": "p11-01.mp3",
           "emotion": "wonder"
         },
         {
           "role": "nibble",
-          "text": "My nest! We found it! Peep, peep!",
+          "text": "My nest! My nest! Peep, peep!",
           "audio": "p11-02.mp3",
           "emotion": "happy"
         },
         {
           "role": "george",
-          "text": "You are home now, Nibble. Sleep well in your warm nest.",
+          "text": "You are home now, Nibble. Sleep well.",
           "audio": "p11-03.mp3",
           "emotion": "calm"
         },
         {
           "role": "mike",
-          "text": "I was scared, but I kept looking, and we found the way.",
+          "text": "We did it! We really found it!",
           "audio": "p11-04.mp3",
           "emotion": "happy"
         }
@@ -461,7 +473,7 @@
     {
       "q": "What does George say about the little dinosaur?",
       "options": [
-        "It is little, and it looks frightened",
+        "He is more scared than us",
         "It is a fierce monster",
         "It is bigger than Daddy"
       ],
@@ -498,7 +510,7 @@
       "q": "What does George say when Mike is afraid in the dark?",
       "options": [
         "Run away now",
-        "We can still be brave",
+        "We can be brave together",
         "Shout as loud as you can"
       ],
       "answer": 1
@@ -522,9 +534,9 @@
       "answer": 0
     },
     {
-      "q": "What did Mike do even though he was scared?",
+      "q": "What does Mike say when they find the nest?",
       "options": [
-        "He kept looking",
+        "We did it! We really found it!",
         "He ran away",
         "He went to sleep"
       ],
@@ -533,10 +545,10 @@
   ],
   "phrases": [
     "Hold my hand",
-    "Look carefully",
     "Stay close to me",
     "You are home now",
-    "Let us look again",
-    "We can still be brave"
+    "One step at a time",
+    "I heard a strange sound",
+    "We can be brave together"
   ]
 }
