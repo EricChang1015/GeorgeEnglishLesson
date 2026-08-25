@@ -18,8 +18,26 @@ Stage 0 定調 ──► Stage 1 劇本＋分鏡 ──► GATE 1 家長簽核
                                             │
 Stage 2 視覺鎖定（bible＋sheet）──► GATE 2 家長看角色表
                                             │
-Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝＋smoke ──► 家長預覽 ──► 發佈
+Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝
+                                            │
+                     GATE 3 整課驗收（lesson-delivery-qa）──► 家長預覽 ──► 發佈
 ```
+
+**一次交付原則：GATE 1 簽核後，Stage 2→5 ＋ GATE 3 一氣呵成，最後一次交付整課。**
+中途只有 GATE 2（新角色／比例尺變動）需要回頭找家長；不准「圖出完先給看看」「音錄完先交卷」這種半成品交付。
+
+## 開工素材（家長提供，Stage 0 一次收齊）
+
+家長開新課時提供以下素材；缺哪項就在 **Stage 0 一次問完**，之後不再逐項回頭追問：
+
+| 素材 | 說明 | 缺省時 |
+|------|------|--------|
+| 角色 | 出場人物／新角色名字與定位 | 沿用篇章既有 cast，不擅自加新角色 |
+| 劇情大綱 | 幾句話的起承轉合，或想講的主題 | 必問，不可腦補 |
+| 篇章歸屬 | 接哪個 chapter（Pip and Ember / Mike Dreams / 新篇章） | 必問 |
+| 必含／禁止元素 | 一定要有的橋段、不想出現的東西 | 視為無特殊要求 |
+| 詞彙方向 | 想練的字或短語（可空） | agent 依 ORT LV6 規則自選 |
+| 頁數 | 故事頁數 | 預設 12 頁 |
 
 ### Stage 0 — 定調（半小時內完成，不出任何圖）
 
@@ -68,9 +86,16 @@ Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝�
 - `python scripts/generate_lesson_audio.py --story scripts/lessonXX_story.json --out lessons/assets/lesson-XX/audio`
 - 角色 voice 必須等於 `scripts/voices.json`；逐句 `emotion` 要對上分鏡表
 
-### Stage 5 — 組裝＋驗收
+### Stage 5 — 組裝
 
 - 建 HTML、進 index 篇章卡；browser smoke（`.cursor/rules/delivery.mdc`）
+
+### GATE 3 — 整課驗收（硬閘，交付前必過）
+
+- 照 `.cursor/skills/lesson-delivery-qa/SKILL.md` 跑完四個驗收面：
+  故事邏輯（fresh subagent 審文）、圖文契約（fresh subagent 逐頁看圖）、
+  音檔（`scripts/check_lesson_audio.py`）、整課瀏覽器走查
+- 全部 PASS 才向家長交付，交付訊息附驗收報告
 - 家長預覽 → 說「發佈」才 commit + push
 
 ---
@@ -82,6 +107,7 @@ Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝�
 3. **家長回饋收集成批**，一輪改完（文＋圖＋音＋doc 同一批、同一個 commit），不要一句一個 session 急救。
 4. **篇章 doc 與成品同步**：改了故事就同 commit 改 `docs/<chapter>.md`，bible 永遠反映目前定稿，不留舊設定（綠光／pillow cave 誤導出圖的教訓）。
 5. 單頁修圖也要**先讀 bible 的鎖定項再出圖**，不要憑上一張圖腦補。
+6. **任何改動（哪怕只有一張圖、一句話）交付前都要重過 GATE 3**（`.cursor/skills/lesson-delivery-qa/SKILL.md`）——改動最容易破壞的就是「整課連貫性」，而那正是單點自查看不到的。
 
 ---
 

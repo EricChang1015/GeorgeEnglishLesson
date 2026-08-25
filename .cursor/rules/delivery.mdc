@@ -7,6 +7,8 @@ alwaysApply: true
 
 Do **not** treat a lesson or player change as finished, and do **not** commit/push, until a real browser smoke test passes.
 
+**Smoke 只是技術面下限。** 動到課文／插圖／音檔／quiz 的改動，交付前還必須過內容驗收（GATE 3）：`.cursor/skills/lesson-delivery-qa/SKILL.md` — fresh subagent 審故事邏輯與圖文契約、`python scripts/check_lesson_audio.py` 驗音檔、整課逐頁走查。交付單位是**整課**，不准生成單一圖片或音檔後就交卷。
+
 `node --check` is not enough. This player is browser JS; a missing `let` only shows up as a console `ReferenceError` after the page loads.
 
 ## Minimum smoke (every lesson HTML you touched, plus `lesson-player.js` / `lesson.css`)

@@ -38,6 +38,12 @@ If the bible is missing a new character or place, **update the bible and get a s
 
 ## Per-page QA（出一張檢一張，任一項破鎖 → 重出該頁，不將就）
 
+執行紀律（沒做到 = 沒 QA）：
+
+1. **必須用 Read 真的打開生成的圖檔**再判定，不准憑 prompt 內容或縮圖印象打分。
+2. 每頁**逐項寫下 PASS / FAIL ＋ 一句證據**（例：「腳印朝畫面右、與 p6 文字一致 → PASS」）。只說「看起來沒問題」視同未檢查。
+3. 自己畫的圖自己容易看順眼——全部頁面出完後，**交付前還要過一次 fresh-context subagent 的圖文契約複審**（見 `.cursor/skills/lesson-delivery-qa/SKILL.md` 驗收面 B），這是硬閘，不是選項。
+
 | 檢查 | 內容 |
 |------|------|
 | 臉與服裝 | George 像 ref、睡衣／外套 = bible 固定款 |

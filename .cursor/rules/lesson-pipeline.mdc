@@ -10,3 +10,4 @@ alwaysApply: true
 1. **GATE 1：** 12 頁分鏡（含逐頁對白、emotion、圖上必見證據）未經家長逐頁確認前，**不准**產生課文插圖或整包 TTS。角色名字在分鏡前定案，之後不改。
 2. **改文動到畫面 → 預設重畫受影響頁**，不准保舊圖造成圖文脫節；任何改動先列影響表（圖／音／quiz／docs），一批做完、同一 commit 同步篇章 doc。
 3. 出圖一律 bible-first、逐頁 QA（`.cursor/skills/picture-book-consistency/SKILL.md`）；比例尺或新角色先給家長看 sheet 再畫內頁。
+4. **GATE 3：** 任何動到課文／插圖／音檔／quiz／player 的工作，交付前必過 `.cursor/skills/lesson-delivery-qa/SKILL.md` 的整課驗收（fresh subagent 審故事與圖文契約、`scripts/check_lesson_audio.py`、整課走查），全 PASS 附報告才准說「做完了」。**交付單位是整課，不是單一圖或音檔。**
