@@ -1,7 +1,7 @@
 # George's Real Adventures — 篇章定稿 v0
 
 新篇章：George 一家的**真實旅行故事**，不接 Pip and Ember，也不接 Mike Dreams。
-狀態：2026-08-26 — **GATE 1 家長已簽核分鏡**；本輪只修連續性／安全／圖文契約，不改家長鎖定對白。簽核前仍不出圖、不錄音。
+狀態：2026-08-26 — **lesson-05 已交付**（GATE 3 PASS）。家長修訂：拿掉初稿「睡龍」意象（非真實行程）；p9／封面改鐘乳石「石頭森林」；p11 改洞內短程槳板（無洞口日光）。
 
 ---
 
@@ -47,7 +47,7 @@ George 是好奇又調皮的小探險家；每個故事有一位「那天的重�
 | 風格 | 溫暖手繪／水彩童書（同前兩篇章）；洞穴黑暗但溫暖，不恐怖 |
 | 光 | 洞內頁**唯一光源＝頭燈的暖白錐形光束**；岩壁可被光帶出形狀；洞口頁／飯店頁為自然光／室內暖光 |
 | 比例尺 | `lessons/assets/refs/cast/real-adventures-sheet.png`（GATE 2 簽核後為主錨） |
-| 禁止 | 寫實照片臉、3D 電影風、恐怖陰影、畫面英文正文、洞內人工彩色投射燈 |
+| 禁止 | 寫實照片臉、3D 電影風、恐怖陰影、畫面英文正文、洞內人工彩色投射燈、**龍形／動物形鐘乳石**（真實旅行篇不接 Pip 龍線） |
 
 ### Scale lock（以站立的 George 為尺，群像頁必同時成立）
 
@@ -90,6 +90,7 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 | **家人裝備主 ref** | `ref/IMG_01_Dady_George_Mummy_Sister_BeforeEnterTheCave.jpg` |
 | 全員裝備＋洞穴群像 | `ref/IMG_11_Jojo_Sylvia_George_Mummy_Daddy.jpg` |
 | Jojo＋George 尺 | `ref/IMG_03_George_And_Trainer_Jojo.jpg` |
+| 洞內槳板（p11） | `ref/IMG_16`～`IMG_18`（全程在洞內，無洞口） |
 | 各分鏡頁 | 見各頁 Refs 欄 |
 
 ---
@@ -97,7 +98,7 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 ## 故事主軸（12 頁）
 
 調皮 George（跳泥坑兩次得逞）→ 飛拉達差點滑倒被 Jojo 拉住（緊張頂點）→
-糖果約定學會當 careful explorer → 鐘乳石龍、茶歇雙獎勵、槳板 → 飯店床上宣布要娶 Jojo。
+糖果約定學會當 careful explorer → 鐘乳石大廳、茶歇雙獎勵、槳板 → 飯店床上宣布要娶 Jojo。
 
 ## 空間區（Zone）
 
@@ -107,9 +108,9 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 | CaveEntrance | p1–2 | 樹林裡的洞口、白日光、全員頭盔＋頭燈＋黃雨鞋 | 洞內景           |
 | MudPassage   | p3–5 | 全黑背景＋頭燈光束、濕泥地反光、泥坑／水坑 | 人工燈光、平整地面     |
 | RiverWall    | p6–8 | 岩壁鋼纜＋扶手＋安全鎖、下方暗河水面    | 樓梯、護欄步道       |
-| CrystalHall  | p9   | 大量鐘乳石、其中一根像睡龍、頭燈光束向上  | 彩色人工投射燈       |
+| CrystalHall  | p9   | 大量鐘乳石、頭燈光束向上；**不要**畫成龍或動物輪廓  | 彩色人工投射燈、龍形／動物形鐘乳石 |
 | TeaBreak     | p10  | 綠色小摺椅＋小桌點心、洞內昏暗只有頭燈   | 餐廳裝潢          |
-| DarkRiver    | p11  | 墨綠如鏡的暗河水面、槳板、**亮橘救生衣**、遠處洞口透光 | 白天湖面、藍天、沒有救生衣 |
+| DarkRiver    | p11  | 全程在洞內短程槳板：墨綠暗河、槳板、**亮橘救生衣**、頭燈光；岩壁包圍 | 洞口日光、藍天綠葉、龍形鐘乳石、白天湖面、沒有救生衣 |
 | HotelRoom    | p12  | 飯店床上、夜間暖光、George 躺被窩、**全家四口都在房裡**；床與房間依 `ref/IMG_20_Hotel_Bed.jpg` | 洞穴內景、Jojo 在房內 |
 
 
@@ -119,7 +120,16 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 - **牽手交接：** p1 Daddy 牽 George → p2 Jojo 接過手 → p3 Jojo 牽著走 → p4 George 掙開手跳泥坑 → p5 Jojo 再牽緊，George 把她拉到水坑**邊上**（Jojo 人不落水）
 - 安全繩 p6 扣上鋼纜；p7 繩子拉住＋Jojo 扶穩（不是只靠徒手）
 - 糖果 p8 出現在 Jojo 手心 → p10 才交給 George
-- p11 槳板必見救生衣（`IMG_15` 背景已有橘救生衣）
+- p11 槳板必見救生衣；**畫面全程在洞內**（划完還要再走才出洞；旁白「走出陽光」是時間跳躍，圖上不畫洞口）
+
+---
+
+## 封面（Cover）
+
+**敘事功能：** 課名視覺錨：George 與 Jojo 在洞內抬頭看鐘乳石奇觀。
+**圖上必見證據：** George（紅盔）＋ Jojo（橘盔）；滿頂細長鐘乳石像石頭森林；頭燈暖光向上。
+**禁止：** 龍形／動物形鐘乳石、洞口日光、藍天綠葉、圖上英文正文。
+**Refs:** `story-09` 風格鎖、`real-adventures-sheet.png`
 
 ---
 
@@ -265,10 +275,10 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 
 
 
-### Page 9 — The stone dragon（CrystalHall）
+### Page 9 — The stone forest（CrystalHall）
 
-**敘事功能：** 獎勵感官頁：鐘乳石奇觀＋呼應 George 愛龍；驗證他守約定。
-**圖上必見證據：** 滿頂鐘乳石、頭燈光束向上；一根大鐘乳石輪廓像睡著的龍；George 小步慢走。
+**敘事功能：** 獎勵感官頁：鐘乳石奇觀；驗證他守約定。不接幻想龍線。
+**圖上必見證據：** 滿頂鐘乳石、頭燈光束向上；鐘乳石就是細長石柱／石林，**不要**畫成龍、恐龍或任何動物；George 小步慢走。
 **Refs:** `IMG_13`, `IMG_14`
 
 
@@ -276,7 +286,7 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 | -------- | ----------------------------------------------------------- | ------- |
 | narrator | Their lamps lit up a huge hall of strange, beautiful rocks. | wonder  |
 | narrator | Stalactites hung from the roof like a stone forest.         | wonder  |
-| george   | "Look! That big one looks like a sleeping dragon!"          | wonder  |
+| george   | "Look! So many long rocks hang from the roof!"              | wonder  |
 | jojo     | "Good eyes, George! And you are walking so carefully now."  | proud   |
 
 
@@ -301,16 +311,16 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 
 ### Page 11 — On the dark river（DarkRiver）
 
-**敘事功能：** 尾聲體驗：槳板＋道別洞穴；鉤子：飯店床上還有一句話要說。
-**圖上必見證據：** George 與 Daddy 同一塊槳板；**兩人都穿亮橘救生衣**（頭盔仍在）；墨綠鏡面水映出頭燈光；遠處洞口透進日光。
-**Refs:** `IMG_16`, `IMG_17`, `IMG_18`, `IMG_19`
+**敘事功能：** 洞內短程槳板體驗（划完還要再走一段才出洞）；鉤子：飯店床上還有一句話要說。
+**圖上必見證據：** George 與 Daddy 同一塊槳板；**兩人都穿亮橘救生衣**（頭盔仍在）；墨綠鏡面水映出頭燈光；**四周都是岩壁，沒有洞口、沒有日光、沒有龍形石**。
+**Refs:** `IMG_16`, `IMG_17`, `IMG_18`
 
 
 | Role     | Line                                                        | Emotion |
 | -------- | ----------------------------------------------------------- | ------- |
 | narrator | Last of all, it was time to paddle on the dark green river. | calm    |
 | narrator | George sat on a big board in a bright life vest.            | wonder  |
-| george   | "Bye-bye, cave! Bye-bye, sleeping dragon!"                  | happy   |
+| george   | "Bye-bye, cave! Bye-bye, stone forest!"                     | happy   |
 | narrator | Then the family walked out into the warm, bright sunshine.  | calm    |
 
 
@@ -352,6 +362,14 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 
 短語練習（sight words 區）："Hold my hand." / "I've got you." / "One step at a time."
 
+## 家教提示（tutor prompts）
+
+- 問：教練 Jojo 為什麼回頭？（Mummy 喊 George 的暱稱 Jojo，教練以為在叫她）
+- 問：George 在岩壁上發生什麼事？（爬太快滑倒，安全繩拉住、Jojo 抓住 harness）
+- 問：Jojo 的糖果約定是什麼？（像 careful cave explorer 一樣小心走就給糖）
+- 問：洞頂掛著什麼？（鐘乳石，像石頭森林）
+- 問：回飯店後 George 宣布什麼？（他愛 Jojo，長大要娶她）
+
 ## Quiz 草案（10 題，全部只靠故事可答）
 
 1. Where did George's family go? — **A. Sansheng Cave** / B. the beach / C. the zoo
@@ -360,7 +378,7 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 4. What did George jump into first? — **A. A big muddy puddle** / B. The dark river / C. A deep hole
 5. What happened on the wet rock wall? — **A. George's boot slipped, but the rope held** / B. George fell into the water / C. George lost his headlamp
 6. What was Jojo's candy deal? — **A. Walk carefully and the candy is yours** / B. Sing a song for the candy / C. Jump into one more puddle
-7. What did the big stalactite look like? — **A. A sleeping dragon** / B. A big elephant / C. A little frog
+7. What hung from the roof like a stone forest? — **A. Stalactites** / B. Pretty lamps / C. Yellow boots
 8. What snack did George choose at the tea break? — **A. Chocolate** / B. Ice cream / C. An apple
 9. What did they do on the dark green river? — **A. Paddled on a board** / B. Swam across / C. Caught a fish
 10. What did George say about Jojo at the hotel? — **A. He loves Jojo and wants to marry her** / B. He never wants to see caves again / C. He lost his yellow boots
@@ -378,3 +396,11 @@ Warm hand-drawn watercolor picture-book. Dark limestone cave; the ONLY light is 
 - [x] 每句有 emotion，且僅使用音檔管線支援的標籤
 - [x] **GATE 1 家長簽核**（2026-08-26）：p1/p2/p4/p5/p12 對白依家長定稿；Jojo=Ava、Mummy=Aria
 - [x] 簽核後 fresh-context 再審（GPT-5.6 Sol）：阻擋項已修（牽手、p7 繩子、p11 救生衣、p12 Everyone、p5 不落水）；**未改**家長鎖定句：p4 *naughty boy*、p5 *I wanna play*、p12 *Everyone laughed out loud*
+- [x] **交付後修訂**（2026-08-26）：初稿「睡龍」非真實素材 → p9 改石頭森林、封面重畫、p11 改洞內槳板（對照 `IMG_16`～`IMG_18`，禁止洞口日光）；quiz 7 改 stalactites；GATE 3 複驗 PASS
+
+## 修訂紀錄
+
+| 日期 | 變更 | 影響 |
+|------|------|------|
+| 2026-08-26 | 拿掉 sleeping dragon（初稿誤植，非家長口述行程） | 文 p9/p11、quiz 7、Notes；圖 cover／p9；音 p09-03、p11-03、quiz-07 |
+| 2026-08-26 | p11 背景改洞內短程槳板 | 圖 story-11；分鏡 Zone DarkRiver 禁止洞口日光 |

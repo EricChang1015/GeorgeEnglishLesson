@@ -4,7 +4,7 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lessons
 
-Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts a new chapter (**Mike Dreams**). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md). Mike chapter: [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
+Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts **Mike Dreams**. **Lesson 5** starts **George's Real Adventures** (real family trips). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md). Mike chapter: [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md). Real adventures: [`docs/real-adventures-chapter.md`](docs/real-adventures-chapter.md).
 
 ### Lesson 1 — `lessons/lesson-01.html`
 **George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
@@ -17,6 +17,9 @@ Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts a n
 
 ### Lesson 4 — `lessons/lesson-04.html`
 **George and the Dinosaur Under the Blanket** (ORT Level 6, **Mike Dreams** ch.1): bedtime with Mike, blanket thump, dream adventure, help Nibble find her nest; morning fern leaf. See [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md).
+
+### Lesson 5 — `lessons/lesson-05.html`
+**George's Big Cave Adventure** (ORT Level 6, **George's Real Adventures** ch.1): Sansheng Cave with Coach Jojo — muddy puddles, via ferrata, stone forest of stalactites, cave paddle board, hotel ending. See [`docs/real-adventures-chapter.md`](docs/real-adventures-chapter.md).
 
 Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz with A/B/C voice, Auto read, swipe / jump-to-page, tutor notes.
 
@@ -40,6 +43,7 @@ python scripts/generate_lesson_audio.py --story scripts/lesson01_story.json --ou
 python scripts/generate_lesson_audio.py --story scripts/lesson02_story.json --out lessons/assets/lesson-02/audio
 python scripts/generate_lesson_audio.py --story scripts/lesson03_story.json --out lessons/assets/lesson-03/audio
 python scripts/generate_lesson_audio.py --story scripts/lesson04_story.json --out lessons/assets/lesson-04/audio
+python scripts/generate_lesson_audio.py --story scripts/lesson05_story.json --out lessons/assets/lesson-05/audio
 ```
 
 Vocab entries may include `example` + `example_audio`; the generator speaks the word, then the example sentence (narrator voice). Quiz A/B/C clips are generated from the `quiz` block (`--quiz-only` to refresh those only).
@@ -82,6 +86,7 @@ npx --yes serve .
 - Lesson 2: https://george.macau-tech.com/lessons/lesson-02.html
 - Lesson 3: https://george.macau-tech.com/lessons/lesson-03.html
 - Lesson 4: https://george.macau-tech.com/lessons/lesson-04.html
+- Lesson 5: https://george.macau-tech.com/lessons/lesson-05.html
 - Repo: https://github.com/EricChang1015/GeorgeEnglishLesson
 
 Legacy GitHub Pages URL (still works): https://ericchang1015.github.io/GeorgeEnglishLesson/

@@ -15,7 +15,7 @@
       "問：教練 Jojo 為什麼回頭？（Mummy 喊 George 的暱稱 Jojo，教練以為在叫她）",
       "問：George 在岩壁上發生什麼事？（爬太快滑倒，安全繩拉住、Jojo 抓住 harness）",
       "問：Jojo 的糖果約定是什麼？（像 careful cave explorer 一樣小心走就給糖）",
-      "問：大鐘乳石像什麼？（睡著的龍）",
+      "問：洞頂掛著什麼？（鐘乳石，像石頭森林）",
       "問：回飯店後 George 宣布什麼？（他愛 Jojo，長大要娶她）"
     ]
   },
@@ -358,7 +358,7 @@
     },
     {
       "img": "story-09.png",
-      "alt": "Headlamps light a huge hall of stalactites; one big stalactite looks like a sleeping dragon",
+      "alt": "Headlamps light a huge hall of stalactites hanging from the roof like a stone forest",
       "lines": [
         {
           "role": "narrator",
@@ -374,7 +374,7 @@
         },
         {
           "role": "george",
-          "text": "Look! That big one looks like a sleeping dragon!",
+          "text": "Look! So many long rocks hang from the roof!",
           "audio": "p09-03.mp3",
           "emotion": "wonder"
         },
@@ -418,7 +418,7 @@
     },
     {
       "img": "story-11.png",
-      "alt": "George and Daddy in bright life vests paddle on a board on the glassy dark green river",
+      "alt": "George and Daddy in bright life vests paddle on a board deep inside the dark cave, no cave mouth",
       "lines": [
         {
           "role": "narrator",
@@ -434,7 +434,7 @@
         },
         {
           "role": "george",
-          "text": "Bye-bye, cave! Bye-bye, sleeping dragon!",
+          "text": "Bye-bye, cave! Bye-bye, stone forest!",
           "audio": "p11-03.mp3",
           "emotion": "happy"
         },
@@ -534,11 +534,11 @@
       "answer": 0
     },
     {
-      "q": "What did the big stalactite look like?",
+      "q": "What hung from the roof like a stone forest?",
       "options": [
-        "A big elephant",
-        "A little frog",
-        "A sleeping dragon"
+        "Pretty lamps",
+        "Yellow boots",
+        "Stalactites"
       ],
       "answer": 2
     },
