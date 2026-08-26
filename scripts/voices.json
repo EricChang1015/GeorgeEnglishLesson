@@ -65,10 +65,27 @@
       "kind": "dino-baby",
       "locale": "British English",
       "notes": "Tiny lost baby dinosaur (Mike Dreams chapter). Soft peep-like child voice; lower pitch than Ember. First used Lesson 4."
+    },
+    "jojo": {
+      "voice": "en-US-AvaNeural",
+      "rate": "-8%",
+      "pitch": "+5Hz",
+      "character": "Jojo",
+      "kind": "adult",
+      "locale": "American English",
+      "notes": "Young female caving coach (George's Real Adventures chapter). Parent pick 2026-08-26 (audition E). First used Lesson 5."
+    },
+    "mummy": {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "pitch": "+5Hz",
+      "character": "Mummy",
+      "kind": "adult",
+      "locale": "American English",
+      "notes": "George's mother. Parent pick 2026-08-26 (audition B). First used Lesson 5."
     }
   },
   "reserved": {
-    "mummy": "Not yet cast — pick a warm adult female voice; do not reuse narrator (Sonia).",
-    "sylvia": "Not yet cast — older sister (~7); pick a child/teen girl voice distinct from George and Ember."
+    "sylvia": "Not yet cast — older sister; pick a child/teen girl voice distinct from George and Ember."
   }
 }

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 5: George's Big Cave Adventure</title>
+  <link rel="stylesheet" href="css/lesson.css" />
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 10% 10%, #e0e8e0 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #e8dcc8 0, transparent 35%),
+        var(--bg);
+    }
+    .voice-key .jojo { background: #fff0e0; color: #c05800; }
+    .voice-key .mummy { background: #ffe8f0; color: #c92a6a; }
+    .line.jojo { background: #fff0e0; border-color: #ffcc99; }
+    .line.mummy { background: #ffe8f0; border-color: #ffb3d1; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">🐉 George English · Lesson 5</div>
+      <nav class="nav-links">
+        <a href="lesson-04.html">Lesson 4</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="screen active" data-screen="0">
+      <img class="hero hero-full" src="assets/lesson-05/cover.webp" alt="George and his family in helmets at the cave entrance" />
+      <h1>George's Big Cave Adventure</h1>
+      <div class="continue">George's Real Adventures · George · Jojo · Daddy · Mummy</div>
+      <p class="hint">ORT Level 6 · Cave · Slippery mud · Careful explorer</p>
+      <div class="voice-key">
+        <span class="narrator">Narrator</span>
+        <span class="george">George (boy)</span>
+        <span class="jojo">Jojo</span>
+        <span class="daddy">Daddy</span>
+        <span class="mummy">Mummy</span>
+      </div>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <h2>New Words</h2>
+      <p class="hint">Tap a card: hear the word, then an example sentence</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Story ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2" data-story="0"></section>
+    <section class="screen" data-screen="3" data-story="1"></section>
+    <section class="screen" data-screen="4" data-story="2"></section>
+    <section class="screen" data-screen="5" data-story="3"></section>
+    <section class="screen" data-screen="6" data-story="4"></section>
+    <section class="screen" data-screen="7" data-story="5"></section>
+    <section class="screen" data-screen="8" data-story="6"></section>
+    <section class="screen" data-screen="9" data-story="7"></section>
+    <section class="screen" data-screen="10" data-story="8"></section>
+    <section class="screen" data-screen="11" data-story="9"></section>
+    <section class="screen" data-screen="12" data-story="10"></section>
+    <section class="screen" data-screen="13" data-story="11"></section>
+
+    <section class="screen" data-screen="14">
+      <h2>Let's Check!</h2>
+      <p class="hint">5 questions this time · Listen, then choose A, B or C</p>
+      <div id="quizArea"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next id="quizNext" disabled>Next ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="15">
+      <h2>Key Phrases</h2>
+      <p class="hint">Tap each phrase and say it with George &amp; Jojo</p>
+      <div class="sight-grid" id="sightGrid"></div>
+      <p class="feedback" id="sightFeedback"></p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Notes ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="16">
+      <h2>Follow-up Notes</h2>
+      <p class="hint">For tutor / parent (saved on this device)</p>
+      <div class="learning-box">
+        <strong>Learning focus</strong>
+        <p>George 一家到貴州三生洞探洞；教練 Jojo 一路牽著調皮的 George。他兩次跳進泥坑、飛拉達爬太快差點滑倒被 Jojo 拉住；糖果約定後學會當 careful explorer，回飯店宣布長大要娶 Jojo。</p>
+        <ul>
+          <li>Cave words: cave, helmet, headlamp, stalactite</li>
+          <li>Safety words: slippery, rope, harness, be careful</li>
+          <li>Action: splash, climb, paddle, slip</li>
+          <li>Key phrases: Hold my hand. I've got you. One step at a time.</li>
+        </ul>
+        <strong>Tutor prompts</strong>
+        <ul>
+          <li>問：教練 Jojo 為什麼回頭？（Mummy 喊 George 的暱稱 Jojo，教練以為在叫她）</li>
+          <li>問：George 在岩壁上發生什麼事？（爬太快滑倒，安全繩拉住、Jojo 抓住 harness）</li>
+          <li>問：Jojo 的糖果約定是什麼？（像 careful cave explorer 一樣小心走就給糖）</li>
+          <li>問：大鐘乳石像什麼？（睡著的龍）</li>
+          <li>問：回飯店後 George 宣布什麼？（他愛 Jojo，長大要娶她）</li>
+        </ul>
+      </div>
+      <div class="notes" id="notesForm">
+        <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
+        <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
+        <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
+        <label><input type="checkbox" data-note="cave_phrases" /> Practised key phrases (Hold my hand / Stay close to me)</label>
+        <label><input type="checkbox" data-note="cave_talk" /> Talked about the cave adventure</label>
+        <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
+        <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
+        <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
+        <p style="margin:14px 0 6px;font-weight:800;">Comments</p>
+        <textarea id="noteComment" placeholder="What went well? What to practice next?"></textarea>
+        <div class="controls" style="margin-top:14px;">
+          <button class="btn-good" type="button" id="saveNotes">💾 Save notes</button>
+          <button class="btn-secondary" type="button" id="clearNotes">Clear</button>
+          <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+        </div>
+        <p class="save-msg" id="saveMsg"></p>
+      </div>
+      <footer class="note">Great exploring, George! 🪖</footer>
+    </section>
+  </div>
+
+  <script>
+    window.LESSON = {
+      asset: "assets/lesson-05/",
+      storageKey: "george-lesson-05-notes-v1",
+      videoDir: "video/",
+      videoPages: [],
+      roleLabel: { narrator: "Narrator", george: "George", jojo: "Jojo", daddy: "Daddy", mummy: "Mummy" },
+      vocab: [
+        { word: "cave", example: "Inside, the cave was dark, wet and very slippery.", img: "story-03.png", alt: "headlamp beams lighting the dark slippery cave", audio: "audio/vocab-cave.mp3", exampleAudio: "audio/vocab-cave-ex.mp3" },
+        { word: "helmet", example: "Everyone put on a helmet, a bright little headlamp and yellow rain boots.", img: "story-01.png", alt: "the family putting on helmets and headlamps at the cave entrance", audio: "audio/vocab-helmet.mp3", exampleAudio: "audio/vocab-helmet-ex.mp3" },
+        { word: "slippery", example: "The mud is very slippery here.", img: "story-03.png", alt: "wet muddy ground shining under headlamp light", audio: "audio/vocab-slippery.mp3", exampleAudio: "audio/vocab-slippery-ex.mp3" },
+        { word: "puddle", example: "Then George saw a big brown puddle of mud.", img: "story-04.png", alt: "George jumping into a big brown muddy puddle", audio: "audio/vocab-puddle.mp3", exampleAudio: "audio/vocab-puddle-ex.mp3" },
+        { word: "rope", example: "Click! Your safety rope is clipped on.", img: "story-06.png", alt: "Jojo clipping George's safety rope onto the steel cable", audio: "audio/vocab-rope.mp3", exampleAudio: "audio/vocab-rope-ex.mp3" },
+        { word: "harness", example: "The rope held, and Jojo held his harness.", img: "story-07.png", alt: "Jojo holding George's harness on the rock wall", audio: "audio/vocab-harness.mp3", exampleAudio: "audio/vocab-harness-ex.mp3" },
+        { word: "stalactite", example: "Stalactites hung from the roof like a stone forest.", img: "story-09.png", alt: "stalactites hanging from the cave roof like a stone forest", audio: "audio/vocab-stalactite.mp3", exampleAudio: "audio/vocab-stalactite-ex.mp3" },
+        { word: "paddle", example: "It was time to paddle on the dark green river.", img: "story-11.png", alt: "George and Daddy paddling on a board on the dark green river", audio: "audio/vocab-paddle.mp3", exampleAudio: "audio/vocab-paddle-ex.mp3" },
+      ],
+      story: [
+        {
+          img: "story-01.png",
+          alt: "The family in helmets and headlamps at the cave entrance; George holds Daddy's hand",
+          lines: [
+            { role: "narrator", text: "One summer day, George and his family came to Sansheng Cave.", audio: "audio/p01-01.mp3" },
+            { role: "narrator", text: "Everyone put on a helmet, a bright little headlamp and yellow rain boots.", audio: "audio/p01-02.mp3" },
+            { role: "daddy", text: "Look at the dark cave mouth, George. Are you ready?", audio: "audio/p01-03.mp3" },
+            { role: "george", text: "I'm scared. Hold my hand, Daddy!", audio: "audio/p01-04.mp3" },
+          ]
+        },
+        {
+          img: "story-02.png",
+          alt: "Mummy calls out to George; Coach Jojo turns around in surprise, then takes George's hand",
+          lines: [
+            { role: "mummy", text: "Jojo! Look out! Be careful!", audio: "audio/p02-01.mp3" },
+            { role: "jojo", text: "Oh! I thought you were calling me!", audio: "audio/p02-02.mp3" },
+            { role: "mummy", text: "Our son is George. Sometimes we call him Jo or Jojo.", audio: "audio/p02-03.mp3" },
+            { role: "narrator", text: "Then Coach Jojo took George's hand and looked after him.", audio: "audio/p02-04.mp3" },
+          ]
+        },
+        {
+          img: "story-03.png",
+          alt: "Jojo leads George by the hand through the dark slippery cave lit only by headlamps",
+          lines: [
+            { role: "narrator", text: "Inside, the cave was dark, wet and very slippery.", audio: "audio/p03-01.mp3" },
+            { role: "narrator", text: "Only their headlamps made little roads of light on the rocks.", audio: "audio/p03-02.mp3" },
+            { role: "jojo", text: "Hold my hand, George. The mud is very slippery here.", audio: "audio/p03-03.mp3" },
+            { role: "george", text: "Squish, squish! The mud is singing under my boots!", audio: "audio/p03-04.mp3" },
+          ]
+        },
+        {
+          img: "story-04.png",
+          alt: "George jumps into a big muddy puddle with a splash while Jojo reaches out too late",
+          lines: [
+            { role: "narrator", text: "Then George saw a big brown puddle of mud.", audio: "audio/p04-01.mp3" },
+            { role: "george", text: "A muddy puddle! I love muddy puddles!", audio: "audio/p04-02.mp3" },
+            { role: "narrator", text: "SPLASH! He jumped in before Jojo could pull him back.", audio: "audio/p04-03.mp3" },
+            { role: "jojo", text: "Oh no, George! You are a naughty boy!", audio: "audio/p04-04.mp3" },
+          ]
+        },
+        {
+          img: "story-05.png",
+          alt: "George tugs Jojo to the puddle's edge and jumps in again; Jojo stays on the edge",
+          lines: [
+            { role: "narrator", text: "Jojo held George's hand tight, but George was quick.", audio: "audio/p05-01.mp3" },
+            { role: "narrator", text: "He tugged her to the puddle's edge and jumped again!", audio: "audio/p05-02.mp3" },
+            { role: "george", text: "Ha ha! Muddy puddle. I wanna play!", audio: "audio/p05-03.mp3" },
+            { role: "jojo", text: "You are faster than a little frog! Slow down, the rocks are slippery!", audio: "audio/p05-04.mp3" },
+          ]
+        },
+        {
+          img: "story-06.png",
+          alt: "A dark river blocks the path; Jojo clips George's safety rope onto the steel cable",
+          lines: [
+            { role: "narrator", text: "Soon a dark river blocked the path in the cave.", audio: "audio/p06-01.mp3" },
+            { role: "narrator", text: "Now they had to climb along the rock wall, like real explorers.", audio: "audio/p06-02.mp3" },
+            { role: "jojo", text: "Click! Your safety rope is clipped on. Stay close to me.", audio: "audio/p06-03.mp3" },
+            { role: "george", text: "I am a cave explorer!", audio: "audio/p06-04.mp3" },
+          ]
+        },
+        {
+          img: "story-07.png",
+          alt: "George's boot slips on the wet rock; the rope holds and Jojo grabs his harness",
+          lines: [
+            { role: "narrator", text: "George climbed faster and faster on the wet rock.", audio: "audio/p07-01.mp3" },
+            { role: "narrator", text: "Then his boot slipped \u2014 \"Whoa!\" \u2014 but the rope held, and Jojo held his harness.", audio: "audio/p07-02.mp3" },
+            { role: "jojo", text: "I've got you, George. Slow steps, one at a time.", audio: "audio/p07-03.mp3" },
+            { role: "george", text: "My heart went bump! Thank you, Jojo.", audio: "audio/p07-04.mp3" },
+          ]
+        },
+        {
+          img: "story-08.png",
+          alt: "On a wide rock ledge Jojo kneels and shows George a little candy in her palm",
+          lines: [
+            { role: "narrator", text: "On a wide rock ledge, Jojo took a little candy from her pocket.", audio: "audio/p08-01.mp3" },
+            { role: "jojo", text: "Walk like a careful cave explorer, and this candy is yours.", audio: "audio/p08-02.mp3" },
+            { role: "george", text: "I promise! Careful steps, like a cave explorer.", audio: "audio/p08-03.mp3" },
+            { role: "narrator", text: "After that, George walked slowly and watched every step.", audio: "audio/p08-04.mp3" },
+          ]
+        },
+        {
+          img: "story-09.png",
+          alt: "Headlamps light a huge hall of stalactites; one big stalactite looks like a sleeping dragon",
+          lines: [
+            { role: "narrator", text: "Their lamps lit up a huge hall of strange, beautiful rocks.", audio: "audio/p09-01.mp3" },
+            { role: "narrator", text: "Stalactites hung from the roof like a stone forest.", audio: "audio/p09-02.mp3" },
+            { role: "george", text: "Look! That big one looks like a sleeping dragon!", audio: "audio/p09-03.mp3" },
+            { role: "jojo", text: "Good eyes, George! And you are walking so carefully now.", audio: "audio/p09-04.mp3" },
+          ]
+        },
+        {
+          img: "story-10.png",
+          alt: "Snack time on little folding chairs in the cave; Jojo gives George the candy and George holds chocolate",
+          lines: [
+            { role: "narrator", text: "They sat down on little chairs for a snack, deep inside the cave.", audio: "audio/p10-01.mp3" },
+            { role: "jojo", text: "Here is your candy, my careful explorer.", audio: "audio/p10-02.mp3" },
+            { role: "george", text: "And I choose chocolate too! Two treats in one day!", audio: "audio/p10-03.mp3" },
+            { role: "narrator", text: "George ate happily, with a little mud still on his nose.", audio: "audio/p10-04.mp3" },
+          ]
+        },
+        {
+          img: "story-11.png",
+          alt: "George and Daddy in bright life vests paddle on a board on the glassy dark green river",
+          lines: [
+            { role: "narrator", text: "Last of all, it was time to paddle on the dark green river.", audio: "audio/p11-01.mp3" },
+            { role: "narrator", text: "George sat on a big board in a bright life vest.", audio: "audio/p11-02.mp3" },
+            { role: "george", text: "Bye-bye, cave! Bye-bye, sleeping dragon!", audio: "audio/p11-03.mp3" },
+            { role: "narrator", text: "Then the family walked out into the warm, bright sunshine.", audio: "audio/p11-04.mp3" },
+          ]
+        },
+        {
+          img: "story-12.png",
+          alt: "In the warm hotel room George is tucked up in bed; Mummy sits beside him and the family smiles",
+          lines: [
+            { role: "narrator", text: "Back at the hotel that night, George was tucked up in bed.", audio: "audio/p12-01.mp3" },
+            { role: "mummy", text: "Did you like the cave, George? Do you like Jojo?", audio: "audio/p12-02.mp3" },
+            { role: "george", text: "Yes! I love Jojo! I want to marry her!", audio: "audio/p12-03.mp3" },
+            { role: "narrator", text: "Everyone laughed out loud, and George dreamed of the cave all night.", audio: "audio/p12-04.mp3" },
+          ]
+        },
+      ],
+      quizPick: 5,
+      quiz: [
+        { q: "Where did George's family go?", options: ["Sansheng Cave", "The beach", "The zoo"], answer: 0 },
+        { q: "Why did Coach Jojo turn around?", options: ["She heard a noise in the cave", "Mummy called \"Jojo\" and the coach thought she meant her", "George waved at her"], answer: 1 },
+        { q: "What was the cave like inside?", options: ["Bright and dry", "Full of pretty lamps", "Dark, wet and slippery"], answer: 2 },
+        { q: "What did George jump into first?", options: ["A big muddy puddle", "The dark river", "A deep hole"], answer: 0 },
+        { q: "What happened on the wet rock wall?", options: ["George fell into the water", "George's boot slipped, but the rope held", "George lost his headlamp"], answer: 1 },
+        { q: "What was Jojo's candy deal?", options: ["Walk carefully and the candy is yours", "Sing a song for the candy", "Jump into one more puddle"], answer: 0 },
+        { q: "What did the big stalactite look like?", options: ["A big elephant", "A little frog", "A sleeping dragon"], answer: 2 },
+        { q: "What snack did George choose at the tea break?", options: ["Ice cream", "Chocolate", "An apple"], answer: 1 },
+        { q: "What did they do on the dark green river?", options: ["Paddled on a board", "Swam across", "Caught a fish"], answer: 0 },
+        { q: "What did George say about Jojo at the hotel?", options: ["He never wants to see caves again", "He loves Jojo and wants to marry her", "He lost his yellow boots"], answer: 1 },
+      ],
+      phrases: [
+        { text: "Hold my hand", audio: "audio/p03-03.mp3" },
+        { text: "I've got you", audio: "audio/p07-03.mp3" },
+        { text: "One step at a time", audio: "audio/p07-03.mp3" },
+        { text: "Be careful", audio: "audio/p02-01.mp3" },
+        { text: "Stay close to me", audio: "audio/p06-03.mp3" },
+        { text: "Slow down", audio: "audio/p05-04.mp3" },
+      ]
+    };
+  </script>
+  <script src="js/lesson-player.js?v=4"></script>
+</body>
+</html>

@@ -21,6 +21,8 @@ Engine: [Microsoft Edge TTS](https://github.com/rany2/edge-tts) via `edge-tts` (
 | `daddy` | Daddy | `en-GB-RyanNeural` | `-5%` | `-5Hz` | Warm British adult male |
 | `mike` | Mike (plush) | `en-US-AnaNeural` | `+5%` | `+20Hz` | Same lock as Pip (different chapter) |
 | `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` | Soft peep-like baby dinosaur |
+| `jojo` | Jojo (caving coach) | `en-US-AvaNeural` | `-8%` | `+5Hz` | Young warm female coach; parent pick 2026-08-26 (audition E) |
+| `mummy` | Mummy | `en-US-AriaNeural` | `+5%` | `+5Hz` | Warm adult female; parent pick 2026-08-26 (audition B) |
 
 ### Distinguishing similar voices
 
@@ -45,7 +47,6 @@ Ember and Nibble both use `en-GB-MaisieNeural` but **different rate/pitch**:
 
 | Role key | Character | Status |
 |----------|-----------|--------|
-| `mummy` | Mummy | TBD — choose a warm adult female; must not sound like the narrator |
 | `sylvia` | Sylvia (older sister) | TBD — child/teen girl; must differ from George, Pip, and Ember |
 
 When a new family member speaks for the first time: agree voice with parent → add to `scripts/voices.json` → update this table → copy into the lesson story JSON.
@@ -98,3 +99,4 @@ Full notes: `docs/lesson-01-03-review.md`.
 | 2 | narrator, george, pip, ember |
 | 3 | narrator, george, pip, ember, daddy |
 | 4 | narrator, george, daddy, mike, nibble |
+| 5 | narrator, george, jojo, mummy, daddy |

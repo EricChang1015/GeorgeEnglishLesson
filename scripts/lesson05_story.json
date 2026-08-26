@@ -1,0 +1,581 @@
+{
+  "id": "lesson-05",
+  "title": "George's Big Cave Adventure",
+  "level": "ORT Level 6",
+  "chapter": "George's Real Adventures",
+  "learning": {
+    "summary_zh": "George 一家到貴州三生洞探洞；教練 Jojo 一路牽著調皮的 George。他兩次跳進泥坑、飛拉達爬太快差點滑倒被 Jojo 拉住；糖果約定後學會當 careful explorer，回飯店宣布長大要娶 Jojo。",
+    "focus_en": [
+      "Cave words: cave, helmet, headlamp, stalactite",
+      "Safety words: slippery, rope, harness, be careful",
+      "Action: splash, climb, paddle, slip",
+      "Key phrases: Hold my hand. I've got you. One step at a time."
+    ],
+    "tutor_prompts_zh": [
+      "問：教練 Jojo 為什麼回頭？（Mummy 喊 George 的暱稱 Jojo，教練以為在叫她）",
+      "問：George 在岩壁上發生什麼事？（爬太快滑倒，安全繩拉住、Jojo 抓住 harness）",
+      "問：Jojo 的糖果約定是什麼？（像 careful cave explorer 一樣小心走就給糖）",
+      "問：大鐘乳石像什麼？（睡著的龍）",
+      "問：回飯店後 George 宣布什麼？（他愛 Jojo，長大要娶她）"
+    ]
+  },
+  "voices": {
+    "narrator": {
+      "voice": "en-GB-SoniaNeural",
+      "rate": "-10%",
+      "pitch": "+0Hz"
+    },
+    "george": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "cute_boy",
+      "voice": "cute_boy",
+      "speed": 1.3,
+      "pitch": 0,
+      "volume": 1.0
+    },
+    "daddy": {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-5%",
+      "pitch": "-5Hz"
+    },
+    "jojo": {
+      "voice": "en-US-AvaNeural",
+      "rate": "-8%",
+      "pitch": "+5Hz"
+    },
+    "mummy": {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "pitch": "+5Hz"
+    }
+  },
+  "vocab": [
+    {
+      "word": "cave",
+      "example": "Inside, the cave was dark, wet and very slippery.",
+      "img": "story-03.png",
+      "alt": "headlamp beams lighting the dark slippery cave",
+      "audio": "vocab-cave.mp3",
+      "example_audio": "vocab-cave-ex.mp3"
+    },
+    {
+      "word": "helmet",
+      "example": "Everyone put on a helmet, a bright little headlamp and yellow rain boots.",
+      "img": "story-01.png",
+      "alt": "the family putting on helmets and headlamps at the cave entrance",
+      "audio": "vocab-helmet.mp3",
+      "example_audio": "vocab-helmet-ex.mp3"
+    },
+    {
+      "word": "slippery",
+      "example": "The mud is very slippery here.",
+      "img": "story-03.png",
+      "alt": "wet muddy ground shining under headlamp light",
+      "audio": "vocab-slippery.mp3",
+      "example_audio": "vocab-slippery-ex.mp3"
+    },
+    {
+      "word": "puddle",
+      "example": "Then George saw a big brown puddle of mud.",
+      "img": "story-04.png",
+      "alt": "George jumping into a big brown muddy puddle",
+      "audio": "vocab-puddle.mp3",
+      "example_audio": "vocab-puddle-ex.mp3"
+    },
+    {
+      "word": "rope",
+      "example": "Click! Your safety rope is clipped on.",
+      "img": "story-06.png",
+      "alt": "Jojo clipping George's safety rope onto the steel cable",
+      "audio": "vocab-rope.mp3",
+      "example_audio": "vocab-rope-ex.mp3"
+    },
+    {
+      "word": "harness",
+      "example": "The rope held, and Jojo held his harness.",
+      "img": "story-07.png",
+      "alt": "Jojo holding George's harness on the rock wall",
+      "audio": "vocab-harness.mp3",
+      "example_audio": "vocab-harness-ex.mp3"
+    },
+    {
+      "word": "stalactite",
+      "example": "Stalactites hung from the roof like a stone forest.",
+      "img": "story-09.png",
+      "alt": "stalactites hanging from the cave roof like a stone forest",
+      "audio": "vocab-stalactite.mp3",
+      "example_audio": "vocab-stalactite-ex.mp3"
+    },
+    {
+      "word": "paddle",
+      "example": "It was time to paddle on the dark green river.",
+      "img": "story-11.png",
+      "alt": "George and Daddy paddling on a board on the dark green river",
+      "audio": "vocab-paddle.mp3",
+      "example_audio": "vocab-paddle-ex.mp3"
+    }
+  ],
+  "pages": [
+    {
+      "img": "story-01.png",
+      "alt": "The family in helmets and headlamps at the cave entrance; George holds Daddy's hand",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "One summer day, George and his family came to Sansheng Cave.",
+          "audio": "p01-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "Everyone put on a helmet, a bright little headlamp and yellow rain boots.",
+          "audio": "p01-02.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "daddy",
+          "text": "Look at the dark cave mouth, George. Are you ready?",
+          "audio": "p01-03.mp3",
+          "emotion": "soft"
+        },
+        {
+          "role": "george",
+          "text": "I'm scared. Hold my hand, Daddy!",
+          "audio": "p01-04.mp3",
+          "emotion": "worried"
+        }
+      ]
+    },
+    {
+      "img": "story-02.png",
+      "alt": "Mummy calls out to George; Coach Jojo turns around in surprise, then takes George's hand",
+      "lines": [
+        {
+          "role": "mummy",
+          "text": "Jojo! Look out! Be careful!",
+          "audio": "p02-01.mp3",
+          "emotion": "worried"
+        },
+        {
+          "role": "jojo",
+          "text": "Oh! I thought you were calling me!",
+          "audio": "p02-02.mp3",
+          "emotion": "surprised"
+        },
+        {
+          "role": "mummy",
+          "text": "Our son is George. Sometimes we call him Jo or Jojo.",
+          "audio": "p02-03.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "Then Coach Jojo took George's hand and looked after him.",
+          "audio": "p02-04.mp3",
+          "emotion": "calm"
+        }
+      ]
+    },
+    {
+      "img": "story-03.png",
+      "alt": "Jojo leads George by the hand through the dark slippery cave lit only by headlamps",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Inside, the cave was dark, wet and very slippery.",
+          "audio": "p03-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "Only their headlamps made little roads of light on the rocks.",
+          "audio": "p03-02.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "jojo",
+          "text": "Hold my hand, George. The mud is very slippery here.",
+          "audio": "p03-03.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "george",
+          "text": "Squish, squish! The mud is singing under my boots!",
+          "audio": "p03-04.mp3",
+          "emotion": "happy"
+        }
+      ]
+    },
+    {
+      "img": "story-04.png",
+      "alt": "George jumps into a big muddy puddle with a splash while Jojo reaches out too late",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Then George saw a big brown puddle of mud.",
+          "audio": "p04-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "george",
+          "text": "A muddy puddle! I love muddy puddles!",
+          "audio": "p04-02.mp3",
+          "emotion": "excited"
+        },
+        {
+          "role": "narrator",
+          "text": "SPLASH! He jumped in before Jojo could pull him back.",
+          "audio": "p04-03.mp3",
+          "emotion": "surprised"
+        },
+        {
+          "role": "jojo",
+          "text": "Oh no, George! You are a naughty boy!",
+          "audio": "p04-04.mp3",
+          "emotion": "worried"
+        }
+      ]
+    },
+    {
+      "img": "story-05.png",
+      "alt": "George tugs Jojo to the puddle's edge and jumps in again; Jojo stays on the edge",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Jojo held George's hand tight, but George was quick.",
+          "audio": "p05-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "He tugged her to the puddle's edge and jumped again!",
+          "audio": "p05-02.mp3",
+          "emotion": "surprised"
+        },
+        {
+          "role": "george",
+          "text": "Ha ha! Muddy puddle. I wanna play!",
+          "audio": "p05-03.mp3",
+          "emotion": "excited"
+        },
+        {
+          "role": "jojo",
+          "text": "You are faster than a little frog! Slow down, the rocks are slippery!",
+          "audio": "p05-04.mp3",
+          "emotion": "worried"
+        }
+      ]
+    },
+    {
+      "img": "story-06.png",
+      "alt": "A dark river blocks the path; Jojo clips George's safety rope onto the steel cable",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Soon a dark river blocked the path in the cave.",
+          "audio": "p06-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "Now they had to climb along the rock wall, like real explorers.",
+          "audio": "p06-02.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "jojo",
+          "text": "Click! Your safety rope is clipped on. Stay close to me.",
+          "audio": "p06-03.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "george",
+          "text": "I am a cave explorer!",
+          "audio": "p06-04.mp3",
+          "emotion": "proud"
+        }
+      ]
+    },
+    {
+      "img": "story-07.png",
+      "alt": "George's boot slips on the wet rock; the rope holds and Jojo grabs his harness",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "George climbed faster and faster on the wet rock.",
+          "audio": "p07-01.mp3",
+          "emotion": "worried"
+        },
+        {
+          "role": "narrator",
+          "text": "Then his boot slipped — \"Whoa!\" — but the rope held, and Jojo held his harness.",
+          "audio": "p07-02.mp3",
+          "emotion": "surprised"
+        },
+        {
+          "role": "jojo",
+          "text": "I've got you, George. Slow steps, one at a time.",
+          "audio": "p07-03.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "george",
+          "text": "My heart went bump! Thank you, Jojo.",
+          "audio": "p07-04.mp3",
+          "emotion": "worried"
+        }
+      ]
+    },
+    {
+      "img": "story-08.png",
+      "alt": "On a wide rock ledge Jojo kneels and shows George a little candy in her palm",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "On a wide rock ledge, Jojo took a little candy from her pocket.",
+          "audio": "p08-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "jojo",
+          "text": "Walk like a careful cave explorer, and this candy is yours.",
+          "audio": "p08-02.mp3",
+          "emotion": "happy"
+        },
+        {
+          "role": "george",
+          "text": "I promise! Careful steps, like a cave explorer.",
+          "audio": "p08-03.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "After that, George walked slowly and watched every step.",
+          "audio": "p08-04.mp3",
+          "emotion": "calm"
+        }
+      ]
+    },
+    {
+      "img": "story-09.png",
+      "alt": "Headlamps light a huge hall of stalactites; one big stalactite looks like a sleeping dragon",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Their lamps lit up a huge hall of strange, beautiful rocks.",
+          "audio": "p09-01.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "narrator",
+          "text": "Stalactites hung from the roof like a stone forest.",
+          "audio": "p09-02.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "george",
+          "text": "Look! That big one looks like a sleeping dragon!",
+          "audio": "p09-03.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "jojo",
+          "text": "Good eyes, George! And you are walking so carefully now.",
+          "audio": "p09-04.mp3",
+          "emotion": "proud"
+        }
+      ]
+    },
+    {
+      "img": "story-10.png",
+      "alt": "Snack time on little folding chairs in the cave; Jojo gives George the candy and George holds chocolate",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "They sat down on little chairs for a snack, deep inside the cave.",
+          "audio": "p10-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "jojo",
+          "text": "Here is your candy, my careful explorer.",
+          "audio": "p10-02.mp3",
+          "emotion": "soft"
+        },
+        {
+          "role": "george",
+          "text": "And I choose chocolate too! Two treats in one day!",
+          "audio": "p10-03.mp3",
+          "emotion": "excited"
+        },
+        {
+          "role": "narrator",
+          "text": "George ate happily, with a little mud still on his nose.",
+          "audio": "p10-04.mp3",
+          "emotion": "happy"
+        }
+      ]
+    },
+    {
+      "img": "story-11.png",
+      "alt": "George and Daddy in bright life vests paddle on a board on the glassy dark green river",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Last of all, it was time to paddle on the dark green river.",
+          "audio": "p11-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "narrator",
+          "text": "George sat on a big board in a bright life vest.",
+          "audio": "p11-02.mp3",
+          "emotion": "wonder"
+        },
+        {
+          "role": "george",
+          "text": "Bye-bye, cave! Bye-bye, sleeping dragon!",
+          "audio": "p11-03.mp3",
+          "emotion": "happy"
+        },
+        {
+          "role": "narrator",
+          "text": "Then the family walked out into the warm, bright sunshine.",
+          "audio": "p11-04.mp3",
+          "emotion": "calm"
+        }
+      ]
+    },
+    {
+      "img": "story-12.png",
+      "alt": "In the warm hotel room George is tucked up in bed; Mummy sits beside him and the family smiles",
+      "lines": [
+        {
+          "role": "narrator",
+          "text": "Back at the hotel that night, George was tucked up in bed.",
+          "audio": "p12-01.mp3",
+          "emotion": "calm"
+        },
+        {
+          "role": "mummy",
+          "text": "Did you like the cave, George? Do you like Jojo?",
+          "audio": "p12-02.mp3",
+          "emotion": "soft"
+        },
+        {
+          "role": "george",
+          "text": "Yes! I love Jojo! I want to marry her!",
+          "audio": "p12-03.mp3",
+          "emotion": "happy"
+        },
+        {
+          "role": "narrator",
+          "text": "Everyone laughed out loud, and George dreamed of the cave all night.",
+          "audio": "p12-04.mp3",
+          "emotion": "happy"
+        }
+      ]
+    }
+  ],
+  "quizPick": 5,
+  "quiz": [
+    {
+      "q": "Where did George's family go?",
+      "options": [
+        "Sansheng Cave",
+        "The beach",
+        "The zoo"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why did Coach Jojo turn around?",
+      "options": [
+        "She heard a noise in the cave",
+        "Mummy called \"Jojo\" and the coach thought she meant her",
+        "George waved at her"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What was the cave like inside?",
+      "options": [
+        "Bright and dry",
+        "Full of pretty lamps",
+        "Dark, wet and slippery"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What did George jump into first?",
+      "options": [
+        "A big muddy puddle",
+        "The dark river",
+        "A deep hole"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What happened on the wet rock wall?",
+      "options": [
+        "George fell into the water",
+        "George's boot slipped, but the rope held",
+        "George lost his headlamp"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What was Jojo's candy deal?",
+      "options": [
+        "Walk carefully and the candy is yours",
+        "Sing a song for the candy",
+        "Jump into one more puddle"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did the big stalactite look like?",
+      "options": [
+        "A big elephant",
+        "A little frog",
+        "A sleeping dragon"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What snack did George choose at the tea break?",
+      "options": [
+        "Ice cream",
+        "Chocolate",
+        "An apple"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What did they do on the dark green river?",
+      "options": [
+        "Paddled on a board",
+        "Swam across",
+        "Caught a fish"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What did George say about Jojo at the hotel?",
+      "options": [
+        "He never wants to see caves again",
+        "He loves Jojo and wants to marry her",
+        "He lost his yellow boots"
+      ],
+      "answer": 1
+    }
+  ],
+  "phrases": [
+    "Hold my hand",
+    "I've got you",
+    "One step at a time",
+    "Be careful",
+    "Stay close to me",
+    "Slow down"
+  ]
+}
