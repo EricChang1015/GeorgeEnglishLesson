@@ -97,6 +97,22 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
   background: #f7f0e6;
 }
 .hero.is-loading { min-height: 200px; }
+.song-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto 16px;
+}
+.song-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .hero.loaded { animation: fadeIn 0.2s ease; }
 .hint { text-align: center; color: #666; font-size: 1rem; margin: 0 0 10px; }
 .page-meta { text-align: center; color: #888; font-weight: 700; margin-bottom: 6px; }
@@ -112,6 +128,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
 .voice-key .mike { background: var(--pip); color: #2b8a3e; }
 .voice-key .nibble { background: var(--ember); color: #c92a2a; }
 .voice-key .narrator { background: var(--narrator); color: #8a5a00; }
+.voice-key .song { background: #e7f6ff; color: #0a5f8a; }
 
 .lines { display: grid; gap: 10px; margin: 8px 0 16px; }
 .line {
@@ -127,6 +144,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--accent-dark); }
 .line.daddy { background: var(--daddy); border-color: #c9b3e8; }
 .line.mike { background: var(--pip); border-color: #b6e6b8; }
 .line.nibble { background: var(--ember); border-color: #ffb0b0; }
+.line.song { background: #e7f6ff; border-color: #9ad0f0; }
 .line.playing, .vocab-card.playing, .sight-word.playing, .quiz-opt.playing {
   box-shadow: 0 0 0 3px #f0c000; border-color: #f0c000 !important;
 }

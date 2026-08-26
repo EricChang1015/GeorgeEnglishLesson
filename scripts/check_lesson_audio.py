@@ -46,6 +46,11 @@ def expected_clips(data: dict) -> list[tuple[str, str]]:
     for page in data.get("pages", []):
         for line in page.get("lines", []):
             clips.append((line["audio"], line["text"]))
+    for page in data.get("songPages") or []:
+        for line in page.get("lines", []):
+            audio = line.get("audio")
+            if audio:
+                clips.append((audio, line.get("text") or audio))
     clips.append(("praise-great.mp3", "Great job!"))
     clips.append(("praise-try.mp3", "Nice try! Let's learn it."))
     clips.append(("title.mp3", data.get("title", "")))

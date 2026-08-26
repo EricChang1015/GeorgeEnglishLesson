@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 6: George and the Wellerman</title>
+  <link rel="stylesheet" href="css/lesson.css" />
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 10% 10%, #c9e7ff 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #ffe9b8 0, transparent 35%),
+        var(--bg);
+    }
+    .line.song { background: #e7f6ff; border-color: #9ad0f0; }
+    .voice-key .song { background: #e7f6ff; color: #0a5f8a; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">George English · Lesson 6</div>
+      <nav class="nav-links">
+        <a href="lesson-05.html">Lesson 5</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="screen active" data-screen="0">
+      <img class="hero hero-full" src="assets/lesson-06/cover.webp" alt="George sings on Billy o' Tea as a whale and the Wellerman appear" />
+      <h1>George and the Wellerman</h1>
+      <div class="continue">George's Song Adventures · song words · sing along</div>
+      <p class="hint">ORT Level 6 · Nathan Evans · Wellerman</p>
+      <div class="voice-key">
+        <span class="narrator">Word audio</span>
+        <span class="song">Song clips</span>
+      </div>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <h2>Song Words</h2>
+      <p class="hint">Tap a card: hear the word, then an example from the song</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Sing ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2" data-song="0"></section>
+    <section class="screen" data-screen="3" data-song="1"></section>
+    <section class="screen" data-screen="4" data-song="2"></section>
+
+    <section class="screen" data-screen="5">
+      <h2>The whole song</h2>
+      <p class="hint">Nathan Evans · Wellerman · needs the internet</p>
+      <div class="song-embed" id="songEmbed"></div>
+      <p class="hint">If the video does not load, check the internet and try again.</p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    window.LESSON = {
+  "asset": "assets/lesson-06/",
+  "storageKey": "george-lesson-06-notes-v2",
+  "youtubeId": "qP-7GNoDJ5c",
+  "roleLabel": {
+    "narrator": "Narrator"
+  },
+  "vocab": [
+    {
+      "word": "Wellerman",
+      "example": "Soon may the Wellerman come, to bring us sugar and tea and rum.",
+      "img": "vocab-wellerman.png",
+      "alt": "a small supply sailing ship with crates and barrels on deck",
+      "audio": "audio/vocab-wellerman.mp3",
+      "exampleAudio": "audio/vocab-wellerman-ex.mp3"
+    },
+    {
+      "word": "bow",
+      "example": "The winds blew hard, her bow dipped down.",
+      "img": "vocab-bow.png",
+      "alt": "the front of a wooden ship dipping into a wave",
+      "audio": "audio/vocab-bow.mp3",
+      "exampleAudio": "audio/vocab-bow-ex.mp3"
+    },
+    {
+      "word": "bully boys",
+      "example": "Blow, me bully boys, blow!",
+      "img": "vocab-bully-boys.png",
+      "alt": "three friendly sailors pulling a rope together",
+      "audio": "audio/vocab-bully-boys.mp3",
+      "exampleAudio": "audio/vocab-bully-boys-ex.mp3"
+    },
+    {
+      "word": "tonguing",
+      "example": "One day, when the tonguing's done.",
+      "img": "vocab-tonguing.png",
+      "alt": "a sailor cutting pale whale fat into long strips on deck",
+      "audio": "audio/vocab-tonguing.mp3",
+      "exampleAudio": "audio/vocab-tonguing-ex.mp3"
+    },
+    {
+      "word": "harpoon",
+      "example": "All hands to the side, harpooned and fought her.",
+      "img": "vocab-harpoon.png",
+      "alt": "a long harpoon pole with a rope coil on the wooden deck",
+      "audio": "audio/vocab-harpoon.mp3",
+      "exampleAudio": "audio/vocab-harpoon-ex.mp3"
+    },
+    {
+      "word": "in tow",
+      "example": "He'd take that whale in tow.",
+      "img": "vocab-in-tow.png",
+      "alt": "a sailing ship pulling a smaller boat behind it with a rope",
+      "audio": "audio/vocab-in-tow.mp3",
+      "exampleAudio": "audio/vocab-in-tow-ex.mp3"
+    },
+    {
+      "word": "all hands",
+      "example": "The Captain called all hands and swore.",
+      "img": "vocab-all-hands.png",
+      "alt": "many sailors gathering on deck when the captain calls",
+      "audio": "audio/vocab-all-hands.mp3",
+      "exampleAudio": "audio/vocab-all-hands-ex.mp3"
+    },
+    {
+      "word": "take our leave",
+      "example": "We'll take our leave and go.",
+      "img": "vocab-leave.png",
+      "alt": "sailors waving from a ship as they sail away from harbour",
+      "audio": "audio/vocab-leave.mp3",
+      "exampleAudio": "audio/vocab-leave-ex.mp3"
+    }
+  ],
+  "story": [],
+  "songPages": [
+    {
+      "title": "Sing along 1",
+      "lines": [
+        {
+          "text": "There once was a ship that put to sea",
+          "audio": "audio/song-verse1-01.mp3"
+        },
+        {
+          "text": "The name of that ship was the Billy o' Tea",
+          "audio": "audio/song-verse1-02.mp3"
+        },
+        {
+          "text": "The winds blew hard, her bow dipped down",
+          "audio": "audio/song-verse1-03.mp3"
+        },
+        {
+          "text": "Blow, me bully boys, blow (huh)",
+          "audio": "audio/song-verse1-04.mp3"
+        },
+        {
+          "text": "Soon may the Wellerman come",
+          "audio": "audio/song-chorus-01.mp3"
+        },
+        {
+          "text": "To bring us sugar and tea and rum",
+          "audio": "audio/song-chorus-02.mp3"
+        },
+        {
+          "text": "One day, when the tonguing's done",
+          "audio": "audio/song-chorus-03.mp3"
+        },
+        {
+          "text": "We'll take our leave and go",
+          "audio": "audio/song-chorus-04.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Sing along 2",
+      "lines": [
+        {
+          "text": "She had not been two weeks from shore",
+          "audio": "audio/song-verse2-01.mp3"
+        },
+        {
+          "text": "When down on her a right whale bore",
+          "audio": "audio/song-verse2-02.mp3"
+        },
+        {
+          "text": "The Captain called all hands and swore",
+          "audio": "audio/song-verse2-03.mp3"
+        },
+        {
+          "text": "He'd take that whale in tow (huh)",
+          "audio": "audio/song-verse2-04.mp3"
+        },
+        {
+          "text": "Before the boat had hit the water",
+          "audio": "audio/song-verse3-01.mp3"
+        },
+        {
+          "text": "The whale's tail came up and caught her",
+          "audio": "audio/song-verse3-02.mp3"
+        },
+        {
+          "text": "All hands to the side, harpooned and fought her",
+          "audio": "audio/song-verse3-03.mp3"
+        },
+        {
+          "text": "When she dived down low (huh)",
+          "audio": "audio/song-verse3-04.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Sing along 3",
+      "lines": [
+        {
+          "text": "For forty days or even more",
+          "audio": "audio/song-verse4-01.mp3"
+        },
+        {
+          "text": "The line went slack then tight once more",
+          "audio": "audio/song-verse4-02.mp3"
+        },
+        {
+          "text": "All boats were lost, there were only four",
+          "audio": "audio/song-verse4-03.mp3"
+        },
+        {
+          "text": "And still that whale did go (huh)",
+          "audio": "audio/song-verse4-04.mp3"
+        },
+        {
+          "text": "Soon may the Wellerman come",
+          "audio": "audio/song-chorus2-01.mp3"
+        },
+        {
+          "text": "To bring us sugar and tea and rum",
+          "audio": "audio/song-chorus2-02.mp3"
+        },
+        {
+          "text": "One day, when the tonguing's done",
+          "audio": "audio/song-chorus2-03.mp3"
+        },
+        {
+          "text": "We'll take our leave and go",
+          "audio": "audio/song-chorus2-04.mp3"
+        }
+      ]
+    }
+  ],
+  "quiz": [],
+  "phrases": []
+};
+  </script>
+  <script src="js/lesson-player.js?v=6"></script>
+</body>
+</html>

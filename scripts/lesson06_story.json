@@ -1,0 +1,684 @@
+{
+  "id": "lesson-06",
+  "title": "George and the Wellerman",
+  "level": "ORT Level 6",
+  "chapter": "George's Song Adventures",
+  "youtubeId": "qP-7GNoDJ5c",
+  "learning": {
+    "summary_zh": "先學 Wellerman 歌詞裡較難的詞與短語，再用原曲逐句跟唱，最後聽完整首歌。故事繪本暫緩。",
+    "focus_en": [
+      "Song words: Wellerman, bow, bully boys, tonguing, harpoon, in tow, all hands, take our leave",
+      "Sing along with Nathan Evans line clips, then the full song"
+    ],
+    "tutor_prompts_zh": [
+      "問：Wellerman 是什麼？（送來補給的船，不是人的名字）",
+      "問：bow 是船的哪裡？（船頭）",
+      "問：bully boys 是欺負人嗎？（不是；歌裡指強壯開心的水手夥伴）",
+      "問：tonguing 是什麼？（舊時把鯨脂切成長條；歌詞 One day, when the tonguing's done）",
+      "問：all hands 是什麼意思？（船上所有人一起過來幫忙）",
+      "問：in tow 是什麼意思？（用繩子拖在後面）",
+      "問：take our leave 是什麼意思？（告別離開／回家）"
+    ]
+  },
+  "voices": {
+    "narrator": {
+      "voice": "en-GB-SoniaNeural",
+      "rate": "-10%",
+      "pitch": "+0Hz"
+    }
+  },
+  "vocab": [
+    {
+      "word": "Wellerman",
+      "example": "Soon may the Wellerman come, to bring us sugar and tea and rum.",
+      "img": "vocab-wellerman.png",
+      "alt": "a small supply sailing ship with crates and barrels on deck",
+      "audio": "vocab-wellerman.mp3",
+      "example_audio": "vocab-wellerman-ex.mp3"
+    },
+    {
+      "word": "bow",
+      "example": "The winds blew hard, her bow dipped down.",
+      "img": "vocab-bow.png",
+      "alt": "the front of a wooden ship dipping into a wave",
+      "audio": "vocab-bow.mp3",
+      "example_audio": "vocab-bow-ex.mp3"
+    },
+    {
+      "word": "bully boys",
+      "example": "Blow, me bully boys, blow!",
+      "img": "vocab-bully-boys.png",
+      "alt": "three friendly sailors pulling a rope together",
+      "audio": "vocab-bully-boys.mp3",
+      "example_audio": "vocab-bully-boys-ex.mp3"
+    },
+    {
+      "word": "tonguing",
+      "example": "One day, when the tonguing's done.",
+      "img": "vocab-tonguing.png",
+      "alt": "a sailor cutting pale whale fat into long strips on deck",
+      "audio": "vocab-tonguing.mp3",
+      "example_audio": "vocab-tonguing-ex.mp3"
+    },
+    {
+      "word": "harpoon",
+      "example": "All hands to the side, harpooned and fought her.",
+      "img": "vocab-harpoon.png",
+      "alt": "a long harpoon pole with a rope coil on the wooden deck",
+      "audio": "vocab-harpoon.mp3",
+      "example_audio": "vocab-harpoon-ex.mp3"
+    },
+    {
+      "word": "in tow",
+      "example": "He'd take that whale in tow.",
+      "img": "vocab-in-tow.png",
+      "alt": "a sailing ship pulling a smaller boat behind it with a rope",
+      "audio": "vocab-in-tow.mp3",
+      "example_audio": "vocab-in-tow-ex.mp3"
+    },
+    {
+      "word": "all hands",
+      "example": "The Captain called all hands and swore.",
+      "img": "vocab-all-hands.png",
+      "alt": "many sailors gathering on deck when the captain calls",
+      "audio": "vocab-all-hands.mp3",
+      "example_audio": "vocab-all-hands-ex.mp3"
+    },
+    {
+      "word": "take our leave",
+      "example": "We'll take our leave and go.",
+      "img": "vocab-leave.png",
+      "alt": "sailors waving from a ship as they sail away from harbour",
+      "audio": "vocab-leave.mp3",
+      "example_audio": "vocab-leave-ex.mp3"
+    }
+  ],
+  "pages": [],
+  "songPages": [
+    {
+      "title": "Sing along 1",
+      "lines": [
+        {
+          "text": "There once was a ship that put to sea",
+          "audio": "song-verse1-01.mp3"
+        },
+        {
+          "text": "The name of that ship was the Billy o' Tea",
+          "audio": "song-verse1-02.mp3"
+        },
+        {
+          "text": "The winds blew hard, her bow dipped down",
+          "audio": "song-verse1-03.mp3"
+        },
+        {
+          "text": "Blow, me bully boys, blow (huh)",
+          "audio": "song-verse1-04.mp3"
+        },
+        {
+          "text": "Soon may the Wellerman come",
+          "audio": "song-chorus-01.mp3"
+        },
+        {
+          "text": "To bring us sugar and tea and rum",
+          "audio": "song-chorus-02.mp3"
+        },
+        {
+          "text": "One day, when the tonguing's done",
+          "audio": "song-chorus-03.mp3"
+        },
+        {
+          "text": "We'll take our leave and go",
+          "audio": "song-chorus-04.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Sing along 2",
+      "lines": [
+        {
+          "text": "She had not been two weeks from shore",
+          "audio": "song-verse2-01.mp3"
+        },
+        {
+          "text": "When down on her a right whale bore",
+          "audio": "song-verse2-02.mp3"
+        },
+        {
+          "text": "The Captain called all hands and swore",
+          "audio": "song-verse2-03.mp3"
+        },
+        {
+          "text": "He'd take that whale in tow (huh)",
+          "audio": "song-verse2-04.mp3"
+        },
+        {
+          "text": "Before the boat had hit the water",
+          "audio": "song-verse3-01.mp3"
+        },
+        {
+          "text": "The whale's tail came up and caught her",
+          "audio": "song-verse3-02.mp3"
+        },
+        {
+          "text": "All hands to the side, harpooned and fought her",
+          "audio": "song-verse3-03.mp3"
+        },
+        {
+          "text": "When she dived down low (huh)",
+          "audio": "song-verse3-04.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Sing along 3",
+      "lines": [
+        {
+          "text": "For forty days or even more",
+          "audio": "song-verse4-01.mp3"
+        },
+        {
+          "text": "The line went slack then tight once more",
+          "audio": "song-verse4-02.mp3"
+        },
+        {
+          "text": "All boats were lost, there were only four",
+          "audio": "song-verse4-03.mp3"
+        },
+        {
+          "text": "And still that whale did go (huh)",
+          "audio": "song-verse4-04.mp3"
+        },
+        {
+          "text": "Soon may the Wellerman come",
+          "audio": "song-chorus2-01.mp3"
+        },
+        {
+          "text": "To bring us sugar and tea and rum",
+          "audio": "song-chorus2-02.mp3"
+        },
+        {
+          "text": "One day, when the tonguing's done",
+          "audio": "song-chorus2-03.mp3"
+        },
+        {
+          "text": "We'll take our leave and go",
+          "audio": "song-chorus2-04.mp3"
+        }
+      ]
+    }
+  ],
+  "quiz": [],
+  "phrases": [],
+  "pending": {
+    "reason": "Story, quiz, phrases and notes paused pending rewrite (parent 2026-08-26).",
+    "pages": [
+      {
+        "img": "story-01.png",
+        "alt": "At night George stands beside his bed singing; Daddy listens from the doorway",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "Late one night, George suddenly stood up beside his warm little bed.",
+            "audio": "p01-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "Soon may the Wellerman come!",
+            "audio": "p01-02.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "daddy",
+            "text": "George, what a big song for such a quiet night!",
+            "audio": "p01-03.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "narrator",
+            "text": "The song swirled around him and carried the bedroom far away.",
+            "audio": "p01-04.mp3",
+            "emotion": "wonder"
+          }
+        ]
+      },
+      {
+        "img": "story-02.png",
+        "alt": "The star blanket becomes a tea-coloured sail and George is a little sailor on a wooden deck",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "His blanket billowed upward and became a great tea-coloured sail.",
+            "audio": "p02-01.mp3",
+            "emotion": "wonder"
+          },
+          {
+            "role": "george",
+            "text": "The floor is wood! Am I standing on a ship?",
+            "audio": "p02-02.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "narrator",
+            "text": "He wore a white sailor shirt, blue shorts and brown boots.",
+            "audio": "p02-03.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "A ship! I am a little sailor on the sea!",
+            "audio": "p02-04.mp3",
+            "emotion": "excited"
+          }
+        ]
+      },
+      {
+        "img": "story-03.png",
+        "alt": "Sunrise on Billy o' Tea with tea-coloured sails and a tea-leaf emblem",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "At sunrise, the wooden sailing ship put out to sea.",
+            "audio": "p03-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "narrator",
+            "text": "Her name was Billy o' Tea, with tea-coloured sails.",
+            "audio": "p03-02.mp3",
+            "emotion": "proud"
+          },
+          {
+            "role": "narrator",
+            "text": "George held a rope while the busy crew raised sail.",
+            "audio": "p03-03.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "george",
+            "text": "Billy o' Tea, take us over the bright waves!",
+            "audio": "p03-04.mp3",
+            "emotion": "happy"
+          }
+        ]
+      },
+      {
+        "img": "story-04.png",
+        "alt": "A strong wind fills the sails and the wooden bow dips into a shining wave",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "A strong wind filled the sails and pushed them onward.",
+            "audio": "p04-01.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "narrator",
+            "text": "The wooden bow dipped down, then climbed another shining wave.",
+            "audio": "p04-02.mp3",
+            "emotion": "wonder"
+          },
+          {
+            "role": "narrator",
+            "text": "George and the crew leaned back and pulled together.",
+            "audio": "p04-03.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "george",
+            "text": "Hold tight, everyone! Blow, me bully boys, blow!",
+            "audio": "p04-04.mp3",
+            "emotion": "proud"
+          }
+        ]
+      },
+      {
+        "img": "story-05.png",
+        "alt": "A huge right whale rises beside Billy o' Tea as the captain calls the crew",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "Billy o' Tea had not been two weeks away from shore.",
+            "audio": "p05-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "Look! A huge right whale beside our ship!",
+            "audio": "p05-02.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "narrator",
+            "text": "The captain called all hands to take the whale in tow.",
+            "audio": "p05-03.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "george",
+            "text": "That whale is bigger than our whole wooden ship!",
+            "audio": "p05-04.mp3",
+            "emotion": "wonder"
+          }
+        ]
+      },
+      {
+        "img": "story-06.png",
+        "alt": "The crew lower a little boat with long poles and coiled rope; the whale swims free ahead",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "The crew lowered a little boat beside Billy o' Tea.",
+            "audio": "p06-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "narrator",
+            "text": "They carried long poles and strong lines for the chase.",
+            "audio": "p06-02.mp3",
+            "emotion": "worried"
+          },
+          {
+            "role": "narrator",
+            "text": "George passed down a rope and watched the whale swim.",
+            "audio": "p06-03.mp3",
+            "emotion": "wonder"
+          },
+          {
+            "role": "george",
+            "text": "Keep the line tidy, and keep everyone safe today!",
+            "audio": "p06-04.mp3",
+            "emotion": "worried"
+          }
+        ]
+      },
+      {
+        "img": "story-07.png",
+        "alt": "The whale's tail splashes and bumps the little boat; the crew hold on",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "Before the little boat had settled, the whale turned around.",
+            "audio": "p07-01.mp3",
+            "emotion": "worried"
+          },
+          {
+            "role": "narrator",
+            "text": "Its mighty tail struck the water and bumped the boat.",
+            "audio": "p07-02.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "narrator",
+            "text": "The crew grabbed the sides as white water splashed everywhere.",
+            "audio": "p07-03.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "george",
+            "text": "Whoa! That tail can make a mountain of water!",
+            "audio": "p07-04.mp3",
+            "emotion": "surprised"
+          }
+        ]
+      },
+      {
+        "img": "story-08.png",
+        "alt": "The whale dives unhurt into deep blue water while a rope races past the boat",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "The whale dived deep below the bright and foamy water.",
+            "audio": "p08-01.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "narrator",
+            "text": "A strong line raced past while everyone held on tightly.",
+            "audio": "p08-02.mp3",
+            "emotion": "worried"
+          },
+          {
+            "role": "narrator",
+            "text": "They held the line, but the whale swam free.",
+            "audio": "p08-03.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "There it goes, diving down below the waves!",
+            "audio": "p08-04.mp3",
+            "emotion": "happy"
+          }
+        ]
+      },
+      {
+        "img": "story-09.png",
+        "alt": "A smaller supply ship approaches from far away while Billy o' Tea stays in the foreground",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "The chase went on, and their supplies began running low.",
+            "audio": "p09-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "narrator",
+            "text": "Then a smaller supply ship appeared across the sparkling sea.",
+            "audio": "p09-02.mp3",
+            "emotion": "wonder"
+          },
+          {
+            "role": "narrator",
+            "text": "It carried sugar boxes, tea chests and sealed rum barrels.",
+            "audio": "p09-03.mp3",
+            "emotion": "happy"
+          },
+          {
+            "role": "george",
+            "text": "Look! The Wellerman has found us at last!",
+            "audio": "p09-04.mp3",
+            "emotion": "excited"
+          }
+        ]
+      },
+      {
+        "img": "story-10.png",
+        "alt": "Sugar boxes, tea chests and rum barrels sit on Billy o' Tea's deck; the Wellerman bow is at the edge",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "The Wellerman drew alongside, bringing supplies for everyone aboard.",
+            "audio": "p10-01.mp3",
+            "emotion": "happy"
+          },
+          {
+            "role": "narrator",
+            "text": "The crew passed over sugar, tea and sealed rum barrels.",
+            "audio": "p10-02.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "Soon may the Wellerman come!",
+            "audio": "p10-03.mp3",
+            "emotion": "excited"
+          },
+          {
+            "role": "narrator",
+            "text": "Everyone answered, \"To bring us sugar and tea and rum!\"",
+            "audio": "p10-04.mp3",
+            "emotion": "proud"
+          }
+        ]
+      },
+      {
+        "img": "story-11.png",
+        "alt": "The whale still swims free far away; the crew smile and sing on Billy o' Tea",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "Forty days passed, but the strong whale still swam onward.",
+            "audio": "p11-01.mp3",
+            "emotion": "calm"
+          },
+          {
+            "role": "george",
+            "text": "They did not catch it, and that whale is still going!",
+            "audio": "p11-02.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "narrator",
+            "text": "George and the crew kept singing across the rolling sea.",
+            "audio": "p11-03.mp3",
+            "emotion": "proud"
+          },
+          {
+            "role": "george",
+            "text": "One day we'll take our leave and go!",
+            "audio": "p11-04.mp3",
+            "emotion": "happy"
+          }
+        ]
+      },
+      {
+        "img": "story-12.png",
+        "alt": "George wakes in his grey pajamas on the star blanket; Daddy smiles beside the bed",
+        "lines": [
+          {
+            "role": "narrator",
+            "text": "With one final note, the rolling sea became his blanket.",
+            "audio": "p12-01.mp3",
+            "emotion": "soft"
+          },
+          {
+            "role": "george",
+            "text": "What a dream! Soon may the Wellerman come!",
+            "audio": "p12-02.mp3",
+            "emotion": "surprised"
+          },
+          {
+            "role": "daddy",
+            "text": "We all heard you singing from your warm little room.",
+            "audio": "p12-03.mp3",
+            "emotion": "happy"
+          },
+          {
+            "role": "narrator",
+            "text": "George laughed softly, with the sea song still inside him.",
+            "audio": "p12-04.mp3",
+            "emotion": "happy"
+          }
+        ]
+      }
+    ],
+    "quizPick": 5,
+    "quiz": [
+      {
+        "q": "What carried George away from his bedroom?",
+        "options": [
+          "His song",
+          "A toy train",
+          "A strong bird"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What did George's blanket become?",
+        "options": [
+          "A little boat",
+          "A tea-coloured sail",
+          "A fishing net"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "What was George's ship called?",
+        "options": [
+          "The Wellerman",
+          "Billy o' Tea",
+          "The Moonlight"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "What appeared beside Billy o' Tea?",
+        "options": [
+          "A right whale",
+          "A sea dragon",
+          "A blue car"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What bumped the little boat?",
+        "options": [
+          "A tea chest",
+          "The whale's tail",
+          "George's boot"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "What did the whale do after the big splash?",
+        "options": [
+          "It climbed aboard",
+          "It dived below",
+          "It went to sleep"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "What kind of ship was the Wellerman?",
+        "options": [
+          "A supply ship",
+          "A racing ship",
+          "A pirate ship"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "What did the Wellerman bring?",
+        "options": [
+          "Sugar, tea and rum",
+          "Apples, milk and bread",
+          "Hats, boots and coats"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Did the crew catch the whale after forty days?",
+        "options": [
+          "Yes, at sunrise",
+          "No, it still swam onward",
+          "The story never says"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "When did George know the adventure was a dream?",
+        "options": [
+          "On the first ship page",
+          "When the whale appeared",
+          "When he woke in his room"
+        ],
+        "answer": 2
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Soon may the Wellerman come",
+        "audio": "p10-03.mp3"
+      },
+      {
+        "text": "Blow, me bully boys, blow",
+        "audio": "p04-04.mp3"
+      },
+      {
+        "text": "Take our leave and go",
+        "audio": "p11-04.mp3"
+      }
+    ]
+  }
+}

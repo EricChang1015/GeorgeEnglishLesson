@@ -1,0 +1,200 @@
+{
+  "source": "https://www.youtube.com/watch?v=qP-7GNoDJ5c",
+  "title": "Nathan Evans - Wellerman (Sea Shanty)",
+  "source_file": "tmp/wellerman/wellerman-source.mp3",
+  "notes": "Full song stays in tmp/; only short clips may be published. Timestamps in seconds.",
+  "lines": [
+    {
+      "id": "v1-01",
+      "section": "verse1",
+      "text": "There once was a ship that put to sea",
+      "start": 2.84,
+      "end": 5.34,
+      "file": "song-verse1-01.mp3"
+    },
+    {
+      "id": "v1-02",
+      "section": "verse1",
+      "text": "The name of that ship was the Billy o' Tea",
+      "start": 5.34,
+      "end": 7.89,
+      "file": "song-verse1-02.mp3"
+    },
+    {
+      "id": "v1-03",
+      "section": "verse1",
+      "text": "The winds blew hard, her bow dipped down",
+      "start": 7.88,
+      "end": 10.31,
+      "file": "song-verse1-03.mp3"
+    },
+    {
+      "id": "v1-04",
+      "section": "verse1",
+      "text": "Blow, my bully boys, blow (huh)",
+      "start": 10.29,
+      "end": 12.96,
+      "file": "song-verse1-04.mp3"
+    },
+    {
+      "id": "chorus-01",
+      "section": "chorus",
+      "text": "Soon may the Wellerman come",
+      "start": 12.96,
+      "end": 15.44,
+      "file": "song-chorus-01.mp3"
+    },
+    {
+      "id": "chorus-02",
+      "section": "chorus",
+      "text": "To bring us sugar and tea and rum",
+      "start": 15.42,
+      "end": 17.85,
+      "file": "song-chorus-02.mp3"
+    },
+    {
+      "id": "chorus-03",
+      "section": "chorus",
+      "text": "One day, when the tonguing's done",
+      "start": 18.13,
+      "end": 20.25,
+      "file": "song-chorus-03.mp3"
+    },
+    {
+      "id": "chorus-04",
+      "section": "chorus",
+      "text": "We'll take our leave and go",
+      "start": 20.25,
+      "end": 22.6,
+      "file": "song-chorus-04.mp3"
+    },
+    {
+      "id": "v2-01",
+      "section": "verse2",
+      "text": "She had not been two weeks from shore",
+      "start": 23.04,
+      "end": 25.38,
+      "file": "song-verse2-01.mp3"
+    },
+    {
+      "id": "v2-02",
+      "section": "verse2",
+      "text": "When down on her a right whale bore",
+      "start": 25.38,
+      "end": 27.84,
+      "file": "song-verse2-02.mp3"
+    },
+    {
+      "id": "v2-03",
+      "section": "verse2",
+      "text": "The Captain called all hands and swore",
+      "start": 28.0,
+      "end": 30.35,
+      "file": "song-verse2-03.mp3"
+    },
+    {
+      "id": "v2-04",
+      "section": "verse2",
+      "text": "He'd take that whale in tow (huh)",
+      "start": 30.34,
+      "end": 32.92,
+      "file": "song-verse2-04.mp3"
+    },
+    {
+      "id": "v3-01",
+      "section": "verse3",
+      "text": "Before the boat had hit the water",
+      "start": 53.0,
+      "end": 55.44,
+      "file": "song-verse3-01.mp3"
+    },
+    {
+      "id": "v3-02",
+      "section": "verse3",
+      "text": "The whale's tail came up and caught her",
+      "start": 55.42,
+      "end": 57.99,
+      "file": "song-verse3-02.mp3"
+    },
+    {
+      "id": "v3-03",
+      "section": "verse3",
+      "text": "All hands to the side, harpooned and fought her",
+      "start": 58.04,
+      "end": 60.37,
+      "file": "song-verse3-03.mp3"
+    },
+    {
+      "id": "v3-04",
+      "section": "verse3",
+      "text": "When she dived down low (huh)",
+      "start": 60.38,
+      "end": 62.88,
+      "file": "song-verse3-04.mp3"
+    },
+    {
+      "id": "v4-01",
+      "section": "verse4",
+      "text": "For forty days or even more",
+      "start": 102.84,
+      "end": 105.44,
+      "file": "song-verse4-01.mp3"
+    },
+    {
+      "id": "v4-02",
+      "section": "verse4",
+      "text": "The line went slack then tight once more",
+      "start": 105.46,
+      "end": 107.81,
+      "file": "song-verse4-02.mp3"
+    },
+    {
+      "id": "v4-03",
+      "section": "verse4",
+      "text": "All boats were lost, there were only four",
+      "start": 107.96,
+      "end": 110.44,
+      "file": "song-verse4-03.mp3"
+    },
+    {
+      "id": "v4-04",
+      "section": "verse4",
+      "text": "And still that whale did go (huh)",
+      "start": 110.46,
+      "end": 112.52,
+      "file": "song-verse4-04.mp3"
+    },
+    {
+      "id": "chorus2-01",
+      "section": "chorus2",
+      "text": "Soon may the Wellerman come",
+      "start": 113.09,
+      "end": 115.35,
+      "file": "song-chorus2-01.mp3"
+    },
+    {
+      "id": "chorus2-02",
+      "section": "chorus2",
+      "text": "To bring us sugar and tea and rum",
+      "start": 115.46,
+      "end": 117.85,
+      "file": "song-chorus2-02.mp3"
+    },
+    {
+      "id": "chorus2-03",
+      "section": "chorus2",
+      "text": "One day, when the tonguing's done",
+      "start": 118.07,
+      "end": 120.27,
+      "file": "song-chorus2-03.mp3"
+    },
+    {
+      "id": "chorus2-04",
+      "section": "chorus2",
+      "text": "We'll take our leave and go",
+      "start": 120.25,
+      "end": 122.52,
+      "file": "song-chorus2-04.mp3"
+    }
+  ]
+}

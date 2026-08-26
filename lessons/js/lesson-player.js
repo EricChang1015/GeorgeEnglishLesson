@@ -9,6 +9,8 @@
   const story = L.story || [];
   const quizPool = L.quiz || [];
   const phrases = L.phrases || [];
+  const songPages = L.songPages || [];
+  const youtubeId = L.youtubeId || "";
   const videoPages = L.videoPages || null;
   const videoDir = L.videoDir || "video/";
   const LETTERS = ["A", "B", "C"];
@@ -263,6 +265,57 @@
     });
   }
 
+  function audioSrc(name) {
+    const n = String(name || "");
+    if (!n || n.startsWith("audio/") || /^https?:/i.test(n)) return n;
+    return "audio/" + n;
+  }
+
+  function buildSongScreens() {
+    document.querySelectorAll("[data-song]").forEach((sec) => {
+      const i = Number(sec.dataset.song);
+      const page = songPages[i];
+      if (!page) return;
+      const linesHtml = page.lines.map((line) => `
+        <button class="line song" type="button" data-audio="${esc(audioSrc(line.audio))}">
+          <span class="who">Sing</span>
+          ${esc(line.text)}
+        </button>
+      `).join("");
+      const img = page.img ? mediaTag(page.img, "hero", page.alt) : "";
+      sec.innerHTML = `
+        <div class="page-meta">${esc(page.title || `Sing along ${i + 1}`)} / ${songPages.length}</div>
+        ${img}
+        <div class="voice-key"><span class="song">Nathan Evans · Wellerman</span></div>
+        <div class="lines">${linesHtml}</div>
+        <p class="hint">Tap a line to sing along · or Read the page · swipe to turn</p>
+        <div class="controls">
+          <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+          <button class="btn-secondary" type="button" data-read-page>🔊 Read page</button>
+          <button class="btn-primary" type="button" data-next>Next ▶</button>
+        </div>
+      `;
+    });
+  }
+
+  function ensureSongEmbed() {
+    const box = document.getElementById("songEmbed");
+    if (!box || box.dataset.ready === "1") return;
+    box.dataset.ready = "1";
+    if (!youtubeId) {
+      box.innerHTML = "<p class=\"hint\">Need the internet to play the full song.</p>";
+      return;
+    }
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtubeId)}?rel=0`;
+    iframe.title = "Nathan Evans — Wellerman";
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    box.innerHTML = "";
+    box.appendChild(iframe);
+  }
+
   function buildVocab() {
     const grid = document.getElementById("vocabGrid");
     if (!grid) return;
@@ -312,6 +365,20 @@
   function isStoryScreen(index) {
     const sec = screens[index];
     return !!(sec && sec.dataset.story != null);
+  }
+
+  function isSongScreen(index) {
+    const sec = screens[index];
+    return !!(sec && sec.dataset.song != null);
+  }
+
+  function isSongEmbedScreen(index) {
+    const sec = screens[index];
+    return !!(sec && sec.querySelector("#songEmbed"));
+  }
+
+  function isLineScreen(index) {
+    return isStoryScreen(index) || isSongScreen(index);
   }
 
   function allQuizAnswered() {
@@ -463,10 +530,12 @@
 
   function pageLabel(sec, i) {
     if (sec.dataset.story != null) return `Story ${Number(sec.dataset.story) + 1}`;
+    if (sec.dataset.song != null) return `Sing ${Number(sec.dataset.song) + 1}`;
+    if (sec.querySelector("#songEmbed")) return "Full song";
     if (sec.querySelector("#quizArea")) return "Quiz";
     if (sec.querySelector("#sightGrid")) return "Phrases";
     if (sec.querySelector("#notesForm")) return "Notes";
-    if (sec.querySelector("#vocabGrid")) return "New Words";
+    if (sec.querySelector("#vocabGrid")) return "Song words";
     if (i === 0) return "Cover";
     return `Page ${i + 1}`;
   }
@@ -530,6 +599,8 @@
     const sec = screens[current];
     let hash = `#p=${current}`;
     if (sec && sec.dataset.story != null) hash = `#story=${Number(sec.dataset.story) + 1}`;
+    else if (sec && sec.dataset.song != null) hash = `#sing=${Number(sec.dataset.song) + 1}`;
+    else if (isSongEmbedScreen(current)) hash = "#listen";
     else if (isQuizScreen(current)) hash = "#quiz";
     else if (isVocabScreen(current)) hash = "#words";
     else if (isPhrasesScreen(current)) hash = "#phrases";
@@ -561,6 +632,16 @@
     const pMatch = hash.match(/^p=(\d+)/) || hash.match(/^page=(\d+)/);
     if (pMatch) return clampScreen(Number(pMatch[1]));
     if (hash === "cover") return 0;
+    const singMatch = hash.match(/^sing=(\d+)/);
+    if (singMatch) {
+      const n = Number(singMatch[1]) - 1;
+      const idx = screens.findIndex((s) => s.dataset.song === String(n));
+      return idx >= 0 ? idx : 0;
+    }
+    if (hash === "listen" || hash === "song") {
+      const idx = screens.findIndex((s) => s.querySelector("#songEmbed"));
+      return idx >= 0 ? idx : 0;
+    }
     if (hash === "words" || hash === "vocab") {
       const idx = screens.findIndex((s) => s.querySelector("#vocabGrid"));
       return idx >= 0 ? idx : 1;
@@ -607,6 +688,7 @@
     hydrateImages(active);
     hydrateVideos(active);
     if (isStoryScreen(current)) syncStoryVideos(active, autoMode);
+    if (isSongEmbedScreen(current)) ensureSongEmbed();
     preloadScreen(current + 1);
     updateProgress();
     updateJump();
@@ -715,8 +797,13 @@
       next();
       return;
     }
-    if (isStoryScreen(current)) {
+    if (isLineScreen(current)) {
       readPage(screens[current], () => { if (autoMode) autoAdvance(); });
+      return;
+    }
+    if (isSongEmbedScreen(current)) {
+      ensureSongEmbed();
+      stopAuto({ silent: true });
       return;
     }
     if (isQuizScreen(current)) {
@@ -891,6 +978,7 @@
 
   buildVocab();
   buildStoryScreens();
+  buildSongScreens();
   renderQuizQuestion();
   buildPhrases();
   installChrome();

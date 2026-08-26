@@ -44,6 +44,8 @@ python scripts/generate_lesson_audio.py --quiz-only --story scripts/lesson01_sto
 
 Quiz clips (narrator): `quiz-01.mp3`, `quiz-01-a.mp3` … `quiz-01-c.mp3`, plus `quiz-choose.mp3`.
 
+If `window.LESSON.youtubeId` is set, a screen with `#songEmbed` lazy-loads the official YouTube player (full song). Screens with `data-song` are sing-along pages: tap a lyric line to play a short original-audio clip. Deep links: `#sing=1`, `#listen`.
+
 On the quiz page, **Read question** speaks the question, then A/B/C. Options stay disabled until that finishes.
 
 If `window.LESSON.quizPick` is set (Lesson 3 uses `5`), the player shuffles the pool and shows that many questions per visit. Audio files stay numbered by **pool order** (`quiz-01` …), not session order. Lessons without `quizPick` still play the full list.
@@ -53,12 +55,14 @@ If `window.LESSON.quizPick` is set (Lesson 3 uses `5`), the player shuffles the 
 | Control | Behaviour |
 |---------|-----------|
 | Swipe / ← → | Previous / next page |
-| **Go to** | Jump to Cover, Words, Story 1–8, Quiz, Phrases, Notes |
+| **Go to** | Jump to Cover, Words / Song words, Story, Sing, Full song, Quiz, Phrases, Notes |
 | **Auto read** | Read the current page, turn, continue; at quiz, wait for A/B/C |
 
 Deep links (updated as the child moves):
 
 - `#story=3` — story page 3
+- `#sing=1` — first sing-along page
+- `#listen` — full-song YouTube embed
 - `#quiz` `#words` `#phrases` `#notes` `#cover`
 - `#p=4` or `?page=4` — screen index (0 = cover)
 

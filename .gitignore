@@ -20,3 +20,6 @@ _local/
 scripts/_poe_test.png
 scripts/poe_usage.jsonl
 scripts/__pycache__/
+
+# Local downloads / audition scratch (never publish full tracks)
+tmp/
