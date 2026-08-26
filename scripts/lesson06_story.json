@@ -7,13 +7,14 @@
   "learning": {
     "summary_zh": "先學 Wellerman 歌詞裡較難的詞與短語，再用原曲逐句跟唱，最後聽完整首歌。故事繪本暫緩。",
     "focus_en": [
-      "Song words: Wellerman, bow, bully boys, tonguing, harpoon, in tow, all hands, take our leave",
+      "Song words: Wellerman, bow, bully boys, rum, tonguing, harpoon, in tow, all hands, take our leave",
       "Sing along with Nathan Evans line clips, then the full song"
     ],
     "tutor_prompts_zh": [
       "問：Wellerman 是什麼？（送來補給的船，不是人的名字）",
       "問：bow 是船的哪裡？（船頭）",
       "問：bully boys 是欺負人嗎？（不是；歌裡指強壯開心的水手夥伴）",
+      "問：rum 是什麼？（以前水手在船上喝的一種深色飲料；歌詞裡跟 sugar、tea 一起送來）",
       "問：tonguing 是什麼？（舊時把鯨脂切成長條；歌詞 One day, when the tonguing's done）",
       "問：all hands 是什麼意思？（船上所有人一起過來幫忙）",
       "問：in tow 是什麼意思？（用繩子拖在後面）",
@@ -53,8 +54,18 @@
       "example_audio": "vocab-bully-boys-ex.mp3"
     },
     {
+      "word": "rum",
+      "example": "To bring us sugar and tea and rum.",
+      "img": "vocab-rum.png",
+      "alt": "wooden rum barrels and a small cup of dark amber drink on a ship deck",
+      "audio": "vocab-rum.mp3",
+      "example_audio": "vocab-rum-ex.mp3"
+    },
+    {
       "word": "tonguing",
       "example": "One day, when the tonguing's done.",
+      "speak": "tongue-ing",
+      "example_speak": "One day, when the tongue-ing is done.",
       "img": "vocab-tonguing.png",
       "alt": "a sailor cutting pale whale fat into long strips on deck",
       "audio": "vocab-tonguing.mp3",
@@ -80,7 +91,7 @@
       "word": "all hands",
       "example": "The Captain called all hands and swore.",
       "img": "vocab-all-hands.png",
-      "alt": "many sailors gathering on deck when the captain calls",
+      "alt": "the captain calls and sailors hurry across the deck to help",
       "audio": "vocab-all-hands.mp3",
       "example_audio": "vocab-all-hands-ex.mp3"
     },
@@ -97,6 +108,8 @@
   "songPages": [
     {
       "title": "Sing along 1",
+      "img": "story-04.png",
+      "alt": "A strong wind fills the sails and the wooden bow dips into a shining wave",
       "lines": [
         {
           "text": "There once was a ship that put to sea",
@@ -134,6 +147,8 @@
     },
     {
       "title": "Sing along 2",
+      "img": "story-05.png",
+      "alt": "A huge right whale rises beside Billy o' Tea as the captain calls the crew",
       "lines": [
         {
           "text": "She had not been two weeks from shore",
@@ -171,6 +186,8 @@
     },
     {
       "title": "Sing along 3",
+      "img": "story-11.png",
+      "alt": "The whale still swims free far away; the crew smile and sing on Billy o' Tea",
       "lines": [
         {
           "text": "For forty days or even more",

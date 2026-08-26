@@ -246,15 +246,16 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 
 ---
 
-## Song Words（精簡版 8 個 — 2026-08-26）
+## Song Words（精簡版 9 個 — 2026-08-26）
 
-家長否決太簡單的名詞（sail / whale / captain / sugar / tea）。改教歌詞裡需要解釋的詞與短語。例句一律取自 Nathan Evans VEVO 用字；圖為**專用單字卡**（不用故事內頁）。
+家長否決太簡單的名詞（sail / whale / captain / sugar / tea）。改教歌詞裡需要解釋的詞與短語。例句一律取自 Nathan Evans VEVO 用字；單字卡為**專用圖**（不用故事內頁）。Sing 1–3 則沿用故事內頁當跟唱插圖。
 
 | Word | Example（歌詞） | 圖 |
 |---|---|---|
 | Wellerman | Soon may the Wellerman come, to bring us sugar and tea and rum. | `vocab-wellerman` |
 | bow | The winds blew hard, her bow dipped down. | `vocab-bow` |
 | bully boys | Blow, me bully boys, blow! | `vocab-bully-boys` |
+| rum | To bring us sugar and tea and rum. | `vocab-rum`（木桶＋深色飲料；無酒醉、圖上無英文字） |
 | tonguing | One day, when the tonguing's done. | `vocab-tonguing`（鯨脂切條；無血。意思見家教提示） |
 | harpoon | All hands to the side, harpooned and fought her. | `vocab-harpoon`（甲板上的魚叉＋繩，不刺入鯨魚） |
 | in tow | He'd take that whale in tow. | `vocab-in-tow` |
@@ -271,7 +272,7 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 
 ## Song-along page plan（獨立於 12 頁故事）
 
-來源：Nathan Evans 官方版（VEVO 字幕用字）<https://www.youtube.com/watch?v=qP-7GNoDJ5c>。時間軸見 `scripts/wellerman_timeline.json`。重複副歌去重。
+來源：Nathan Evans 官方版（VEVO 字幕用字）<https://www.youtube.com/watch?v=qP-7GNoDJ5c>。時間軸見 `scripts/wellerman_timeline.json`。重複副歌去重。跟唱頁插圖沿用故事內頁：Sing 1 = `story-04`、Sing 2 = `story-05`、Sing 3 = `story-11`。
 
 1. **Verse 1**
    - There once was a ship that put to sea
@@ -312,6 +313,7 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 - 問：Wellerman 是什麼？（送來補給的船，不是人的名字）
 - 問：bow 是船的哪裡？（船頭，不是蝴蝶結、也不是鞠躬）
 - 問：bully boys 是欺負人嗎？（不是；歌裡指強壯開心的水手夥伴）
+- 問：rum 是什麼？（以前水手在船上喝的一種深色飲料；歌詞裡跟 sugar、tea 一起送來）
 - 問：tonguing 是什麼？（舊時把鯨脂切成長條；歌詞 One day, when the tonguing's done）
 - 問：harpoon 是什麼？（帶繩的長魚叉；圖上只放在甲板，不刺鯨魚）
 - 問：in tow 是什麼意思？（用繩子拖在後面）

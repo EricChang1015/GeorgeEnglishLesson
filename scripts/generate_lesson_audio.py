@@ -53,7 +53,8 @@ def collect_jobs(data: dict, audio_dir: Path, quiz_only: bool) -> list[dict]:
         for item in data.get("vocab", []):
             jobs.append(
                 {
-                    "text": item["word"],
+                    "text": item.get("speak") or item["word"],
+                    "ssml": item.get("ssml"),
                     "role": "narrator",
                     "cfg": narrator,
                     "out": audio_dir / item["audio"],
@@ -64,7 +65,8 @@ def collect_jobs(data: dict, audio_dir: Path, quiz_only: bool) -> list[dict]:
             if example and example_audio:
                 jobs.append(
                     {
-                        "text": example,
+                        "text": item.get("example_speak") or example,
+                        "ssml": item.get("example_ssml"),
                         "role": "narrator",
                         "cfg": narrator,
                         "out": audio_dir / example_audio,
@@ -127,9 +129,20 @@ def collect_jobs(data: dict, audio_dir: Path, quiz_only: bool) -> list[dict]:
     return jobs
 
 
-async def save_edge(text: str, out: Path, voice: str, rate: str, pitch: str) -> None:
+async def save_edge(
+    text: str,
+    out: Path,
+    voice: str,
+    rate: str,
+    pitch: str,
+    ssml: str | None = None,
+) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     communicate = edge_tts.Communicate(text, voice=voice, rate=rate, pitch=pitch)
+    if ssml:
+        # Communicate() XML-escapes text. Inject a phoneme fragment inside the
+        # existing <prosody> wrap so rare words (e.g. tonguing) keep IPA.
+        communicate.texts = [ssml.encode("utf-8")]
     await communicate.save(str(out))
     print(f"OK  {out.name}  (edge {voice})  {text[:56]}{'…' if len(text) > 56 else ''}")
 
@@ -245,7 +258,14 @@ async def generate(
             time.sleep(0.35)
         else:
             cfg = job["cfg"]
-            await save_edge(job["text"], out, cfg["voice"], cfg["rate"], cfg["pitch"])
+            await save_edge(
+                job["text"],
+                out,
+                cfg["voice"],
+                cfg["rate"],
+                cfg["pitch"],
+                ssml=job.get("ssml"),
+            )
         written += 1
     print(f"\nDone: {written} new files ({len(jobs)} jobs) -> {audio_dir}")
 

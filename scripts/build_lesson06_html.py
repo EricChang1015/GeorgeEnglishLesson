@@ -38,6 +38,7 @@ def lesson_payload() -> dict:
         "songPages": [
             {
                 "title": page["title"],
+                **({"img": page["img"], "alt": page.get("alt") or ""} if page.get("img") else {}),
                 "lines": [{"text": ln["text"], "audio": audio(ln["audio"])} for ln in page["lines"]],
             }
             for page in STORY.get("songPages") or []
@@ -123,7 +124,7 @@ MID = """
 
 TAIL = """
   </script>
-  <script src="js/lesson-player.js?v=6"></script>
+  <script src="js/lesson-player.js?v=7"></script>
 </body>
 </html>
 """
