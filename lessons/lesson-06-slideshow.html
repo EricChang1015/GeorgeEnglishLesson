@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 6: Picture song — Wellerman</title>
+  <link rel="stylesheet" href="css/lesson.css" />
+  <link rel="stylesheet" href="css/wellerman-slideshow.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">George English · Lesson 6</div>
+      <nav class="nav-links">
+        <a href="lesson-06.html#words">Song words</a>
+        <a href="lesson-06.html#listen">Whole song</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <div class="slideshow-card">
+      <p class="page-meta" id="slideMeta">Line 1 / 24</p>
+      <label class="jump-line">Go to
+        <select id="slideJump" aria-label="Jump to lyric line"></select>
+      </label>
+      <figure class="slideshow-figure" id="slideFigure">
+        <img class="hero hero-full" id="slideImg" alt="" />
+      </figure>
+      <p class="lyric-text" id="slideLyric"></p>
+      <p class="hint">Swipe the picture · or tap Next · Play from here sings the whole song</p>
+      <div class="slideshow-controls">
+        <button class="btn-ghost" type="button" id="btnPrev">◀ Prev</button>
+        <button class="btn-secondary" type="button" id="btnReplay">🔊</button>
+        <button class="btn-primary" type="button" id="btnNext">Next ▶</button>
+      </div>
+      <div class="slideshow-controls">
+        <button class="btn-good" type="button" id="btnAuto">▶ Play from here</button>
+        <a class="btn btn-primary" href="lesson-06.html#listen" style="text-decoration:none;display:inline-block;">Whole song ▶</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.LESSON = {
+  "asset": "assets/lesson-06/",
+  "lyricFrames": [
+    {
+      "index": 1,
+      "id": "v1-01",
+      "section": "verse1",
+      "text": "There once was a ship that put to sea",
+      "audio": "audio/song-verse1-01.mp3",
+      "img": "lyric-01.png",
+      "alt": "Wide dawn shot of Billy o' Tea leaving harbour into open sea. Faces may be small silhouettes."
+    },
+    {
+      "index": 2,
+      "id": "v1-02",
+      "section": "verse1",
+      "text": "The name of that ship was the Billy o' Tea",
+      "audio": "audio/song-verse1-02.mp3",
+      "img": "lyric-02.png",
+      "alt": "Medium shot of the same ship. George near the mast, Captain at the stern, three crew at the rigging. Tea-leaf emblem clear."
+    },
+    {
+      "index": 3,
+      "id": "v1-03",
+      "section": "verse1",
+      "text": "The winds blew hard, her bow dipped down",
+      "audio": "audio/song-verse1-03.mp3",
+      "img": "lyric-03.png",
+      "alt": "Bow plunges into a wave. George and crew-stocky grip the bow rail. Captain midships. crew-red and crew-young hold lines farther aft."
+    },
+    {
+      "index": 4,
+      "id": "v1-04",
+      "section": "verse1",
+      "text": "Blow, my bully boys, blow (huh)",
+      "audio": "audio/song-verse1-04.mp3",
+      "img": "lyric-04.png",
+      "alt": "George, crew-red, crew-young and crew-stocky lean back on one thick rope, cheering. Captain watches from the stern."
+    },
+    {
+      "index": 5,
+      "id": "chorus-01",
+      "section": "chorus",
+      "text": "Soon may the Wellerman come",
+      "audio": "audio/song-chorus-01.mp3",
+      "img": "lyric-05.png",
+      "alt": "Billy five crane their necks, excited and hopeful, not idle. crew-stocky and crew-red lower a thick rope down Billy's side for the incoming ship. George waves both arms. Captain points at Wellerman. The smaller Wellerman is actively rowing and sailing TOWARD Billy with a bow wake. supply-beard and supply-cap pull oars, looking at Billy, working, not standing with hands in pockets. Cargo 3 pale crates PORT, 2 dark chests MID, 4 barrels STARBOARD. No whale."
+    },
+    {
+      "index": 6,
+      "id": "chorus-02",
+      "section": "chorus",
+      "text": "To bring us sugar and tea and rum",
+      "audio": "audio/song-chorus-02.mp3",
+      "img": "lyric-06.png",
+      "alt": "Alongside transfer. supply-beard passes a tea chest; supply-cap steadies a rum barrel. George claps; crew-stocky reaches for a crate. Captain supervises. crew-red and crew-young hold alignment lines on Billy."
+    },
+    {
+      "index": 7,
+      "id": "chorus-03",
+      "section": "chorus",
+      "text": "One day, when the tonguing's done",
+      "audio": "audio/song-chorus-03.mp3",
+      "img": "lyric-07.png",
+      "alt": "ONLY Billy o' Tea. Historical tonguing like parent photo: a large DARK rounded whale body lies on the wet deck. A huge pale creamy BLUBBER BLANKET is being peeled off that body and hoisted nearly vertical by mast ropes hooked into the top of the flap. crew-red, crew-young and crew-stocky lean into long-handled spades at the cut-line where pale fat meets the dark body. Captain hauls the tackle, straining. George pulls a smaller rope, determined not smiling. Overcast sky, exhausting labour. No blood, no red tissue, no guts, no Wellerman, no swimming whale in the sea."
+    },
+    {
+      "index": 8,
+      "id": "chorus-04",
+      "section": "chorus",
+      "text": "We'll take our leave and go",
+      "audio": "audio/song-chorus-04.mp3",
+      "img": "lyric-08.png",
+      "alt": "All five on Billy's stern waving goodbye as the ship sails toward the horizon. Wake visible."
+    },
+    {
+      "index": 9,
+      "id": "v2-01",
+      "section": "verse2",
+      "text": "She had not been two weeks from shore",
+      "audio": "audio/song-verse2-01.mp3",
+      "img": "lyric-09.png",
+      "alt": "Reuses lyric-17 art: weary forty-day hunt mood on Billy only. Captain at the wheel worried; crew-young scans empty horizon with a telescope; crew-stocky scrubs the deck; crew-red sweeps; George helps with a small broom, worried frown. No coastline needed. No Wellerman, no whale, no calendar."
+    },
+    {
+      "index": 10,
+      "id": "v2-02",
+      "section": "verse2",
+      "text": "When down on her a right whale bore",
+      "audio": "audio/song-verse2-02.mp3",
+      "img": "lyric-10.png",
+      "alt": "Right whale surfaces on the starboard side with V-spray. George grips the rail, surprised. Captain and crew-stocky at the rail; crew-red and crew-young run closer but stay on deck."
+    },
+    {
+      "index": 11,
+      "id": "v2-03",
+      "section": "verse2",
+      "text": "The Captain called all hands and swore",
+      "audio": "audio/song-verse2-03.mp3",
+      "img": "lyric-11.png",
+      "alt": "Stern captain in the centre, waving or whistling. Three crew run toward him from different directions. George watches from the side. Stern, not smiling."
+    },
+    {
+      "index": 12,
+      "id": "v2-04",
+      "section": "verse2",
+      "text": "He'd take that whale in tow (huh)",
+      "audio": "audio/song-verse2-04.mp3",
+      "img": "lyric-12.png",
+      "alt": "Tow line stretches toward the free whale but is not attached. crew-red and crew-young stand beside Whaleboat-1 still on davits. crew-stocky at the davits. George holds a rope coil. Captain points at the whale."
+    },
+    {
+      "index": 13,
+      "id": "v3-01",
+      "section": "verse3",
+      "text": "Before the boat had hit the water",
+      "audio": "audio/song-verse3-01.mp3",
+      "img": "lyric-13.png",
+      "alt": "Whaleboat-1 hanging from davits, hull not yet touching the sea. crew-red at the bow seat, crew-young at the stern seat. George, Captain and crew-stocky lower ropes from the mother-ship deck."
+    },
+    {
+      "index": 14,
+      "id": "v3-02",
+      "section": "verse3",
+      "text": "The whale's tail came up and caught her",
+      "audio": "audio/song-verse3-02.mp3",
+      "img": "lyric-14.png",
+      "alt": "Huge fluke slaps spray. Whaleboat tilts but does not capsize. Same two men grip the gunwales. Mother-ship trio watch from starboard."
+    },
+    {
+      "index": 15,
+      "id": "v3-03",
+      "section": "verse3",
+      "text": "All hands to the side, harpooned and fought her",
+      "audio": "audio/song-verse3-03.mp3",
+      "img": "lyric-15.png",
+      "alt": "All hands: mother-ship trio lean over the starboard rail; boat pair raise rope-harpoon poles toward the whale. Poles do not touch the whale's skin."
+    },
+    {
+      "index": 16,
+      "id": "v3-04",
+      "section": "verse3",
+      "text": "When she dived down low (huh)",
+      "audio": "audio/song-verse3-04.mp3",
+      "img": "lyric-16.png",
+      "alt": "Whale dives whole-body. Line races past the boat but does not bind the whale. George points at bubble trail from the mother ship. Same boat pair still in Whaleboat-1."
+    },
+    {
+      "index": 17,
+      "id": "v4-01",
+      "section": "verse4",
+      "text": "For forty days or even more",
+      "audio": "audio/song-verse4-01.mp3",
+      "img": "lyric-17.png",
+      "alt": "Forty days of hunting with no catch. Only Billy o' Tea on an empty sea. All five look weary and worried, not smiling. Captain grips the helm and steers with a furrowed brow. crew-young stands at the rail scanning the empty horizon with a brass telescope. crew-stocky scrubs the wooden deck on his knees. crew-red sweeps with a broom. George in sailor suit helps with a small broom, worried frown, not a toothy grin. No Wellerman, no supply men, no cargo stacks, no whale in the water, no calendar or number 40."
+    },
+    {
+      "index": 18,
+      "id": "v4-02",
+      "section": "verse4",
+      "text": "The line went slack then tight once more",
+      "audio": "audio/song-verse4-02.mp3",
+      "img": "lyric-18.png",
+      "alt": "crew-stocky at the winch manages a coil that visibly goes slack then taut. George watches the coil. Captain at stern. crew-red and crew-young help pull. No Wellerman."
+    },
+    {
+      "index": 19,
+      "id": "v4-03",
+      "section": "verse4",
+      "text": "All boats were lost, there were only four",
+      "audio": "audio/song-verse4-03.mp3",
+      "img": "lyric-19.png",
+      "alt": "Four intact empty whaleboats remain. TWO hang from davits on the PORT side and TWO hang from davits on the STARBOARD side (or stern) — never four davits in a single row on one rail. Extra empty davits split on both sides show losses. Five people on deck count the remaining boats. No numeral 4."
+    },
+    {
+      "index": 20,
+      "id": "v4-04",
+      "section": "verse4",
+      "text": "And still that whale did go (huh)",
+      "audio": "audio/song-verse4-04.mp3",
+      "img": "lyric-20.png",
+      "alt": "Billy five watch the same whale swim away, tail fluke up, no rope on the animal. ONLY Billy o' Tea — no Wellerman, no supply men, no cargo. Gentle humour, not anger."
+    },
+    {
+      "index": 21,
+      "id": "chorus2-01",
+      "section": "chorus2",
+      "text": "Soon may the Wellerman come",
+      "audio": "audio/song-chorus2-01.mp3",
+      "img": "lyric-21.png",
+      "alt": "Same eager scene as lyric-05 from a slightly lower deck angle: Billy five crane necks, lower a rope; Wellerman rows toward Billy; same two supply men working oars; same cargo layout. No whale."
+    },
+    {
+      "index": 22,
+      "id": "chorus2-02",
+      "section": "chorus2",
+      "text": "To bring us sugar and tea and rum",
+      "audio": "audio/song-chorus2-02.mp3",
+      "img": "lyric-22.png",
+      "alt": "Same transfer as lyric-06: supply-beard passes tea, supply-cap steadies rum, George claps, crew-stocky receives."
+    },
+    {
+      "index": 23,
+      "id": "chorus2-03",
+      "section": "chorus2",
+      "text": "One day, when the tonguing's done",
+      "audio": "audio/song-chorus2-03.mp3",
+      "img": "lyric-23.png",
+      "alt": "Same historical tonguing as lyric-07, slightly different angle: dark whale body on deck, pale blubber blanket peeling off, mast ropes hoisting the flap, three crew at the cut-line, captain and George hauling. No blood, no Wellerman, no swimming whale."
+    },
+    {
+      "index": 24,
+      "id": "chorus2-04",
+      "section": "chorus2",
+      "text": "We'll take our leave and go",
+      "audio": "audio/song-chorus2-04.mp3",
+      "img": "lyric-24.png",
+      "alt": "Same five waving from Billy's stern as lyric-08. Optional warm sunset. No Wellerman."
+    }
+  ]
+};
+  </script>
+  <script src="js/wellerman-slideshow.js?v=2"></script>
+</body>
+</html>

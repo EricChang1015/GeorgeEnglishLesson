@@ -1,0 +1,549 @@
+{
+  "lesson": "lesson-06",
+  "title": "George and the Wellerman — lyric slideshow",
+  "source_timeline": "scripts/wellerman_timeline.json",
+  "audio_dir": "lessons/assets/lesson-06/audio",
+  "img_dir": "lessons/assets/lesson-06",
+  "locks": {
+    "deck_ids": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+    "whaleboat_ids": ["crew-red", "crew-young"],
+    "whaleboat_bow": "crew-red",
+    "whaleboat_stern": "crew-young",
+    "wellerman_ids": ["supply-beard", "supply-cap"],
+    "never_in_whaleboat": ["george-sailor", "captain", "crew-stocky", "supply-beard", "supply-cap"],
+    "cargo": {
+      "sugar": 3,
+      "tea": 2,
+      "rum": 4,
+      "layout": "port-sugar, mid-tea, starboard-rum"
+    },
+    "chorus_pairs": [[5, 21], [6, 22], [7, 23], [8, 24]],
+    "whaleboat_occupied_frames": [13, 14, 15, 16]
+  },
+  "frames": [
+    {
+      "id": "v1-01",
+      "index": 1,
+      "section": "verse1",
+      "text": "There once was a ship that put to sea",
+      "audio": "song-verse1-01.mp3",
+      "img": "lyric-01.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Wide dawn shot of Billy o' Tea leaving harbour into open sea. Faces may be small silhouettes.",
+      "props": ["billy-o-tea"],
+      "evidence": ["full ship", "tea-leaf sail emblem", "morning light", "no Wellerman", "no whale"],
+      "continuity_ref": null,
+      "continuity_note": "Opening. Same five people aboard; distant.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v1-02",
+      "index": 2,
+      "section": "verse1",
+      "text": "The name of that ship was the Billy o' Tea",
+      "audio": "song-verse1-02.mp3",
+      "img": "lyric-02.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Medium shot of the same ship. George near the mast, Captain at the stern, three crew at the rigging. Tea-leaf emblem clear.",
+      "props": ["billy-o-tea"],
+      "evidence": ["tea-leaf emblem on mainsail", "tea-brown hull", "rigging", "one ship only"],
+      "continuity_ref": "v1-01",
+      "continuity_note": "Same ship and five people; camera closer.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v1-03",
+      "index": 3,
+      "section": "verse1",
+      "text": "The winds blew hard, her bow dipped down",
+      "audio": "song-verse1-03.mp3",
+      "img": "lyric-03.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Bow plunges into a wave. George and crew-stocky grip the bow rail. Captain midships. crew-red and crew-young hold lines farther aft.",
+      "props": ["billy-o-tea"],
+      "evidence": ["bow in wave trough", "spray", "full sails", "George at bow"],
+      "continuity_ref": "v1-02",
+      "continuity_note": "All five still on the mother ship; George + crew-stocky at the bow.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v1-04",
+      "index": 4,
+      "section": "verse1",
+      "text": "Blow, my bully boys, blow (huh)",
+      "audio": "song-verse1-04.mp3",
+      "img": "lyric-04.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "George, crew-red, crew-young and crew-stocky lean back on one thick rope, cheering. Captain watches from the stern.",
+      "props": ["billy-o-tea", "halyard"],
+      "evidence": ["four pulling one rope", "three distinct crew faces", "wind-filled sail", "excited not scared"],
+      "continuity_ref": "v1-03",
+      "continuity_note": "First close lineup of the three Billy crew faces.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "chorus-01",
+      "index": 5,
+      "section": "chorus",
+      "text": "Soon may the Wellerman come",
+      "audio": "song-chorus-01.mp3",
+      "img": "lyric-05.png",
+      "zone": "SupplyShip",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": ["supply-beard", "supply-cap"]
+      },
+      "action": "Billy five crane their necks, excited and hopeful, not idle. crew-stocky and crew-red lower a thick rope down Billy's side for the incoming ship. George waves both arms. Captain points at Wellerman. The smaller Wellerman is actively rowing and sailing TOWARD Billy with a bow wake. supply-beard and supply-cap pull oars, looking at Billy, working, not standing with hands in pockets. Cargo 3 pale crates PORT, 2 dark chests MID, 4 barrels STARBOARD. No whale.",
+      "props": ["billy-o-tea", "wellerman", "heaving-line"],
+      "evidence": ["eager craning necks", "rope being lowered", "Wellerman rowing toward Billy", "supply men working oars", "two different ships", "green circle emblem"],
+      "continuity_ref": "v1-04",
+      "continuity_note": "Supply pair first locked. Same faces on all remaining Wellerman frames (6, 21, 22).",
+      "whale": false,
+      "cargo": {
+        "sugar": 3,
+        "tea": 2,
+        "rum": 4,
+        "layout": "port-sugar, mid-tea, starboard-rum"
+      }
+    },
+    {
+      "id": "chorus-02",
+      "index": 6,
+      "section": "chorus",
+      "text": "To bring us sugar and tea and rum",
+      "audio": "song-chorus-02.mp3",
+      "img": "lyric-06.png",
+      "zone": "SupplyShip",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": ["supply-beard", "supply-cap"]
+      },
+      "action": "Alongside transfer. supply-beard passes a tea chest; supply-cap steadies a rum barrel. George claps; crew-stocky reaches for a crate. Captain supervises. crew-red and crew-young hold alignment lines on Billy.",
+      "props": ["billy-o-tea", "wellerman", "cargo-sugar", "cargo-tea", "cargo-rum"],
+      "evidence": ["sugar crates", "tea chests", "sealed rum barrels", "no drinking", "same two supply men"],
+      "continuity_ref": "chorus-01",
+      "continuity_note": "Same supply pair and cargo style; only motion is passing goods.",
+      "whale": false,
+      "cargo": {
+        "sugar": 3,
+        "tea": 2,
+        "rum": 4,
+        "layout": "port-sugar, mid-tea, starboard-rum"
+      }
+    },
+    {
+      "id": "chorus-03",
+      "index": 7,
+      "section": "chorus",
+      "text": "One day, when the tonguing's done",
+      "audio": "song-chorus-03.mp3",
+      "img": "lyric-07.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "ONLY Billy o' Tea. Historical tonguing like parent photo: a large DARK rounded whale body lies on the wet deck. A huge pale creamy BLUBBER BLANKET is being peeled off that body and hoisted nearly vertical by mast ropes hooked into the top of the flap. crew-red, crew-young and crew-stocky lean into long-handled spades at the cut-line where pale fat meets the dark body. Captain hauls the tackle, straining. George pulls a smaller rope, determined not smiling. Overcast sky, exhausting labour. No blood, no red tissue, no guts, no Wellerman, no swimming whale in the sea.",
+      "props": ["billy-o-tea", "whale-carcass-on-deck", "blubber-blanket", "block-and-tackle", "blubber-spades"],
+      "evidence": ["dark whale body on deck", "pale blanket peeling off the body", "ropes hooked into the flap", "men at the cut-line leaning hard", "George on a rope not smiling", "no blood", "no Wellerman", "no swimming whale"],
+      "continuity_ref": "chorus-02",
+      "continuity_note": "Tonguing matches historical flensing (parent photo). Chorus pair with lyric-23. Child-safe: pale blubber, no gore.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "chorus-04",
+      "index": 8,
+      "section": "chorus",
+      "text": "We'll take our leave and go",
+      "audio": "song-chorus-04.mp3",
+      "img": "lyric-08.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "All five on Billy's stern waving goodbye as the ship sails toward the horizon. Wake visible.",
+      "props": ["billy-o-tea"],
+      "evidence": ["waving", "stern wake", "no Wellerman"],
+      "continuity_ref": "chorus-03",
+      "continuity_note": "Wellerman leaves the frame. Same five on Billy. Pair with lyric-24.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v2-01",
+      "index": 9,
+      "section": "verse2",
+      "text": "She had not been two weeks from shore",
+      "audio": "song-verse2-01.mp3",
+      "img": "lyric-09.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Reuses lyric-17 art: weary forty-day hunt mood on Billy only. Captain at the wheel worried; crew-young scans empty horizon with a telescope; crew-stocky scrubs the deck; crew-red sweeps; George helps with a small broom, worried frown. No coastline needed. No Wellerman, no whale, no calendar.",
+      "props": ["billy-o-tea", "broom", "telescope", "helm"],
+      "evidence": ["worried faces not smiles", "captain at wheel", "telescope search", "deck sweeping", "one ship only", "no Wellerman", "no whale"],
+      "continuity_ref": "chorus-04",
+      "continuity_note": "Parent: same picture as lyric-17 (For forty days). Same five aboard.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v2-02",
+      "index": 10,
+      "section": "verse2",
+      "text": "When down on her a right whale bore",
+      "audio": "song-verse2-02.mp3",
+      "img": "lyric-10.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Right whale surfaces on the starboard side with V-spray. George grips the rail, surprised. Captain and crew-stocky at the rail; crew-red and crew-young run closer but stay on deck.",
+      "props": ["billy-o-tea", "right-whale"],
+      "evidence": ["right whale no dorsal fin", "callosities on snout, above left eye, right jaw", "V-shaped blow", "George at rail"],
+      "continuity_ref": "v2-01",
+      "continuity_note": "First close whale. All five still on mother ship; nobody in the whaleboat.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v2-03",
+      "index": 11,
+      "section": "verse2",
+      "text": "The Captain called all hands and swore",
+      "audio": "song-verse2-03.mp3",
+      "img": "lyric-11.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Stern captain in the centre, waving or whistling. Three crew run toward him from different directions. George watches from the side. Stern, not smiling.",
+      "props": ["billy-o-tea", "right-whale"],
+      "evidence": ["captain centre", "three distinct crew running in", "stern face"],
+      "continuity_ref": "v2-02",
+      "continuity_note": "Sets up the split: red+young will take the boat; stocky stays on deck.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v2-04",
+      "index": 12,
+      "section": "verse2",
+      "text": "He'd take that whale in tow (huh)",
+      "audio": "song-verse2-04.mp3",
+      "img": "lyric-12.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Tow line stretches toward the free whale but is not attached. crew-red and crew-young stand beside Whaleboat-1 still on davits. crew-stocky at the davits. George holds a rope coil. Captain points at the whale.",
+      "props": ["billy-o-tea", "whaleboat-1", "tow-line", "right-whale"],
+      "evidence": ["line toward whale not bound", "whaleboat on davits empty of seated crew", "whale free"],
+      "continuity_ref": "v2-03",
+      "continuity_note": "Boat still empty. Same pair who will sit in it next frame.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v3-01",
+      "index": 13,
+      "section": "verse3",
+      "text": "Before the boat had hit the water",
+      "audio": "song-verse3-01.mp3",
+      "img": "lyric-13.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-stocky"],
+        "whaleboat": ["crew-red", "crew-young"],
+        "wellerman": []
+      },
+      "action": "Whaleboat-1 hanging from davits, hull not yet touching the sea. crew-red at the bow seat, crew-young at the stern seat. George, Captain and crew-stocky lower ropes from the mother-ship deck.",
+      "props": ["billy-o-tea", "whaleboat-1", "davits"],
+      "evidence": ["boat in mid-air", "not touching water", "red beard at bow", "young clean-shaven at stern"],
+      "continuity_ref": "v2-04",
+      "continuity_note": "ONLY allowed whaleboat crew. Occupancy locked through lyric-16.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v3-02",
+      "index": 14,
+      "section": "verse3",
+      "text": "The whale's tail came up and caught her",
+      "audio": "song-verse3-02.mp3",
+      "img": "lyric-14.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-stocky"],
+        "whaleboat": ["crew-red", "crew-young"],
+        "wellerman": []
+      },
+      "action": "Huge fluke slaps spray. Whaleboat tilts but does not capsize. Same two men grip the gunwales. Mother-ship trio watch from starboard.",
+      "props": ["billy-o-tea", "whaleboat-1", "right-whale"],
+      "evidence": ["giant tail", "boat tilted not flipped", "same two boatmen", "no harpoon in whale"],
+      "continuity_ref": "v3-01",
+      "continuity_note": "Boat occupants must match lyric-13 exactly.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v3-03",
+      "index": 15,
+      "section": "verse3",
+      "text": "All hands to the side, harpooned and fought her",
+      "audio": "song-verse3-03.mp3",
+      "img": "lyric-15.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-stocky"],
+        "whaleboat": ["crew-red", "crew-young"],
+        "wellerman": []
+      },
+      "action": "All hands: mother-ship trio lean over the starboard rail; boat pair raise rope-harpoon poles toward the whale. Poles do not touch the whale's skin.",
+      "props": ["billy-o-tea", "whaleboat-1", "harpoon-poles", "right-whale"],
+      "evidence": ["starboard lean", "poles with rope", "poles not piercing", "same boat pair"],
+      "continuity_ref": "v3-02",
+      "continuity_note": "All hands means deck trio PLUS the same boat pair — no teleport swap.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v3-04",
+      "index": 16,
+      "section": "verse3",
+      "text": "When she dived down low (huh)",
+      "audio": "song-verse3-04.mp3",
+      "img": "lyric-16.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-stocky"],
+        "whaleboat": ["crew-red", "crew-young"],
+        "wellerman": []
+      },
+      "action": "Whale dives whole-body. Line races past the boat but does not bind the whale. George points at bubble trail from the mother ship. Same boat pair still in Whaleboat-1.",
+      "props": ["billy-o-tea", "whaleboat-1", "tow-line", "right-whale"],
+      "evidence": ["whale diving", "bubbles", "line not around whale", "no wounds"],
+      "continuity_ref": "v3-03",
+      "continuity_note": "Last occupied-boat frame. Next lyric is forty days later; pair return to deck.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "v4-01",
+      "index": 17,
+      "section": "verse4",
+      "text": "For forty days or even more",
+      "audio": "song-verse4-01.mp3",
+      "img": "lyric-17.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Forty days of hunting with no catch. Only Billy o' Tea on an empty sea. All five look weary and worried, not smiling. Captain grips the helm and steers with a furrowed brow. crew-young stands at the rail scanning the empty horizon with a brass telescope. crew-stocky scrubs the wooden deck on his knees. crew-red sweeps with a broom. George in sailor suit helps with a small broom, worried frown, not a toothy grin. No Wellerman, no supply men, no cargo stacks, no whale in the water, no calendar or number 40.",
+      "props": ["billy-o-tea", "broom", "telescope", "helm"],
+      "evidence": ["worried faces not smiles", "captain at wheel", "telescope search", "deck sweeping", "one ship only", "empty horizon", "no Wellerman", "no whale"],
+      "continuity_ref": "v3-04",
+      "continuity_note": "Time skip: boat pair legally back on Billy. This is the long fruitless hunt — Wellerman has not arrived yet in this shot.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v4-02",
+      "index": 18,
+      "section": "verse4",
+      "text": "The line went slack then tight once more",
+      "audio": "song-verse4-02.mp3",
+      "img": "lyric-18.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "crew-stocky at the winch manages a coil that visibly goes slack then taut. George watches the coil. Captain at stern. crew-red and crew-young help pull. No Wellerman.",
+      "props": ["billy-o-tea", "tow-line", "winch"],
+      "evidence": ["slack-and-tight rope", "crew-stocky at winch", "no panic"],
+      "continuity_ref": "v4-01",
+      "continuity_note": "Line handler is always crew-stocky, not a new face.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v4-03",
+      "index": 19,
+      "section": "verse4",
+      "text": "All boats were lost, there were only four",
+      "audio": "song-verse4-03.mp3",
+      "img": "lyric-19.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Four intact empty whaleboats remain. TWO hang from davits on the PORT side and TWO hang from davits on the STARBOARD side (or stern) — never four davits in a single row on one rail. Extra empty davits split on both sides show losses. Five people on deck count the remaining boats. No numeral 4.",
+      "props": ["billy-o-tea", "whaleboat-1", "whaleboat-2", "whaleboat-3", "whaleboat-4", "empty-davits"],
+      "evidence": ["four small boats", "davits on BOTH sides of the ship", "not four hooks in one row", "no written number"],
+      "continuity_ref": "v4-02",
+      "continuity_note": "Whaleboat-1 style matches lyric-13. Nobody seated in boats. Davits must look like a real whaler, port and starboard.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "v4-04",
+      "index": 20,
+      "section": "verse4",
+      "text": "And still that whale did go (huh)",
+      "audio": "song-verse4-04.mp3",
+      "img": "lyric-20.png",
+      "zone": "WhaleChase",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Billy five watch the same whale swim away, tail fluke up, no rope on the animal. ONLY Billy o' Tea — no Wellerman, no supply men, no cargo. Gentle humour, not anger.",
+      "props": ["billy-o-tea", "right-whale"],
+      "evidence": ["distant free whale", "no rope on whale", "same five watching", "one ship only", "no Wellerman"],
+      "continuity_ref": "v4-03",
+      "continuity_note": "Whale still the same animal (callosities). The whale has gone; the supply ship is not in this shot.",
+      "whale": true,
+      "cargo": null
+    },
+    {
+      "id": "chorus2-01",
+      "index": 21,
+      "section": "chorus2",
+      "text": "Soon may the Wellerman come",
+      "audio": "song-chorus2-01.mp3",
+      "img": "lyric-21.png",
+      "zone": "SupplyShip",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": ["supply-beard", "supply-cap"]
+      },
+      "action": "Same eager scene as lyric-05 from a slightly lower deck angle: Billy five crane necks, lower a rope; Wellerman rows toward Billy; same two supply men working oars; same cargo layout. No whale.",
+      "props": ["billy-o-tea", "wellerman", "heaving-line"],
+      "evidence": ["eager craning necks", "rope being lowered", "Wellerman rowing toward Billy", "same supply pair as lyric-05", "same cargo layout"],
+      "continuity_ref": "chorus-01",
+      "continuity_note": "Chorus pair with lyric-05. Camera angle may change; people and cargo may not.",
+      "whale": false,
+      "cargo": {
+        "sugar": 3,
+        "tea": 2,
+        "rum": 4,
+        "layout": "port-sugar, mid-tea, starboard-rum"
+      }
+    },
+    {
+      "id": "chorus2-02",
+      "index": 22,
+      "section": "chorus2",
+      "text": "To bring us sugar and tea and rum",
+      "audio": "song-chorus2-02.mp3",
+      "img": "lyric-22.png",
+      "zone": "SupplyShip",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": ["supply-beard", "supply-cap"]
+      },
+      "action": "Same transfer as lyric-06: supply-beard passes tea, supply-cap steadies rum, George claps, crew-stocky receives.",
+      "props": ["billy-o-tea", "wellerman", "cargo-sugar", "cargo-tea", "cargo-rum"],
+      "evidence": ["same cargo style", "same two supply men", "no drinking"],
+      "continuity_ref": "chorus-02",
+      "continuity_note": "Chorus pair with lyric-06.",
+      "whale": false,
+      "cargo": {
+        "sugar": 3,
+        "tea": 2,
+        "rum": 4,
+        "layout": "port-sugar, mid-tea, starboard-rum"
+      }
+    },
+    {
+      "id": "chorus2-03",
+      "index": 23,
+      "section": "chorus2",
+      "text": "One day, when the tonguing's done",
+      "audio": "song-chorus2-03.mp3",
+      "img": "lyric-23.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Same historical tonguing as lyric-07, slightly different angle: dark whale body on deck, pale blubber blanket peeling off, mast ropes hoisting the flap, three crew at the cut-line, captain and George hauling. No blood, no Wellerman, no swimming whale.",
+      "props": ["billy-o-tea", "whale-carcass-on-deck", "blubber-blanket", "block-and-tackle", "blubber-spades"],
+      "evidence": ["dark whale body on deck", "pale blanket peeling off the body", "ropes hooked into the flap", "men at the cut-line leaning hard", "one ship only", "no Wellerman", "no swimming whale"],
+      "continuity_ref": "chorus-03",
+      "continuity_note": "Chorus pair with lyric-07.",
+      "whale": false,
+      "cargo": null
+    },
+    {
+      "id": "chorus2-04",
+      "index": 24,
+      "section": "chorus2",
+      "text": "We'll take our leave and go",
+      "audio": "song-chorus2-04.mp3",
+      "img": "lyric-24.png",
+      "zone": "OpenSea",
+      "cast": {
+        "deck": ["george-sailor", "captain", "crew-red", "crew-young", "crew-stocky"],
+        "whaleboat": [],
+        "wellerman": []
+      },
+      "action": "Same five waving from Billy's stern as lyric-08. Optional warm sunset. No Wellerman.",
+      "props": ["billy-o-tea"],
+      "evidence": ["waving", "stern wake", "same five", "sunset allowed"],
+      "continuity_ref": "chorus-04",
+      "continuity_note": "Chorus pair with lyric-08. Sunset is the only allowed change.",
+      "whale": false,
+      "cargo": null
+    }
+  ]
+}

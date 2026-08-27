@@ -46,6 +46,8 @@ Quiz clips (narrator): `quiz-01.mp3`, `quiz-01-a.mp3` … `quiz-01-c.mp3`, plus 
 
 If `window.LESSON.youtubeId` is set, a screen with `#songEmbed` lazy-loads the official YouTube player (full song). Screens with `data-song` are sing-along pages: tap a lyric line to play a short original-audio clip. Deep links: `#sing=1`, `#listen`.
 
+Lesson 6 slim player has no `data-song` pages: Cover → Song words → `lesson-06-slideshow.html` (one lyric line, one picture), then `#listen` for the full song.
+
 On the quiz page, **Read question** speaks the question, then A/B/C. Options stay disabled until that finishes.
 
 If `window.LESSON.quizPick` is set (Lesson 3 uses `5`), the player shuffles the pool and shows that many questions per visit. Audio files stay numbered by **pool order** (`quiz-01` …), not session order. Lessons without `quizPick` still play the full list.
@@ -61,8 +63,9 @@ If `window.LESSON.quizPick` is set (Lesson 3 uses `5`), the player shuffles the 
 Deep links (updated as the child moves):
 
 - `#story=3` — story page 3
-- `#sing=1` — first sing-along page
+- `#sing=1` — first sing-along page (lessons that still use `data-song`)
 - `#listen` — full-song YouTube embed
+- Lesson 6 picture song: `lessons/lesson-06-slideshow.html#line=1` … `#line=24`
 - `#quiz` `#words` `#phrases` `#notes` `#cover`
 - `#p=4` or `?page=4` — screen index (0 = cover)
 

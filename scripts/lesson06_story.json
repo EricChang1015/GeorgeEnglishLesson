@@ -5,17 +5,17 @@
   "chapter": "George's Song Adventures",
   "youtubeId": "qP-7GNoDJ5c",
   "learning": {
-    "summary_zh": "先學 Wellerman 歌詞裡較難的詞與短語，再用原曲逐句跟唱，最後聽完整首歌。故事繪本暫緩。",
+    "summary_zh": "先學 Wellerman 歌詞裡較難的詞與短語，再一句一圖跟唱，最後聽完整首歌。故事繪本暫緩。",
     "focus_en": [
       "Song words: Wellerman, bow, bully boys, rum, tonguing, harpoon, in tow, all hands, take our leave",
-      "Sing along with Nathan Evans line clips, then the full song"
+      "Sing along with the picture song (one line, one picture), then the full song"
     ],
     "tutor_prompts_zh": [
       "問：Wellerman 是什麼？（送來補給的船，不是人的名字）",
       "問：bow 是船的哪裡？（船頭）",
       "問：bully boys 是欺負人嗎？（不是；歌裡指強壯開心的水手夥伴）",
       "問：rum 是什麼？（以前水手在船上喝的一種深色飲料；歌詞裡跟 sugar、tea 一起送來）",
-      "問：tonguing 是什麼？（舊時把鯨脂切成長條；歌詞 One day, when the tonguing's done）",
+      "問：tonguing 是什麼？（舊時在甲板上把鯨脂剝成大塊；歌詞 One day, when the tonguing's done）",
       "問：all hands 是什麼意思？（船上所有人一起過來幫忙）",
       "問：in tow 是什麼意思？（用繩子拖在後面）",
       "問：take our leave 是什麼意思？（告別離開／回家）"
@@ -33,7 +33,7 @@
       "word": "Wellerman",
       "example": "Soon may the Wellerman come, to bring us sugar and tea and rum.",
       "img": "vocab-wellerman.png",
-      "alt": "a small supply sailing ship with crates and barrels on deck",
+      "alt": "a smaller supply schooner with a green circle sail, two crew, and sugar crates, tea chests and rum barrels",
       "audio": "vocab-wellerman.mp3",
       "example_audio": "vocab-wellerman-ex.mp3"
     },
@@ -67,7 +67,7 @@
       "speak": "tongue-ing",
       "example_speak": "One day, when the tongue-ing is done.",
       "img": "vocab-tonguing.png",
-      "alt": "a sailor cutting pale whale fat into long strips on deck",
+      "alt": "sailors peeling a huge pale blubber blanket from a whale on deck with ropes and long spades",
       "audio": "vocab-tonguing.mp3",
       "example_audio": "vocab-tonguing-ex.mp3"
     },

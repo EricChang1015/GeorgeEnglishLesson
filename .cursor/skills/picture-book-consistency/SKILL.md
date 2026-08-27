@@ -42,7 +42,7 @@ If the bible is missing a new character or place, **update the bible and get a s
 
 1. **必須用 Read 真的打開生成的圖檔**再判定，不准憑 prompt 內容或縮圖印象打分。
 2. 每頁**逐項寫下 PASS / FAIL ＋ 一句證據**（例：「腳印朝畫面右、與 p6 文字一致 → PASS」）。只說「看起來沒問題」視同未檢查。
-3. 自己畫的圖自己容易看順眼——全部頁面出完後，**交付前還要過一次 fresh-context subagent 的圖文契約複審**（見 `.cursor/skills/lesson-delivery-qa/SKILL.md` 驗收面 B），這是硬閘，不是選項。
+3. 自己畫的圖自己容易看順眼——出圖後必須用**另一個 model** 的 fresh subagent 審圖文契約（`.cursor/rules/checkpoint-review.mdc` CP3／CP4）。**新檔未通過 A/B（比舊檔更好且無新硬傷）不准覆寫課件目錄。**
 
 | 檢查 | 內容 |
 |------|------|

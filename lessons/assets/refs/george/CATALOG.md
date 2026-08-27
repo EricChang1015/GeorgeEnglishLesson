@@ -16,14 +16,14 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 | Id | Role | Appearance notes |
 |----|------|------------------|
 | `george` | Boy ~5, story hero | East Asian; short black hair with bangs; round face |
-| `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`) |
+| `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`; extra face: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`) |
 | `mummy` | Mother | Adult woman; glasses in close-up refs |
 | `sylvia` | Older sister | Dark hair (often ponytail); often baseball cap / sunglasses outdoors |
 
 ## How agents should pick refs
 
 1. **George face / likeness (required for any George art):** start with `priority: primary` photos, especially `george-solo-bed-smile.jpg`.
-2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole).
+2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole). Extra front-facing backups: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`.
 3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
 5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
@@ -159,12 +159,42 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **use_for:** full parents cast; Daddy + Mummy likeness
 - **notes:** Compact family selfie; George center (open-mouth expression — prefer other files for calm smile)
 
+#### george-daddy-sylvia-arcade-selfie.jpg
+- **priority:** high
+- **people:** george, daddy, sylvia
+- **tags:** daddy Sylvia George in Arcade, arcade, indoors, play, selfie, family, daddy-face, glasses, nighttime
+- **use_for:** George + Daddy + Sylvia indoor play; extra Daddy face (glasses + mole, three-quarter)
+- **notes:** Arcade racing cabinet; Daddy holds a takeaway cup; Sylvia white cap + glasses at the controls; George focused on the game. Use faces/poses — do not copy neon arcade interior into story art unless the scene is an arcade.
+
 #### george-daddy-sylvia-overlook-selfie.jpg
 - **priority:** medium
 - **people:** george, daddy, sylvia
 - **tags:** outdoors, travel, mountains, bridge, selfie, daytime
 - **use_for:** George + Daddy + Sylvia outing / travel
 - **notes:** Overlook with green suspension bridge; Sylvia light cap + sunglasses
+
+### Daddy + Sylvia / Daddy + Mummy
+
+#### daddy-sylvia-outdoors-selfie.jpg
+- **priority:** high
+- **people:** daddy, sylvia
+- **tags:** daddy Sylvia outdoor, outdoors, travel, mountains, selfie, daytime, daddy-face, glasses
+- **use_for:** Daddy + Sylvia outdoor travel; Daddy face (glasses + mole)
+- **notes:** Karst hills overlook; Daddy blue tee + bag strap; Sylvia pale cap, dark rectangular glasses, white tee with pink collar trim. No George in frame.
+
+#### daddy-sylvia-indoor-selfie.jpg
+- **priority:** high
+- **people:** daddy, sylvia
+- **tags:** daddy sylvia, indoors, home, selfie, closeup, daddy-face, glasses, front-facing
+- **use_for:** strong extra **Daddy face** likeness (front-facing glasses + mole); Sylvia without cap
+- **notes:** Living-room selfie; Daddy navy tee, thin round glasses, mole on lower jaw; Sylvia long dark hair, school uniform (white shirt + teal tie). Prefer faces — do not copy the room clutter or uniform into story art unless the scene needs them.
+
+#### daddy-mummy-indoor-smile.jpg
+- **priority:** high
+- **people:** daddy, mummy
+- **tags:** daddy mummy, indoors, family, parents, smile, closeup, daddy-face, mummy-face, glasses
+- **use_for:** Daddy + Mummy likeness together; Daddy slight smile with round glasses
+- **notes:** Indoor pet-cafe selfie; Daddy charcoal tee, holding a small banded snake; Mummy long black hair, round glasses, floral tee. Use faces — do not copy the snake or cafe interior into story art unless the scene needs them.
 
 ### Favorite toy — Mike Wazowski
 

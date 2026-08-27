@@ -35,14 +35,7 @@ def lesson_payload() -> dict:
             for v in STORY["vocab"]
         ],
         "story": [],
-        "songPages": [
-            {
-                "title": page["title"],
-                **({"img": page["img"], "alt": page.get("alt") or ""} if page.get("img") else {}),
-                "lines": [{"text": ln["text"], "audio": audio(ln["audio"])} for ln in page["lines"]],
-            }
-            for page in STORY.get("songPages") or []
-        ],
+        "songPages": [],
         "quiz": [],
         "phrases": [],
     }
@@ -77,9 +70,9 @@ HEAD = """<!DOCTYPE html>
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
     <section class="screen active" data-screen="0">
-      <img class="hero hero-full" src="assets/lesson-06/cover.webp" alt="George sings on Billy o' Tea as a whale and the Wellerman appear" />
+      <img class="hero hero-full" src="assets/lesson-06/cover.webp" alt="George sings on Billy o' Tea; a right whale blows nearby; the smaller Wellerman approaches" />
       <h1>George and the Wellerman</h1>
-      <div class="continue">George's Song Adventures · song words · sing along</div>
+      <div class="continue">George's Song Adventures · song words · picture song</div>
       <p class="hint">ORT Level 6 · Nathan Evans · Wellerman</p>
       <div class="voice-key">
         <span class="narrator">Word audio</span>
@@ -87,6 +80,7 @@ HEAD = """<!DOCTYPE html>
       </div>
       <div class="controls">
         <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <a class="btn btn-good" href="lesson-06-slideshow.html" style="text-decoration:none;display:inline-block;">Picture song ▶</a>
         <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
       </div>
     </section>
@@ -99,15 +93,11 @@ MID = """
       <div class="vocab-grid" id="vocabGrid"></div>
       <div class="controls">
         <button class="btn-ghost" type="button" data-prev>◀ Back</button>
-        <button class="btn-primary" type="button" data-next>Sing ▶</button>
+        <a class="btn btn-primary" href="lesson-06-slideshow.html" style="text-decoration:none;display:inline-block;">Picture song ▶</a>
       </div>
     </section>
 
-    <section class="screen" data-screen="2" data-song="0"></section>
-    <section class="screen" data-screen="3" data-song="1"></section>
-    <section class="screen" data-screen="4" data-song="2"></section>
-
-    <section class="screen" data-screen="5">
+    <section class="screen" data-screen="2">
       <h2>The whole song</h2>
       <p class="hint">Nathan Evans · Wellerman · needs the internet</p>
       <div class="song-embed" id="songEmbed"></div>

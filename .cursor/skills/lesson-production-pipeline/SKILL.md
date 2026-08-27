@@ -92,9 +92,8 @@ Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝
 
 ### GATE 3 — 整課驗收（硬閘，交付前必過）
 
-- 照 `.cursor/skills/lesson-delivery-qa/SKILL.md` 跑完四個驗收面：
-  故事邏輯（fresh subagent 審文）、圖文契約（fresh subagent 逐頁看圖）、
-  音檔（`scripts/check_lesson_audio.py`）、整課瀏覽器走查
+- 照 `.cursor/skills/lesson-delivery-qa/SKILL.md` 跑完四個驗收面。
+- **模型輪替與放行**照 `.cursor/rules/checkpoint-review.mdc`：CP1–CP5 用不同 model；整包須三個 Cursor model 都 PASS；換檔先 A/B。
 - 全部 PASS 才向家長交付，交付訊息附驗收報告
 - 家長預覽 → 說「發佈」才 commit + push
 

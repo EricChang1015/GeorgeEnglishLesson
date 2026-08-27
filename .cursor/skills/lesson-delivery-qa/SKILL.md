@@ -11,9 +11,11 @@ description: Whole-lesson acceptance gate (GATE 3) that must pass before reporti
 ## 鐵律
 
 1. **交付單位是整課，不是單一產物。** 就算只改了一張圖或一句話，也要把整課從封面走到 notes，確認改動沒有破壞連貫性。禁止「圖出完了」「音錄完了」就交卷。
-2. **產生者不能自評。** 內容審查（故事邏輯、圖文契約）必須開 **fresh-context subagent** 執行：只給它最終成品與鎖定文件，不給它產生過程的上下文，讓它以「第一次看這課的讀者」身分挑毛病。
+2. **產生者不能自評。** 內容審查必須開 **fresh-context subagent**，且 **換成與產生者不同的 Cursor model**（slug 與 CP 表見 `.cursor/rules/checkpoint-review.mdc`）。只給最終成品與鎖定文件，不給產生過程。
 3. **逐項書面判定。** 每個檢查項寫 PASS / FAIL ＋ 一句證據。「看起來沒問題」＝沒有驗收。
-4. **任一 FAIL → 修 → 重跑該驗收面。** 全部 PASS 才交付，交付訊息附上驗收報告。
+4. **任一 FAIL → 修 → 重跑該驗收面。** 爭議時拉第三模型（Gemini 3.1 Pro），集思廣益後只重做該步。全部 PASS 才交付。
+5. **整包放行：** 三個指定 Cursor model（Grok 4.6、Composer 2.5、Grok 4.5）都同意才准說「做完了」。
+6. **換檔：** 新圖／新音必須經另一模型 A/B（Read 舊檔＋新檔）確認明顯更好，才覆寫課件目錄。
 
 ## 四個驗收面
 
@@ -59,10 +61,11 @@ python scripts/check_lesson_audio.py --story scripts/lessonXX_story.json --audio
 
 | 驗收面 | 結果 | 證據／備註 |
 |--------|------|-----------|
-| A 故事邏輯 | PASS | subagent 逐頁過，無因果斷裂 |
-| B 圖文契約 | PASS（p7 重畫 1 次） | p7 腳印方向修正後複驗過 |
+| A 故事邏輯 | PASS | 標明 model；逐頁過，無因果斷裂 |
+| B 圖文契約 | PASS（p7 重畫 1 次） | 標明 model；p7 腳印方向修正後複驗過 |
 | C 音檔 | PASS | check_lesson_audio 105/105 |
 | D 走查 | PASS | 12 頁全走，console 乾淨 |
+| 互檢 CP | PASS | CP1–5 指定 model；三 Cursor model 放行（`.cursor/rules/checkpoint-review.mdc`） |
 
 FAIL 過的項目要寫「修了什麼、複驗結果」，不是刪掉重寫成 PASS。
 

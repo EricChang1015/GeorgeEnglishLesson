@@ -1,0 +1,70 @@
+---
+description: 建課／出圖／替換資源必用的多模型互檢（人物不跑、分鏡對、相鄰連續、A/B 才換檔）
+alwaysApply: true
+---
+
+# Multi-model checkpoints
+
+建新課、改分鏡、出圖、slideshow、或替換任何課件圖／音時，遵守本規則。細節產線仍讀 `lesson-production-pipeline`；整課放行仍讀 `lesson-delivery-qa`。
+
+## 每次檢查看這三件事
+
+1. **不跑篇：** 臉、服裝、比例、船／房間錨點、禁止元素（第六人、分身、補給員上錯船）對 bible／sheet。
+2. **分鏡對故事：** 在場角色、動作、道具、情緒 = 該頁／該句 roster（圖上必見證據都要看得見）。
+3. **相鄰連續：** 同 Zone 的前後幀：人在哪、艇上誰、貨物堆、鯨的斑、光線不無故跳。
+
+「看起來沒問題」不算過。必須 **Read 真圖**（或真讀 JSON／課文），逐項 PASS／FAIL ＋一句證據。
+
+## 產生者不能一路做到底
+
+- **禁止**同一個 model 從寫分鏡、出圖、自檢、到說「做完了」。
+- 每個 checkpoint 開 **fresh-context Task**，並顯式傳 `model`（不要 `inherit` 成產生者）。
+- 只給審核端：定稿檔路徑、bible／JSON、檢查清單。**不要**給出圖 prompt 或「我剛畫了什麼」的過程。
+
+### 指定模型（Task `model` slug）
+
+| 角色 | 模型 | slug |
+|---|---|---|
+| 連續性／橫向 | Cursor Grok 4.6 | `cursor-grok-4.6-xhigh` |
+| 結構／音檔／player | Composer 2.5 | `composer-2.5` |
+| 逐張圖文 | Cursor Grok 4.5 High Fast | `cursor-grok-4.5-high-fast` |
+| 爭議公正第三人 | Gemini 3.1 Pro | `gemini-3.1-pro` |
+
+## Checkpoint 何時跑
+
+| CP | 時機 | 查什麼 | 模型 |
+|---|---|---|---|
+| CP1 | 分鏡／roster／JSON 凍結後 | 文字連續、因果、誰在哪 | Grok 4.6 |
+| CP2 | 檔名／timeline／音檔就緒 | schema、音檔存在、與 timeline 對齊 | Composer 2.5 |
+| CP3 | 每批出圖之後 | 逐張 Read：分鏡證據 + 不跑篇 | Grok 4.5 |
+| CP4 | 全部圖齊（或修過多幀） | 相鄰幀連續、分身、服裝跳 | Grok 4.6 |
+| CP5 | player 組裝後 | smoke、走查、console | Composer 2.5 |
+
+單幀家長修圖：至少 **另一個模型** 做下面的 A/B；若改到「誰在哪／哪艘船」，再加 CP4。
+
+## 爭議 → 集思廣益 → 重做該步
+
+兩審意見不合、或審核 FAIL 而產生者認為 PASS：
+
+1. 再開一個**不同**模型（優先 Gemini 3.1 Pro）只審爭議項。
+2. 彙整 FAIL 證據成一張影響表（改哪幾幀／哪幾句）。
+3. **只重做該步**（重畫那幾張、改那幾句 JSON），不要整包推倒。
+4. 重做後用**原 FAIL 的那個模型**複審；複審仍用 fresh context。
+
+## 放行：三個 Cursor 模型都同意
+
+整課／整包（新課、大改文、一句一圖全包）在跟家長說「做完了」之前：
+
+- Grok 4.6、Composer 2.5、Grok 4.5 **各自獨立**對最終成品跑一次（文／圖／player 依其 CP 分工，但結論都要 PASS）。
+- 任一 FAIL → 修 → 重跑該面；修完至少再請**一個先前 PASS 的模型**看有沒有回歸。
+- 兩個 PASS、一個堅持 FAIL → 當爭議，拉 Gemini 或重做該步，**不准多數決蓋過書面 FAIL 證據**。
+
+## 替換資源：新檔必須明顯更好才覆寫
+
+產生者不准自己把新 PNG／WebP／mp3 蓋掉舊檔交差。
+
+1. 新檔先放暫存（Cursor `assets/` 或並列檔名），**舊課件檔先留著**。
+2. **另一個模型**用 Read 打開舊檔＋新檔（同檢查清單）。
+3. 准換的條件：列出的 FAIL 已修掉，**且沒有新增硬傷**（跑篇、分身、圖文不符）。
+4. 新檔沒有明顯更好、或互有勝負 → **不換**，重畫或保留舊檔。
+5. 通過後才 copy 進 `lessons/assets/lesson-XX/` 並跑 `optimize_lesson_images.py`。

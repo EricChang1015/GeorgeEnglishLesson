@@ -1,8 +1,8 @@
 # George's Song Adventures — 篇章提案 v0
 
 新篇章：George 在熟悉的歌曲中進入歷史與想像交織的冒險；本篇不接其他幻想篇章。
-狀態：2026-08-26 — **本課先發精簡版**：封面 → Song Words → Sing along 1–3（原曲逐句）→ Full Song（YouTube）。  
-12 頁故事繪本、故事 TTS、quiz、phrases、notes **暫緩**（家長：畫面連貫與 TTS 唱歌都不夠好）。分鏡仍保留在下文，供之後改寫。
+狀態：2026-08-27 — **精簡版**：封面 → Song Words → 一句一圖 slideshow → Full Song（YouTube）。  
+12 頁故事繪本、故事 TTS、quiz、phrases、notes **暫緩**。
 
 ---
 
@@ -17,7 +17,7 @@ George 在夜裡唱起一首歌，歌曲把房間變成一場完整冒險。故�
 - George 從唱歌進入冒險，直到 p12 醒來才知道那是一場夢。
 - 故事依 public-domain sea shanty〈Wellerman〉推進，課文以 ORT Level 6 方式重述，不整段傾倒歌詞。
 - 捕鯨只作歷史背景：無血、無傷口、無死亡；鯨魚始終沒有被捉到。
-- 精簡版 PLAYER：**先學歌詞難詞，再跟唱，最後聽完整首歌**。故事頁暫不進 player。
+- 精簡版 PLAYER：**先學歌詞難詞，再一句一圖跟唱，最後聽完整首歌**。故事頁暫不進 player。
 
 ---
 
@@ -59,15 +59,42 @@ Captain 與 crew 本課只作視覺角色，不開口，因此不用新增 voice
 比例尺：`lessons/assets/refs/cast/song-adventures-sheet.png`  
 船與鯨：`lessons/assets/refs/cast/song-adventures-ships.png`
 
+### 角色表（2026-08-27 重繪鎖）
+
+**sheet 上不出現 Daddy。** 篇章視覺以海上冒險為主；Daddy 僅保留在 pending 12 頁故事的 BedroomNight／BedroomWake 分鏡，不進角色比例尺。
+
+| ID | 角色 | 外觀鎖 | 比例（相對 George 水手裝） |
+|---|---|---|---|
+| `george-pajamas` | George 睡衣版 | 灰／藍灰 raglan 長袖、米白長褲、赤腳；短黑瀏海、圓臉、大耳 | — |
+| `george-sailor` | George 水手裝 | 白長袖水手衫、海軍藍方領與袖口、海軍藍短褲、棕短靴、白小水手帽；瀏海露出 | — |
+| `captain` | Captain | **硬漢船長：** 四十多歲、風吹深皺紋、濃眉、短硬鬍或修剪短鬍渣；深藍厚呢大衣、金扣、船長帽；表情嚴肅果斷，不笑臉討好 | 腰高 ≈ George 的 1.8× |
+| `crew-red` | Crew A（紅鬍） | 壯實、紅棕捲鬍、無帽或毛線帽、條紋海魂衫、棕靴；膚色偏白 | 腰高 ≈ George 的 1.7× |
+| `crew-young` | Crew B（年輕） | 瘦高、黑短髮、無鬍、深藍上衣、米色褲；東亞或混血面孔，與 A 明顯不同臉型 | 腰高 ≈ George 的 1.75× |
+| `crew-stocky` | Crew C（矮壯） | 矮壯、光頭或極短髮、大鬍子、深綠或褐色厚衫、吊帶；膚色深一階 | 腰高 ≈ George 的 1.55× |
+| `supply-beard` | Wellerman 補給員 A | 中等身材、棕色全鬍、橄欖綠毛衣、卡其褲、無帽；**只站 Wellerman 甲板** | 腰高 ≈ George 的 1.65× |
+| `supply-cap` | Wellerman 補給員 B | 瘦高、灰毛線帽、紅圍巾、米白衫＋棕背心、淺短髭；臉與 A 及 Billy crew 皆不同；**只站 Wellerman 甲板** | 腰高 ≈ George 的 1.7× |
+
+**船員彼此禁止：** 同一張臉複製、同一髮型鬍型、同一套衣服換色。
+
+補給員鎖定圖：`lessons/assets/refs/cast/song-adventures-supply.png`
+
+### 船隻與鯨（2026-08-27 重繪鎖 — 更像真實船型）
+
+| ID | 名稱 | 造型鎖（參考歷史木帆船／捕鯨船） |
+|---|---|---|
+| `billy-o-tea` | Billy o' Tea | **雙桅以上木造捕鯨帆船**（brig 或 bark 型）：深茶棕船身、多層橫帆＋船首斜帆；主帆有**茶葉圖徽**（無英文）。船首有雕飾、舷側可見吊艇架與索具；比例像真實 19 世紀遠洋帆船，不要玩具感 |
+| `wellerman` | Wellerman 補給船 | **明顯較小的單桅／雙桅補給帆船**（schooner 型）：淺色上層船身、深褐水線、單方帆或縱帆；船尾小艙；甲板可見糖箱、茶葉箱、封口 rum 桶；帆上**綠色圓形圖徽**（無英文）。整體比 Billy o' Tea 短約 40–50% |
+| `right-whale` | 同一條 right whale | **北露脊鯨（Eubalaena）**：無背鯨鰭、巨大圓頭、**吻部 callosities（灰白斑塊）**、V 形雙噴氣、寬大尾鰭；深灰褐至近黑；體長可與 Billy o' Tea 相當或略長。溫和眼神，**始終自由、無傷、無繩綁身** |
+
 ### Prompt 重複句（海上頁 p2–p11 逐頁複製）
 
 ```text
-Warm hand-drawn watercolor children's picture book, grainy painterly texture. George is an East Asian boy ~5, short black bangs, round face, big dark eyes, toothy smile. SAILOR LOOK: white long-sleeve sailor shirt, navy square collar and cuffs, navy shorts, brown short boots, small white sailor hat with bangs visible. Billy o' Tea: tea-brown wooden hull, tea-cream sails, green tea-leaf emblem on the main sail, no letters. Wellerman (only p9–p11): smaller pale-hull supply ship, one mast, green circle emblem, no letters. Right whale (p5–p11): huge dark grey-brown, V-shaped blow spray, kind eye, never harpooned, never bleeding. No on-image text, no photoreal faces, no horror, no blood, no drunkenness.
+Warm hand-drawn watercolor children's picture book, grainy painterly texture. George is an East Asian boy ~5, short black bangs, round face, big dark eyes, toothy smile. SAILOR LOOK: white long-sleeve sailor shirt, navy square collar and cuffs, navy shorts, brown short boots, small white sailor hat with bangs visible. CAPTAIN: rugged weathered face, thick eyebrows, short scruffy beard, stern serious expression, dark navy peacoat, captain hat — NOT friendly soft smile. BILLY CREW: three distinct sailors — crew-red (stocky red-brown curly beard, striped shirt, knit cap), crew-young (tall lean East Asian, black short hair, clean-shaven, navy shirt, beige trousers), crew-stocky (short bald, big dark beard, olive shirt, suspenders). Never clone faces. SUPPLY CREW (Wellerman only): supply-beard (brown full beard, olive-green sweater, no hat) and supply-cap (grey knit cap, red scarf, cream shirt, brown vest). Billy o' Tea: realistic 19th-century wooden brig/bark whaler, tea-brown hull, tea-leaf emblem on main sail, no letters. Wellerman: smaller schooner supply ship (~half length), pale upper hull, green circle emblem, no letters. Cargo lock: 3 pale sugar crates PORT, 2 darker tea chests MID, 4 sealed rum barrels STARBOARD. Right whale: Eubalaena, no dorsal fin, three callosity patches (snout tip, above left eye, right jaw), V-shaped blow spray, kind eye, never harpooned, never bleeding. Whaleboat-1: clinker-built, dark-brown hull, cream interior; bow always crew-red, stern always crew-young. George never in the whaleboat. No on-image text, no photoreal faces, no horror, no blood, no drunkenness.
 ```
 
-## GATE 2 凍結（2026-08-26）
+## GATE 2 凍結（2026-08-27 修訂）
 
-角色表、船隻表已鎖定，可畫內頁。睡衣版 George＝灰／藍灰 raglan＋米白褲（sheet）；水手裝與兩船／鯨依 sheet。
+角色表、船隻表已鎖定。睡衣版 George＝灰／藍灰 raglan＋米白褲；水手裝、硬漢 Captain、三名差異化 Billy crew、兩船／鯨依 **2026-08-27 重繪** `song-adventures-sheet.png`、`song-adventures-ships.png`。**Sheet 不含 Daddy。** Wellerman 兩名補給員與貨物堆依 `song-adventures-supply.png`。歌詞逐句圖另受下方 **Cast Continuity Lock** 約束。
 
 ---
 
@@ -90,7 +117,43 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 
 ---
 
-## 封面（Cover）
+## 封面（Cover）— 2026-08-27 重繪分鏡
+
+**敘事功能：** 一眼看見鎖定後的 George 水手裝、Billy o' Tea、自由的 right whale、較小的 Wellerman；夜海夢境仍在。  
+**Zone：** OpenSea + 遠景 SupplyShip（兩船可分）+ 鯨在水中自由。  
+**在場：**
+- **Billy 船首／甲板：** `george-sailor`（張口唱歌、開心）為最大前景；後方可辨 `captain`（嚴肅、呢大衣）、`crew-red`、`crew-young`、`crew-stocky`（臉小但服裝鎖可見，不是路人）。
+- **Wellerman（明顯較小、遠處右側）：** `supply-beard`（橄欖綠毛衣、棕鬍、無帽）、`supply-cap`（灰毛線帽、紅圍巾、米衫棕背心）。貨物：port 3 淺箱、mid 2 深箱、starboard 4 桶。
+- **鯨：** 同一條北露脊鯨，無背鰭、吻部 callosities、V 噴氣；靠近船但**未被捕、無繩、無傷**。
+**動作：** George 在船首唱歌；鯨噴氣；Wellerman 朝 Billy 駛近。  
+**道具／錨點：** Billy 茶棕船身、主帆**茶葉圖徽**；Wellerman 帆**空心綠圓（無茶葉）**；夜空滿月；可有淡淡星星毯旋線。  
+**禁止：** 圖上英文、血、魚叉刺鯨、醉酒、Daddy、補給員站上 Billy、兩船畫成同一艘、Wellerman 用茶葉帆。  
+**連續性：** 人物／船／鯨必須對 `song-adventures-sheet.png`、`song-adventures-ships.png`、`song-adventures-supply.png`。
+
+### vocab-wellerman 分鏡
+
+| 欄 | 內容 |
+|---|---|
+| 用途 | 單字卡：Wellerman = 補給帆船 |
+| Zone | SupplyShip 特寫（**不要** Billy、不要鯨） |
+| 在場 | 僅 `supply-beard`、`supply-cap` 在較小單桅／雙桅補給船上 |
+| 動作 | 船在開闊海上行駛；二人在甲板貨物旁（可扶箱或掌舵），不是空白無人船 |
+| 道具 | 淺色船身、帆上**綠圓無茶葉**；貨物鎖 3／2／4 |
+| 禁止 | 燈塔、海岸小鎮搶戲、茶葉帆、英文、飲酒 |
+
+### vocab-tonguing 分鏡
+
+| 欄 | 內容 |
+|---|---|
+| 用途 | 單字卡：tonguing = 辛苦剝鯨脂 |
+| Zone | 甲板特寫（對齊 lyric-07，更近） |
+| 在場 | 與 lyric-07 **同一五人、全部出力（不得寫成可選）**：`crew-red`、`crew-young`、`crew-stocky` 在剝開處用長柄鏟；`captain` 拉滑輪；`george-sailor` 拉細繩（不拿刀、不笑著玩）。近景可裁畫面邊緣，文字 roster 五人必須寫齊 |
+| 動作 | 深色鯨身在甲板；淡色鯨脂毯被桅杆吊鉤從身上剝起；長柄鏟在剝開處；吃力 |
+| 禁止 | 血、內臟、Wellerman、海中活鯨、英文、輕鬆切條的餐桌構圖 |
+
+---
+
+## 封面（Cover）— 舊稿（12 頁故事 pending 仍可參考）
 
 **敘事功能：** 同時交代 George、歌曲、兩艘船與自由的鯨魚，讓讀者期待海上夢境。  
 **圖上必見證據：** 固定水手裝的 George 站在 Billy o' Tea 船首，張口快樂唱歌；茶色帆上的茶葉圖徽清楚；同一條大 right whale 在船旁躍出水面但保持距離；較小的 Wellerman 帶著木箱和木桶從遠處駛來；月光旋線把畫面邊緣連回星星毯的圖案。  
@@ -248,7 +311,7 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 
 ## Song Words（精簡版 9 個 — 2026-08-26）
 
-家長否決太簡單的名詞（sail / whale / captain / sugar / tea）。改教歌詞裡需要解釋的詞與短語。例句一律取自 Nathan Evans VEVO 用字；單字卡為**專用圖**（不用故事內頁）。Sing 1–3 則沿用故事內頁當跟唱插圖。
+家長否決太簡單的名詞（sail / whale / captain / sugar / tea）。改教歌詞裡需要解釋的詞與短語。例句一律取自 Nathan Evans VEVO 用字；單字卡為**專用圖**（不用故事內頁）。跟唱改走一句一圖 slideshow。
 
 | Word | Example（歌詞） | 圖 |
 |---|---|---|
@@ -256,7 +319,7 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 | bow | The winds blew hard, her bow dipped down. | `vocab-bow` |
 | bully boys | Blow, me bully boys, blow! | `vocab-bully-boys` |
 | rum | To bring us sugar and tea and rum. | `vocab-rum`（木桶＋深色飲料；無酒醉、圖上無英文字） |
-| tonguing | One day, when the tonguing's done. | `vocab-tonguing`（鯨脂切條；無血。意思見家教提示） |
+| tonguing | One day, when the tonguing's done. | `vocab-tonguing`（甲板剝脂：淡色鯨脂毯＋滑輪；無血。意思見家教提示） |
 | harpoon | All hands to the side, harpooned and fought her. | `vocab-harpoon`（甲板上的魚叉＋繩，不刺入鯨魚） |
 | in tow | He'd take that whale in tow. | `vocab-in-tow` |
 | all hands | The Captain called all hands and swore. | `vocab-all-hands` |
@@ -270,9 +333,307 @@ George 夜裡突然唱起 Wellerman → 歌聲讓房間變成 Billy o' Tea → �
 
 ---
 
-## Song-along page plan（獨立於 12 頁故事）
+## Cast Continuity Lock（歌詞 24 句 — 2026-08-27）
 
-來源：Nathan Evans 官方版（VEVO 字幕用字）<https://www.youtube.com/watch?v=qP-7GNoDJ5c>。時間軸見 `scripts/wellerman_timeline.json`。重複副歌去重。跟唱頁插圖沿用故事內頁：Sing 1 = `story-04`、Sing 2 = `story-05`、Sing 3 = `story-11`。
+機器可讀來源：`scripts/lesson06_lyric_frames.json`。出圖與 slideshow **禁止**手改人物位置；改連續性只改 bible + JSON，再重跑 `scripts/check_lyric_frames.py`。
+
+### 固定群組
+
+| 群組 | 鎖定 ID | 規則 |
+|---|---|---|
+| Billy o' Tea 甲板 | `george-sailor`, `captain`, `crew-red`, `crew-young`, `crew-stocky` | 五人同船；Captain **永遠**在船尾指揮位或中甲板高處，不進小艇、不上 Wellerman |
+| 捕鯨小艇 Whaleboat-1 | bow = `crew-red`，stern = `crew-young` | **全課唯一乘員組合**。只在 lyric-13…16 有人在艇內。`crew-stocky`、George、Captain **永不**進小艇 |
+| Wellerman 甲板 | `supply-beard`, `supply-cap` | **只出現在 Wellerman**；從第一次副歌起造型不變；不上 Billy o' Tea、不進小艇 |
+| 貨物 | `cargo-sugar`×3、`cargo-tea`×2、`cargo-rum`×4 | Wellerman 甲板永遠：左舷（port）三箱糖、中間兩箱茶、右舷（starboard）四桶 rum。交接時只搬運，不改箱桶款式與堆法 |
+| 鯨魚 | `right-whale` | 同一條北露脊鯨。Callosities：**吻尖一塊、左眼上方一塊、右下頷一塊**。無背鰭、V 噴氣、無傷無繩 |
+
+### 硬禁止（連續性）
+
+- 同一句或相鄰句不得把小艇上的 A 換成 B。
+- `supply-*` 不得出現在 Billy 甲板或小艇。
+- George 24 句皆水手裝；Daddy 不進歌詞圖。
+- 副歌 #5≡#21、#6≡#22、#7≡#23、#8≡#24：**同一批人、同一批貨**；只許鏡頭角度不同。
+- 圖上無英文、無血、無魚叉刺入鯨身、無日曆／數字。
+
+### 歌詞 Zone
+
+| Zone | Frames | 必須 | 禁止 |
+|---|---|---|---|
+| OpenSea | 1–4, **7–9**, **17**, **23–24** | Billy o' Tea | Wellerman、海中游動的近景鯨（#7／#23 甲板上是淡色鯨脂作業，不是活鯨） |
+| SupplyShip | **5–6, 21–22** | 兩船外形可分；補給員只在 Wellerman | 補給員站上 Billy；貨物款式改款 |
+| WhaleChase | 10–16, 18–**20** | 同一條鯨、同一艘 Billy；13–16 小艇乘員鎖定 | 小艇換人、George 下艇、血、刺中 |
+
+---
+
+## Lyric frames（一句歌詞一圖 — roster）
+
+**目標：** `lesson-06.html` 流程為封面 → Song Words → **一句一圖 slideshow** → Full Song。Sing 1–3 已撤下。
+
+來源：Nathan Evans VEVO 用字；時間軸 `scripts/wellerman_timeline.json`；音檔 `song-*.mp3`。
+
+### lyric-01 `v1-01` — There once was a ship that put to sea
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 開場：主船啟航 |
+| 在場 | **甲板（遠景剪影）：** 五人皆在船上但臉可很小。**小艇：** 空（收在吊架）。**Wellerman：** 無 |
+| 動作 | Billy o' Tea 正離開港口／入開闊海；晨光 |
+| 道具 | `billy-o-tea`；茶葉圖徽可小但可辨 |
+| 連續性 | 開場。無鯨、無補給船 |
+
+### lyric-02 `v1-02` — The name of that ship was the Billy o' Tea
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 點名主船 |
+| 在場 | **甲板：** George 在船中靠近桅；Captain 船尾；三名 crew 在索具旁。**小艇／Wellerman：** 無 |
+| 動作 | 中景展示全船；主帆茶葉圖徽清楚 |
+| 道具 | 同一艘 Billy o' Tea |
+| 連續性 | 承接 #1 的同一艘船、同一五人；鏡頭靠近 |
+
+### lyric-03 `v1-03` — The winds blew hard, her bow dipped down
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 強風、船首入浪 |
+| 在場 | **船首：** George + `crew-stocky` 抓欄杆。**中／船尾：** Captain 站穩；`crew-red`、`crew-young` 在甲板後方抓索。**小艇／Wellerman：** 無 |
+| 動作 | 船首壓入浪谷、浪花飛濺、帆鼓滿 |
+| 道具 | 船首（bow）為畫面主體 |
+| 連續性 | 五人仍全在母船；George 與 crew-stocky 在船首，為後面拉繩做鋪墊 |
+
+### lyric-04 `v1-04` — Blow, my bully boys, blow (huh)
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 水手齊力迎風 |
+| 在場 | **甲板中：** George + `crew-red` + `crew-young` + `crew-stocky` 同拉一條粗繩。**船尾：** Captain 看著他們。**小艇／Wellerman：** 無 |
+| 動作 | 四人向後傾拉繩、張口歡呼；興奮不驚恐 |
+| 道具 | 一條主帆控繩 |
+| 連續性 | 三名 Billy crew 首次同時近景；臉必須可辨且互不相同 |
+
+### lyric-05 `chorus-01` — Soon may the Wellerman come
+
+| 欄 | 內容 |
+|---|---|
+| Zone | SupplyShip |
+| 敘事功能 | 盼望補給船駛來 |
+| 在場 | **Billy 甲板眺望：** 五人**引頸期盼、雀躍**，不是事不關己。`crew-stocky`／`crew-red` **放下粗繩**給靠近的補給船。George 揮手；Captain 指向 Wellerman。**Wellerman：** 正在**划／駛向** Billy（船首浪），`supply-beard`、`supply-cap` 出力划或收帆，對準母船。貨物堆鎖定。**小艇／鯨：** 無 |
+| 動作 | 補給船朝捕鯨船靠近；母船準備接繩 |
+| 道具 | 兩船、接舷繩；Wellerman 貨物堆已是鎖定布局 |
+| 連續性 | 補給二人**首次**定裝；之後只在 #6、#21、#22 再出現。無近景鯨 |
+
+### lyric-06 `chorus-02` — To bring us sugar and tea and rum
+
+| 欄 | 內容 |
+|---|---|
+| Zone | SupplyShip |
+| 敘事功能 | 看見補給內容並開始交接 |
+| 在場 | **Wellerman：** `supply-beard` 遞茶箱、`supply-cap` 扶 rum 桶。**Billy 接貨：** George 拍手、`crew-stocky` 伸手接箱；Captain 在船尾監督；`crew-red`、`crew-young` 在 Billy 欄杆幫忙拉繩對齊兩船。**小艇：** 空 |
+| 動作 | 箱桶從 Wellerman 遞向 Billy；無人飲酒 |
+| 道具 | port 三糖箱、mid 兩茶箱、starboard 四 rum 桶（部分可在半空，款式不變） |
+| 連續性 | 同一補給二人、同一貨物款；只許搬運 |
+
+### lyric-07 `chorus-03` — One day, when the tonguing's done
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 齊心做非常辛苦的 tonguing（歷史剝脂：滑輪吊起大塊淡色鯨脂） |
+| 在場 | **僅 Billy 五人全部出力**。**無 Wellerman、海中無活鯨、無小艇乘員** |
+| 動作 | 甲板上有深色鯨身；淡色鯨脂毯正從身上被桅杆繩索吊起剝開；三人在剝開處用長柄鏟全力前傾；船長拉滑輪；George 拉細繩、認真不是笑著玩 |
+| 道具 | 鯨脂毯、滑輪組、長柄鏟；參考 `lessons/assets/refs/cast/tonguing-flensing-ref.webp`。**無血、無內臟、無紅色組織** |
+| 連續性 | 與 #23 同一批人同一工作。補給船此句不入鏡 |
+
+### lyric-08 `chorus-04` — We'll take our leave and go
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 告別、船駛向地平線 |
+| 在場 | **Billy 船尾甲板全五人揮手。** 小艇空、**無 Wellerman** |
+| 動作 | 揮手告別；船尾浪跡 |
+| 道具 | 只有 Billy o' Tea |
+| 連續性 | 補給船已離開畫面；五人全回 Billy。#24 必須同一批人、可改夕陽 |
+
+### lyric-09 `v2-01` — She had not been two weeks from shore
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 離岸未久（畫面與 #17 相同：漫長海上日子） |
+| 在場 | **僅 Billy 五人**（同 lyric-17）。無 Wellerman、無鯨 |
+| 動作 | 船長憂心掌舵；望遠鏡找鯨；掃／擦甲板；George 小掃把、愁眉 |
+| 道具 | 同 #17；**不要日曆、不要第二艘船** |
+| 連續性 | 家長指定重用 #17 圖 |
+
+### lyric-10 `v2-02` — When down on her a right whale bore
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 露脊鯨逼近主船 |
+| 在場 | **右舷欄杆：** George（驚訝抓欄）、Captain、`crew-stocky`。**中甲板跑近：** `crew-red`、`crew-young`（仍在母船，尚未登艇） |
+| 動作 | 同一條 right whale 從右舷浮起、V 噴氣 |
+| 道具 | 鯨的三塊 callosities 必須可見 |
+| 連續性 | 鯨首次近景；五人全在母船 |
+
+### lyric-11 `v2-03` — The Captain called all hands and swore
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 硬漢船長召集全員 |
+| 在場 | **中甲板：** Captain 居中揮手／吹哨。`crew-red`、`crew-young`、`crew-stocky` 從三個方向跑向他。George 在側邊看 |
+| 動作 | 嚴肅果斷，不是笑臉 |
+| 道具 | 鯨可在畫面邊緣 |
+| 連續性 | 三人跑向船長＝即將分工：紅鬍＋年輕去小艇，矮壯留母船 |
+
+### lyric-12 `v2-04` — He'd take that whale in tow (huh)
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 打算用繩拖鯨（尚未拖到） |
+| 在場 | **甲板：** George 遞繩圈、Captain 指向鯨、`crew-stocky` 在吊架旁準備放艇。`crew-red`、`crew-young` **站在尚未放下的 Whaleboat-1 旁邊（仍在母船，未入座）** |
+| 動作 | 粗繩朝鯨延伸但**未綁住**；鯨自由游 |
+| 道具 | Whaleboat-1 掛在吊架上；拖纜 |
+| 連續性 | 為 #13 登艇鋪墊；此幀小艇陣列仍為空 |
+
+### lyric-13 `v3-01` — Before the boat had hit the water
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 小艇離開甲板、尚未觸水 |
+| 在場 | **Whaleboat-1：** `crew-red` 在船首、`crew-young` 在船尾。**母船甲板：** George、Captain、`crew-stocky` 在吊架邊放繩 |
+| 動作 | 小艇吊在半空，艇底未碰海 |
+| 道具 | 吊架、繩圈 |
+| 連續性 | **乘員從此鎖定到 #16。** 與 #12 是同一對人登入同一艘艇 |
+
+### lyric-14 `v3-02` — The whale's tail came up and caught her
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 鯨尾拍水波及小艇 |
+| 在場 | **小艇（同 #13）：** `crew-red` 船首、`crew-young` 船尾，抓艇舷。**母船：** George、Captain、`crew-stocky` 在右舷觀看 |
+| 動作 | 巨大尾鰭拍浪；小艇傾斜**未翻** |
+| 道具 | 魚叉桿仍在艇內或上舉，**不刺鯨** |
+| 連續性 | 乘員不得換；母船三人不得突然出現在艇上 |
+
+### lyric-15 `v3-03` — All hands to the side, harpooned and fought her
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 全員就位、溫和「作戰」（桿不刺入） |
+| 在場 | **小艇仍是紅鬍船首 + 年輕船尾**，舉起帶繩魚叉桿。**母船右舷探身：** George、Captain、`crew-stocky` |
+| 動作 | 小艇靠鯨側；桿指向鯨但**離開皮膚** |
+| 道具 | 帶繩長桿、右舷 |
+| 連續性 | 「all hands」＝母船三人到右舷 **加上** 艇上原班人馬，不是把艇上的人瞬移回甲板 |
+
+### lyric-16 `v3-04` — When she dived down low (huh)
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 鯨魚下潛、繩未拴住 |
+| 在場 | 小艇乘員同 #13–15；母船三人同前，George 指向水下氣泡 |
+| 動作 | 鯨完整下潛；繩從小艇邊滑過、未綁鯨身 |
+| 道具 | 氣泡尾跡；鯨無傷 |
+| 連續性 | 小艇序列結束。下一句已過四十天，二人回到母船 |
+
+### lyric-17 `v4-01` — For forty days or even more
+
+| 欄 | 內容 |
+|---|---|
+| Zone | OpenSea |
+| 敘事功能 | 捕鯨已四十天仍無收穫；漫長空等 |
+| 在場 | **僅 Billy 五人**（`crew-red`、`crew-young` 已回母船）。**無 Wellerman、無補給員、無貨物堆。小艇：** 空（可掛吊架） |
+| 動作 | 全員愁眉／憂心（不笑）：Captain **掌舵**；`crew-young` **望遠鏡**掃空地平線找鯨；`crew-stocky` 跪擦甲板；`crew-red` 掃甲板；George 拿小掃把幫忙、擔心不是咧嘴笑 |
+| 道具 | 舵輪、銅望遠鏡、掃把／擦甲板石；空曠海面；**不要寫 40、不要日曆、不要鯨、不要第二艘船** |
+| 連續性 | 時間跳過後全員回母船合法。此幀補給船尚未入鏡（與副歌 5–7、20–23 分開） |
+
+### lyric-18 `v4-02` — The line went slack then tight once more
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 繩索鬆了又緊 |
+| 在場 | **甲板：** `crew-stocky` 在絞盤／欄杆管繩；George 看著繩圈；Captain 船尾；`crew-red`、`crew-young` 在旁幫忙拉。**小艇空。Wellerman 不在此幀** |
+| 動作 | 同一畫面裡繩圈明顯「一鬆一緊」（誇張弧線） |
+| 道具 | 粗繩、絞盤 |
+| 連續性 | 管繩的是留在母船的 `crew-stocky`，不是換一個新臉 |
+
+### lyric-19 `v4-03` — All boats were lost, there were only four
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 只剩四艘小艇 |
+| 在場 | 五人全在 Billy 甲板清點／看吊架。Whaleboat-1 是四艘裡可辨的那艘（無人在艇內） |
+| 動作 | **左舷兩艘、右舷（或船尾）兩艘**吊在吊艇架上，**禁止**同一側排四個吊鉤。另有兩側空吊架表示損失。五人清點剩下的艇 |
+| 道具 | 四艇分兩舷 + 空吊架；**圖上不寫數字 4** |
+| 連續性 | 小艇造型與 Whaleboat-1 一致；無人坐進艇裡 |
+
+### lyric-20 `v4-04` — And still that whale did go (huh)
+
+| 欄 | 內容 |
+|---|---|
+| Zone | WhaleChase |
+| 敘事功能 | 鯨仍自由離去 |
+| 在場 | **僅 Billy 五人**望向遠方。**無 Wellerman**。小艇空 |
+| 動作 | 鯨擺尾游離、無繩 |
+| 道具 | 遠鯨 + 只有 Billy |
+| 連續性 | 幽默無奈，不是憤怒獵殺；補給船不入此幀 |
+
+### lyric-21 `chorus2-01` — Soon may the Wellerman come
+
+同 #5：**同一批人、同一貨物堆、同樣雀躍放繩、補給船划來**；鏡頭可略低。
+
+### lyric-22 `chorus2-02` — To bring us sugar and tea and rum
+
+同 #6：`supply-beard` 仍遞茶箱、`supply-cap` 仍扶 rum 桶；Billy 仍是 George 拍手 + `crew-stocky` 接箱。
+
+### lyric-23 `chorus2-03` — One day, when the tonguing's done
+
+同 #7：歷史剝脂姿勢（大塊淡色鯨脂＋桅杆滑輪），無血、無 Wellerman、海中無活鯨。
+
+### lyric-24 `chorus2-04` — We'll take our leave and go
+
+同 #8：Billy 五人揮手；無 Wellerman。可加夕陽，不可換人。
+
+**檔名：** `lessons/assets/lesson-06/lyric-01.png` … `lyric-24.png`（頁面載入 `.webp`）。
+
+**Slideshow 頁：** `lessons/lesson-06-slideshow.html`。`lesson-06.html`：封面 → Song Words → slideshow → YouTube。
+
+### CP0 家長簽核
+
+2026-08-27：家長指示實作「一句一圖 slideshow」完整計畫（含 roster 鎖、出圖與新頁）。本 roster 為 GATE 1b 凍結稿；改人物位置須先改本節與 JSON。
+
+### GATE 3／互檢紀錄（2026-08-27）
+
+| 關卡 | 執行 | 結果 |
+|---|---|---|
+| CP1 | Grok 4.6 分鏡連續性 | 歌詞 24 句 PASS。封面／vocab 初審 **FAIL**（tonguing 可選三人）→ 已改為 lyric-07 同一五人 |
+| CP2 | Composer 2.5 schema／timeline／audio | PASS |
+| CP3 | Grok 4.5 逐張圖文 | 歌詞圖複審 PASS。封面／vocab-wellerman／vocab-tonguing 安裝檔 **PASS** |
+| CP4 | Grok 4.6 相鄰連續 | 歌詞圖 PASS（後續家長改 17／07／23 另記） |
+| CP5 | Composer 2.5 player／走查 | **PASS**：無 Sing 1–3；cover → words → slideshow → `#listen` |
+| C 音檔 | `check_lyric_frames.py --require-art`、`check_lesson_audio.py` | PASS（JSON 未引用的 p01–quiz mp3 未進本包） |
+
+Slideshow：`lessons/lesson-06-slideshow.html`。封面 **Start** 進單字；單字後 **Picture song** 進 slideshow。
+
+---
+
+## Song-along page plan（獨立於 12 頁故事 — 過渡中）
+
+來源：Nathan Evans 官方版（VEVO 字幕用字）<https://www.youtube.com/watch?v=qP-7GNoDJ5c>。時間軸見 `scripts/wellerman_timeline.json`。  
+**現況：** 一句一圖 slideshow 已進 player 主線（封面 → 單字 → slideshow → YouTube）。
 
 1. **Verse 1**
    - There once was a ship that put to sea
