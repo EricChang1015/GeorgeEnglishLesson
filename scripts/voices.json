@@ -1,6 +1,6 @@
 {
   "engine": "edge-tts",
-  "updated": "2026-08-12",
+  "updated": "2026-09-01",
   "notes": "Canonical role voices. Copy the full roles block into each lesson story JSON under \"voices\". Do not change a role without parent approval.",
   "roles": {
     "narrator": {
@@ -83,9 +83,43 @@
       "kind": "adult",
       "locale": "American English",
       "notes": "George's mother. Parent pick 2026-08-26 (audition B). First used Lesson 5."
+    },
+    "sylvia": {
+      "voice": "en-GB-LibbyNeural",
+      "rate": "+8%",
+      "pitch": "+8Hz",
+      "character": "Sylvia",
+      "kind": "child-teen-girl",
+      "locale": "British English",
+      "notes": "Older sister. Distinct from George (Ana) and Ember (Maisie). First used Lesson 7."
+    },
+    "horn": {
+      "voice": "en-GB-ThomasNeural",
+      "rate": "+0%",
+      "pitch": "-8Hz",
+      "character": "Horn",
+      "kind": "beast",
+      "locale": "British English",
+      "notes": "Bull-horn wild thing. Boy voice, lower than George. First used Lesson 7."
+    },
+    "beak": {
+      "voice": "en-US-JennyNeural",
+      "rate": "+12%",
+      "pitch": "+10Hz",
+      "character": "Beak",
+      "kind": "beast",
+      "locale": "American English",
+      "notes": "Rooster wild thing. Bright and loud. Not Pip/Ember settings. First used Lesson 7."
+    },
+    "goat": {
+      "voice": "en-AU-NatashaNeural",
+      "rate": "-5%",
+      "pitch": "+5Hz",
+      "character": "Goat",
+      "kind": "beast",
+      "locale": "Australian English",
+      "notes": "Ram-horn wild thing. Gentle. First used Lesson 7."
     }
   },
-  "reserved": {
-    "sylvia": "Not yet cast — older sister; pick a child/teen girl voice distinct from George and Ember."
-  }
+  "reserved": {}
 }

@@ -1,0 +1,191 @@
+{
+  "id": "lesson-07",
+  "title": "George and the Wild Parade",
+  "level": "ORT Level 6",
+  "chapter": "George and the Wild Things",
+  "learning": {
+    "summary_zh": "George 穿 T-rex 裝在客廳拿木叉追姐姐，被罵 wild thing、罰回房不准吃晚飯。房間長出叢林，Billy o' Tea 載他到野獸島。他用眼神馴服 Horn、Beak、Goat，當王跳 wild parade；肚子餓後自願留下王冠回家，晚飯還熱。",
+    "focus_en": [
+      "Story words: wild thing, jungle, stare, crown, parade",
+      "Home words: wooden fork, living room, supper",
+      "Feeling: lonely, still hot",
+      "Key phrases: I am not afraid. Come and eat, wild thing."
+    ],
+    "tutor_prompts_zh": [
+      "問：Mummy 為什麼叫 George wild thing？（他拿木叉在客廳追 Sylvia）",
+      "問：George 怎樣成為國王？（盯著野獸的黃眼睛，不怕）",
+      "問：誰說王可以離開？（Goat）",
+      "問：王冠後來呢？（留給 Horn，沒有帶回家）",
+      "問：回到房間時晚飯怎麼樣？（還熱，全家等他）"
+    ]
+  },
+  "voices": {
+    "narrator": { "voice": "en-GB-SoniaNeural", "rate": "-10%", "pitch": "+0Hz" },
+    "george": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "cute_boy",
+      "voice": "cute_boy",
+      "speed": 1.3,
+      "pitch": 0,
+      "volume": 1.0
+    },
+    "mummy": { "voice": "en-US-AriaNeural", "rate": "+5%", "pitch": "+5Hz" },
+    "daddy": { "voice": "en-GB-RyanNeural", "rate": "-5%", "pitch": "-5Hz" },
+    "sylvia": { "voice": "en-GB-LibbyNeural", "rate": "+8%", "pitch": "+8Hz" },
+    "horn": { "voice": "en-GB-ThomasNeural", "rate": "+0%", "pitch": "-8Hz" },
+    "beak": { "voice": "en-US-JennyNeural", "rate": "+12%", "pitch": "+10Hz" },
+    "goat": { "voice": "en-AU-NatashaNeural", "rate": "-5%", "pitch": "+5Hz" }
+  },
+  "vocab": [
+    { "word": "wild thing", "example": "Mummy called George a wild thing, then later a soft wild thing.", "img": "story-02.png", "alt": "Mummy calling George a wild thing in the living room", "audio": "vocab-wild-thing.mp3", "example_audio": "vocab-wild-thing-ex.mp3" },
+    { "word": "wooden fork", "example": "Sylvia said the wooden fork was only a play fork.", "img": "story-01.png", "alt": "George chasing Sylvia with a wooden play fork", "audio": "vocab-wooden-fork.mp3", "example_audio": "vocab-wooden-fork-ex.mp3" },
+    { "word": "jungle", "example": "Green vines grew into a jungle, but his bed stayed.", "img": "story-04.png", "alt": "vines growing in George's bedroom", "audio": "vocab-jungle.mp3", "example_audio": "vocab-jungle-ex.mp3" },
+    { "word": "stare", "example": "George stared into their yellow eyes and was not afraid.", "img": "story-08.png", "alt": "George staring into the yellow eyes of the wild things", "audio": "vocab-stare.mp3", "example_audio": "vocab-stare-ex.mp3" },
+    { "word": "crown", "example": "Beak put a vine crown on George's dinosaur hood.", "img": "story-08.png", "alt": "a leafy vine crown on George's hood", "audio": "vocab-crown.mp3", "example_audio": "vocab-crown-ex.mp3" },
+    { "word": "parade", "example": "Goat said, let the wild parade begin!", "img": "story-09.png", "alt": "George and the wild things stomping in a parade", "audio": "vocab-parade.mp3", "example_audio": "vocab-parade-ex.mp3" },
+    { "word": "lonely", "example": "The quiet room felt lonely without his family.", "img": "story-03.png", "alt": "George sitting alone on his cream bed", "audio": "vocab-lonely.mp3", "example_audio": "vocab-lonely-ex.mp3" },
+    { "word": "still hot", "example": "His supper was still hot when he came home.", "img": "story-12.png", "alt": "a steaming supper tray on the bed with the family", "audio": "vocab-still-hot.mp3", "example_audio": "vocab-still-hot-ex.mp3" }
+  ],
+  "pages": [
+    {
+      "img": "story-01.png",
+      "alt": "In the living room George in a T-rex onesie chases Sylvia with a wooden play fork; she laughs",
+      "lines": [
+        { "role": "narrator", "text": "After tea, George stomped through the living room in his T-rex suit.", "audio": "p01-01.mp3", "emotion": "calm" },
+        { "role": "george", "text": "Roar! I am the biggest dinosaur in this whole house!", "audio": "p01-02.mp3", "emotion": "proud" },
+        { "role": "sylvia", "text": "George, stop chasing me with that silly wooden fork!", "audio": "p01-03.mp3", "emotion": "annoyed" },
+        { "role": "george", "text": "No way! Wild T-rex George will catch you soon!", "audio": "p01-04.mp3", "emotion": "naughty" }
+      ]
+    },
+    {
+      "img": "story-02.png",
+      "alt": "Mummy stands by the living-room door and sends George to his room; Sylvia watches",
+      "lines": [
+        { "role": "mummy", "text": "George! You are being a wild thing, not a kind brother!", "audio": "p02-01.mp3", "emotion": "cross" },
+        { "role": "george", "text": "Wild things do not have to listen to anyone!", "audio": "p02-02.mp3", "emotion": "defiant" },
+        { "role": "mummy", "text": "No supper. Go to your room and stay there now.", "audio": "p02-03.mp3", "emotion": "firm" },
+        { "role": "sylvia", "text": "Maybe next time play without the fork, George.", "audio": "p02-04.mp3", "emotion": "gentle" }
+      ]
+    },
+    {
+      "img": "story-03.png",
+      "alt": "George sits alone on his cream bed with the bird lamp glowing",
+      "lines": [
+        { "role": "narrator", "text": "George marched to his room and shut the door with a loud thump.", "audio": "p03-01.mp3", "emotion": "calm" },
+        { "role": "george", "text": "Fine! I do not even want any stupid supper tonight!", "audio": "p03-02.mp3", "emotion": "sulky" },
+        { "role": "narrator", "text": "His tummy rumbled, but nobody came to the door.", "audio": "p03-03.mp3", "emotion": "soft" },
+        { "role": "george", "text": "They all love Sylvia more than they love me.", "audio": "p03-04.mp3", "emotion": "lonely" }
+      ]
+    },
+    {
+      "img": "story-04.png",
+      "alt": "Green vines climb the cream bedroom walls; the bed and bird lamp remain",
+      "lines": [
+        { "role": "narrator", "text": "Green vines crept up the cream wall beside his beige headboard.", "audio": "p04-01.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "Wait… my bed is still here under all these leaves.", "audio": "p04-02.mp3", "emotion": "curious" },
+        { "role": "narrator", "text": "The little bird lamp glowed warm through the curling jungle.", "audio": "p04-03.mp3", "emotion": "calm" },
+        { "role": "george", "text": "Even the grey curtains look like tall trees now.", "audio": "p04-04.mp3", "emotion": "amazed" }
+      ]
+    },
+    {
+      "img": "story-05.png",
+      "alt": "A small tea-brown boat with a tea-leaf sail waits beside George's bed",
+      "lines": [
+        { "role": "narrator", "text": "A small wooden boat pushed through the leaves beside his bed.", "audio": "p05-01.mp3", "emotion": "wonder" },
+        { "role": "george", "text": "Billy o' Tea! You came just for me!", "audio": "p05-02.mp3", "emotion": "excited" },
+        { "role": "narrator", "text": "Tea-brown sails rose up; a leaf emblem shone soft and gold.", "audio": "p05-03.mp3", "emotion": "calm" },
+        { "role": "george", "text": "I will sail away and find my own wild land!", "audio": "p05-04.mp3", "emotion": "bold" }
+      ]
+    },
+    {
+      "img": "story-06.png",
+      "alt": "George steers the small Billy o' Tea alone under a lavender sky",
+      "lines": [
+        { "role": "narrator", "text": "George steered past fern waves under a wide lavender sky.", "audio": "p06-01.mp3", "emotion": "calm" },
+        { "role": "george", "text": "The sea smells like rain and something sweet.", "audio": "p06-02.mp3", "emotion": "curious" },
+        { "role": "narrator", "text": "His room faded behind him, but the bird lamp light followed.", "audio": "p06-03.mp3", "emotion": "soft" },
+        { "role": "george", "text": "Keep going, Billy. I am not turning back yet.", "audio": "p06-04.mp3", "emotion": "determined" }
+      ]
+    },
+    {
+      "img": "story-07.png",
+      "alt": "Three huge wild things block the shore; George stands brave at the boat",
+      "lines": [
+        { "role": "horn", "text": "Who dares land on our island with small blue shoes?", "audio": "p07-01.mp3", "emotion": "fierce" },
+        { "role": "beak", "text": "Look at those teeth on his hood! Show your claws!", "audio": "p07-02.mp3", "emotion": "challenging" },
+        { "role": "goat", "text": "Three wild ones block the shore. Step back, small boy.", "audio": "p07-03.mp3", "emotion": "warning" },
+        { "role": "george", "text": "I am not small. I am George, and I am brave.", "audio": "p07-04.mp3", "emotion": "brave" }
+      ]
+    },
+    {
+      "img": "story-08.png",
+      "alt": "George stares into yellow eyes; Beak sets a vine crown on his hood",
+      "lines": [
+        { "role": "george", "text": "Stop. Look at my eyes. I am not afraid of you.", "audio": "p08-01.mp3", "emotion": "stern" },
+        { "role": "narrator", "text": "The yellow-eyed beasts went quiet and lowered their sharp claws.", "audio": "p08-02.mp3", "emotion": "calm" },
+        { "role": "horn", "text": "You stared us down. You must be our king now.", "audio": "p08-03.mp3", "emotion": "awed" },
+        { "role": "beak", "text": "Wear this vine crown. Rule the wild things well.", "audio": "p08-04.mp3", "emotion": "proud" }
+      ]
+    },
+    {
+      "img": "story-09.png",
+      "alt": "George and the three wild things stomp and leap in a wild parade",
+      "lines": [
+        { "role": "goat", "text": "Let the wild parade begin! Stomp and swirl with us!", "audio": "p09-01.mp3", "emotion": "joyful" },
+        { "role": "george", "text": "Higher! We leap like storm clouds over the moon!", "audio": "p09-02.mp3", "emotion": "gleeful" },
+        { "role": "beak", "text": "King George, your roar is the loudest of all!", "audio": "p09-03.mp3", "emotion": "delighted" },
+        { "role": "horn", "text": "Again! Again! The island shakes with happy feet!", "audio": "p09-04.mp3", "emotion": "excited" }
+      ]
+    },
+    {
+      "img": "story-10.png",
+      "alt": "After the dance George holds his tummy; Goat speaks gently; the boat waits",
+      "lines": [
+        { "role": "george", "text": "My tummy is empty. I wish I smelled hot soup.", "audio": "p10-01.mp3", "emotion": "hungry" },
+        { "role": "narrator", "text": "The vine crown felt heavy; the jungle night felt far from home.", "audio": "p10-02.mp3", "emotion": "soft" },
+        { "role": "goat", "text": "Kings can leave whenever their hearts pull homeward.", "audio": "p10-03.mp3", "emotion": "gentle" },
+        { "role": "george", "text": "The place that loves me most is waiting for me.", "audio": "p10-04.mp3", "emotion": "tender" }
+      ]
+    },
+    {
+      "img": "story-11.png",
+      "alt": "George sails away on Billy o' Tea; Horn holds the crown on the shore",
+      "lines": [
+        { "role": "george", "text": "Goodbye, wild friends. I must go back home now.", "audio": "p11-01.mp3", "emotion": "wistful" },
+        { "role": "horn", "text": "Sail safe, little king. We will keep your crown.", "audio": "p11-02.mp3", "emotion": "warm" },
+        { "role": "beak", "text": "Tell your family the wild things said hello.", "audio": "p11-03.mp3", "emotion": "friendly" },
+        { "role": "narrator", "text": "Billy o' Tea turned toward the distant bird-lamp glow.", "audio": "p11-04.mp3", "emotion": "calm" }
+      ]
+    },
+    {
+      "img": "story-12.png",
+      "alt": "Back in the bedroom the family waits with a steaming supper; George still wears the T-rex hood",
+      "lines": [
+        { "role": "narrator", "text": "George stepped into his room. Supper steamed on a tray.", "audio": "p12-01.mp3", "emotion": "calm" },
+        { "role": "mummy", "text": "We kept your plate hot. Come and eat, wild thing.", "audio": "p12-02.mp3", "emotion": "soft" },
+        { "role": "daddy", "text": "Welcome home, George. We missed our brave little king.", "audio": "p12-03.mp3", "emotion": "warm" },
+        { "role": "sylvia", "text": "Next time chase me with hugs, not a fork!", "audio": "p12-04.mp3", "emotion": "teasing" }
+      ]
+    }
+  ],
+  "quiz": [
+    { "q": "Where did George chase Sylvia?", "options": ["In the living room", "On the island", "On the boat"], "answer": 0 },
+    { "q": "What did Mummy call George?", "options": ["A careful king", "A wild thing", "A little lamp"], "answer": 1 },
+    { "q": "What grew in George's room?", "options": ["A jungle of vines", "A stone forest", "A muddy puddle"], "answer": 0 },
+    { "q": "What was the name of the little boat?", "options": ["Wellerman", "Billy o' Tea", "Wild Parade"], "answer": 1 },
+    { "q": "How did George tame the wild things?", "options": ["He hit them with the fork", "He stared into their yellow eyes", "He hid behind the boat"], "answer": 1 },
+    { "q": "Who put the vine crown on George?", "options": ["Beak", "Daddy", "Sylvia"], "answer": 0 },
+    { "q": "Who said kings can leave?", "options": ["Horn", "Goat", "Mummy"], "answer": 1 },
+    { "q": "What did George do with the crown?", "options": ["He took it home to bed", "He threw it in the sea", "He left it with Horn"], "answer": 2 },
+    { "q": "What was waiting in his room?", "options": ["A cold sandwich", "Supper that was still hot", "The three wild things"], "answer": 1 },
+    { "q": "Who was waiting at home?", "options": ["Only Mummy", "Mike and Nibble", "Mummy, Daddy and Sylvia"], "answer": 2 }
+  ],
+  "phrases": [
+    "I am not afraid",
+    "wild thing",
+    "still hot",
+    "Go to your room",
+    "Kings can leave",
+    "Come and eat"
+  ]
+}

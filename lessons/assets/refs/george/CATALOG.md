@@ -264,3 +264,26 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **tags:** bedroom, lamp, night-light, bird-lamp, alarm-clock, prop, scene-anchor
 - **use_for:** George's little lamp in RealBedroom and dream scenes; replace star night-light
 - **notes:** Chubby glowing bird body, tiny black dot eyes, small yellow-orange beak, three-prong fan tail, white clock panel on lower belly. Scale lock: fist-sized / ankle-high vs standing George (see `lessons/assets/refs/cast/mike-nibble-sheet.png`). In Hill/Forest dream art: keep fist-sized, hide clock digits. No bedside table lamp in story art.
+
+### Costume — T-rex onesie (Lesson 7)
+
+#### george-solo-halloween-trex-bucket.jpg
+- **priority:** primary
+- **people:** george
+- **tags:** solo, halloween, costume, trex, dinosaur, indoors, full-body, front-facing
+- **use_for:** Lesson 7 George costume lock — front of T-rex onesie + face
+- **notes:** Full-body tan/beige/light-orange cracked-scale T-rex jumpsuit with matching hood (dino head); front zipper; navy sneakers with white soles and green Nike swoosh. Orange pumpkin candy bucket is Halloween-only — do not copy into Lesson 7 unless the beat needs it. Face: short black bangs, East Asian boy ~5.
+
+#### george-solo-halloween-trex-night-side.png
+- **priority:** high
+- **people:** george
+- **tags:** solo, halloween, costume, trex, dinosaur, night, side, full-body, tail
+- **use_for:** Lesson 7 costume lock — hood side eye, back plates, thick tapered tail
+- **notes:** Side/rear view of the same mottled brown-orange scale onesie; dark triangular plates down the spine continuing onto the tail; blue sneakers; yellow pumpkin bucket (Halloween-only, do not copy unless needed).
+
+#### george-mummy-daddy-sylvia-halloween-trex-play.jpg
+- **priority:** high
+- **people:** george, mummy, daddy, sylvia
+- **tags:** family, halloween, costume, trex, indoors, smile, play
+- **use_for:** Lesson 7 family likeness + George in T-rex hood with family; home-clothes hints (not cave gear)
+- **notes:** George center in orange-brown dino hood, excited hands. Sylvia (teen, long dark wavy hair, gold headband, dark dress with gold trim) making a playful face. Mummy behind George, glasses, dark long sleeves, smile. Daddy far left, glasses, navy tee with colorful animal icons. Use faces and George costume; do not copy the lobby sign or exact party clothes into every page.

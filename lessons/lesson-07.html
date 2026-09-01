@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 7: George's Wild Parade</title>
+  <link rel="stylesheet" href="css/lesson.css" />
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 10% 10%, #f3e6c8 0, transparent 40%),
+        radial-gradient(circle at 90% 0%, #d8e8c8 0, transparent 35%),
+        var(--bg);
+    }
+    .voice-key .mummy { background: #ffe8f0; color: #c92a6a; }
+    .voice-key .sylvia { background: #e8f6e4; color: #2b7a2b; }
+    .voice-key .horn { background: #efe4d4; color: #7a4a12; }
+    .voice-key .beak { background: #fff3d6; color: #b36b00; }
+    .voice-key .goat { background: #ececec; color: #4a4a4a; }
+    .line.mummy { background: #ffe8f0; border-color: #ffb3d1; }
+    .line.sylvia { background: #e8f6e4; border-color: #b6e6b8; }
+    .line.horn { background: #efe4d4; border-color: #e0c4a0; }
+    .line.beak { background: #fff3d6; border-color: #ffd48a; }
+    .line.goat { background: #ececec; border-color: #c8c8c8; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">🐉 George English · Lesson 7</div>
+      <nav class="nav-links">
+        <a href="lesson-06.html">Lesson 6</a>
+        <a href="../index.html">All lessons</a>
+      </nav>
+    </header>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="screen active" data-screen="0">
+      <img class="hero hero-full" src="assets/lesson-07/cover.webp" alt="George in a T-rex onesie with a vine crown stands before three huge wild things" />
+      <h1>George and the Wild Parade</h1>
+      <div class="continue">George and the Wild Things · George · Sylvia · Horn · Beak · Goat</div>
+      <p class="hint">ORT Level 6 · Living room · Jungle room · Wild parade</p>
+      <div class="voice-key">
+        <span class="narrator">Narrator</span>
+        <span class="george">George (boy)</span>
+        <span class="mummy">Mummy</span>
+        <span class="sylvia">Sylvia</span>
+        <span class="daddy">Daddy</span>
+        <span class="horn">Horn</span>
+        <span class="beak">Beak</span>
+        <span class="goat">Goat</span>
+      </div>
+      <div class="controls">
+        <button class="btn-primary" type="button" data-next>Start ▶</button>
+        <button class="btn-secondary" type="button" data-audio="audio/title.mp3">🔊 Title</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="1">
+      <h2>New Words</h2>
+      <p class="hint">Tap a card: hear the word, then an example sentence</p>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Story ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2" data-story="0"></section>
+    <section class="screen" data-screen="3" data-story="1"></section>
+    <section class="screen" data-screen="4" data-story="2"></section>
+    <section class="screen" data-screen="5" data-story="3"></section>
+    <section class="screen" data-screen="6" data-story="4"></section>
+    <section class="screen" data-screen="7" data-story="5"></section>
+    <section class="screen" data-screen="8" data-story="6"></section>
+    <section class="screen" data-screen="9" data-story="7"></section>
+    <section class="screen" data-screen="10" data-story="8"></section>
+    <section class="screen" data-screen="11" data-story="9"></section>
+    <section class="screen" data-screen="12" data-story="10"></section>
+    <section class="screen" data-screen="13" data-story="11"></section>
+
+    <section class="screen" data-screen="14">
+      <h2>Let's Check!</h2>
+      <p class="hint">5 questions this time · Listen, then choose A, B or C</p>
+      <div id="quizArea"></div>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next id="quizNext" disabled>Next ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="15">
+      <h2>Key Phrases</h2>
+      <p class="hint">Tap each phrase and say it with George</p>
+      <div class="sight-grid" id="sightGrid"></div>
+      <p class="feedback" id="sightFeedback"></p>
+      <div class="controls">
+        <button class="btn-ghost" type="button" data-prev>◀ Back</button>
+        <button class="btn-primary" type="button" data-next>Notes ▶</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="16">
+      <h2>Follow-up Notes</h2>
+      <p class="hint">For tutor / parent (saved on this device)</p>
+      <div class="learning-box">
+        <strong>Learning focus</strong>
+        <p>George 穿 T-rex 裝在客廳拿木叉追姐姐，被罵 wild thing、罰回房不准吃晚飯。房間長出叢林，Billy o' Tea 載他到野獸島。他用眼神馴服 Horn、Beak、Goat，當王跳 wild parade；肚子餓後自願留下王冠回家，晚飯還熱。</p>
+        <ul>
+          <li>Story words: wild thing, jungle, stare, crown, parade</li>
+          <li>Home words: wooden fork, living room, supper</li>
+          <li>Feeling: lonely, still hot</li>
+          <li>Key phrases: I am not afraid. Come and eat, wild thing.</li>
+        </ul>
+        <strong>Tutor prompts</strong>
+        <ul>
+          <li>問：Mummy 為什麼叫 George wild thing？（他拿木叉在客廳追 Sylvia）</li>
+          <li>問：George 怎樣成為國王？（盯著野獸的黃眼睛，不怕）</li>
+          <li>問：誰說王可以離開？（Goat）</li>
+          <li>問：王冠後來呢？（留給 Horn，沒有帶回家）</li>
+          <li>問：回到房間時晚飯怎麼樣？（還熱，全家等他）</li>
+        </ul>
+      </div>
+      <div class="notes" id="notesForm">
+        <label><input type="checkbox" data-note="read_aloud" /> Tried reading aloud</label>
+        <label><input type="checkbox" data-note="used_ai_audio" /> Used AI line audio / Read page</label>
+        <label><input type="checkbox" data-note="vocab_sentence" /> Echoed vocab example sentences</label>
+        <label><input type="checkbox" data-note="wild_phrases" /> Practised key phrases (I am not afraid / Kings can leave)</label>
+        <label><input type="checkbox" data-note="story_talk" /> Talked about the wild parade</label>
+        <label><input type="checkbox" data-note="followed_dialogue" /> Followed the dialogue well</label>
+        <label><input type="checkbox" data-note="quiz_ok" /> Got quiz answers right</label>
+        <label><input type="checkbox" data-note="needs_review" /> Needs review next time</label>
+        <p style="margin:14px 0 6px;font-weight:800;">Comments</p>
+        <textarea id="noteComment" placeholder="What went well? What to practice next?"></textarea>
+        <div class="controls" style="margin-top:14px;">
+          <button class="btn-good" type="button" id="saveNotes">💾 Save notes</button>
+          <button class="btn-secondary" type="button" id="clearNotes">Clear</button>
+          <a class="btn btn-primary" href="../index.html" style="text-decoration:none;display:inline-block;">Home</a>
+        </div>
+        <p class="save-msg" id="saveMsg"></p>
+      </div>
+      <footer class="note">Welcome home, wild thing! 👑</footer>
+    </section>
+  </div>
+
+  <script>
+    window.LESSON = {
+      asset: "assets/lesson-07/",
+      storageKey: "george-lesson-07-notes-v1",
+      videoDir: "video/",
+      videoPages: [],
+      roleLabel: { narrator: "Narrator", george: "George", mummy: "Mummy", sylvia: "Sylvia", daddy: "Daddy", horn: "Horn", beak: "Beak", goat: "Goat" },
+      vocab: [
+        { word: "wild thing", example: "Mummy called George a wild thing, then later a soft wild thing.", img: "story-02.png", alt: "Mummy calling George a wild thing in the living room", audio: "audio/vocab-wild-thing.mp3", exampleAudio: "audio/vocab-wild-thing-ex.mp3" },
+        { word: "wooden fork", example: "Sylvia said the wooden fork was only a play fork.", img: "story-01.png", alt: "George chasing Sylvia with a wooden play fork", audio: "audio/vocab-wooden-fork.mp3", exampleAudio: "audio/vocab-wooden-fork-ex.mp3" },
+        { word: "jungle", example: "Green vines grew into a jungle, but his bed stayed.", img: "story-04.png", alt: "vines growing in George's bedroom", audio: "audio/vocab-jungle.mp3", exampleAudio: "audio/vocab-jungle-ex.mp3" },
+        { word: "stare", example: "George stared into their yellow eyes and was not afraid.", img: "story-08.png", alt: "George staring into the yellow eyes of the wild things", audio: "audio/vocab-stare.mp3", exampleAudio: "audio/vocab-stare-ex.mp3" },
+        { word: "crown", example: "Beak put a vine crown on George's dinosaur hood.", img: "story-08.png", alt: "a leafy vine crown on George's hood", audio: "audio/vocab-crown.mp3", exampleAudio: "audio/vocab-crown-ex.mp3" },
+        { word: "parade", example: "Goat said, let the wild parade begin!", img: "story-09.png", alt: "George and the wild things stomping in a parade", audio: "audio/vocab-parade.mp3", exampleAudio: "audio/vocab-parade-ex.mp3" },
+        { word: "lonely", example: "The quiet room felt lonely without his family.", img: "story-03.png", alt: "George sitting alone on his cream bed", audio: "audio/vocab-lonely.mp3", exampleAudio: "audio/vocab-lonely-ex.mp3" },
+        { word: "still hot", example: "His supper was still hot when he came home.", img: "story-12.png", alt: "a steaming supper tray on the bed with the family", audio: "audio/vocab-still-hot.mp3", exampleAudio: "audio/vocab-still-hot-ex.mp3" },
+      ],
+      story: [
+        {
+          img: "story-01.png",
+          alt: "In the living room George in a T-rex onesie chases Sylvia with a wooden play fork; she laughs",
+          lines: [
+            { role: "narrator", text: "After tea, George stomped through the living room in his T-rex suit.", audio: "audio/p01-01.mp3" },
+            { role: "george", text: "Roar! I am the biggest dinosaur in this whole house!", audio: "audio/p01-02.mp3" },
+            { role: "sylvia", text: "George, stop chasing me with that silly wooden fork!", audio: "audio/p01-03.mp3" },
+            { role: "george", text: "No way! Wild T-rex George will catch you soon!", audio: "audio/p01-04.mp3" },
+          ]
+        },
+        {
+          img: "story-02.png",
+          alt: "Mummy stands by the living-room door and sends George to his room; Sylvia watches",
+          lines: [
+            { role: "mummy", text: "George! You are being a wild thing, not a kind brother!", audio: "audio/p02-01.mp3" },
+            { role: "george", text: "Wild things do not have to listen to anyone!", audio: "audio/p02-02.mp3" },
+            { role: "mummy", text: "No supper. Go to your room and stay there now.", audio: "audio/p02-03.mp3" },
+            { role: "sylvia", text: "Maybe next time play without the fork, George.", audio: "audio/p02-04.mp3" },
+          ]
+        },
+        {
+          img: "story-03.png",
+          alt: "George sits alone on his cream bed with the bird lamp glowing",
+          lines: [
+            { role: "narrator", text: "George marched to his room and shut the door with a loud thump.", audio: "audio/p03-01.mp3" },
+            { role: "george", text: "Fine! I do not even want any stupid supper tonight!", audio: "audio/p03-02.mp3" },
+            { role: "narrator", text: "His tummy rumbled, but nobody came to the door.", audio: "audio/p03-03.mp3" },
+            { role: "george", text: "They all love Sylvia more than they love me.", audio: "audio/p03-04.mp3" },
+          ]
+        },
+        {
+          img: "story-04.png",
+          alt: "Green vines climb the cream bedroom walls; the bed and bird lamp remain",
+          lines: [
+            { role: "narrator", text: "Green vines crept up the cream wall beside his beige headboard.", audio: "audio/p04-01.mp3" },
+            { role: "george", text: "Wait... my bed is still here under all these leaves.", audio: "audio/p04-02.mp3" },
+            { role: "narrator", text: "The little bird lamp glowed warm through the curling jungle.", audio: "audio/p04-03.mp3" },
+            { role: "george", text: "Even the grey curtains look like tall trees now.", audio: "audio/p04-04.mp3" },
+          ]
+        },
+        {
+          img: "story-05.png",
+          alt: "A small tea-brown boat with a tea-leaf sail waits beside George's bed",
+          lines: [
+            { role: "narrator", text: "A small wooden boat pushed through the leaves beside his bed.", audio: "audio/p05-01.mp3" },
+            { role: "george", text: "Billy o' Tea! You came just for me!", audio: "audio/p05-02.mp3" },
+            { role: "narrator", text: "Tea-brown sails rose up; a leaf emblem shone soft and gold.", audio: "audio/p05-03.mp3" },
+            { role: "george", text: "I will sail away and find my own wild land!", audio: "audio/p05-04.mp3" },
+          ]
+        },
+        {
+          img: "story-06.png",
+          alt: "George steers the small Billy o' Tea alone under a lavender sky",
+          lines: [
+            { role: "narrator", text: "George steered past fern waves under a wide lavender sky.", audio: "audio/p06-01.mp3" },
+            { role: "george", text: "The sea smells like rain and something sweet.", audio: "audio/p06-02.mp3" },
+            { role: "narrator", text: "His room faded behind him, but the bird lamp light followed.", audio: "audio/p06-03.mp3" },
+            { role: "george", text: "Keep going, Billy. I am not turning back yet.", audio: "audio/p06-04.mp3" },
+          ]
+        },
+        {
+          img: "story-07.png",
+          alt: "Three huge wild things block the shore; George stands brave at the boat",
+          lines: [
+            { role: "horn", text: "Who dares land on our island with small blue shoes?", audio: "audio/p07-01.mp3" },
+            { role: "beak", text: "Look at those teeth on his hood! Show your claws!", audio: "audio/p07-02.mp3" },
+            { role: "goat", text: "Three wild ones block the shore. Step back, small boy.", audio: "audio/p07-03.mp3" },
+            { role: "george", text: "I am not small. I am George, and I am brave.", audio: "audio/p07-04.mp3" },
+          ]
+        },
+        {
+          img: "story-08.png",
+          alt: "George stares into yellow eyes; Beak sets a vine crown on his hood",
+          lines: [
+            { role: "george", text: "Stop. Look at my eyes. I am not afraid of you.", audio: "audio/p08-01.mp3" },
+            { role: "narrator", text: "The yellow-eyed beasts went quiet and lowered their sharp claws.", audio: "audio/p08-02.mp3" },
+            { role: "horn", text: "You stared us down. You must be our king now.", audio: "audio/p08-03.mp3" },
+            { role: "beak", text: "Wear this vine crown. Rule the wild things well.", audio: "audio/p08-04.mp3" },
+          ]
+        },
+        {
+          img: "story-09.png",
+          alt: "George and the three wild things stomp and leap in a wild parade",
+          lines: [
+            { role: "goat", text: "Let the wild parade begin! Stomp and swirl with us!", audio: "audio/p09-01.mp3" },
+            { role: "george", text: "Higher! We leap like storm clouds over the moon!", audio: "audio/p09-02.mp3" },
+            { role: "beak", text: "King George, your roar is the loudest of all!", audio: "audio/p09-03.mp3" },
+            { role: "horn", text: "Again! Again! The island shakes with happy feet!", audio: "audio/p09-04.mp3" },
+          ]
+        },
+        {
+          img: "story-10.png",
+          alt: "After the dance George holds his tummy; Goat speaks gently; the boat waits",
+          lines: [
+            { role: "george", text: "My tummy is empty. I wish I smelled hot soup.", audio: "audio/p10-01.mp3" },
+            { role: "narrator", text: "The vine crown felt heavy; the jungle night felt far from home.", audio: "audio/p10-02.mp3" },
+            { role: "goat", text: "Kings can leave whenever their hearts pull homeward.", audio: "audio/p10-03.mp3" },
+            { role: "george", text: "The place that loves me most is waiting for me.", audio: "audio/p10-04.mp3" },
+          ]
+        },
+        {
+          img: "story-11.png",
+          alt: "George sails away on Billy o' Tea; Horn holds the crown on the shore",
+          lines: [
+            { role: "george", text: "Goodbye, wild friends. I must go back home now.", audio: "audio/p11-01.mp3" },
+            { role: "horn", text: "Sail safe, little king. We will keep your crown.", audio: "audio/p11-02.mp3" },
+            { role: "beak", text: "Tell your family the wild things said hello.", audio: "audio/p11-03.mp3" },
+            { role: "narrator", text: "Billy o' Tea turned toward the distant bird-lamp glow.", audio: "audio/p11-04.mp3" },
+          ]
+        },
+        {
+          img: "story-12.png",
+          alt: "Back in the bedroom the family waits with a steaming supper; George still wears the T-rex hood",
+          lines: [
+            { role: "narrator", text: "George stepped into his room. Supper steamed on a tray.", audio: "audio/p12-01.mp3" },
+            { role: "mummy", text: "We kept your plate hot. Come and eat, wild thing.", audio: "audio/p12-02.mp3" },
+            { role: "daddy", text: "Welcome home, George. We missed our brave little king.", audio: "audio/p12-03.mp3" },
+            { role: "sylvia", text: "Next time chase me with hugs, not a fork!", audio: "audio/p12-04.mp3" },
+          ]
+        },
+      ],
+      quizPick: 5,
+      quiz: [
+        { q: "Where did George chase Sylvia?", options: ["In the living room", "On the island", "On the boat"], answer: 0 },
+        { q: "What did Mummy call George?", options: ["A careful king", "A wild thing", "A little lamp"], answer: 1 },
+        { q: "What grew in George's room?", options: ["A jungle of vines", "A stone forest", "A muddy puddle"], answer: 0 },
+        { q: "What was the name of the little boat?", options: ["Wellerman", "Billy o' Tea", "Wild Parade"], answer: 1 },
+        { q: "How did George tame the wild things?", options: ["He hit them with the fork", "He stared into their yellow eyes", "He hid behind the boat"], answer: 1 },
+        { q: "Who put the vine crown on George?", options: ["Beak", "Daddy", "Sylvia"], answer: 0 },
+        { q: "Who said kings can leave?", options: ["Horn", "Goat", "Mummy"], answer: 1 },
+        { q: "What did George do with the crown?", options: ["He took it home to bed", "He threw it in the sea", "He left it with Horn"], answer: 2 },
+        { q: "What was waiting in his room?", options: ["A cold sandwich", "Supper that was still hot", "The three wild things"], answer: 1 },
+        { q: "Who was waiting at home?", options: ["Only Mummy", "Mike and Nibble", "Mummy, Daddy and Sylvia"], answer: 2 },
+      ],
+      phrases: [
+        { text: "I am not afraid", audio: "audio/p08-01.mp3" },
+        { text: "wild thing", audio: "audio/p02-01.mp3" },
+        { text: "still hot", audio: "audio/p12-02.mp3" },
+        { text: "Go to your room", audio: "audio/p02-03.mp3" },
+        { text: "Kings can leave", audio: "audio/p10-03.mp3" },
+        { text: "Come and eat", audio: "audio/p12-02.mp3" },
+      ]
+    };
+  </script>
+  <script src="js/lesson-player.js?v=4"></script>
+</body>
+</html>

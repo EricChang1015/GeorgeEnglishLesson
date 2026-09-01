@@ -23,6 +23,10 @@ Engine: [Microsoft Edge TTS](https://github.com/rany2/edge-tts) via `edge-tts` (
 | `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` | Soft peep-like baby dinosaur |
 | `jojo` | Jojo (caving coach) | `en-US-AvaNeural` | `-8%` | `+5Hz` | Young warm female coach; parent pick 2026-08-26 (audition E) |
 | `mummy` | Mummy | `en-US-AriaNeural` | `+5%` | `+5Hz` | Warm adult female; parent pick 2026-08-26 (audition B) |
+| `sylvia` | Sylvia (sister) | `en-GB-LibbyNeural` | `+8%` | `+8Hz` | Teen girl; first used Lesson 7 |
+| `horn` | Horn | `en-GB-ThomasNeural` | `+0%` | `-8Hz` | Bull-horn beast; boy voice, lower |
+| `beak` | Beak | `en-US-JennyNeural` | `+12%` | `+10Hz` | Rooster beast; bright, not Pip/Ember |
+| `goat` | Goat | `en-AU-NatashaNeural` | `-5%` | `+5Hz` | Ram-horn beast; gentle |
 
 ### Distinguishing similar voices
 
@@ -45,9 +49,7 @@ Ember and Nibble both use `en-GB-MaisieNeural` but **different rate/pitch**:
 
 ## Reserved (not yet cast)
 
-| Role key | Character | Status |
-|----------|-----------|--------|
-| `sylvia` | Sylvia (older sister) | TBD — child/teen girl; must differ from George, Pip, and Ember |
+None. Sylvia and Lesson 7 beasts were added 2026-09-01.
 
 When a new family member speaks for the first time: agree voice with parent → add to `scripts/voices.json` → update this table → copy into the lesson story JSON.
 

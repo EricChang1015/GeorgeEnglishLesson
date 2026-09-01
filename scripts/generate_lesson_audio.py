@@ -36,6 +36,20 @@ MINIMAX_DELIVERY = {
     "calm": {"minimax_emotion": "calm", "speed": 1.30, "pitch": 0, "volume": 0.88},
     "proud": {"minimax_emotion": "happy", "speed": 1.26, "pitch": 1, "volume": 0.95},
     "wonder": {"minimax_emotion": "surprised", "speed": 1.24, "pitch": 1, "volume": 0.95},
+    "naughty": {"minimax_emotion": "happy", "speed": 1.34, "pitch": 1, "volume": 1.0},
+    "defiant": {"minimax_emotion": "happy", "speed": 1.32, "pitch": 1, "volume": 1.0},
+    "sulky": {"minimax_emotion": "fearful", "speed": 1.18, "pitch": -1, "volume": 0.86},
+    "lonely": {"minimax_emotion": "fearful", "speed": 1.16, "pitch": -1, "volume": 0.82},
+    "curious": {"minimax_emotion": "surprised", "speed": 1.26, "pitch": 1, "volume": 0.92},
+    "amazed": {"minimax_emotion": "surprised", "speed": 1.28, "pitch": 1, "volume": 0.95},
+    "bold": {"minimax_emotion": "happy", "speed": 1.32, "pitch": 1, "volume": 1.0},
+    "determined": {"minimax_emotion": "calm", "speed": 1.28, "pitch": 0, "volume": 0.95},
+    "brave": {"minimax_emotion": "happy", "speed": 1.28, "pitch": 1, "volume": 0.98},
+    "stern": {"minimax_emotion": "calm", "speed": 1.22, "pitch": -1, "volume": 0.95},
+    "gleeful": {"minimax_emotion": "happy", "speed": 1.36, "pitch": 1, "volume": 1.0},
+    "hungry": {"minimax_emotion": "fearful", "speed": 1.18, "pitch": 0, "volume": 0.88},
+    "tender": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.86},
+    "wistful": {"minimax_emotion": "fearful", "speed": 1.14, "pitch": -1, "volume": 0.84},
 }
 
 
