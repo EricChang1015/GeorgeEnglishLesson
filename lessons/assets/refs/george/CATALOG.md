@@ -24,7 +24,7 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 
 1. **George face / likeness (required for any George art):** start with `priority: primary` photos, especially `george-solo-bed-smile.jpg`.
 2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole) for George scenes; solo Daddy refs in `lessons/assets/refs/daddy/CATALOG.md` (default: `daddy-solo-indoor-vehicle-neutral.png`).
-3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
+3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`). **Full family (all four):** see `george-daddy-mummy-sylvia-*` entries below; solo face refs in `refs/sylvia/`, `refs/mummy/`, `refs/daddy/`.
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
 5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
 6. **Bedroom / bedtime scene:** use `mike-plush-bedroom-bed-scattered.jpg` for George's actual bed layout, cream blanket, far-wall grey curtains, and plush placement; use `george-daddy-bedtime-reading.jpg` for bedtime reading posture **and the left-of-bed wall** (plain cream wall + beige headboard, **no window/curtains** on that side).
@@ -165,7 +165,67 @@ Solo Mummy face / body refs: `lessons/assets/refs/mummy/CATALOG.md` (default fac
 - **use_for:** Mummy reading to George; shared story-time / bedtime reading posture
 - **notes:** Mummy: low ponytail, wispy bangs, thin round dark metal glasses, cream/beige knit sweater, gold necklace. George: grey sweatshirt, short black bangs, leaning in to look at the book (Sleeping Beauty). Use faces, closeness, and reading pose — do not copy restaurant booth or exact book cover into story art unless the scene needs them.
 
-### Family group
+### Family group — full cast (George + Daddy + Mummy + Sylvia)
+
+Height order in story art: **Daddy tallest → Sylvia → Mummy → George smallest.**
+
+#### george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png
+- **priority:** high
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, indoors, home, sofa, selfie, smile, glasses
+- **use_for:** warm home family group; all four faces + relative positions on a couch
+- **notes:** Brown leather sofa; plain wall. Daddy far left: cream tee, round metal glasses. George center: green-white striped tee, drinking from grey water bottle. Mummy: white tee + pink fleece vest, round glasses, wide smile. Sylvia far right: white long-sleeve, rectangular black glasses, calm smile. Use faces and sofa grouping — do not copy exact pajama/stripe patterns unless the scene is at home.
+
+#### george-daddy-mummy-sylvia-indoor-livingroom-play-selfie.jpg
+- **priority:** high
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, indoors, home, livingroom, play, selfie, matching-shirts
+- **use_for:** indoor family play at home; George focused on activity while parents + Sylvia pose
+- **notes:** Matching black "we are family" monster tees on all four. George foreground left playing purple kinetic sand in pink tray. Mummy center: long dark hair, round glasses, gentle smile. Sylvia center-back: rectangular glasses, playful tongue-out. Daddy right: selfie-taker, short dark hair. Use cast positions and play-at-home mood — do not copy monster-shirt graphic into story art unless needed.
+
+#### george-daddy-mummy-sylvia-outdoors-park-bench-family-shirts.jpg
+- **priority:** high
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, outdoors, park, bench, travel, selfie, smile, matching-shirts
+- **use_for:** outdoor family outing; park bench group pose
+- **notes:** Green park bench; trees behind. Daddy left (selfie): round glasses, black family tee. George: pink sunglasses, family tee. Mummy: round sunglasses, blue lanyard, laughing. Sylvia far right: mint tee (not matching), rectangular glasses, blue backpack — **Sylvia often wears different outfit from rest**. Use relative seating and outing mood.
+
+#### george-daddy-mummy-sylvia-outdoors-dino-selfie-smile.jpg
+- **priority:** high
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, outdoors, zoo, dinosaur, adventure, selfie, smile, travel
+- **use_for:** family adventure / dinosaur park; full cast with prop
+- **notes:** Triceratops statue in lush greenery. Daddy left: navy tee, rectangular glasses, bag strap. George front center: blue long-sleeve with Mickey graphic. Mummy: blue hooded windbreaker (lime hood lining), hands on George's shoulders. Sylvia right: black Mickey-pattern sweatshirt, rectangular glasses. Pairs with `george-sylvia-park-dino-smile.jpg` (George+Sylvia only) for dino-play chapters.
+
+#### george-daddy-mummy-sylvia-outdoors-plaza-pigeons-smile.jpg
+- **priority:** medium
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, outdoors, urban, plaza, pigeons, travel, smile, winter-coats
+- **use_for:** city travel; feeding birds; winter outdoor family
+- **notes:** Urban plaza with blue skyscraper behind. Daddy far left: grey GAP hoodie, round tinted glasses. Sylvia crouching: black hoodie, sunglasses, interacting with pigeons. Mummy holding George on lap: bronze puffer, sunglasses. George: bright red puffer, blue pants, happy. Use winter-coat grouping and city outing — do not copy GAP logo unless needed.
+
+#### george-daddy-mummy-sylvia-outdoors-tower-selfie-smile.jpg
+- **priority:** medium
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, outdoors, travel, landmark, tower, selfie, smile, winter-coats
+- **use_for:** family sightseeing; landmark travel group
+- **notes:** Eiffel-tower replica; clear blue sky; low-angle selfie. Daddy foreground left: black puffer, round sunglasses. George center: green/beige camo puffer, looking sideways. Sylvia center: rectangular glasses, pink face mask. Mummy right: bronze puffer, round sunglasses, blue crossbody bag. Use travel landmark mood — masks/sunglasses are trip-only, not default lesson look.
+
+#### george-daddy-mummy-sylvia-indoor-airport-selfie-smile.jpg
+- **priority:** medium
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, indoors, airport, travel, selfie, smile
+- **use_for:** family travel departure; airport terminal group
+- **notes:** Airport terminal floor + queue stanchions. Daddy left: beige tee, round glasses, wide smile. Sylvia behind: long hair + bangs, rectangular glasses, navy graphic tee. Mummy right holding George: short layered hair, round glasses, navy tee. George: white patterned long-sleeve, leaning on Mummy. **Extra person in background (grandmother, peace sign) — NOT in cast bible; do not draw in lesson art.** Use four core family faces only.
+
+#### george-mummy-daddy-sylvia-halloween-trex-play.jpg
+- **priority:** high
+- **people:** george, mummy, daddy, sylvia
+- **tags:** family, full-cast, halloween, costume, trex, indoors, smile, play
+- **use_for:** Lesson 7 family likeness + George in T-rex hood with family; home-clothes hints (not cave gear)
+- **notes:** George center in orange-brown dino hood, excited hands. Sylvia (teen, long dark wavy hair, gold headband, dark dress with gold trim) making a playful face. Mummy behind George, glasses, dark long sleeves, smile. Daddy far left, glasses, navy tee with colorful animal icons. Use faces and George costume; do not copy the lobby sign or exact party clothes into every page.
+
+### Family group — partial (3 or fewer)
 
 #### george-daddy-mummy-indoor-closeup.jpg
 - **priority:** medium
@@ -297,8 +357,4 @@ George’s favorite doll: a lime-green, one-eyed Mike Wazowski plush (*Monsters,
 - **notes:** Side/rear view of the same mottled brown-orange scale onesie; dark triangular plates down the spine continuing onto the tail; blue sneakers; yellow pumpkin bucket (Halloween-only, do not copy unless needed).
 
 #### george-mummy-daddy-sylvia-halloween-trex-play.jpg
-- **priority:** high
-- **people:** george, mummy, daddy, sylvia
-- **tags:** family, halloween, costume, trex, indoors, smile, play
-- **use_for:** Lesson 7 family likeness + George in T-rex hood with family; home-clothes hints (not cave gear)
-- **notes:** George center in orange-brown dino hood, excited hands. Sylvia (teen, long dark wavy hair, gold headband, dark dress with gold trim) making a playful face. Mummy behind George, glasses, dark long sleeves, smile. Daddy far left, glasses, navy tee with colorful animal icons. Use faces and George costume; do not copy the lobby sign or exact party clothes into every page.
+- **See:** full-cast entry under **Family group — full cast** above (Lesson 7 family + T-rex costume).

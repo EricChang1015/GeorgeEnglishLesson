@@ -91,3 +91,10 @@ mummy-{setting}-{pose-or-mood}[-variant].jpg
 | `george-daddy-mummy-indoor-closeup.jpg` | George + both parents closeup |
 | `daddy-mummy-indoor-smile.jpg` | Daddy + Mummy together (Mummy floral tee) |
 | `george-mummy-daddy-sylvia-halloween-trex-play.jpg` | Full family + George T-rex costume |
+| `george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png` | Full family at home on sofa |
+| `george-daddy-mummy-sylvia-indoor-livingroom-play-selfie.jpg` | Full family indoor play |
+| `george-daddy-mummy-sylvia-outdoors-park-bench-family-shirts.jpg` | Full family park bench |
+| `george-daddy-mummy-sylvia-outdoors-dino-selfie-smile.jpg` | Full family dinosaur park |
+| `george-daddy-mummy-sylvia-outdoors-plaza-pigeons-smile.jpg` | Full family city plaza |
+| `george-daddy-mummy-sylvia-outdoors-tower-selfie-smile.jpg` | Full family landmark travel |
+| `george-daddy-mummy-sylvia-indoor-airport-selfie-smile.jpg` | Full family airport |

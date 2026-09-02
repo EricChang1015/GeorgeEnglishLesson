@@ -96,3 +96,10 @@ sylvia-{setting}-{pose-or-mood}[-variant].jpg
 | `daddy-sylvia-indoor-selfie.jpg` | Daddy + Sylvia home selfie (Sylvia school uniform) |
 | `daddy-sylvia-outdoors-selfie.jpg` | Daddy + Sylvia travel (Sylvia cap + glasses) |
 | `george-mummy-daddy-sylvia-halloween-trex-play.jpg` | Full family + George T-rex costume |
+| `george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png` | Full family at home on sofa |
+| `george-daddy-mummy-sylvia-indoor-livingroom-play-selfie.jpg` | Full family indoor play (kinetic sand) |
+| `george-daddy-mummy-sylvia-outdoors-park-bench-family-shirts.jpg` | Full family park bench outing |
+| `george-daddy-mummy-sylvia-outdoors-dino-selfie-smile.jpg` | Full family dinosaur park |
+| `george-daddy-mummy-sylvia-outdoors-plaza-pigeons-smile.jpg` | Full family city plaza / pigeons |
+| `george-daddy-mummy-sylvia-outdoors-tower-selfie-smile.jpg` | Full family landmark sightseeing |
+| `george-daddy-mummy-sylvia-indoor-airport-selfie-smile.jpg` | Full family airport (no grandmother in art) |
