@@ -2,6 +2,8 @@
 
 Likeness refs for **Sylvia** (older sister, teen girl). Photos in this folder are **tracked in git**. Do not embed raw photos in published lesson HTML — generate picture-book art under `lessons/assets/lesson-XX/` instead.
 
+**Why:** Lesson 7 家人臉曾跑篇（萬聖節合照當唯一臉）。畫 Sylvia **必須先 Read** `sylvia-solo-outdoors-graduation-smile.jpg`。地圖：`docs/family-refs.md`。
+
 **Family / group shots with George** remain in `lessons/assets/refs/george/` (e.g. `george-sylvia-arcade-play.jpg`, `daddy-sylvia-indoor-selfie.jpg`). Use **this folder** for solo Sylvia face, body, and outfit refs.
 
 ## Naming

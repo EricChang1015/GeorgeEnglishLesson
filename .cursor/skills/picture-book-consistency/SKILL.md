@@ -10,9 +10,10 @@ Do not generate lesson art from a one-line story beat. Lock the cast and places 
 
 ## Read first
 
-1. `docs/cast-bible.md` — 全專案角色鎖；篇章 bible（如 `docs/big-eye-chapter.md`）— 該章比例、服裝、場景、Zone
-2. `lessons/assets/refs/george/CATALOG.md`, `lessons/assets/refs/sylvia/CATALOG.md`, `lessons/assets/refs/mummy/CATALOG.md`, and `lessons/assets/refs/daddy/CATALOG.md` — then **Read** the photos named in the bible
-3. `.cursor/rules/character-refs.mdc` — family photo rules
+1. `docs/family-refs.md` — 家人臉選圖地圖（Lesson 7 跑篇後補齊）
+2. `docs/cast-bible.md` — 全專案角色鎖；篇章 bible（如 `docs/big-eye-chapter.md`、`docs/lesson-07-proposals/bible-locked.md`）— 該章比例、服裝、場景、Zone
+3. Matching `CATALOG.md` under `lessons/assets/refs/{george,sylvia,mummy,daddy}/` — then **Read** the photos named in the bible（家人頁必 Read solo primary，不准只讀萬聖節合照）
+4. `.cursor/rules/character-refs.mdc` — family photo rules
 
 If the bible is missing a new character or place, **update the bible and get a sheet** before page images.
 
@@ -46,7 +47,7 @@ If the bible is missing a new character or place, **update the bible and get a s
 
 | 檢查 | 內容 |
 |------|------|
-| 臉與服裝 | George 像 ref、睡衣／外套 = bible 固定款 |
+| 臉與服裝 | George 像 `george-solo-bed-smile.jpg`；Daddy／Mummy／Sylvia **各像自己的 solo primary**（見 `docs/family-refs.md`）；服裝 = 該課 bible。萬聖節合照不當家人主臉 |
 | 解剖 | 手腳數量正確（Mike 三隻腳的教訓）、無尖爪 |
 | 比例 | 對 sheet：誰到誰的哪裡 |
 | Zone | 錨點在、禁止元素不在（窗戶、星燈、pillow cave 的教訓） |

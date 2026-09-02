@@ -2,6 +2,8 @@
 
 **Do not put photos here.**
 
+Map of who lives where: `docs/family-refs.md`
+
 Put new family / George likeness photos **directly** into:
 
 `lessons/assets/refs/george/`

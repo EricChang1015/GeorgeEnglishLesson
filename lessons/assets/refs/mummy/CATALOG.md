@@ -2,6 +2,8 @@
 
 Likeness refs for **Mummy** (mother). Photos in this folder are **tracked in git**. Do not embed raw photos in published lesson HTML — generate picture-book art under `lessons/assets/lesson-XX/` instead.
 
+**Why:** Lesson 7 家人臉曾跑篇。畫 Mummy **必須先 Read** `mummy-solo-indoor-smile.png`（細圓框眼鏡＋空氣瀏海）。地圖：`docs/family-refs.md`。
+
 **Family / group shots with George** remain in `lessons/assets/refs/george/` (e.g. `george-mummy-indoor-reading-smile.jpg`, `george-daddy-mummy-indoor-closeup.jpg`, `daddy-mummy-indoor-smile.jpg`). Use **this folder** for solo Mummy face, body, and outfit refs.
 
 ## Naming

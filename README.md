@@ -56,7 +56,7 @@ python scripts/optimize_lesson_images.py
 
 ## Character reference photos
 
-Likeness refs for consistent lesson art:
+Likeness refs for consistent lesson art (map: [`docs/family-refs.md`](docs/family-refs.md)):
 
 - George + family group: `lessons/assets/refs/george/` — `lessons/assets/refs/george/CATALOG.md`
 - Sylvia solo: `lessons/assets/refs/sylvia/` — `lessons/assets/refs/sylvia/CATALOG.md`

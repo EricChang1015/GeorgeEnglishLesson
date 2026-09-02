@@ -2,6 +2,8 @@
 
 Likeness refs for **Daddy** (father). Photos in this folder are **tracked in git**. Do not embed raw photos in published lesson HTML — generate picture-book art under `lessons/assets/lesson-XX/` instead.
 
+**Why:** Lesson 7 家人臉曾跑篇。畫 Daddy **必須先 Read** `daddy-solo-indoor-vehicle-neutral.png`（圓框眼鏡＋左下顎小痣）。地圖：`docs/family-refs.md`。
+
 **Family / group shots with George** remain in `lessons/assets/refs/george/` (e.g. `george-daddy-outdoors-pavilion-neutral.jpg`, `george-daddy-bedtime-reading.jpg`, `daddy-sylvia-indoor-selfie.jpg`). Use **this folder** for solo Daddy face, body, and outfit refs.
 
 ## Naming

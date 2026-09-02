@@ -1,7 +1,7 @@
 # Cast & scene bible — Pip and Ember chapter
 
 出任何新插畫（含重畫 Lesson 1–3）**之前**先讀本檔，再讀 `.cursor/skills/picture-book-consistency/SKILL.md`。  
-真人參考仍以 `lessons/assets/refs/george/CATALOG.md` 為準。本檔鎖定**故事角色比例、服裝、場景**，補照片沒有的部分。
+真人參考地圖：`docs/family-refs.md`。George／合照見 `lessons/assets/refs/george/CATALOG.md`；Sylvia／Mummy／Daddy 獨照見各自 `refs/{id}/CATALOG.md`。本檔鎖定**故事角色比例、服裝、場景**，補照片沒有的部分。
 
 狀態：2026-08-21。已有角色表 `lessons/assets/refs/cast/pip-ember-sheet.png`（Lesson 3 重畫用）。比例仍以下列鎖定頁為輔。
 
@@ -108,7 +108,11 @@ Same picture-book watercolor cast: George (East Asian boy ~5, short black bangs,
 | 角色表（出圖主錨） | `lessons/assets/refs/cast/pip-ember-sheet.png` |
 | George 臉 | `lessons/assets/refs/george/george-solo-bed-smile.jpg` |
 | George 近臉／封面 | `lessons/assets/refs/george/george-solo-sofa-alphabet-smile.jpg` |
-| Daddy 臉 | `lessons/assets/refs/george/george-daddy-outdoors-pavilion-neutral.jpg` |
+| Daddy 臉（solo） | `lessons/assets/refs/daddy/daddy-solo-indoor-vehicle-neutral.png` |
+| Daddy 臉（與 George） | `lessons/assets/refs/george/george-daddy-outdoors-pavilion-neutral.jpg` |
+| Mummy 臉 | `lessons/assets/refs/mummy/mummy-solo-indoor-smile.png` |
+| Sylvia 臉 | `lessons/assets/refs/sylvia/sylvia-solo-outdoors-graduation-smile.jpg` |
+| 全家比例／沙發 | `lessons/assets/refs/george/george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png` |
 | Pip 對 George 的身高 | `lessons/assets/lesson-01/story-03.webp` |
 | 三人＋洞口群像 | `lessons/assets/lesson-03/story-01.webp` |
 

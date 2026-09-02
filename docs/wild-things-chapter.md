@@ -44,7 +44,8 @@ George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回
 
 George：全課 T-rex（頭套不脫）。臉與裝見 `lessons/assets/refs/george/` 萬聖節三張＋`george-solo-bed-smile.jpg`。
 
-家人居家便服。身高 Daddy ＞ Sylvia ＞ Mummy ＞ George。
+家人居家便服。身高 Daddy ＞ Sylvia ＞ Mummy ＞ George。  
+**臉必須像本人**（L7 初稿家人不像）：先 Read `docs/family-refs.md` — Sylvia `sylvia-solo-outdoors-graduation-smile.jpg`、Mummy `mummy-solo-indoor-smile.png`、Daddy `daddy-solo-indoor-vehicle-neutral.png`。萬聖節合照不當家人主臉。
 
 | 獸 | 原著型 | 尺 |
 |----|--------|----|

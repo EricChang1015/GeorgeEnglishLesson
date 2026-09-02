@@ -46,7 +46,7 @@ alwaysApply: false
 ## Visuals
 - **Bible first:** read `docs/cast-bible.md` and the `picture-book-consistency` skill before any new or redrawn art
 - Picture-book style illustrations; lock Pip / Ember **scale vs George** (Pip waist–chest, Ember knee-high)
-- Match George (and family) to refs in `lessons/assets/refs/george/` — see `CATALOG.md` and `.cursor/rules/character-refs.mdc`
+- Match George and family to refs — map: `docs/family-refs.md`; George/group in `lessons/assets/refs/george/`; solo Sylvia/Mummy/Daddy in their own folders. See `.cursor/rules/character-refs.mdc`
 - Store published lesson images in `lessons/assets/lesson-XX/` (do not embed raw ref photos in lesson HTML)
 - Keep original PNG for redraws; **HTML/player must load `.webp` only** (no JPG copies, no PNG at runtime)
 - After adding or replacing a PNG: `python scripts/optimize_lesson_images.py --lesson lesson-XX`

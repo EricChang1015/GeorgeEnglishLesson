@@ -11,7 +11,7 @@ alwaysApply: true
 - First language: Chinese (Traditional); English is a second language
 - Story hero: use **George** as the child protagonist (not a fictional substitute name)
 - Family cast in art: George (hero), Daddy, Mummy, Sylvia (older sister)
-- Appearance reference photos: `lessons/assets/refs/george/` + tag index `lessons/assets/refs/george/CATALOG.md` (East Asian boy ~5, short black hair with bangs, round face). Default face: `george-solo-bed-smile.jpg`. Keep likeness consistent across lesson art. See also `.cursor/rules/character-refs.mdc`.
+- Appearance reference photos: map in `docs/family-refs.md`. George default face: `lessons/assets/refs/george/george-solo-bed-smile.jpg`. Family solo faces: Sylvia / Mummy / Daddy under `lessons/assets/refs/{sylvia,mummy,daddy}/` — do not invent generic adult/teen faces (Lesson 7 defect). See `.cursor/rules/character-refs.mdc`.
 
 ## Interests
 - TV / video: Paw Patrol, Doctor Binocs

@@ -91,7 +91,10 @@
 ### 家人比例（居家，不是 L5 洞穴裝備）
 
 - Daddy 最高；Sylvia 比 Mummy 高；George 最矮（頭頂約到 Sylvia 胸口、Daddy 腰）
-- Mummy／Sylvia 臉可參考 `george-mummy-daddy-sylvia-halloween-trex-play.jpg` 與 `docs/real-adventures-chapter.md` 的身高序
+- **臉（2026-09 補齊）：** 各角色 solo primary — 見 `docs/family-refs.md`。不要只靠 `george-mummy-daddy-sylvia-halloween-trex-play.jpg` 畫家人臉（L7 跑篇原因）
+- Sylvia：`sylvia-solo-outdoors-graduation-smile.jpg`（黑方框眼鏡）
+- Mummy：`mummy-solo-indoor-smile.png`（細圓框眼鏡）
+- Daddy：`daddy-solo-indoor-vehicle-neutral.png`（圓框＋下巴痣）
 - Round 1 **不必**寫滿服裝細節；標誰在場即可。居家衣服留給 Round 2 bible。
 
 ### 野獸（Round 1 只定名字與一句個性）

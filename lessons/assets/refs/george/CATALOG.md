@@ -2,6 +2,8 @@
 
 Likeness refs for lesson illustration. Photos in this folder are **tracked in git**. Do not embed raw photos in published lesson HTML — generate picture-book art under `lessons/assets/lesson-XX/` instead.
 
+**家人獨照不在這裡。** Sylvia／Mummy／Daddy solo 臉見 `docs/family-refs.md`。本資料夾＝George 臉＋合照。Lesson 7 曾因只用萬聖節全家福當家人臉而畫不像——合照只當站位／身高，臉要 Read 各角色 solo primary。
+
 ## Naming
 
 ```
