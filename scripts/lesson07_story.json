@@ -31,10 +31,31 @@
     },
     "mummy": { "voice": "en-US-AriaNeural", "rate": "+5%", "pitch": "+5Hz" },
     "daddy": { "voice": "en-GB-RyanNeural", "rate": "-5%", "pitch": "-5Hz" },
-    "sylvia": { "voice": "en-GB-LibbyNeural", "rate": "+8%", "pitch": "+8Hz" },
-    "horn": { "voice": "en-GB-ThomasNeural", "rate": "+0%", "pitch": "-8Hz" },
-    "beak": { "voice": "en-US-JennyNeural", "rate": "+12%", "pitch": "+10Hz" },
-    "goat": { "voice": "en-AU-NatashaNeural", "rate": "-5%", "pitch": "+5Hz" }
+    "sylvia": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_Kind-heartedGirl",
+      "voice": "English_Kind-heartedGirl",
+      "speed": 1.05,
+      "pitch": 2,
+      "volume": 1.0
+    },
+    "horn": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_ManWithDeepVoice",
+      "voice": "English_ManWithDeepVoice",
+      "speed": 0.82,
+      "pitch": -6,
+      "volume": 1.0
+    },
+    "beak": {
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_Comedian",
+      "voice": "English_Comedian",
+      "speed": 1.16,
+      "pitch": 4,
+      "volume": 1.0
+    },
+    "goat": { "voice": "en-US-SteffanNeural", "rate": "-12%", "pitch": "-14Hz" }
   },
   "vocab": [
     { "word": "wild thing", "example": "Mummy called George a wild thing, then later a soft wild thing.", "img": "story-02.png", "alt": "Mummy calling George a wild thing in the living room", "audio": "vocab-wild-thing.mp3", "example_audio": "vocab-wild-thing-ex.mp3" },

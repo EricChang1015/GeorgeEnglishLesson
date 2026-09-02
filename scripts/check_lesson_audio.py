@@ -65,6 +65,10 @@ def expected_clips(data: dict) -> list[tuple[str, str]]:
     return clips
 
 
+def is_minimax(cfg: dict) -> bool:
+    return str(cfg.get("engine") or "").startswith("minimax") or bool(cfg.get("voice_id"))
+
+
 def check_voices(data: dict) -> list[str]:
     problems: list[str] = []
     canonical = json.loads((ROOT / "scripts" / "voices.json").read_text(encoding="utf-8"))["roles"]
@@ -72,12 +76,26 @@ def check_voices(data: dict) -> list[str]:
         if role not in canonical:
             problems.append(f"voice: role '{role}' is not in scripts/voices.json (reserved/uncast?)")
             continue
-        if str(cfg.get("engine", "")).startswith("minimax") or cfg.get("voice_id"):
-            # MiniMax lock currently only approved for George (cute_boy).
-            if role != "george" or (cfg.get("voice_id") or cfg.get("voice")) != "cute_boy":
-                problems.append(f"voice: role '{role}' uses unapproved MiniMax voice {cfg.get('voice_id') or cfg.get('voice')}")
-            continue
         want = canonical[role]
+        story_mm = is_minimax(cfg)
+        canon_mm = is_minimax(want)
+        if story_mm or canon_mm:
+            if role == "george":
+                # voices.json still lists Edge Ana as fallback; published L3+ lock is cute_boy.
+                if (cfg.get("voice_id") or cfg.get("voice")) != "cute_boy":
+                    problems.append(
+                        f"voice: role 'george' uses unapproved MiniMax voice {cfg.get('voice_id') or cfg.get('voice')}"
+                    )
+                continue
+            if not canon_mm:
+                problems.append(f"voice: role '{role}' uses MiniMax but voices.json is Edge")
+                continue
+            for key in ("engine", "voice_id", "speed", "pitch"):
+                if cfg.get(key) != want.get(key):
+                    problems.append(
+                        f"voice: role '{role}' {key}={cfg.get(key)!r} but voices.json says {want.get(key)!r}"
+                    )
+            continue
         for key in ("voice", "rate", "pitch"):
             if cfg.get(key) != want.get(key):
                 problems.append(

@@ -23,7 +23,7 @@ George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回
 
 ---
 
-## 語音（GATE 1 後再選未鎖角色）
+## 語音（家長 2026-09-02 定案）
 
 | Role key | 角色 | 狀態 |
 |----------|------|------|
@@ -31,10 +31,10 @@ George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回
 | `george` | George | 已鎖 MiniMax cute_boy |
 | `mummy` | Mummy | 已鎖 Aria |
 | `daddy` | Daddy | 已鎖 Ryan |
-| `sylvia` | Sylvia | **未選** |
-| `horn` | Horn | **未選** |
-| `beak` | Beak | **未選** |
-| `goat` | Goat | **未選** |
+| `sylvia` | Sylvia | **已鎖** MiniMax `English_Kind-heartedGirl`（試聽 F） |
+| `horn` | Horn | **已鎖** MiniMax `English_ManWithDeepVoice`（試聽 E） |
+| `beak` | Beak | **已鎖** MiniMax `English_Comedian`（試聽 F） |
+| `goat` | Goat | **已鎖** Edge `en-US-SteffanNeural` −12% / −14Hz（試聽 B） |
 
 ---
 

@@ -23,10 +23,10 @@ Engine: [Microsoft Edge TTS](https://github.com/rany2/edge-tts) via `edge-tts` (
 | `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` | Soft peep-like baby dinosaur |
 | `jojo` | Jojo (caving coach) | `en-US-AvaNeural` | `-8%` | `+5Hz` | Young warm female coach; parent pick 2026-08-26 (audition E) |
 | `mummy` | Mummy | `en-US-AriaNeural` | `+5%` | `+5Hz` | Warm adult female; parent pick 2026-08-26 (audition B) |
-| `sylvia` | Sylvia (sister) | `en-GB-LibbyNeural` | `+8%` | `+8Hz` | Teen girl; first used Lesson 7 |
-| `horn` | Horn | `en-GB-ThomasNeural` | `+0%` | `-8Hz` | Bull-horn beast; boy voice, lower |
-| `beak` | Beak | `en-US-JennyNeural` | `+12%` | `+10Hz` | Rooster beast; bright, not Pip/Ember |
-| `goat` | Goat | `en-AU-NatashaNeural` | `-5%` | `+5Hz` | Ram-horn beast; gentle |
+| `sylvia` | Sylvia (sister) | MiniMax `English_Kind-heartedGirl` | `1.05` | `+2` | Older sister; parent pick 2026-09-02 (audition F) |
+| `horn` | Horn | MiniMax `English_ManWithDeepVoice` | `0.82` | `-6` | Rough, extremely deep; parent pick 2026-09-02 (E) |
+| `beak` | Beak | MiniMax `English_Comedian` | `1.16` | `+4` | Rough, high; parent pick 2026-09-02 (F) |
+| `goat` | Goat | `en-US-SteffanNeural` | `-12%` | `-14Hz` | Rough, low, gentler than Horn; parent pick 2026-09-02 (B) |
 
 ### Distinguishing similar voices
 
@@ -49,7 +49,7 @@ Ember and Nibble both use `en-GB-MaisieNeural` but **different rate/pitch**:
 
 ## Reserved (not yet cast)
 
-None. Sylvia and Lesson 7 beasts were added 2026-09-01.
+None. Sylvia / Horn / Beak / Goat parent-locked 2026-09-02.
 
 When a new family member speaks for the first time: agree voice with parent → add to `scripts/voices.json` → update this table → copy into the lesson story JSON.
 
@@ -102,3 +102,5 @@ Full notes: `docs/lesson-01-03-review.md`.
 | 3 | narrator, george, pip, ember, daddy |
 | 4 | narrator, george, daddy, mike, nibble |
 | 5 | narrator, george, jojo, mummy, daddy |
+| 6 | narrator, george, daddy |
+| 7 | narrator, george, mummy, daddy, sylvia, horn, beak, goat |

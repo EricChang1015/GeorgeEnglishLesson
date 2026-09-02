@@ -1,6 +1,6 @@
 {
   "engine": "edge-tts",
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "notes": "Canonical role voices. Copy the full roles block into each lesson story JSON under \"voices\". Do not change a role without parent approval.",
   "roles": {
     "narrator": {
@@ -85,40 +85,49 @@
       "notes": "George's mother. Parent pick 2026-08-26 (audition B). First used Lesson 5."
     },
     "sylvia": {
-      "voice": "en-GB-LibbyNeural",
-      "rate": "+8%",
-      "pitch": "+8Hz",
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_Kind-heartedGirl",
+      "voice": "English_Kind-heartedGirl",
+      "speed": 1.05,
+      "pitch": 2,
+      "volume": 1.0,
       "character": "Sylvia",
       "kind": "child-teen-girl",
-      "locale": "British English",
-      "notes": "Older sister. Distinct from George (Ana) and Ember (Maisie). First used Lesson 7."
+      "locale": "English",
+      "notes": "Older sister. Parent pick 2026-09-02 (audition F). First used Lesson 7."
     },
     "horn": {
-      "voice": "en-GB-ThomasNeural",
-      "rate": "+0%",
-      "pitch": "-8Hz",
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_ManWithDeepVoice",
+      "voice": "English_ManWithDeepVoice",
+      "speed": 0.82,
+      "pitch": -6,
+      "volume": 1.0,
       "character": "Horn",
       "kind": "beast",
-      "locale": "British English",
-      "notes": "Bull-horn wild thing. Boy voice, lower than George. First used Lesson 7."
+      "locale": "English",
+      "notes": "Bull-horn wild thing. Rough, extremely deep. Parent pick 2026-09-02 (audition E). First used Lesson 7."
     },
     "beak": {
-      "voice": "en-US-JennyNeural",
-      "rate": "+12%",
-      "pitch": "+10Hz",
+      "engine": "minimax-speech-2.8",
+      "voice_id": "English_Comedian",
+      "voice": "English_Comedian",
+      "speed": 1.16,
+      "pitch": 4,
+      "volume": 1.0,
       "character": "Beak",
       "kind": "beast",
-      "locale": "American English",
-      "notes": "Rooster wild thing. Bright and loud. Not Pip/Ember settings. First used Lesson 7."
+      "locale": "English",
+      "notes": "Rooster wild thing. Rough, high. Parent pick 2026-09-02 (audition F). First used Lesson 7."
     },
     "goat": {
-      "voice": "en-AU-NatashaNeural",
-      "rate": "-5%",
-      "pitch": "+5Hz",
+      "voice": "en-US-SteffanNeural",
+      "rate": "-12%",
+      "pitch": "-14Hz",
       "character": "Goat",
       "kind": "beast",
-      "locale": "Australian English",
-      "notes": "Ram-horn wild thing. Gentle. First used Lesson 7."
+      "locale": "American English",
+      "notes": "Ram-horn wild thing. Rough, low, gentler than Horn. Parent pick 2026-09-02 (audition B). First used Lesson 7."
     }
   },
   "reserved": {}

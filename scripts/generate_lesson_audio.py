@@ -50,6 +50,17 @@ MINIMAX_DELIVERY = {
     "hungry": {"minimax_emotion": "fearful", "speed": 1.18, "pitch": 0, "volume": 0.88},
     "tender": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.86},
     "wistful": {"minimax_emotion": "fearful", "speed": 1.14, "pitch": -1, "volume": 0.84},
+    "annoyed": {"minimax_emotion": "angry", "speed": 1.28, "pitch": 1, "volume": 0.95},
+    "teasing": {"minimax_emotion": "happy", "speed": 1.32, "pitch": 1, "volume": 1.0},
+    "gentle": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.88},
+    "fierce": {"minimax_emotion": "angry", "speed": 1.20, "pitch": -1, "volume": 1.0},
+    "challenging": {"minimax_emotion": "angry", "speed": 1.32, "pitch": 1, "volume": 1.0},
+    "warning": {"minimax_emotion": "calm", "speed": 1.18, "pitch": -1, "volume": 0.95},
+    "awed": {"minimax_emotion": "surprised", "speed": 1.16, "pitch": 0, "volume": 0.92},
+    "joyful": {"minimax_emotion": "happy", "speed": 1.36, "pitch": 1, "volume": 1.0},
+    "delighted": {"minimax_emotion": "happy", "speed": 1.36, "pitch": 1, "volume": 1.0},
+    "warm": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.90},
+    "friendly": {"minimax_emotion": "happy", "speed": 1.24, "pitch": 1, "volume": 0.95},
 }
 
 
@@ -169,10 +180,12 @@ def resolve_minimax_delivery(job: dict) -> dict:
     base_speed = float(cfg.get("speed", 1.30))
     scale = base_speed / 1.30
     preset_speed = float(preset.get("speed", base_speed)) * scale
+    base_pitch = int(cfg.get("pitch", 0))
+    preset_pitch = int(preset.get("pitch", 0))
     return {
         "minimax_emotion": override.get("minimax_emotion") or preset["minimax_emotion"],
         "speed": float(override.get("speed", preset_speed)),
-        "pitch": int(override.get("pitch", preset.get("pitch", cfg.get("pitch", 0)))),
+        "pitch": int(override.get("pitch", base_pitch + preset_pitch)),
         "volume": float(override.get("volume", preset.get("volume", cfg.get("volume", 1.0)))),
     }
 

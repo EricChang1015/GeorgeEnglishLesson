@@ -23,10 +23,10 @@ When a character speaks in a lesson, their `"voices"` entry in `scripts/lessonXX
 | `mike` | Mike (plush) | `en-US-AnaNeural` | `+5%` | `+20Hz` |
 | `nibble` | Nibble (baby dino) | `en-GB-MaisieNeural` | `+12%` | `+8Hz` |
 | `mummy` | Mummy | `en-US-AriaNeural` | `+5%` | `+5Hz` |
-| `sylvia` | Sylvia | `en-GB-LibbyNeural` | `+8%` | `+8Hz` |
-| `horn` | Horn | `en-GB-ThomasNeural` | `+0%` | `-8Hz` |
-| `beak` | Beak | `en-US-JennyNeural` | `+12%` | `+10Hz` |
-| `goat` | Goat | `en-AU-NatashaNeural` | `-5%` | `+5Hz` |
+| `sylvia` | Sylvia | MiniMax `English_Kind-heartedGirl` | `1.05` | `+2` |
+| `horn` | Horn | MiniMax `English_ManWithDeepVoice` | `0.82` | `-6` |
+| `beak` | Beak | MiniMax `English_Comedian` | `1.16` | `+4` |
+| `goat` | Goat | `en-US-SteffanNeural` | `-12%` | `-14Hz` |
 
 George uses his own Ana / MiniMax lock. **Pip and Mike share the same Ana settings** (`+5%` / `+20Hz`); tell them apart by scene and per-line `emotion`.
 

@@ -1,8 +1,8 @@
 {
   "engine": "minimax-speech-2.8",
   "via": "poe",
-  "updated": "2026-08-21",
-  "notes": "Story dialogue only. Always send voice_id (plain voice is ignored by Poe). Vocab/quiz stay on Edge TTS. Lesson 3 George lines use this lock (parent pick F2, 2026-08-21).",
+  "updated": "2026-09-02",
+  "notes": "Story dialogue only. Always send voice_id (plain voice is ignored by Poe). Vocab/quiz stay on Edge TTS. George lock F2 (2026-08-21). Lesson 7 Sylvia/Horn/Beak parent pick 2026-09-02.",
   "roles": {
     "george": {
       "voice_id": "cute_boy",
@@ -12,6 +12,33 @@
       "character": "George",
       "kind": "child-boy",
       "notes": "Parent pick F2 cute_boy. Base speed 1.30 (2026-08-21); per-line delivery in story JSON overrides."
+    },
+    "sylvia": {
+      "voice_id": "English_Kind-heartedGirl",
+      "speed": 1.05,
+      "pitch": 2,
+      "volume": 1.0,
+      "character": "Sylvia",
+      "kind": "child-teen-girl",
+      "notes": "Parent pick 2026-09-02 (audition F)."
+    },
+    "horn": {
+      "voice_id": "English_ManWithDeepVoice",
+      "speed": 0.82,
+      "pitch": -6,
+      "volume": 1.0,
+      "character": "Horn",
+      "kind": "beast",
+      "notes": "Parent pick 2026-09-02 (audition E). Extremely deep; emotion pitch is an offset on this lock."
+    },
+    "beak": {
+      "voice_id": "English_Comedian",
+      "speed": 1.16,
+      "pitch": 4,
+      "volume": 1.0,
+      "character": "Beak",
+      "kind": "beast",
+      "notes": "Parent pick 2026-09-02 (audition F). High and rough."
     }
   }
 }
