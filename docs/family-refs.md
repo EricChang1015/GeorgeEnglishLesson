@@ -52,7 +52,7 @@
 
 ## Lesson 7 必讀（家人頁）
 
-服裝仍跟 `docs/lesson-07-proposals/bible-locked.md`（居家便服，不是洞穴裝備）。
+服裝跟 `docs/lesson-07-proposals/bible-locked.md`：**居家睡衣、不穿鞋**（不是洞穴裝備、不是外出便服）。全身鎖：`lessons/assets/refs/cast/wild-things-family-sheet.png`。
 
 | 頁 | 誰在場 | 必 Read 臉 | 腳 |
 |----|--------|------------|----|

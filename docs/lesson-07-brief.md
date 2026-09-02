@@ -95,7 +95,8 @@
 - Sylvia：`sylvia-solo-outdoors-graduation-smile.jpg`（黑方框眼鏡）
 - Mummy：`mummy-solo-indoor-smile.png`（細圓框眼鏡）
 - Daddy：`daddy-solo-indoor-vehicle-neutral.png`（圓框＋下巴痣）
-- Round 1 **不必**寫滿服裝細節；標誰在場即可。居家衣服留給 Round 2 bible。
+- **家人睡衣全身表（bible）：** `lessons/assets/refs/cast/wild-things-family-sheet.png` — 野獸表 `wild-things-sheet.png` **沒有** Daddy／Mummy／Sylvia，畫家人必須讀這張
+- 在家（客廳／睡房）全員襪子或赤腳，不穿鞋；家人盡量睡衣：Daddy 灰身海軍藍插肩＋淺米睡褲；Sylvia 墨綠成套＋黑方框眼鏡；Mummy 藕粉成套＋細圓框眼鏡；George 仍全課 T-rex
 
 ### 野獸（Round 1 只定名字與一句個性）
 

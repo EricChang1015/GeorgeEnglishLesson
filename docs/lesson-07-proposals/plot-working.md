@@ -44,7 +44,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** Mummy 定調 wild thing；回嘴；禁晚餐、關房。  
 **翻頁鉤子：** 被趕向房門。  
-**圖上必見證據：** Mummy 門口，細圓框眼鏡，嚴厲不恐怖；George 仍 T-rex、握木叉、**赤腳／襪子**；Sylvia 黑方框眼鏡在旁；指向臥室。  
+**圖上必見證據：** Mummy 門口，細圓框眼鏡、**藕粉睡衣**，嚴厲不恐怖；George 仍 T-rex、握木叉、**襪子／赤腳**；Sylvia 黑方框眼鏡、**墨綠成套睡衣**在旁；指向臥室。全員不穿鞋。  
 **在場：** george, mummy, sylvia  
 **禁止：** 恐怖懲罰、推搡、Daddy 睡前朗讀構圖。
 
@@ -194,7 +194,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 同一 L4 房間；熱晚餐；全家四人。  
 **翻頁鉤子：** （終）wild thing 被接納。  
-**圖上必見證據：** 床、光鳥燈、灰簾、床頭左實牆；叢林退盡或只剩幾葉；托盤熱食蒸氣；Daddy 最高、Sylvia 高於 Mummy、George 最矮；仍整套 T-rex（**不脫頭套**）、**室內赤腳／襪子**；木叉在 tray 旁或床邊；無船、無獸、無冠。家人臉對 `docs/family-refs.md` solo primary。  
+**圖上必見證據：** 床、光鳥燈、灰簾、床頭左實牆；叢林退盡或只剩幾葉；托盤熱食蒸氣；Daddy 最高、Sylvia 高於 Mummy、George 最矮；仍整套 T-rex（**不脫頭套**）；家人**睡衣、襪子／赤腳、不穿鞋**（Daddy 灰／海軍藍插肩睡衣、Sylvia 墨綠成套、Mummy 藕粉成套）；木叉在 tray 旁或床邊；無船、無獸、無冠。臉＋睡衣對 `wild-things-family-sheet.png`。  
 **在場：** george, mummy, sylvia, daddy  
 **禁止：** 叢林未退、缺家人、換裝、脫頭套。
 
