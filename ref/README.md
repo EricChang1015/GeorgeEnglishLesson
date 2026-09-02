@@ -6,7 +6,11 @@ Put new family / George likeness photos **directly** into:
 
 `lessons/assets/refs/george/`
 
-Then update `lessons/assets/refs/george/CATALOG.md` with people + tags + `use_for`.
+Solo Sylvia photos go in:
+
+`lessons/assets/refs/sylvia/`
+
+Then update the matching folder's `CATALOG.md` with people + tags + `use_for`.
 
 Naming:
 
@@ -16,4 +20,4 @@ Naming:
 
 Subjects (George first): `george`, `daddy`, `mummy`, `sylvia`
 
-Photos under `lessons/assets/refs/george/` are tracked in the repo. Do not put new drops in this `ref/` folder.
+Photos under `lessons/assets/refs/george/` and `lessons/assets/refs/sylvia/` are tracked in the repo. Do not put new drops in this `ref/` folder.

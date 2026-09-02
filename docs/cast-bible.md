@@ -62,7 +62,13 @@
 
 ### Mummy / Sylvia
 
-- 尚未在本篇章對白中固定登場。若入畫：先問家長，再補聖經欄位。
+**Sylvia** — older sister, East Asian teen (~12–14). Long straight black hair (side-swept bangs; ponytail or half-up in some refs); **black rectangular glasses** in most lesson art; taller than Mummy, shorter than Daddy.
+
+- Solo refs + tags: `lessons/assets/refs/sylvia/CATALOG.md`
+- Default face: `sylvia-solo-outdoors-graduation-smile.jpg`
+- With George / family: `lessons/assets/refs/george/CATALOG.md` (e.g. `george-sylvia-arcade-play.jpg`)
+
+**Mummy** — 尚未在本篇章對白中固定登場。若入畫：先問家長，再補聖經欄位。
 
 ---
 

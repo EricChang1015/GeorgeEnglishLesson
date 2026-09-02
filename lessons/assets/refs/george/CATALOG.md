@@ -18,7 +18,7 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 | `george` | Boy ~5, story hero | East Asian; short black hair with bangs; round face |
 | `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`; extra face: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`) |
 | `mummy` | Mother | Adult woman; glasses in close-up refs |
-| `sylvia` | Older sister | Dark hair (often ponytail); often baseball cap / sunglasses outdoors |
+| `sylvia` | Older sister | Dark hair (often ponytail); black rectangular glasses; often baseball cap outdoors — **solo refs:** `lessons/assets/refs/sylvia/CATALOG.md`
 
 ## How agents should pick refs
 
@@ -135,6 +135,8 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **notes:** Daddy yellow life vest + glasses; George black pirate-style life vest + white star hat
 
 ### With Sylvia
+
+Solo Sylvia face / body refs: `lessons/assets/refs/sylvia/CATALOG.md` (default face: `sylvia-solo-outdoors-graduation-smile.jpg`).
 
 #### george-sylvia-arcade-play.jpg
 - **priority:** medium
