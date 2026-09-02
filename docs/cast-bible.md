@@ -56,9 +56,11 @@
 
 ### Daddy
 
-- 東亞成人；短深色頭髮；細框圓／橢圓金屬眼鏡
-- 臉：`george-daddy-outdoors-pavilion-neutral.jpg`
-- 上山尋人：成人戶外衣著即可，但眼鏡與臉型要穩
+- 東亞成人男性（~late 30s–40s）；短黑髮、頭頂略蓬；**細圓／橢圓深色金屬眼鏡**；**左下顎小痣**；無鬍。全家最高（Daddy > Sylvia > Mummy > George）。
+
+- Solo refs + tags: `lessons/assets/refs/daddy/CATALOG.md`
+- Default solo face: `daddy-solo-indoor-vehicle-neutral.png`
+- With George / family: `lessons/assets/refs/george/CATALOG.md`（e.g. `george-daddy-outdoors-pavilion-neutral.jpg`）
 
 ### Mummy / Sylvia
 

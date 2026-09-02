@@ -16,14 +16,14 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 | Id | Role | Appearance notes |
 |----|------|------------------|
 | `george` | Boy ~5, story hero | East Asian; short black hair with bangs; round face |
-| `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`; extra face: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`) |
+| `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin — **solo refs:** `lessons/assets/refs/daddy/CATALOG.md` (group default: `george-daddy-outdoors-pavilion-neutral.jpg`)
 | `mummy` | Mother | East Asian adult; long dark hair; thin round metal glasses — **solo refs:** `lessons/assets/refs/mummy/CATALOG.md`
 | `sylvia` | Older sister | Dark hair (often ponytail); black rectangular glasses; often baseball cap outdoors — **solo refs:** `lessons/assets/refs/sylvia/CATALOG.md`
 
 ## How agents should pick refs
 
 1. **George face / likeness (required for any George art):** start with `priority: primary` photos, especially `george-solo-bed-smile.jpg`.
-2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole). Extra front-facing backups: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`.
+2. **Daddy face / likeness:** prefer `george-daddy-outdoors-pavilion-neutral.jpg` (front-facing glasses + mole) for George scenes; solo Daddy refs in `lessons/assets/refs/daddy/CATALOG.md` (default: `daddy-solo-indoor-vehicle-neutral.png`).
 3. **Family scenes:** match cast tags (`with:daddy`, `with:mummy`, `with:sylvia`).
 4. **Mood / setting:** use tags (`smile`, `outdoors`, `bed`, `play`) when generating matching story beats.
 5. **George’s favorite doll (Mike Wazowski):** lime-green one-eyed *Monsters, Inc.* plush. Start with `mike-plush-indoor-closeup.jpg` for the toy look; use `george-solo-sofa-mike-plush-smile.jpg` when George is holding it. Sleeping-with-Mike refs are for bedtime / comfort beats only.
@@ -98,6 +98,8 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 - **notes:** Slightly blurry, low-resolution candid. White tee, blue raglan sleeves, red collar, red vehicle graphic; holding a piece of grilled food. Neutral look off-camera. Prefer `george-solo-restaurant-bib-neutral.jpg` for face at a table.
 
 ### With Daddy
+
+Solo Daddy face / body refs: `lessons/assets/refs/daddy/CATALOG.md` (default solo face: `daddy-solo-indoor-vehicle-neutral.png`).
 
 #### george-daddy-outdoors-pavilion-neutral.jpg
 - **priority:** primary

@@ -11,7 +11,7 @@ Do not generate lesson art from a one-line story beat. Lock the cast and places 
 ## Read first
 
 1. `docs/cast-bible.md` — 全專案角色鎖；篇章 bible（如 `docs/big-eye-chapter.md`）— 該章比例、服裝、場景、Zone
-2. `lessons/assets/refs/george/CATALOG.md`, `lessons/assets/refs/sylvia/CATALOG.md`, and `lessons/assets/refs/mummy/CATALOG.md` — then **Read** the photos named in the bible
+2. `lessons/assets/refs/george/CATALOG.md`, `lessons/assets/refs/sylvia/CATALOG.md`, `lessons/assets/refs/mummy/CATALOG.md`, and `lessons/assets/refs/daddy/CATALOG.md` — then **Read** the photos named in the bible
 3. `.cursor/rules/character-refs.mdc` — family photo rules
 
 If the bible is missing a new character or place, **update the bible and get a sheet** before page images.

@@ -14,6 +14,10 @@ Solo Mummy photos go in:
 
 `lessons/assets/refs/mummy/`
 
+Solo Daddy photos go in:
+
+`lessons/assets/refs/daddy/`
+
 Then update the matching folder's `CATALOG.md` with people + tags + `use_for`.
 
 Naming:
@@ -24,4 +28,4 @@ Naming:
 
 Subjects (George first): `george`, `daddy`, `mummy`, `sylvia`
 
-Photos under `lessons/assets/refs/george/`, `lessons/assets/refs/sylvia/`, and `lessons/assets/refs/mummy/` are tracked in the repo. Do not put new drops in this `ref/` folder.
+Photos under `lessons/assets/refs/george/`, `lessons/assets/refs/sylvia/`, `lessons/assets/refs/mummy/`, and `lessons/assets/refs/daddy/` are tracked in the repo. Do not put new drops in this `ref/` folder.

@@ -61,16 +61,17 @@ Likeness refs for consistent lesson art:
 - George + family group: `lessons/assets/refs/george/` — `lessons/assets/refs/george/CATALOG.md`
 - Sylvia solo: `lessons/assets/refs/sylvia/` — `lessons/assets/refs/sylvia/CATALOG.md`
 - Mummy solo: `lessons/assets/refs/mummy/` — `lessons/assets/refs/mummy/CATALOG.md`
+- Daddy solo: `lessons/assets/refs/daddy/` — `lessons/assets/refs/daddy/CATALOG.md`
 - Agent rule: `.cursor/rules/character-refs.mdc`
 - Cast ids: `george`, `daddy`, `mummy`, `sylvia`
 - Naming: `{subjects}-{setting}-{pose-or-mood}.jpg` (George first when he is in frame)
 - Default George face: `george-solo-bed-smile.jpg`
 - Default Sylvia face: `sylvia-solo-outdoors-graduation-smile.jpg`
 - Default Mummy face: `mummy-solo-indoor-smile.png`
+- Default Daddy face: `daddy-solo-indoor-vehicle-neutral.png` (solo); `george-daddy-outdoors-pavilion-neutral.jpg` (with George)
 - Cover / close face: `george-solo-sofa-alphabet-smile.jpg`
-- Daddy face: `george-daddy-outdoors-pavilion-neutral.jpg`
 
-Photos in `lessons/assets/refs/george/`, `lessons/assets/refs/sylvia/`, and `lessons/assets/refs/mummy/` are **tracked in git**. Put new photos in the matching folder and update that folder's `CATALOG.md`. Do not use `ref/` for new drops. Do not embed raw ref photos in published lesson HTML — only drawn/AI lesson art goes under `lessons/assets/lesson-XX/`.
+Photos in `lessons/assets/refs/george/`, `lessons/assets/refs/sylvia/`, `lessons/assets/refs/mummy/`, and `lessons/assets/refs/daddy/` are **tracked in git**. Put new photos in the matching folder and update that folder's `CATALOG.md`. Do not use `ref/` for new drops. Do not embed raw ref photos in published lesson HTML — only drawn/AI lesson art goes under `lessons/assets/lesson-XX/`.
 
 ## Local preview
 
