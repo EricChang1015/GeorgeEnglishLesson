@@ -66,7 +66,11 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 ---
 
-## 12 頁分鏡
+## 分鏡（19 頁定稿）
+
+逐頁對白與圖上必見證據以 [`lesson-07-proposals/plot-working.md`](lesson-07-proposals/plot-working.md) 為準。下面舊 12 頁表只留對照，**不要**再依它出圖或審圖。
+
+## 舊 12 頁分鏡（作廢）
 
 ### Page 1 — T-Rex Chase（LivingRoom）
 
