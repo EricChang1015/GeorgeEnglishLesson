@@ -18,7 +18,7 @@
 
 ---
 
-## George（全 12 頁不換裝）
+## George（全 19 頁不換裝）
 
 - 東亞男孩約 5 歲；短黑瀏海從恐龍頭套前緣露出；圓臉、大耳、門牙笑
 - 臉：`lessons/assets/refs/george/george-solo-bed-smile.jpg`
@@ -38,7 +38,7 @@
 |------|--------|----------------|
 | Mummy | 細框**圓**眼鏡、深色素面長袖、淺米居家褲；p2 皺眉不恐怖 | `mummy-solo-indoor-smile.png`（空氣瀏海、溫暖圓臉） |
 | Sylvia | **黑方框眼鏡**、肩線深色長髮、可戴金／黃髮箍、墨綠或鼠尾綠衫＋長褲；p1 笑跑無傷 | `sylvia-solo-outdoors-graduation-smile.jpg` |
-| Daddy | 細框圓金屬眼鏡、**左下顎小痣**、素海軍藍居家衣（無品牌字）；僅 p12 | `daddy-solo-indoor-vehicle-neutral.png` |
+| Daddy | 細框圓金屬眼鏡、**左下顎小痣**、素海軍藍居家衣（無品牌字）；僅 p19 | `daddy-solo-indoor-vehicle-neutral.png` |
 
 同框比例：`george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png`  
 萬聖節姿勢（非臉）：`george-mummy-daddy-sylvia-halloween-trex-play.jpg`（不抄派對衣／綠絨袍）
@@ -52,24 +52,24 @@
 ### Horn（`horn`）≈ 3.0×
 
 原著最典型：寬牛角、獅鬃、**橫條紋**身、大黃眼、利爪、厚足。George 頭頂到其**大腿下／膝上**。  
-p7 張爪擋岸；p8 **第一個低頭收爪**；p11 岸上舉葉冠揮別。  
+p7 張爪擋岸；p9 **第一個低頭收爪**；p17 接冠、p18 岸上舉葉冠揮別。  
 禁止：電影名 Carol；畫成和 George 差不多高。
 
 ### Beak（`beak`）≈ 2.2×（最矮仍 ≥ 2×）
 
 雞冠／肉垂、**黃橙羽或黃毛**、明顯**鳥嘴**、細長爪、可有小翅或羽臂。George 頭頂到其**腰或略下**。  
-p7 喊亮爪；p8 **把藤冠戴上** George 頭套；p9 喊 King George 最響。  
+p8 枯木留爪痕示威；p11 **把藤冠戴上** George 頭套；p13 領月下旋轉。  
 禁止：電影名 Moishe；畫成可愛小雞、矮過 2×。
 
 ### Goat（`goat`）≈ 2.6×
 
 **捲羊角**、山羊鬍或長下頷毛、較柔的黃眼、厚毛、可見爪。塊頭大但臉最溫。George 頭頂到其**大腿中段**。  
-p7 警告「step back」；p9 宣布 wild parade；p10「Kings can leave…」。  
+p8 雙臂擋住入島藤橋；p12 宣布 wild parade；p14–15 守王規。  
 禁止：電影名 KW；公羊畫成家羊寵物。
 
 ### 葉藤冠（道具）
 
-綠藤＋闊葉圈，套在恐龍頭套外；無金屬、無英文。p8 出現 → p9–10 戴 → p11 留島 → p12 無。
+綠藤＋闊葉圈，套在恐龍頭套外；無金屬、無英文。p10 遠見未完成 → p11 Beak 戴上 → p12–16 George 戴著／扶著 → p17 交 Horn → p18 Horn 岸上舉著 → p19 無。
 
 ---
 
@@ -95,7 +95,7 @@ p7 警告「step back」；p9 宣布 wild parade；p10「Kings can leave…」�
 RealBedroom＝L4：米色軟墊床頭、素奶油牆、奶油被、淡藍床單、拳頭大光鳥燈、遠牆灰簾、**床頭左側無窗**。  
 布局：`mike-plush-bedroom-bed-scattered.jpg`（不畫 Mike）。燈：`george-bedroom-bird-lamp-product.jpg`。
 
-Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Captain／crew／鯨。p12 船與獸皆消失。
+Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Captain／crew／鯨。p19 船與獸皆消失。
 
 ---
 
@@ -105,7 +105,7 @@ Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Capt
 
 ## Zone（與 plot-working 相同）
 
-LivingRoom p1–2｜RealBedroom p3–4、p12｜Threshold p5｜OpenSea p6、p11｜WildIsland／Clearing p7–10
+LivingRoom p1–2｜RealBedroom p3–4、p19｜Threshold p5｜OpenSea p6、p18｜WildIsland p7–9｜WildClearing p10–17
 
 ---
 
@@ -126,4 +126,4 @@ Warm watercolor children's picture book on cream paper, fine ink cross-hatching,
 - George 脫頭套、換裝
 - 家人洞穴裝備；衣服英文
 - Mike、Nibble、Pip、Ember、crew、鯨
-- p12 留船／獸／冠
+- p19 留船／獸／冠
