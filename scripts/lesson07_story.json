@@ -132,7 +132,7 @@
       "img": "story-07.png",
       "alt": "Three huge wild things block the shore; George stands brave at the boat",
       "lines": [
-        { "role": "horn", "text": "Who dares land on our island with small blue shoes?", "audio": "p07-01.mp3", "emotion": "fierce" },
+        { "role": "horn", "text": "Who dares land on our island in that tiny T-rex suit?", "audio": "p07-01.mp3", "emotion": "fierce" },
         { "role": "beak", "text": "Look at those teeth on his hood! Show your claws!", "audio": "p07-02.mp3", "emotion": "challenging" },
         { "role": "goat", "text": "Three wild ones block the shore. Step back, small boy.", "audio": "p07-03.mp3", "emotion": "warning" },
         { "role": "george", "text": "I am not small. I am George, and I am brave.", "audio": "p07-04.mp3", "emotion": "brave" }

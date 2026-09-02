@@ -129,7 +129,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "Who dares land on our island with small blue shoes?" | fierce |
+| horn | "Who dares land on our island in that tiny T-rex suit?" | fierce |
 | beak | "Look at those teeth on his hood! Show your claws!" | challenging |
 | goat | "Three wild ones block the shore. Step back, small boy." | warning |
 | george | "I am not small. I am George, and I am brave." | brave |

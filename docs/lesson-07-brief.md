@@ -63,7 +63,7 @@
 - 全家＋頭套：`lessons/assets/refs/george/george-mummy-daddy-sylvia-halloween-trex-play.jpg`
 - 臉：`lessons/assets/refs/george/george-solo-bed-smile.jpg`
 
-鎖定：棕／卡其／淺橘裂紋鱗片連身 T-rex；頭套（恐龍頭）、背上三角板、粗尾；深藍運動鞋（白底、可有綠勾）。南瓜桶是萬聖節道具，**本課不要**除非你有充分理由。
+鎖定：棕／卡其／淺橘裂紋鱗片連身 T-rex；頭套（恐龍頭）、背上三角板、粗尾。室內／床上 **不准運動鞋**（赤腳或襪子）；深藍運動鞋只在島上／海上。南瓜桶是萬聖節道具，**本課不要**除非你有充分理由。
 
 ### 房間＝Lesson 4 RealBedroom
 
