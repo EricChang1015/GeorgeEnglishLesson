@@ -17,7 +17,7 @@ Likeness refs for lesson illustration. Photos in this folder are **tracked in gi
 |----|------|------------------|
 | `george` | Boy ~5, story hero | East Asian; short black hair with bangs; round face |
 | `daddy` | Father | East Asian adult; short dark hair with volume on top; thin round/oval metal glasses; small mole on lower left chin (see `george-daddy-outdoors-pavilion-neutral.jpg`; extra face: `daddy-sylvia-indoor-selfie.jpg`, `daddy-mummy-indoor-smile.jpg`) |
-| `mummy` | Mother | Adult woman; glasses in close-up refs |
+| `mummy` | Mother | East Asian adult; long dark hair; thin round metal glasses — **solo refs:** `lessons/assets/refs/mummy/CATALOG.md`
 | `sylvia` | Older sister | Dark hair (often ponytail); black rectangular glasses; often baseball cap outdoors — **solo refs:** `lessons/assets/refs/sylvia/CATALOG.md`
 
 ## How agents should pick refs
@@ -151,6 +151,17 @@ Solo Sylvia face / body refs: `lessons/assets/refs/sylvia/CATALOG.md` (default f
 - **tags:** smile, outdoors, park, play, dinosaur-prop, daytime
 - **use_for:** George + Sylvia outdoor play; light adventure / park scenes
 - **notes:** George on blue dino sculpture; navy/grey raglan; Sylvia mint tee, white “GOOD” cap
+
+### With Mummy
+
+Solo Mummy face / body refs: `lessons/assets/refs/mummy/CATALOG.md` (default face: `mummy-solo-indoor-smile.png`).
+
+#### george-mummy-indoor-reading-smile.jpg
+- **priority:** high
+- **people:** george, mummy
+- **tags:** indoors, restaurant, reading, story-time, bedtime, books, affectionate, mummy-face, glasses
+- **use_for:** Mummy reading to George; shared story-time / bedtime reading posture
+- **notes:** Mummy: low ponytail, wispy bangs, thin round dark metal glasses, cream/beige knit sweater, gold necklace. George: grey sweatshirt, short black bangs, leaning in to look at the book (Sleeping Beauty). Use faces, closeness, and reading pose — do not copy restaurant booth or exact book cover into story art unless the scene needs them.
 
 ### Family group
 

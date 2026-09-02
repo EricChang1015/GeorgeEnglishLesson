@@ -68,7 +68,11 @@
 - Default face: `sylvia-solo-outdoors-graduation-smile.jpg`
 - With George / family: `lessons/assets/refs/george/CATALOG.md` (e.g. `george-sylvia-arcade-play.jpg`)
 
-**Mummy** — 尚未在本篇章對白中固定登場。若入畫：先問家長，再補聖經欄位。
+**Mummy** — mother, East Asian adult (~30s–40s). Long straight dark brown/black hair (wispy bangs; sometimes low ponytail); **thin round metal glasses** (gold/silver) in most lesson art; oval face; warm smile. **Shorter than Sylvia**, taller than George.
+
+- Solo refs + tags: `lessons/assets/refs/mummy/CATALOG.md`
+- Default face: `mummy-solo-indoor-smile.png`
+- With George / family: `lessons/assets/refs/george/CATALOG.md` (e.g. `george-mummy-indoor-reading-smile.jpg`)
 
 ---
 
