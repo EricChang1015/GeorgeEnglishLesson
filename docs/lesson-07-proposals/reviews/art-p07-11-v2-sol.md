@@ -85,7 +85,7 @@ Reviewed only against `ART-RUBRIC-p07-10-v2.md`, `bible-locked.md`, and storyboa
 
 ## Final
 
-Passing page: p7.  
+Passing page: p7.
 Failing pages: p8, p9, p10, p11.
 
 VERDICT: FAIL
