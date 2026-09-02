@@ -36,6 +36,7 @@ Example: `george-daddy-outdoors-lifevest-smile.jpg` (George listed first)
 7. Match cast + mood tags from the catalog to the story beat
 8. Keep George, Daddy, Sylvia, and Mummy consistent across the whole lesson; do not invent a different face per page
 9. Never embed these private photos in published HTML; only AI/drawn picture-book art goes under `lessons/assets/lesson-XX/`
+10. Lesson 7 home clothes: draw Daddy／Mummy／Sylvia from `lessons/assets/refs/cast/wild-things-family-sheet.png` (pajamas, socks or barefoot). `wild-things-sheet.png` is George + beasts only — it does not lock family outfits
 
 ## AI voice (paired with likeness)
 - Fixed voice per cast id: see `scripts/voices.json` and `docs/character-voices.md`

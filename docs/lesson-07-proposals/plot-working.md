@@ -29,7 +29,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 開場頑皮；T-rex 裝、木叉玩追 Sylvia，鬧不是傷。  
 **翻頁鉤子：** 媽媽聞聲。  
-**圖上必見證據：** George 棕／卡其 T-rex＋深藍運動鞋；木叉舉胸前；Sylvia 笑鬧不哭；**LivingRoom** 沙發／暖燈，無 L4 床。  
+**圖上必見證據：** George 棕／卡其 T-rex、**室內赤腳或襪子（不准運動鞋）**；木叉舉胸前；Sylvia 笑鬧不哭、**黑方框眼鏡**；**LivingRoom** 沙發／暖燈，無 L4 床。  
 **在場：** george, sylvia  
 **禁止：** 刺人、血、Sylvia 大哭、Mike／Nibble、換裝、南瓜桶。
 
@@ -44,7 +44,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** Mummy 定調 wild thing；回嘴；禁晚餐、關房。  
 **翻頁鉤子：** 被趕向房門。  
-**圖上必見證據：** Mummy 門口／樓梯，嚴厲不恐怖；George 仍 T-rex、握木叉；Sylvia 在旁；指向臥室。  
+**圖上必見證據：** Mummy 門口，細圓框眼鏡、**藕粉睡衣**，嚴厲不恐怖；George 仍 T-rex、握木叉、**襪子／赤腳**；Sylvia 黑方框眼鏡、**墨綠成套睡衣**在旁；指向臥室。全員不穿鞋。  
 **在場：** george, mummy, sylvia  
 **禁止：** 恐怖懲罰、推搡、Daddy 睡前朗讀構圖。
 
@@ -59,7 +59,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 禁足孤單；建立 L4 房間基線。  
 **翻頁鉤子：** 牆或地板出現綠意。  
-**圖上必見證據：** 米色軟墊床頭＋木邊、奶油被、淡藍床單；光鳥燈床邊；床頭左側實牆無窗；遠牆灰簾；George T-rex，木叉在床或手邊。  
+**圖上必見證據：** 米色軟墊床頭＋木邊、奶油被、淡藍床單；光鳥燈床邊；床頭左側實牆無窗；遠牆灰簾；George T-rex **坐在床上赤腳（不准運動鞋）**，木叉在床或手邊。  
 **在場：** george  
 **禁止：** 星形燈、床頭櫃檯燈、Mike／Nibble。
 
@@ -74,7 +74,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 叢林長出；房間錨仍可認。  
 **翻頁鉤子：** 葉叢深處有小木船。  
-**圖上必見證據：** 藤蔓沿奶油牆與床頭；床、光鳥燈、灰簾至少各見；床單邊緣可見；George T-rex 張望。  
+**圖上必見證據：** 藤蔓沿奶油牆與床頭；床、光鳥燈、灰簾至少各見；床單邊緣可見；George T-rex **赤腳站在床上**張望。  
 **在場：** george  
 **禁止：** 房間消失、pillow cave、第二個 George。
 
@@ -89,7 +89,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 小私人 Billy o' Tea 現身；主動上船。  
 **翻頁鉤子：** 船離開葉叢。  
-**圖上必見證據：** 茶棕船身、茶色帆、茶葉圖徽、帆上無英文；一腳床沿一腳上船；無 crew／鯨。  
+**圖上必見證據：** 茶棕船身、茶色帆、茶葉圖徽、帆上無英文；一腳床沿一腳上船，**兩腳皆赤腳／襪子（室內）**；無 crew／鯨。  
 **在場：** george  
 **禁止：** 換色換徽、Wellerman。
 
@@ -125,7 +125,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "Who dares land on our island with small blue shoes?" | fierce |
+| horn | "Who dares land on our island in that tiny T-rex suit?" | fierce |
 | beak | "Look at those teeth on his hood! Show your claws!" | challenging |
 | goat | "Three wild ones block the shore. Step back, small boy." | warning |
 | george | "I am not small. I am George, and I am brave." | brave |
@@ -194,7 +194,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 **敘事功能：** 同一 L4 房間；熱晚餐；全家四人。  
 **翻頁鉤子：** （終）wild thing 被接納。  
-**圖上必見證據：** 床、光鳥燈、灰簾、床頭左實牆；叢林退盡或只剩幾葉；托盤熱食蒸氣；Daddy 最高、Sylvia 高於 Mummy、George 最矮；仍整套 T-rex（**不脫頭套**）；木叉在 tray 旁或床邊；無船、無獸、無冠。  
+**圖上必見證據：** 床、光鳥燈、灰簾、床頭左實牆；叢林退盡或只剩幾葉；托盤熱食蒸氣；Daddy 最高、Sylvia 高於 Mummy、George 最矮；仍整套 T-rex（**不脫頭套**）；家人**睡衣、襪子／赤腳、不穿鞋**（Daddy 灰／海軍藍插肩睡衣、Sylvia 墨綠成套、Mummy 藕粉成套）；木叉在 tray 旁或床邊；無船、無獸、無冠。臉＋睡衣對 `wild-things-family-sheet.png`。  
 **在場：** george, mummy, sylvia, daddy  
 **禁止：** 叢林未退、缺家人、換裝、脫頭套。
 

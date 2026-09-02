@@ -23,25 +23,31 @@
 - 東亞男孩約 5 歲；短黑瀏海從恐龍頭套前緣露出；圓臉、大耳、門牙笑
 - 臉：`lessons/assets/refs/george/george-solo-bed-smile.jpg`
 - 裝：`george-solo-halloween-trex-bucket.jpg`、`george-solo-halloween-trex-night-side.png`
-- 棕／卡其／淺橘裂紋鱗片連身；頭套（短吻、側眼）；背板一連到粗尾；白氈三角袖爪；深藍運動鞋白底（可有綠勾）
+- 棕／卡其／淺橘裂紋鱗片連身；頭套（短吻、側眼）；背板一連到粗尾；白氈三角袖爪
 - **頭套 p1–p12 都戴**；無南瓜桶
+- **腳：** LivingRoom／RealBedroom（含床上、p5 上船）＝**赤腳或襪子，不准運動鞋**。OpenSea／WildIsland（p6–p11）與封面才可深藍運動鞋白底
 
 ---
 
-## 家人（居家，不是 L5 洞穴裝備）
+## 家人（居家睡衣，不是 L5 洞穴裝備、不是外出便服）
 
 身高：Daddy ＞ Sylvia ＞ Mummy ＞ George（頭套頂 ≈ Sylvia 胸口、Daddy 腰）。
 
-**臉必須像真人。** Lesson 7 初稿曾把家人畫成另一張臉——因為只讀萬聖節合照。出圖前 **Read 各角色 solo primary**（地圖：`docs/family-refs.md`）。萬聖節合照只鎖「T-rex＋家人同框」姿勢，**不當 Sylvia／Mummy／Daddy 主臉**。
+**角色表：**
+- 野獸比例：`lessons/assets/refs/cast/wild-things-sheet.png`（George＋Horn／Beak／Goat）
+- **家人睡衣全身：** `lessons/assets/refs/cast/wild-things-family-sheet.png`（Daddy／Sylvia／Mummy／George 同框；室內全赤腳或襪子）
 
-| 角色 | 服裝鎖 | 臉（必 Read） |
+**臉必須像真人。** 出圖前 **Read 各角色 solo primary**（`docs/family-refs.md`）＋上面 family sheet。萬聖節合照不當主臉、不抄派對衣。
+
+在家（LivingRoom p1–2、RealBedroom p12）**全員不穿鞋**（襪子或赤腳）。家人盡量睡衣，看起來像晚上在家，不是白天外出。
+
+| 角色 | 睡衣鎖 | 臉（必 Read） |
 |------|--------|----------------|
-| Mummy | 細框**圓**眼鏡、深色素面長袖、淺米居家褲；p2 皺眉不恐怖 | `mummy-solo-indoor-smile.png`（空氣瀏海、溫暖圓臉） |
-| Sylvia | **黑方框眼鏡**、肩線深色長髮、可戴金／黃髮箍、墨綠或鼠尾綠衫＋長褲；p1 笑跑無傷 | `sylvia-solo-outdoors-graduation-smile.jpg` |
-| Daddy | 細框圓金屬眼鏡、**左下顎小痣**、素海軍藍居家衣（無品牌字）；僅 p12 | `daddy-solo-indoor-vehicle-neutral.png` |
+| Mummy | 細框**圓**眼鏡、**藕粉／塵玫瑰色**長袖睡衣套裝；p2 皺眉不恐怖；襪子／赤腳 | `mummy-solo-indoor-smile.png` |
+| Sylvia | **黑方框眼鏡**、長黑髮側瀏海、可戴細黃髮帶、**墨綠成套睡衣**（上衣＋長褲）；p1 笑跑無傷；襪子／赤腳 | `sylvia-solo-outdoors-graduation-smile.jpg` |
+| Daddy | 細框圓眼鏡、**左下顎小痣**、**灰身海軍藍插肩袖**睡衣上衣＋淺米睡褲；僅 p12；襪子／赤腳 | `daddy-solo-indoor-vehicle-neutral.png`＋`george-daddy-bedtime-reading.jpg`（睡衣款） |
 
-同框比例：`george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png`  
-萬聖節姿勢（非臉）：`george-mummy-daddy-sylvia-halloween-trex-play.jpg`（不抄派對衣／綠絨袍）
+禁止：家人穿洞穴裝備、運動鞋、室內拖鞋當外出鞋、深藍便服長袖＋卡其褲（那是舊鎖，已作廢）。
 
 ---
 
@@ -112,7 +118,7 @@ LivingRoom p1–2｜RealBedroom p3–4、p12｜Threshold p5｜OpenSea p6、p11�
 ## Prompt 重複句（出圖時整段複製）
 
 ```text
-Warm watercolor children's picture book on cream paper, fine ink cross-hatching, grainy painterly texture, muted earth colors — same style as a Sendak-mood picture book, never horror, never photoreal, never 3D, no on-image text. George is an East Asian boy ~5, short black bangs showing under the hood, round face, big ears, toothy smile. ALL PAGES: tan/khaki/light-ochre T-rex onesie with dark cracked-scale print, dinosaur-head HOOD stays on, soft dark-brown triangular back plates onto a THICK tapered tail, navy sneakers with white soles. NO pumpkin bucket. Family HOME clothes only; height Daddy > Sylvia > Mummy > George. Likeness from solo refs (not Halloween group only): Sylvia teen, long black hair, black rectangular glasses; Mummy adult, wispy bangs, thin round metal glasses, warm smile; Daddy adult, short black hair with volume, thin round glasses, small mole on lower left chin. Three huge Sendak-faithful wild things, ALL at least twice George's height, same ground line, yellow eyes with pupils, bared teeth, big claws, shaggy fur, wild but not nightmare-scary: HORN (~3× George) bull horns, lion mane, STRIPED body; BEAK (~2.2×) rooster comb, yellow-orange feathers, bird beak, long claws; GOAT (~2.6×) curled ram horns, goat beard, gentler face. Small private Billy o' Tea: tea-brown hull, tea-cream sail, tea-leaf emblem, no letters, no crew. RealBedroom: cream blanket, pale-blue sheet, beige padded headboard on a PLAIN cream wall, fist-sized glowing bird lamp, grey curtains on the FAR wall only, NO window left of the headboard. No Carol/KW/Moishe names, no sixth beast, no blood, no fighting.
+Warm watercolor children's picture book on cream paper, fine ink cross-hatching, grainy painterly texture, muted earth colors — same style as a Sendak-mood picture book, never horror, never photoreal, never 3D, no on-image text. George is an East Asian boy ~5, short black bangs showing under the hood, round face, big ears, toothy smile. ALL PAGES: tan/khaki/light-ochre T-rex onesie with dark cracked-scale print, dinosaur-head HOOD stays on, soft dark-brown triangular back plates onto a THICK tapered tail. NO pumpkin bucket. INDOOR pages (living room and bedroom, including standing or sitting on the bed): George is BAREFOOT or in plain light socks — NEVER sneakers, NEVER blue shoes on the floor or on the bed. Outdoor island/sea pages may show navy sneakers. At HOME everyone is in pajamas and BAREFOOT or in plain socks — no sneakers, no slippers as outdoor shoes. Height Daddy > Sylvia > Mummy > George. Sylvia: black rectangular glasses, forest-green matching pajama set. Mummy: thin round glasses, dusty-rose pajama set (NOT green, NOT navy day clothes). Daddy: thin round glasses, chin mole, grey sleep shirt with navy raglan sleeves and cream pajama pants. Likeness from solo refs + wild-things-family-sheet.png. Three huge Sendak-faithful wild things, ALL at least twice George's height, same ground line, yellow eyes with pupils, bared teeth, big claws, shaggy fur, wild but not nightmare-scary: HORN (~3× George) bull horns, lion mane, STRIPED body; BEAK (~2.2×) rooster comb, yellow-orange feathers, bird beak, long claws; GOAT (~2.6×) curled ram horns, goat beard, gentler face. Small private Billy o' Tea: tea-brown hull, tea-cream sail, tea-leaf emblem, no letters, no crew. RealBedroom: cream blanket, pale-blue sheet, beige padded headboard on a PLAIN cream wall, fist-sized glowing bird lamp, grey curtains on the FAR wall only, NO window left of the headboard. No Carol/KW/Moishe names, no sixth beast, no blood, no fighting.
 ```
 
 ---

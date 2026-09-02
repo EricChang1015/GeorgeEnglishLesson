@@ -52,10 +52,13 @@
 
 ## Lesson 7 必讀（家人頁）
 
-服裝仍跟 `docs/lesson-07-proposals/bible-locked.md`（居家便服，不是洞穴裝備）。
+服裝跟 `docs/lesson-07-proposals/bible-locked.md`：**居家睡衣、不穿鞋**（不是洞穴裝備、不是外出便服）。全身鎖：`lessons/assets/refs/cast/wild-things-family-sheet.png`。
 
-| 頁 | 誰在場 | 必 Read 臉 |
-|----|--------|------------|
-| p1 | George、Sylvia | Sylvia graduation smile |
-| p2 | George、Mummy、Sylvia | Mummy indoor smile + Sylvia graduation |
-| p12 | 全家四人 | 上列三張 + Daddy vehicle neutral + sofa group |
+| 頁 | 誰在場 | 必 Read 臉 | 腳 |
+|----|--------|------------|----|
+| p1 | George、Sylvia | Sylvia graduation smile | 室內：George **赤腳或襪子** |
+| p2 | George、Mummy、Sylvia | Mummy indoor smile + Sylvia graduation | 同上 |
+| p3–p5 | 僅 George | George bed-smile + T-rex 正面 | **床上／室內不准運動鞋** |
+| p12 | 全家四人 | 上列三張 + Daddy vehicle neutral + sofa group | 室內赤腳／襪子 |
+
+島上／海上（p6–p11）才可深藍運動鞋。Horn 不再提 blue shoes。

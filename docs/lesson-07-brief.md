@@ -63,7 +63,7 @@
 - 全家＋頭套：`lessons/assets/refs/george/george-mummy-daddy-sylvia-halloween-trex-play.jpg`
 - 臉：`lessons/assets/refs/george/george-solo-bed-smile.jpg`
 
-鎖定：棕／卡其／淺橘裂紋鱗片連身 T-rex；頭套（恐龍頭）、背上三角板、粗尾；深藍運動鞋（白底、可有綠勾）。南瓜桶是萬聖節道具，**本課不要**除非你有充分理由。
+鎖定：棕／卡其／淺橘裂紋鱗片連身 T-rex；頭套（恐龍頭）、背上三角板、粗尾。室內／床上 **不准運動鞋**（赤腳或襪子）；深藍運動鞋只在島上／海上。南瓜桶是萬聖節道具，**本課不要**除非你有充分理由。
 
 ### 房間＝Lesson 4 RealBedroom
 
@@ -95,7 +95,8 @@
 - Sylvia：`sylvia-solo-outdoors-graduation-smile.jpg`（黑方框眼鏡）
 - Mummy：`mummy-solo-indoor-smile.png`（細圓框眼鏡）
 - Daddy：`daddy-solo-indoor-vehicle-neutral.png`（圓框＋下巴痣）
-- Round 1 **不必**寫滿服裝細節；標誰在場即可。居家衣服留給 Round 2 bible。
+- **家人睡衣全身表（bible）：** `lessons/assets/refs/cast/wild-things-family-sheet.png` — 野獸表 `wild-things-sheet.png` **沒有** Daddy／Mummy／Sylvia，畫家人必須讀這張
+- 在家（客廳／睡房）全員襪子或赤腳，不穿鞋；家人盡量睡衣：Daddy 灰身海軍藍插肩＋淺米睡褲；Sylvia 墨綠成套＋黑方框眼鏡；Mummy 藕粉成套＋細圓框眼鏡；George 仍全課 T-rex
 
 ### 野獸（Round 1 只定名字與一句個性）
 

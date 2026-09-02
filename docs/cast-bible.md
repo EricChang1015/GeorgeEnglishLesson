@@ -61,6 +61,7 @@
 - Solo refs + tags: `lessons/assets/refs/daddy/CATALOG.md`
 - Default solo face: `daddy-solo-indoor-vehicle-neutral.png`
 - With George / family: `lessons/assets/refs/george/CATALOG.md`（e.g. `george-daddy-outdoors-pavilion-neutral.jpg`）
+- Lesson 7 居家睡衣全身（與野獸表分開）：`lessons/assets/refs/cast/wild-things-family-sheet.png`
 
 ### Mummy / Sylvia
 
@@ -113,6 +114,8 @@ Same picture-book watercolor cast: George (East Asian boy ~5, short black bangs,
 | Mummy 臉 | `lessons/assets/refs/mummy/mummy-solo-indoor-smile.png` |
 | Sylvia 臉 | `lessons/assets/refs/sylvia/sylvia-solo-outdoors-graduation-smile.jpg` |
 | 全家比例／沙發 | `lessons/assets/refs/george/george-daddy-mummy-sylvia-indoor-sofa-selfie-smile.png` |
+| L7 家人睡衣全身 | `lessons/assets/refs/cast/wild-things-family-sheet.png` |
+| L7 野獸比例 | `lessons/assets/refs/cast/wild-things-sheet.png` |
 | Pip 對 George 的身高 | `lessons/assets/lesson-01/story-03.webp` |
 | 三人＋洞口群像 | `lessons/assets/lesson-03/story-01.webp` |
 

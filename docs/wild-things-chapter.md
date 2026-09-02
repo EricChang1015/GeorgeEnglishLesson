@@ -44,8 +44,9 @@ George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回
 
 George：全課 T-rex（頭套不脫）。臉與裝見 `lessons/assets/refs/george/` 萬聖節三張＋`george-solo-bed-smile.jpg`。
 
-家人居家便服。身高 Daddy ＞ Sylvia ＞ Mummy ＞ George。  
-**臉必須像本人**（L7 初稿家人不像）：先 Read `docs/family-refs.md` — Sylvia `sylvia-solo-outdoors-graduation-smile.jpg`、Mummy `mummy-solo-indoor-smile.png`、Daddy `daddy-solo-indoor-vehicle-neutral.png`。萬聖節合照不當家人主臉。
+家人**居家睡衣、不穿鞋**。身高 Daddy ＞ Sylvia ＞ Mummy ＞ George。  
+角色表：野獸 `wild-things-sheet.png`；家人睡衣全身 `wild-things-family-sheet.png`。  
+**臉必須像本人**：`docs/family-refs.md`。Sylvia 墨綠成套睡衣＋方框眼鏡；Mummy 藕粉睡衣＋圓框眼鏡；Daddy 灰／海軍藍插肩睡衣＋圓框＋下巴痣。
 
 | 獸 | 原著型 | 尺 |
 |----|--------|----|
@@ -129,7 +130,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；still hot
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "Who dares land on our island with small blue shoes?" | fierce |
+| horn | "Who dares land on our island in that tiny T-rex suit?" | fierce |
 | beak | "Look at those teeth on his hood! Show your claws!" | challenging |
 | goat | "Three wild ones block the shore. Step back, small boy." | warning |
 | george | "I am not small. I am George, and I am brave." | brave |
