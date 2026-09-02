@@ -1,23 +1,24 @@
-# George and the Wild Things — 篇章定稿（待 GATE 1）
+# George and the Wild Things — 篇章定稿（GATE 1 已簽核）
 
 新篇章：想像裡的野獸國。**不接** Pip and Ember、Mike Dreams、Real Adventures、Song Adventures 的劇情；只借用 L4 房間錨與 L6 Billy o' Tea 的認船特徵（本課縮成小私人船）。
 
-狀態：2026-09-01 — 家長下令開始製作 Lesson 7。Zone 用 **LivingRoom**（不用 HomeHall）。  
+狀態：2026-09-02 — **19 頁 Sol 擴寫稿** GATE 1 簽核。Zone 用 **LivingRoom**（不用 HomeHall）。  
 家庭站可上；野獸造型忠於 Sendak 三型。對白仍是我們的句子，不搬原書原句。
 
 **第一課標題：** *George and the Wild Parade*／喬治與野獸大遊行
 
 選案紀錄：
 
-- 劇本：匿名投票總分第一＝Composer（[`plot-ranking.md`](lesson-07-proposals/plot-ranking.md)）。家長指定用 Composer。
+- 劇本：擴寫五稿互投第一＝**GPT sol**（[`expansion-ranking.md`](lesson-07-proposals/expansion-ranking.md)）。家長 2026-09-02 指定用 Sol。
 - 外形：家長指定 Gemini 預覽風格＋原著型野獸＋至少 2× George。鎖定檔 [`bible-locked.md`](lesson-07-proposals/bible-locked.md)。
-- 工作分鏡：[`plot-working.md`](lesson-07-proposals/plot-working.md)
+- 工作分鏡（19 頁）：[`plot-working.md`](lesson-07-proposals/plot-working.md)
+- 擴寫影響表：[`expansion-impact.md`](lesson-07-proposals/expansion-impact.md)
 
 ---
 
 ## 系列核心
 
-George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回房不准吃晚餐。房間長出叢林，小船 Billy o' Tea 載他到野獸島。他用眼神與勇氣被拱為王，和 Horn、Beak、Goat 跳 wild parade；狂歡後肚子餓，Goat 說王可以離開，他自己把冠留下、回家。晚飯還熱，全家等他。
+George 穿 T-rex 連身裝在家玩過頭，被 Mummy 稱為 wild thing、罰回房不准吃晚餐。房間長出叢林，小船 Billy o' Tea 載他到野獸島。他拒退、對視馴服三獸，當王跳 wild parade、頒兩條王規後自願留冠回家。晚飯還熱，全家等他。
 
 角色不知道這是夢。馴服不是打鬥。
 

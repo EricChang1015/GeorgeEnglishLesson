@@ -8,12 +8,12 @@ d = json.loads((ROOT / "scripts/lesson07_story.json").read_text(encoding="utf-8"
 learn = d.get("learning") or {}
 
 phrase_map = {
-    "I am not afraid": "p08-01.mp3",
+    "Look into my eyes": "p09-01.mp3",
     "wild thing": "p02-01.mp3",
-    "still hot": "p12-02.mp3",
-    "Go to your room": "p02-03.mp3",
-    "Kings can leave": "p10-03.mp3",
-    "Come and eat": "p12-02.mp3",
+    "First royal rule": "p14-01.mp3",
+    "I choose home": "p17-01.mp3",
+    "still hot": "p19-02.mp3",
+    "friendly bow": "p14-02.mp3",
 }
 
 vocab_js = []

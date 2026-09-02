@@ -78,8 +78,15 @@
     <section class="screen" data-screen="11" data-story="9"></section>
     <section class="screen" data-screen="12" data-story="10"></section>
     <section class="screen" data-screen="13" data-story="11"></section>
+    <section class="screen" data-screen="14" data-story="12"></section>
+    <section class="screen" data-screen="15" data-story="13"></section>
+    <section class="screen" data-screen="16" data-story="14"></section>
+    <section class="screen" data-screen="17" data-story="15"></section>
+    <section class="screen" data-screen="18" data-story="16"></section>
+    <section class="screen" data-screen="19" data-story="17"></section>
+    <section class="screen" data-screen="20" data-story="18"></section>
 
-    <section class="screen" data-screen="14">
+    <section class="screen" data-screen="21">
       <h2>Let's Check!</h2>
       <p class="hint">5 questions this time · Listen, then choose A, B or C</p>
       <div id="quizArea"></div>
@@ -89,7 +96,7 @@
       </div>
     </section>
 
-    <section class="screen" data-screen="15">
+    <section class="screen" data-screen="22">
       <h2>Key Phrases</h2>
       <p class="hint">Tap each phrase and say it with George</p>
       <div class="sight-grid" id="sightGrid"></div>
@@ -100,25 +107,25 @@
       </div>
     </section>
 
-    <section class="screen" data-screen="16">
+    <section class="screen" data-screen="23">
       <h2>Follow-up Notes</h2>
       <p class="hint">For tutor / parent (saved on this device)</p>
       <div class="learning-box">
         <strong>Learning focus</strong>
-        <p>George 穿 T-rex 裝在客廳拿木叉追姐姐，被罵 wild thing、罰回房不准吃晚飯。房間長出叢林，Billy o' Tea 載他到野獸島。他用眼神馴服 Horn、Beak、Goat，當王跳 wild parade；肚子餓後自願留下王冠回家，晚飯還熱。</p>
+        <p>George 穿 T-rex 裝在客廳拿木叉追姐姐，被罰回房不准吃晚飯。房間長出叢林，Billy o' Tea 載他到野獸島。他拒退、對視馴服三獸，當王跳 wild parade、頒兩條王規後自願留冠回家，晚飯還熱。</p>
         <ul>
-          <li>Story words: wild thing, jungle, stare, crown, parade</li>
-          <li>Home words: wooden fork, living room, supper</li>
-          <li>Feeling: lonely, still hot</li>
-          <li>Key phrases: I am not afraid. Come and eat, wild thing.</li>
+          <li>Story words: wild thing, jungle, stare, crown, parade, rule</li>
+          <li>Home words: wooden fork, living room, supper, homeward</li>
+          <li>Feeling: lonely, homesick, still hot</li>
+          <li>Key phrases: Look into my eyes. First royal rule. I choose home.</li>
         </ul>
         <strong>Tutor prompts</strong>
         <ul>
-          <li>問：Mummy 為什麼叫 George wild thing？（他拿木叉在客廳追 Sylvia）</li>
-          <li>問：George 怎樣成為國王？（盯著野獸的黃眼睛，不怕）</li>
-          <li>問：誰說王可以離開？（Goat）</li>
-          <li>問：王冠後來呢？（留給 Horn，沒有帶回家）</li>
-          <li>問：回到房間時晚飯怎麼樣？（還熱，全家等他）</li>
+          <li>問：Mummy 為什麼罰 George？（客廳拿木叉追 Sylvia、太 wild）</li>
+          <li>問：George 怎樣進入野獸國？（對視、不逃、過藤橋）</li>
+          <li>問：George 當王時訂了什麼規矩？（大腳等小腳；吼完要鞠躬）</li>
+          <li>問：他為什麼想回家？（冠變重、肚子餓、聞到家中暖香）</li>
+          <li>問：王冠後來呢？（自願留給 Horn，沒帶回家）</li>
         </ul>
       </div>
       <div class="notes" id="notesForm">
@@ -151,157 +158,227 @@
       videoPages: [],
       roleLabel: { narrator: "Narrator", george: "George", mummy: "Mummy", sylvia: "Sylvia", daddy: "Daddy", horn: "Horn", beak: "Beak", goat: "Goat" },
       vocab: [
-        { word: "wild thing", example: "Mummy called George a wild thing, then later a soft wild thing.", img: "story-02.png", alt: "Mummy calling George a wild thing in the living room", audio: "audio/vocab-wild-thing.mp3", exampleAudio: "audio/vocab-wild-thing-ex.mp3" },
-        { word: "wooden fork", example: "Sylvia said the wooden fork was only a play fork.", img: "story-01.png", alt: "George chasing Sylvia with a wooden play fork", audio: "audio/vocab-wooden-fork.mp3", exampleAudio: "audio/vocab-wooden-fork-ex.mp3" },
-        { word: "jungle", example: "Green vines grew into a jungle, but his bed stayed.", img: "story-04.png", alt: "vines growing in George's bedroom", audio: "audio/vocab-jungle.mp3", exampleAudio: "audio/vocab-jungle-ex.mp3" },
-        { word: "stare", example: "George stared into their yellow eyes and was not afraid.", img: "story-08.png", alt: "George staring into the yellow eyes of the wild things", audio: "audio/vocab-stare.mp3", exampleAudio: "audio/vocab-stare-ex.mp3" },
-        { word: "crown", example: "Beak put a vine crown on George's dinosaur hood.", img: "story-08.png", alt: "a leafy vine crown on George's hood", audio: "audio/vocab-crown.mp3", exampleAudio: "audio/vocab-crown-ex.mp3" },
-        { word: "parade", example: "Goat said, let the wild parade begin!", img: "story-09.png", alt: "George and the wild things stomping in a parade", audio: "audio/vocab-parade.mp3", exampleAudio: "audio/vocab-parade-ex.mp3" },
-        { word: "lonely", example: "The quiet room felt lonely without his family.", img: "story-03.png", alt: "George sitting alone on his cream bed", audio: "audio/vocab-lonely.mp3", exampleAudio: "audio/vocab-lonely-ex.mp3" },
-        { word: "still hot", example: "His supper was still hot when he came home.", img: "story-12.png", alt: "a steaming supper tray on the bed with the family", audio: "audio/vocab-still-hot.mp3", exampleAudio: "audio/vocab-still-hot-ex.mp3" },
+        { word: "wild thing", example: "Mummy said wild things still need kind brothers.", img: "story-02.png", alt: "Mummy calling George wild in the living room", audio: "audio/vocab-wild-thing.mp3", exampleAudio: "audio/vocab-wild-thing-ex.mp3" },
+        { word: "wooden fork", example: "Sylvia asked George to leave the wooden fork behind.", img: "story-01.png", alt: "George chasing Sylvia with a wooden play fork", audio: "audio/vocab-wooden-fork.mp3", exampleAudio: "audio/vocab-wooden-fork-ex.mp3" },
+        { word: "jungle", example: "Green vines turned his room into a jungle.", img: "story-04.png", alt: "vines growing in George's bedroom", audio: "audio/vocab-jungle.mp3", exampleAudio: "audio/vocab-jungle-ex.mp3" },
+        { word: "stare", example: "George stared into their yellow eyes without fear.", img: "story-09.png", alt: "George staring into yellow wild-thing eyes", audio: "audio/vocab-stare.mp3", exampleAudio: "audio/vocab-stare-ex.mp3" },
+        { word: "crown", example: "Beak placed a vine crown on George's dinosaur hood.", img: "story-11.png", alt: "a leafy vine crown on George's hood", audio: "audio/vocab-crown.mp3", exampleAudio: "audio/vocab-crown-ex.mp3" },
+        { word: "parade", example: "Their wild parade began with four enormous stamping beats.", img: "story-12.png", alt: "George and wild things stomping in a parade", audio: "audio/vocab-parade.mp3", exampleAudio: "audio/vocab-parade-ex.mp3" },
+        { word: "rule", example: "First royal rule: big feet wait for smaller feet.", img: "story-14.png", alt: "George announcing two royal rules", audio: "audio/vocab-rule.mp3", exampleAudio: "audio/vocab-rule-ex.mp3" },
+        { word: "still hot", example: "His supper was still hot when he came home.", img: "story-19.png", alt: "steaming supper tray with the family", audio: "audio/vocab-still-hot.mp3", exampleAudio: "audio/vocab-still-hot-ex.mp3" },
       ],
       story: [
         {
           img: "story-01.png",
-          alt: "In the living room George in a T-rex onesie chases Sylvia with a wooden play fork; she laughs",
+          alt: "In the living room George in a T-rex onesie chases Sylvia with a wooden play fork; she laughs in green pajamas",
           lines: [
             { role: "narrator", text: "After tea, George stomped through the living room in his T-rex suit.", audio: "audio/p01-01.mp3" },
             { role: "george", text: "Roar! I am the biggest dinosaur in this whole house!", audio: "audio/p01-02.mp3" },
             { role: "sylvia", text: "George, stop chasing me with that silly wooden fork!", audio: "audio/p01-03.mp3" },
-            { role: "george", text: "No way! Wild T-rex George will catch you soon!", audio: "audio/p01-04.mp3" },
+            { role: "george", text: "Keep running, Sylvia! Wild T-rex George is coming closer!", audio: "audio/p01-04.mp3" },
           ]
         },
         {
           img: "story-02.png",
-          alt: "Mummy stands by the living-room door and sends George to his room; Sylvia watches",
+          alt: "Mummy in dusty-pink pajamas points toward the bedroom; George holds the wooden fork; Sylvia watches",
           lines: [
-            { role: "mummy", text: "George! You are being a wild thing, not a kind brother!", audio: "audio/p02-01.mp3" },
-            { role: "george", text: "Wild things do not have to listen to anyone!", audio: "audio/p02-02.mp3" },
-            { role: "mummy", text: "No supper. Go to your room and stay there now.", audio: "audio/p02-03.mp3" },
-            { role: "sylvia", text: "Maybe next time play without the fork, George.", audio: "audio/p02-04.mp3" },
+            { role: "mummy", text: "George, you are being wild, not being a kind brother.", audio: "audio/p02-01.mp3" },
+            { role: "george", text: "Wild things never have to listen to anybody else!", audio: "audio/p02-02.mp3" },
+            { role: "mummy", text: "Then there is no supper. Go to your room now.", audio: "audio/p02-03.mp3" },
+            { role: "sylvia", text: "Next time, please leave the wooden fork behind.", audio: "audio/p02-04.mp3" },
           ]
         },
         {
           img: "story-03.png",
-          alt: "George sits alone on his cream bed with the bird lamp glowing",
+          alt: "George sits alone on his cream bed in T-rex suit; the wooden fork beside the bed; bird lamp glowing",
           lines: [
-            { role: "narrator", text: "George marched to his room and shut the door with a loud thump.", audio: "audio/p03-01.mp3" },
-            { role: "george", text: "Fine! I do not even want any stupid supper tonight!", audio: "audio/p03-02.mp3" },
-            { role: "narrator", text: "His tummy rumbled, but nobody came to the door.", audio: "audio/p03-03.mp3" },
-            { role: "george", text: "They all love Sylvia more than they love me.", audio: "audio/p03-04.mp3" },
+            { role: "narrator", text: "George shut his bedroom door with one enormous thump.", audio: "audio/p03-01.mp3" },
+            { role: "george", text: "Fine! I do not want any supper tonight anyway.", audio: "audio/p03-02.mp3" },
+            { role: "narrator", text: "He left the wooden fork beside his bed and listened.", audio: "audio/p03-03.mp3" },
+            { role: "george", text: "Why does being wild suddenly feel so lonely?", audio: "audio/p03-04.mp3" },
           ]
         },
         {
           img: "story-04.png",
-          alt: "Green vines climb the cream bedroom walls; the bed and bird lamp remain",
+          alt: "Green vines climb the cream bedroom walls; bed, bird lamp and grey curtains remain visible",
           lines: [
-            { role: "narrator", text: "Green vines crept up the cream wall beside his beige headboard.", audio: "audio/p04-01.mp3" },
-            { role: "george", text: "Wait... my bed is still here under all these leaves.", audio: "audio/p04-02.mp3" },
-            { role: "narrator", text: "The little bird lamp glowed warm through the curling jungle.", audio: "audio/p04-03.mp3" },
-            { role: "george", text: "Even the grey curtains look like tall trees now.", audio: "audio/p04-04.mp3" },
+            { role: "narrator", text: "A green vine curled around the beige headboard beside him.", audio: "audio/p04-01.mp3" },
+            { role: "george", text: "My bed is still here, but the walls are growing!", audio: "audio/p04-02.mp3" },
+            { role: "narrator", text: "The bird lamp glowed warmly between broad jungle leaves.", audio: "audio/p04-03.mp3" },
+            { role: "george", text: "Something is pushing through the leaves near my curtains.", audio: "audio/p04-04.mp3" },
           ]
         },
         {
           img: "story-05.png",
-          alt: "A small tea-brown boat with a tea-leaf sail waits beside George's bed",
+          alt: "A small tea-brown boat with a tea-leaf sail waits beside George's bed; fork stays on the bed",
           lines: [
-            { role: "narrator", text: "A small wooden boat pushed through the leaves beside his bed.", audio: "audio/p05-01.mp3" },
-            { role: "george", text: "Billy o' Tea! You came just for me!", audio: "audio/p05-02.mp3" },
-            { role: "narrator", text: "Tea-brown sails rose up; a leaf emblem shone soft and gold.", audio: "audio/p05-03.mp3" },
-            { role: "george", text: "I will sail away and find my own wild land!", audio: "audio/p05-04.mp3" },
+            { role: "narrator", text: "A little tea-brown boat nosed through the leaves beside his bed.", audio: "audio/p05-01.mp3" },
+            { role: "george", text: "Billy o' Tea, you came here just for me!", audio: "audio/p05-02.mp3" },
+            { role: "narrator", text: "George left the fork behind and climbed carefully aboard.", audio: "audio/p05-03.mp3" },
+            { role: "george", text: "Take me somewhere every wild thing can be free!", audio: "audio/p05-04.mp3" },
           ]
         },
         {
           img: "story-06.png",
-          alt: "George steers the small Billy o' Tea alone under a lavender sky",
+          alt: "George steers Billy o' Tea alone under a lavender sky; island silhouettes ahead; bird-lamp glow behind",
           lines: [
-            { role: "narrator", text: "George steered past fern waves under a wide lavender sky.", audio: "audio/p06-01.mp3" },
-            { role: "george", text: "The sea smells like rain and something sweet.", audio: "audio/p06-02.mp3" },
-            { role: "narrator", text: "His room faded behind him, but the bird lamp light followed.", audio: "audio/p06-03.mp3" },
-            { role: "george", text: "Keep going, Billy. I am not turning back yet.", audio: "audio/p06-04.mp3" },
+            { role: "narrator", text: "Billy o' Tea sailed beyond fern waves under lavender skies.", audio: "audio/p06-01.mp3" },
+            { role: "george", text: "The sea smells like rain, leaves, and something sweet.", audio: "audio/p06-02.mp3" },
+            { role: "narrator", text: "The bird-lamp glow shrank as one long night rolled past.", audio: "audio/p06-03.mp3" },
+            { role: "george", text: "An island! Three enormous shapes are waiting on the shore.", audio: "audio/p06-04.mp3" },
           ]
         },
         {
           img: "story-07.png",
-          alt: "Three huge wild things block the shore; George stands brave at the boat",
+          alt: "Horn, Beak and Goat block the sandy shore; George stands brave at the boat bow in blue shoes",
           lines: [
-            { role: "horn", text: "Who dares land on our island with small blue shoes?", audio: "audio/p07-01.mp3" },
-            { role: "beak", text: "Look at those teeth on his hood! Show your claws!", audio: "audio/p07-02.mp3" },
-            { role: "goat", text: "Three wild ones block the shore. Step back, small boy.", audio: "audio/p07-03.mp3" },
-            { role: "george", text: "I am not small. I am George, and I am brave.", audio: "audio/p07-04.mp3" },
+            { role: "horn", text: "Who brings that tiny boat onto our enormous island?", audio: "audio/p07-01.mp3" },
+            { role: "beak", text: "Turn your leaf sail around before we show our claws!", audio: "audio/p07-02.mp3" },
+            { role: "goat", text: "The path ahead belongs to three very wild things.", audio: "audio/p07-03.mp3" },
+            { role: "george", text: "I sailed too far to run away before meeting you.", audio: "audio/p07-04.mp3" },
           ]
         },
         {
           img: "story-08.png",
-          alt: "George stares into yellow eyes; Beak sets a vine crown on his hood",
+          alt: "Horn stamps the sand, Beak scratches dead wood, Goat blocks the vine bridge; George stands steady",
           lines: [
-            { role: "george", text: "Stop. Look at my eyes. I am not afraid of you.", audio: "audio/p08-01.mp3" },
-            { role: "narrator", text: "The yellow-eyed beasts went quiet and lowered their sharp claws.", audio: "audio/p08-02.mp3" },
-            { role: "horn", text: "You stared us down. You must be our king now.", audio: "audio/p08-03.mp3" },
-            { role: "beak", text: "Wear this vine crown. Rule the wild things well.", audio: "audio/p08-04.mp3" },
+            { role: "horn", text: "My hooves can make the whole sandy shoreline tremble!", audio: "audio/p08-01.mp3" },
+            { role: "beak", text: "My claws can scratch deep lines into dead wood!", audio: "audio/p08-02.mp3" },
+            { role: "goat", text: "My horns guard the only bridge into our jungle.", audio: "audio/p08-03.mp3" },
+            { role: "george", text: "You are noisy, but I can still stand steady.", audio: "audio/p08-04.mp3" },
           ]
         },
         {
           img: "story-09.png",
-          alt: "George and the three wild things stomp and leap in a wild parade",
+          alt: "George stares into three pairs of yellow eyes; Horn lowers his head first; boat still on the shore",
           lines: [
-            { role: "goat", text: "Let the wild parade begin! Stomp and swirl with us!", audio: "audio/p09-01.mp3" },
-            { role: "george", text: "Higher! We leap like storm clouds over the moon!", audio: "audio/p09-02.mp3" },
-            { role: "beak", text: "King George, your roar is the loudest of all!", audio: "audio/p09-03.mp3" },
-            { role: "horn", text: "Again! Again! The island shakes with happy feet!", audio: "audio/p09-04.mp3" },
+            { role: "george", text: "Look into my eyes. I will not hurt you or hide.", audio: "audio/p09-01.mp3" },
+            { role: "narrator", text: "George held their yellow gaze without raising a single fist.", audio: "audio/p09-02.mp3" },
+            { role: "horn", text: "His knees stayed still. Lower your claws, wild friends.", audio: "audio/p09-03.mp3" },
+            { role: "goat", text: "Courage like that may cross our guarded bridge.", audio: "audio/p09-04.mp3" },
           ]
         },
         {
           img: "story-10.png",
-          alt: "After the dance George holds his tummy; Goat speaks gently; the boat waits",
+          alt: "Horn leads George across a vine bridge into a wide moonlit jungle; footprints point inland",
           lines: [
-            { role: "george", text: "My tummy is empty. I wish I smelled hot soup.", audio: "audio/p10-01.mp3" },
-            { role: "narrator", text: "The vine crown felt heavy; the jungle night felt far from home.", audio: "audio/p10-02.mp3" },
-            { role: "goat", text: "Kings can leave whenever their hearts pull homeward.", audio: "audio/p10-03.mp3" },
-            { role: "george", text: "The place that loves me most is waiting for me.", audio: "audio/p10-04.mp3" },
+            { role: "horn", text: "Follow my footprints; brave visitors may enter our island.", audio: "audio/p10-01.mp3" },
+            { role: "narrator", text: "Beyond the bridge, the jungle opened wider than the shore.", audio: "audio/p10-02.mp3" },
+            { role: "beak", text: "Our moonlit clearing has waited for someone truly fearless.", audio: "audio/p10-03.mp3" },
+            { role: "george", text: "Then show me what waits beyond those enormous trees.", audio: "audio/p10-04.mp3" },
           ]
         },
         {
           img: "story-11.png",
-          alt: "George sails away on Billy o' Tea; Horn holds the crown on the shore",
+          alt: "Beak places a vine crown on George's T-rex hood in a moonlit clearing; leaf throne and wooden drum nearby",
           lines: [
-            { role: "george", text: "Goodbye, wild friends. I must go back home now.", audio: "audio/p11-01.mp3" },
-            { role: "horn", text: "Sail safe, little king. We will keep your crown.", audio: "audio/p11-02.mp3" },
-            { role: "beak", text: "Tell your family the wild things said hello.", audio: "audio/p11-03.mp3" },
-            { role: "narrator", text: "Billy o' Tea turned toward the distant bird-lamp glow.", audio: "audio/p11-04.mp3" },
+            { role: "beak", text: "Wear this vine crown, brave George, and lead us fairly.", audio: "audio/p11-01.mp3" },
+            { role: "horn", text: "You faced our wildness without becoming cruel or afraid.", audio: "audio/p11-02.mp3" },
+            { role: "goat", text: "A good king listens before making the island roar.", audio: "audio/p11-03.mp3" },
+            { role: "george", text: "I will be a wild king who keeps everyone safe.", audio: "audio/p11-04.mp3" },
           ]
         },
         {
           img: "story-12.png",
-          alt: "Back in the bedroom the family waits with a steaming supper; George still wears the T-rex hood",
+          alt: "George with vine crown stomps in a wild parade with Horn, Beak and Goat in the clearing",
           lines: [
-            { role: "narrator", text: "George stepped into his room. Supper steamed on a tray.", audio: "audio/p12-01.mp3" },
-            { role: "mummy", text: "We kept your plate hot. Come and eat, wild thing.", audio: "audio/p12-02.mp3" },
-            { role: "daddy", text: "Welcome home, George. We missed our brave little king.", audio: "audio/p12-03.mp3" },
-            { role: "sylvia", text: "Next time chase me with hugs, not a fork!", audio: "audio/p12-04.mp3" },
+            { role: "goat", text: "Our wild parade begins with four enormous stamping beats!", audio: "audio/p12-01.mp3" },
+            { role: "george", text: "Stomp together, then spin when Horn strikes the drum!", audio: "audio/p12-02.mp3" },
+            { role: "narrator", text: "Four happy sets of feet thundered around the clearing.", audio: "audio/p12-03.mp3" },
+            { role: "horn", text: "The silver seedpods are answering us from the trees!", audio: "audio/p12-04.mp3" },
+          ]
+        },
+        {
+          img: "story-13.png",
+          alt: "Moonlit parade swirl in the clearing; Beak leads from a low stump; silver seedpods in the trees",
+          lines: [
+            { role: "beak", text: "Follow my wings beneath the bright and bumpy moon!", audio: "audio/p13-01.mp3" },
+            { role: "george", text: "Swirl past the seedpods, then roar and bow together!", audio: "audio/p13-02.mp3" },
+            { role: "narrator", text: "Their shadows wheeled around the trees for another merry round.", audio: "audio/p13-03.mp3" },
+            { role: "horn", text: "Careful! Our happy feet are tangling into one furry heap!", audio: "audio/p13-04.mp3" },
+          ]
+        },
+        {
+          img: "story-14.png",
+          alt: "George with crown holds up two fingers announcing royal rules; beasts sit laughing on the ground",
+          lines: [
+            { role: "george", text: "First royal rule: big feet wait for smaller feet.", audio: "audio/p14-01.mp3" },
+            { role: "george", text: "Second royal rule: every roar ends with a friendly bow.", audio: "audio/p14-02.mp3" },
+            { role: "goat", text: "Those rules leave room for every wild thing.", audio: "audio/p14-03.mp3" },
+            { role: "beak", text: "Line up again! This time, nobody tangles their tails.", audio: "audio/p14-04.mp3" },
+          ]
+        },
+        {
+          img: "story-15.png",
+          alt: "George leads another parade round in the clearing; moon high; many footprint rings on the ground",
+          lines: [
+            { role: "narrator", text: "The kinder parade rolled through three more moonlit rounds.", audio: "audio/p15-01.mp3" },
+            { role: "horn", text: "King George, your rules make wild games last longer!", audio: "audio/p15-02.mp3" },
+            { role: "george", text: "One final march, then everyone takes a quiet rest.", audio: "audio/p15-03.mp3" },
+            { role: "narrator", text: "The last bow ended, and George's empty tummy growled.", audio: "audio/p15-04.mp3" },
+          ]
+        },
+        {
+          img: "story-16.png",
+          alt: "Tired George sits on the leaf throne holding crown and tummy; distant bird-lamp glow over the sea",
+          lines: [
+            { role: "narrator", text: "After so many rounds, the vine crown felt strangely heavy.", audio: "audio/p16-01.mp3" },
+            { role: "george", text: "My tummy is louder than Horn's great wooden drum.", audio: "audio/p16-02.mp3" },
+            { role: "narrator", text: "A warm supper smell drifted from the distant bird-lamp glow.", audio: "audio/p16-03.mp3" },
+            { role: "george", text: "I miss Mummy, Daddy, Sylvia, and our table.", audio: "audio/p16-04.mp3" },
+          ]
+        },
+        {
+          img: "story-17.png",
+          alt: "George gives the vine crown to Horn on the shore; Beak steadies Billy o' Tea; Goat waves goodbye",
+          lines: [
+            { role: "george", text: "I choose home. Horn, please keep my crown here.", audio: "audio/p17-01.mp3" },
+            { role: "goat", text: "A true king may follow where his loving heart leads.", audio: "audio/p17-02.mp3" },
+            { role: "beak", text: "I will steady your boat while you climb aboard.", audio: "audio/p17-03.mp3" },
+            { role: "horn", text: "Sail safely, George. Your kind rules will stay here.", audio: "audio/p17-04.mp3" },
+          ]
+        },
+        {
+          img: "story-18.png",
+          alt: "George sails Billy o' Tea homeward; Horn holds the crown on the shrinking island; bird-lamp glow ahead",
+          lines: [
+            { role: "narrator", text: "Billy o' Tea turned from the island toward the warm glow.", audio: "audio/p18-01.mp3" },
+            { role: "george", text: "Goodbye, wild friends! Keep bowing after every happy roar!", audio: "audio/p18-02.mp3" },
+            { role: "narrator", text: "The three beasts waved until moonlit waves hid the shore.", audio: "audio/p18-03.mp3" },
+            { role: "george", text: "The bird lamp is brighter now. Home must be close.", audio: "audio/p18-04.mp3" },
+          ]
+        },
+        {
+          img: "story-19.png",
+          alt: "Family in pajamas waits with steaming supper in George's bedroom; George still wears the T-rex hood",
+          lines: [
+            { role: "george", text: "I came back because home is my favourite wild place.", audio: "audio/p19-01.mp3" },
+            { role: "mummy", text: "Your supper is still hot, and we saved your seat.", audio: "audio/p19-02.mp3" },
+            { role: "daddy", text: "Welcome back, George. We were waiting to eat together.", audio: "audio/p19-03.mp3" },
+            { role: "sylvia", text: "After supper, chase me with hugs, not that fork!", audio: "audio/p19-04.mp3" },
           ]
         },
       ],
       quizPick: 5,
       quiz: [
         { q: "Where did George chase Sylvia?", options: ["In the living room", "On the island", "On the boat"], answer: 0 },
-        { q: "What did Mummy call George?", options: ["A careful king", "A wild thing", "A little lamp"], answer: 1 },
+        { q: "What did George leave beside his bed?", options: ["His blue shoes", "The wooden fork", "The vine crown"], answer: 1 },
         { q: "What grew in George's room?", options: ["A jungle of vines", "A stone forest", "A muddy puddle"], answer: 0 },
         { q: "What was the name of the little boat?", options: ["Wellerman", "Billy o' Tea", "Wild Parade"], answer: 1 },
         { q: "How did George tame the wild things?", options: ["He hit them with the fork", "He stared into their yellow eyes", "He hid behind the boat"], answer: 1 },
         { q: "Who put the vine crown on George?", options: ["Beak", "Daddy", "Sylvia"], answer: 0 },
-        { q: "Who said kings can leave?", options: ["Horn", "Goat", "Mummy"], answer: 1 },
+        { q: "What was George's first royal rule?", options: ["No more roaring ever", "Big feet wait for smaller feet", "Kings must sleep standing up"], answer: 1 },
         { q: "What did George do with the crown?", options: ["He took it home to bed", "He threw it in the sea", "He left it with Horn"], answer: 2 },
         { q: "What was waiting in his room?", options: ["A cold sandwich", "Supper that was still hot", "The three wild things"], answer: 1 },
         { q: "Who was waiting at home?", options: ["Only Mummy", "Mike and Nibble", "Mummy, Daddy and Sylvia"], answer: 2 },
       ],
       phrases: [
-        { text: "I am not afraid", audio: "audio/p08-01.mp3" },
+        { text: "Look into my eyes", audio: "audio/p09-01.mp3" },
         { text: "wild thing", audio: "audio/p02-01.mp3" },
-        { text: "still hot", audio: "audio/p12-02.mp3" },
-        { text: "Go to your room", audio: "audio/p02-03.mp3" },
-        { text: "Kings can leave", audio: "audio/p10-03.mp3" },
-        { text: "Come and eat", audio: "audio/p12-02.mp3" },
+        { text: "First royal rule", audio: "audio/p14-01.mp3" },
+        { text: "I choose home", audio: "audio/p17-01.mp3" },
+        { text: "still hot", audio: "audio/p19-02.mp3" },
+        { text: "friendly bow", audio: "audio/p14-02.mp3" },
       ]
     };
   </script>
