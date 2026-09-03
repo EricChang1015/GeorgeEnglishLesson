@@ -9,7 +9,7 @@
       "Story words: wild thing, jungle, stare, crown, parade, rule",
       "Home words: wooden fork, living room, supper, homeward",
       "Feeling: lonely, homesick, still hot",
-      "Key phrases: Look into my eyes. First royal rule. I choose home."
+      "Key phrases: Look at me. First royal rule. I choose home."
     ],
     "tutor_prompts_zh": [
       "問：Mummy 為什麼罰 George？（客廳拿木叉追 Sylvia、太 wild）",
@@ -292,7 +292,7 @@
     },
     {
       "img": "story-06.png",
-      "alt": "George steers Billy o' Tea alone under a lavender sky; island silhouettes ahead; bird-lamp glow behind",
+      "alt": "George steers Billy o' Tea alone under a lavender sky; a distant island ahead; the glowing chick lamp behind",
       "lines": [
         {
           "role": "narrator",
@@ -314,9 +314,9 @@
         },
         {
           "role": "george",
-          "text": "An island! Three enormous shapes are waiting on the shore.",
+          "text": "There is an island! I want to see what is there.",
           "audio": "p06-04.mp3",
-          "emotion": "alert"
+          "emotion": "curious"
         }
       ]
     },
@@ -338,13 +338,13 @@
         },
         {
           "role": "goat",
-          "text": "The path ahead belongs to three very wild things.",
+          "text": "Go back, little boat. This island is ours.",
           "audio": "p07-03.mp3",
           "emotion": "warning"
         },
         {
           "role": "george",
-          "text": "I sailed too far to run away before meeting you.",
+          "text": "I will not run away. I came to meet you.",
           "audio": "p07-04.mp3",
           "emotion": "brave"
         }
@@ -352,47 +352,41 @@
     },
     {
       "img": "story-08.png",
-      "alt": "Horn stamps the sand, Beak scratches dead wood, Goat blocks the vine bridge; George stands steady",
+      "alt": "Horn stomps a big hole in the sand, Beak pulls up a tree by the roots, Goat blocks the vine bridge; George stands steady",
       "lines": [
         {
           "role": "horn",
-          "text": "My hooves can make the whole sandy shoreline tremble!",
+          "text": "My strong feet can stomp a big hole in the ground!",
           "audio": "p08-01.mp3",
-          "emotion": "booming"
+          "emotion": "proud"
         },
         {
           "role": "beak",
-          "text": "My claws can scratch deep lines into dead wood!",
+          "text": "My claws are so strong, I can pull a big tree up by the roots!",
           "audio": "p08-02.mp3",
-          "emotion": "showy"
+          "emotion": "proud"
         },
         {
           "role": "goat",
           "text": "My horns guard the only bridge into our jungle.",
           "audio": "p08-03.mp3",
           "emotion": "firm"
-        },
-        {
-          "role": "george",
-          "text": "You are noisy, but I can still stand steady.",
-          "audio": "p08-04.mp3",
-          "emotion": "composed"
         }
       ]
     },
     {
       "img": "story-09.png",
-      "alt": "George stares into three pairs of yellow eyes; Horn lowers his head first; boat still on the shore",
+      "alt": "George stands taller with T-rex claws raised, unafraid; Horn tells the wild friends to lower their claws",
       "lines": [
         {
           "role": "george",
-          "text": "Look into my eyes. I will not hurt you or hide.",
+          "text": "Look at me. I am not afraid of you.",
           "audio": "p09-01.mp3",
-          "emotion": "steady"
+          "emotion": "brave"
         },
         {
           "role": "narrator",
-          "text": "George held their yellow gaze without raising a single fist.",
+          "text": "George stood tall and looked into their yellow eyes.",
           "audio": "p09-02.mp3",
           "emotion": "calm"
         },
@@ -416,9 +410,9 @@
       "lines": [
         {
           "role": "horn",
-          "text": "Follow my footprints; brave visitors may enter our island.",
+          "text": "Follow me. Brave visitors may enter our island.",
           "audio": "p10-01.mp3",
-          "emotion": "welcoming"
+          "emotion": "warm"
         },
         {
           "role": "narrator",
@@ -446,7 +440,7 @@
       "lines": [
         {
           "role": "beak",
-          "text": "Wear this vine crown, brave George, and lead us fairly.",
+          "text": "Wear this vine crown, George. You are the king of this island.",
           "audio": "p11-01.mp3",
           "emotion": "proud"
         },
@@ -494,7 +488,7 @@
         },
         {
           "role": "horn",
-          "text": "The silver seedpods are answering us from the trees!",
+          "text": "Keep stomping! Our wild parade is getting louder!",
           "audio": "p12-04.mp3",
           "emotion": "excited"
         }
@@ -502,7 +496,7 @@
     },
     {
       "img": "story-13.png",
-      "alt": "Moonlit parade swirl in the clearing; Beak leads from a low stump; silver seedpods in the trees",
+      "alt": "Moonlit parade swirl in the clearing; Beak leads from a low stump; the dancers are about to bump",
       "lines": [
         {
           "role": "beak",
@@ -512,9 +506,9 @@
         },
         {
           "role": "george",
-          "text": "Swirl past the seedpods, then roar and bow together!",
+          "text": "Swirl around with me, then roar and bow together!",
           "audio": "p13-02.mp3",
-          "emotion": "playful"
+          "emotion": "gleeful"
         },
         {
           "role": "narrator",
@@ -524,7 +518,7 @@
         },
         {
           "role": "horn",
-          "text": "Careful! Our happy feet are tangling into one furry heap!",
+          "text": "Watch out! We are going to bump into each other!",
           "audio": "p13-04.mp3",
           "emotion": "surprised"
         }
@@ -532,7 +526,7 @@
     },
     {
       "img": "story-14.png",
-      "alt": "George with crown holds up two fingers announcing royal rules; beasts sit laughing on the ground",
+      "alt": "After a bump, George with crown holds up two fingers; the beasts sit apart laughing, not tangled",
       "lines": [
         {
           "role": "george",
@@ -554,9 +548,9 @@
         },
         {
           "role": "beak",
-          "text": "Line up again! This time, nobody tangles their tails.",
+          "text": "Line up again! This time, nobody bumps into anyone.",
           "audio": "p14-04.mp3",
-          "emotion": "eager"
+          "emotion": "excited"
         }
       ]
     },
@@ -592,7 +586,7 @@
     },
     {
       "img": "story-16.png",
-      "alt": "Tired George sits on the leaf throne holding crown and tummy; distant bird-lamp glow over the sea",
+      "alt": "Tired George sits on the leaf throne holding crown and tummy; the glowing chick lamp shines far over the sea",
       "lines": [
         {
           "role": "narrator",
@@ -652,7 +646,7 @@
     },
     {
       "img": "story-18.png",
-      "alt": "George sails Billy o' Tea homeward; Horn holds the crown on the shrinking island; bird-lamp glow ahead",
+      "alt": "George sails Billy o' Tea homeward; Horn holds the crown on the shrinking island; the glowing chick lamp shines ahead",
       "lines": [
         {
           "role": "narrator",
@@ -804,7 +798,7 @@
     }
   ],
   "phrases": [
-    "Look into my eyes",
+    "Look at me",
     "wild thing",
     "First royal rule",
     "I choose home",

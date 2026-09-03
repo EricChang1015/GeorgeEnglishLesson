@@ -52,13 +52,13 @@
 ### Horn（`horn`）≈ 3.0×
 
 原著最典型：寬牛角、獅鬃、**橫條紋**身、大黃眼、利爪、厚足。George 頭頂到其**大腿下／膝上**。  
-p7 張爪擋岸；p9 **第一個低頭收爪**；p17 接冠、p18 岸上舉葉冠揮別。  
+p7 張爪擋岸；p8 **踩出沙地大洞**示威；p9 **第一個低頭收爪**；p17 接冠、p18 岸上舉葉冠揮別。  
 禁止：電影名 Carol；畫成和 George 差不多高。
 
 ### Beak（`beak`）≈ 2.2×（最矮仍 ≥ 2×）
 
 雞冠／肉垂、**黃橙羽或黃毛**、明顯**鳥嘴**、細長爪、可有小翅或羽臂。George 頭頂到其**腰或略下**。  
-p8 枯木留爪痕示威；p11 **把藤冠戴上** George 頭套；p13 領月下旋轉。  
+p8 **把一棵大樹連根拔起**示威（不攻擊人）；p11 **把藤冠戴上** George 頭套；p13 領月下旋轉。  
 禁止：電影名 Moishe；畫成可愛小雞、矮過 2×。
 
 ### Goat（`goat`）≈ 2.6×
@@ -84,7 +84,7 @@ p8 雙臂擋住入島藤橋；p12 宣布 wild parade；p14–15 守王規。
 | Beak | **≥ 2.2** | 頭套頂 ≈ Beak 腰 |
 | Goat | **≥ 2.6** | 頭套頂 ≈ Goat 大腿中 |
 | Horn | **≥ 3.0** | 頭套頂 ≈ Horn 膝上／大腿下 |
-| 光鳥燈 | 拳頭／腳踝 | 非星燈 |
+| 光鳥燈（Lamp） | 拳頭／腳踝 | `mike-nibble-sheet` 圓黃小雞夜燈：小橘喙、短黃翅、會發光。禁止太陽、窗燈、產品檯燈、Mike／Nibble |
 | 木叉 | George 前臂長 | 圓鈍木齒 |
 | Billy o' Tea | 約一張床長 | 一人小艇 |
 
@@ -93,7 +93,8 @@ p8 雙臂擋住入島藤橋；p12 宣布 wild parade；p14–15 守王規。
 ## 房間與船
 
 RealBedroom＝L4：米色軟墊床頭、素奶油牆、奶油被、淡藍床單、拳頭大光鳥燈、遠牆灰簾、**床頭左側無窗**。  
-布局：`mike-plush-bedroom-bed-scattered.jpg`（不畫 Mike）。燈：`george-bedroom-bird-lamp-product.jpg`。
+布局：`mike-plush-bedroom-bed-scattered.jpg`（不畫 Mike）。  
+**燈（家長 2026-09-03）：** 用 `lessons/assets/refs/cast/mike-nibble-sheet.png` 的 **Lamp**（圓黃小雞夜燈），不用產品檯燈、不用太陽、不用遠方小屋窗黃點。p6 在船後方縮小；p16 遠海發光；p18 前方更近更亮。
 
 Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Captain／crew／鯨。p19 船與獸皆消失。
 
@@ -112,7 +113,7 @@ LivingRoom p1–2｜RealBedroom p3–4、p19｜Threshold p5｜OpenSea p6、p18�
 ## Prompt 重複句（出圖時整段複製）
 
 ```text
-Warm watercolor children's picture book on cream paper, fine ink cross-hatching, grainy painterly texture, muted earth colors — same style as a Sendak-mood picture book, never horror, never photoreal, never 3D, no on-image text. George is an East Asian boy ~5, short black bangs showing under the hood, round face, big ears, toothy smile. ALL PAGES: tan/khaki/light-ochre T-rex onesie with dark cracked-scale print, dinosaur-head HOOD stays on, soft dark-brown triangular back plates onto a THICK tapered tail, navy sneakers with white soles. NO pumpkin bucket. Family HOME clothes only; height Daddy > Sylvia > Mummy > George. Likeness from solo refs (not Halloween group only): Sylvia teen, long black hair, black rectangular glasses; Mummy adult, wispy bangs, thin round metal glasses, warm smile; Daddy adult, short black hair with volume, thin round glasses, small mole on lower left chin. Three huge Sendak-faithful wild things, ALL at least twice George's height, same ground line, yellow eyes with pupils, bared teeth, big claws, shaggy fur, wild but not nightmare-scary: HORN (~3× George) bull horns, lion mane, STRIPED body; BEAK (~2.2×) rooster comb, yellow-orange feathers, bird beak, long claws; GOAT (~2.6×) curled ram horns, goat beard, gentler face. Small private Billy o' Tea: tea-brown hull, tea-cream sail, tea-leaf emblem, no letters, no crew. RealBedroom: cream blanket, pale-blue sheet, beige padded headboard on a PLAIN cream wall, fist-sized glowing bird lamp, grey curtains on the FAR wall only, NO window left of the headboard. No Carol/KW/Moishe names, no sixth beast, no blood, no fighting.
+Warm watercolor children's picture book on cream paper, fine ink cross-hatching, grainy painterly texture, muted earth colors — same style as a Sendak-mood picture book, never horror, never photoreal, never 3D, no on-image text. George is an East Asian boy ~5, short black bangs showing under the hood, round face, big ears, toothy smile. ALL PAGES: tan/khaki/light-ochre T-rex onesie with dark cracked-scale print, dinosaur-head HOOD stays on, soft dark-brown triangular back plates onto a THICK tapered tail, navy sneakers with white soles. NO pumpkin bucket. Family HOME clothes only; height Daddy > Sylvia > Mummy > George. Likeness from solo refs (not Halloween group only): Sylvia teen, long black hair, black rectangular glasses; Mummy adult, wispy bangs, thin round metal glasses, warm smile; Daddy adult, short black hair with volume, thin round glasses, small mole on lower left chin. Three huge Sendak-faithful wild things, ALL at least twice George's height, same ground line, yellow eyes with pupils, bared teeth, big claws, shaggy fur, wild but not nightmare-scary: HORN (~3× George) bull horns, lion mane, STRIPED body; BEAK (~2.2×) rooster comb, yellow-orange feathers, bird beak, long claws; GOAT (~2.6×) curled ram horns, goat beard, gentler face. Small private Billy o' Tea: tea-brown hull, tea-cream sail, tea-leaf emblem, no letters, no crew. RealBedroom: cream blanket, pale-blue sheet, beige padded headboard on a PLAIN cream wall, fist-sized glowing yellow chick LAMP (round yellow body, tiny orange beak, short yellow wings; NOT a sun, NOT a cottage window, NOT Mike or Nibble), grey curtains on the FAR wall only, NO window left of the headboard. No Carol/KW/Moishe names, no sixth beast, no blood, no fighting.
 ```
 
 ---

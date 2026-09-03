@@ -16,7 +16,7 @@
 |---|---:|---|---|
 | p7 抵岸＋三獸一起示威 | p7–8 | 抵岸先被擋；George 不退，三獸才各自展示威嚇本領 | 因為 George 拒絕退船，所以三獸加強警告 |
 | p8 對視＋立刻加冕 | p9–11 | 對視馴服、穿越藤橋深入島心、到清地才加冕 | 因為 George 用勇氣贏得信任，所以三獸帶他進入王之清地 |
-| p9 單頁 parade | p12–15 | 地面跺腳、月下旋轉、兩條王規、依規矩再玩幾輪 | 因為 George 接受王冠，所以歡迎遊行展開；因為大家撞成一團，所以他學會溫柔領導 |
+| p9 單頁 parade | p12–15 | 地面跺腳、月下旋轉、兩條王規、依規矩再玩幾輪 | 因為 George 接受王冠，所以歡迎遊行展開；因為大家轉太快撞在一起，所以他學會溫柔領導 |
 | p10 餓＋想家＋決定 | p16–17 | 先停下感到冠重與肚餓，再由遠方暖香想到家，最後正式辭王道別 | 因為歡樂安靜下來，所以 George 聽見自己的需要；因此他自願離開 |
 | p11 回航 | p18 | 冠留 Horn 後才獨自回航，循鳥燈暖光找路 | 因為三獸尊重他的選擇，所以 Billy o' Tea 能平安離岸 |
 
@@ -115,18 +115,18 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 ### Page 6 — Long Sail（OpenSea）
 
-**敘事功能：** 因為 George 選擇遠航，所以房間退成遠方暖光；長航之後，島與巨大剪影終於出現。  
-**翻頁鉤子：** 三個黃眼巨大身影站在沙岸上等他。  
-**圖上必見證據：** George 穿同一 T-rex 裝與深藍運動鞋，在 Billy o' Tea 船尾獨自掌舵；同一茶棕船、茶色茶葉徽帆；淡紫天空；身後一點暖光像鳥燈；前方島影與三個巨大剪影。  
+**敘事功能：** 因為 George 選擇遠航，所以房間退成遠方暖光；長航之後，一座島出現，他想上岸看看。  
+**翻頁鉤子：** 前方只有島的輪廓，下一頁才看見擋岸的三獸。  
+**圖上必見證據：** George 穿同一 T-rex 裝與深藍運動鞋，在 Billy o' Tea 船尾獨自掌舵；同一茶棕船、茶色茶葉徽帆；淡紫天空；**身後**是 `mike-nibble-sheet` 的 Lamp（圓黃小雞夜燈，小橘喙、短黃翅，拳頭大，在發光）；前方只有島的樹影／山形，**沒有**野獸剪影或黃眼。  
 **在場：** george  
-**禁止：** 第六人、船員、換船、鯨、木叉、脫頭套。
+**禁止：** 野獸／monster 剪影、第六人、船員、換船、鯨、木叉、脫頭套、太陽圓盤、Mike／Nibble。
 
 | Role | Line | Emotion |
 |------|------|---------|
 | narrator | Billy o' Tea sailed beyond fern waves under lavender skies. | calm |
 | george | "The sea smells like rain, leaves, and something sweet." | curious |
 | narrator | The bird-lamp glow shrank as one long night rolled past. | soft |
-| george | "An island! Three enormous shapes are waiting on the shore." | alert |
+| george | "There is an island! I want to see what is there." | curious |
 
 ### Page 7 — The Blocked Shore（WildIsland）
 
@@ -140,36 +140,35 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 |------|------|---------|
 | horn | "Who brings that tiny boat onto our enormous island?" | fierce |
 | beak | "Turn your leaf sail around before we show our claws!" | challenging |
-| goat | "The path ahead belongs to three very wild things." | warning |
-| george | "I sailed too far to run away before meeting you." | brave |
+| goat | "Go back, little boat. This island is ours." | warning |
+| george | "I will not run away. I came to meet you." | brave |
 
 ### Page 8 — Three Wild Warnings（WildIsland）
 
-**敘事功能：** 因為 George 不退，三獸逐一加強示威；因為 George 看出它們只在嚇人，所以穩穩站住。  
+**敘事功能：** 因為 George 不退，三獸逐一加強示威；George 看著、不說話，下一頁才回應。  
 **翻頁鉤子：** Horn 把最大的一雙黃眼靠近 George。  
-**圖上必見證據：** Horn 用蹄踩出沙坑但不碰人；Beak 只在枯木上留下爪痕；Goat 張開雙臂擋住通往島內的藤橋；George 空手站直，船在身後，三獸比例維持。  
+**圖上必見證據：** Horn 用強壯的腳在沙地踩出一個大洞，不碰人；Beak 用利爪把一棵大樹連根拔起（示威，不攻擊）；Goat 張開雙臂擋住通往島內的藤橋；George 空手站直，船在身後，三獸比例維持。  
 **在場：** george, horn, beak, goat  
-**禁止：** 攻擊 George、折斷活樹、流血、武器、第四隻野獸。
+**禁止：** 攻擊 George、流血、武器、第四隻野獸。
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "My hooves can make the whole sandy shoreline tremble!" | booming |
-| beak | "My claws can scratch deep lines into dead wood!" | showy |
+| horn | "My strong feet can stomp a big hole in the ground!" | proud |
+| beak | "My claws are so strong, I can pull a big tree up by the roots!" | proud |
 | goat | "My horns guard the only bridge into our jungle." | firm |
-| george | "You are noisy, but I can still stand steady." | composed |
 
 ### Page 9 — The Steady Stare（WildIsland）
 
 **敘事功能：** 因為三次示威都沒嚇退 George，所以 Horn 近身考驗；George 用眼神與勇氣回應，因此三獸收爪低頭。  
 **翻頁鉤子：** Horn 讓開後，藤橋另一端露出廣闊叢林。  
-**圖上必見證據：** George 直視 Horn，再看 Beak 與 Goat 的三雙黃眼；Horn 首先低頭；Beak 收爪；Goat 放下擋橋手臂；全程無接觸、無魔法光；Billy o' Tea 仍泊岸。  
+**圖上必見證據：** George 比岸上其他頁稍大、清楚可見；T-rex 袖爪舉起做「看我」姿勢，臉不害怕；直視三雙黃眼；Horn 首先低頭並叫朋友收爪；Beak／Goat 利爪正在放下；全程無接觸、無魔法光；Billy o' Tea 仍泊岸。  
 **在場：** george, horn, beak, goat  
-**禁止：** 拳腳、武器、魔法馴服、恐怖咬人、比例縮小。
+**禁止：** 拳腳互打、武器、魔法馴服、恐怖咬人、比例縮到看不清姿勢。
 
 | Role | Line | Emotion |
 |------|------|---------|
-| george | "Look into my eyes. I will not hurt you or hide." | steady |
-| narrator | George held their yellow gaze without raising a single fist. | calm |
+| george | "Look at me. I am not afraid of you." | brave |
+| narrator | George stood tall and looked into their yellow eyes. | calm |
 | horn | "His knees stayed still. Lower your claws, wild friends." | awed |
 | goat | "Courage like that may cross our guarded bridge." | respectful |
 
@@ -183,7 +182,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "Follow my footprints; brave visitors may enter our island." | welcoming |
+| horn | "Follow me. Brave visitors may enter our island." | warm |
 | narrator | Beyond the bridge, the jungle opened wider than the shore. | wonder |
 | beak | "Our moonlit clearing has waited for someone truly fearless." | excited |
 | george | "Then show me what waits beyond those enormous trees." | eager |
@@ -198,7 +197,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| beak | "Wear this vine crown, brave George, and lead us fairly." | proud |
+| beak | "Wear this vine crown, George. You are the king of this island." | proud |
 | horn | "You faced our wildness without becoming cruel or afraid." | loyal |
 | goat | "A good king listens before making the island roar." | wise |
 | george | "I will be a wild king who keeps everyone safe." | honoured |
@@ -206,47 +205,47 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 ### Page 12 — Stomping Parade（WildClearing）
 
 **敘事功能：** 因為 George 接受王冠，所以三獸用第一場地面遊行歡迎他；歡樂聲引出更大的月下玩法。  
-**翻頁鉤子：** 被震動的銀色種莢在高樹間像小鼓一樣響。  
+**翻頁鉤子：** 跺腳聲越來越大，Beak 要把遊行帶到月光下旋轉。  
 **圖上必見證據：** George 戴藤冠站在三獸中間跺腳；Horn 打空木鼓、Goat 旋轉、Beak 拍翅帶節奏；地面有四組環形腳印；表情快樂，爪牙可見但無傷害。  
 **在場：** george, horn, beak, goat  
-**禁止：** 原句 *let the wild rumpus start*、恐怖陰影、傷害、額外野獸。
+**禁止：** 原句 *let the wild rumpus start*、恐怖陰影、傷害、額外野獸、把種莢當劇情道具。
 
 | Role | Line | Emotion |
 |------|------|---------|
 | goat | "Our wild parade begins with four enormous stamping beats!" | joyful |
 | george | "Stomp together, then spin when Horn strikes the drum!" | gleeful |
 | narrator | Four happy sets of feet thundered around the clearing. | lively |
-| horn | "The silver seedpods are answering us from the trees!" | excited |
+| horn | "Keep stomping! Our wild parade is getting louder!" | excited |
 
 ### Page 13 — Moonlit Swirls（WildClearing）
 
-**敘事功能：** 因為高樹種莢回響，所以 Beak 把遊行帶到月光下；第二輪加入旋轉、呼喊與鞠躬，讓狂歡持續升級。  
-**翻頁鉤子：** 大家轉得太快，尾巴、翅膀與腳撞成一團。  
-**圖上必見證據：** 同一清地較高的月光區；Beak 在低樹樁領拍，Horn、Goat、George 繞圈；George 的 T-rex 尾與藤冠清楚；銀色種莢、月亮、四組旋轉足跡建立連續。  
+**敘事功能：** 因為跺腳遊行愈玩愈快，所以 Beak 把隊伍帶到月光下旋轉；轉太快，大家就要撞在一起。  
+**翻頁鉤子：** Horn 大喊小心，下一頁看見剛撞完坐在地上。  
+**圖上必見證據：** 同一清地月光區；Beak 在低樹樁領拍，Horn、Goat、George 繞圈；George 的 T-rex 尾與藤冠清楚；月亮與四組旋轉足跡；四人靠得很近、快要撞上，但還沒纏成一堆。  
 **在場：** george, horn, beak, goat  
-**禁止：** 危險爬高、墜落、第四隻野獸、王冠消失、換裝。
+**禁止：** 危險爬高、墜落、第四隻野獸、王冠消失、換裝、把種莢當劇情焦點。
 
 | Role | Line | Emotion |
 |------|------|---------|
 | beak | "Follow my wings beneath the bright and bumpy moon!" | delighted |
-| george | "Swirl past the seedpods, then roar and bow together!" | playful |
+| george | "Swirl around with me, then roar and bow together!" | gleeful |
 | narrator | Their shadows wheeled around the trees for another merry round. | warm |
-| horn | "Careful! Our happy feet are tangling into one furry heap!" | surprised |
+| horn | "Watch out! We are going to bump into each other!" | surprised |
 
 ### Page 14 — The King’s Rules（WildClearing）
 
-**敘事功能：** 因為遊行撞成一團，所以 George 第一次真正治理；兩條好笑又體貼的王規讓每個人都能繼續玩。  
+**敘事功能：** 因為遊行轉太快撞在一起，所以 George 第一次真正治理；兩條好笑又體貼的王規讓每個人都能繼續玩。  
 **翻頁鉤子：** 三獸依新規重新排隊，邀 George 再當一輪領隊。  
-**圖上必見證據：** 四位坐在地上笑著解開尾巴與腳；George 戴冠舉起兩根手指宣布兩條規則；Horn、Beak、Goat 認真聽；無人受傷。  
+**圖上必見證據：** 四人剛撞完、分開坐在地上笑（可揉頭／坐歪），**沒有**尾巴腳爪纏成一堆；George 戴冠舉起兩根手指宣布兩條規則；Horn、Beak、Goat 認真聽；無人受傷。  
 **在場：** george, horn, beak, goat  
-**禁止：** 霸道命令、懲罰、哭泣、傷口、額外角色。
+**禁止：** 毛團纏繞、霸道命令、懲罰、哭泣、傷口、額外角色。
 
 | Role | Line | Emotion |
 |------|------|---------|
 | george | "First royal rule: big feet wait for smaller feet." | kindly |
 | george | "Second royal rule: every roar ends with a friendly bow." | playful |
 | goat | "Those rules leave room for every wild thing." | approving |
-| beak | "Line up again! This time, nobody tangles their tails." | eager |
+| beak | "Line up again! This time, nobody bumps into anyone." | excited |
 
 ### Page 15 — King for a While（WildClearing）
 
@@ -267,9 +266,9 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 **敘事功能：** 因為歡樂終於安靜，George 才感到肚餓與冠重；遠方鳥燈暖光帶來家中晚飯的氣味，因此想家有了具體原因。  
 **翻頁鉤子：** George 雙手摘下藤冠，轉向通往沙岸的小徑。  
-**圖上必見證據：** George 疲倦坐在葉椅、雙手扶冠與肚子；三獸安靜圍坐；遠方海面有鳥燈般暖點；Billy o' Tea 在岸邊遠景；月色柔和。  
+**圖上必見證據：** George 疲倦坐在葉椅、雙手扶冠與肚子；三獸安靜圍坐；遠方海面／對岸是 `mike-nibble-sheet` 的 Lamp（圓黃小雞夜燈在發光，不是太陽、不是窗戶黃點）；Billy o' Tea 在岸邊遠景；月色柔和。  
 **在場：** george, horn, beak, goat  
-**禁止：** 說這是夢、家人突然出現在島上、強制送走、冠已交出。
+**禁止：** 說這是夢、家人突然出現在島上、強制送走、冠已交出、太陽圓盤、Mike／Nibble。
 
 | Role | Line | Emotion |
 |------|------|---------|
@@ -297,9 +296,9 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 **敘事功能：** 因為三獸放行並歸還船，所以 George 能獨自回航；因為鳥燈暖光越來越亮，所以他找到回房方向。  
 **翻頁鉤子：** 葉浪分開，灰簾與熟悉床沿出現在船頭前。  
-**圖上必見證據：** George 獨駕同一 Billy o' Tea；茶棕船身、茶色茶葉徽帆固定；Horn 在岸上高舉藤冠，Beak 與 Goat 揮別且逐漸變小；前方鳥燈暖光擴大；無冠在船上。  
+**圖上必見證據：** George 獨駕同一 Billy o' Tea；茶棕船身、茶色茶葉徽帆固定；Horn 在岸上高舉藤冠，Beak 與 Goat 揮別且逐漸變小；**前方**是同一顆 `mike-nibble-sheet` Lamp，比 p16 更近、更亮；無冠在船上。  
 **在場：** george, horn, beak, goat  
-**禁止：** 追船、換船、鯨、船員、冠回到 George 頭上。
+**禁止：** 追船、換船、鯨、船員、冠回到 George 頭上、太陽圓盤、小屋窗燈替代 Lamp、Mike／Nibble。
 
 | Role | Line | Emotion |
 |------|------|---------|

@@ -8,7 +8,7 @@ d = json.loads((ROOT / "scripts/lesson07_story.json").read_text(encoding="utf-8"
 learn = d.get("learning") or {}
 
 phrase_map = {
-    "Look into my eyes": "p09-01.mp3",
+    "Look at me": "p09-01.mp3",
     "wild thing": "p02-01.mp3",
     "First royal rule": "p14-01.mp3",
     "I choose home": "p17-01.mp3",
