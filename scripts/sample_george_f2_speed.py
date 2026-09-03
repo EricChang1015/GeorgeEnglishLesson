@@ -73,7 +73,7 @@ def main() -> int:
                     "speed": speed,
                 }
             )
-    print(f"\nListen: http://localhost:3456/lessons/minimax-listen.html")
+    print(f"\nListen: {OUT_DIR / 'index.html'} (gitignored voice-tests)")
     print(f"Files: {OUT_DIR}")
     return 0
 

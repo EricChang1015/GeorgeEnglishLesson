@@ -2,7 +2,7 @@
 """Lesson 7 voice audition: Sylvia + Horn / Beak / Goat.
 
 Outputs stay under lessons/assets/lesson-07/voice-tests/ (gitignored).
-Open lessons/l7-voice-picker.html via the local server.
+Open that folder's index.html via the local server. See tools/README.md.
 """
 
 from __future__ import annotations
@@ -139,7 +139,36 @@ def main() -> int:
         asyncio.run(generate_edge(edge_rows))
     if not args.edge_only:
         generate_minimax(mini_rows)
+    write_index()
+    print(f"Listen: {OUT / 'index.html'}")
     return 0
+
+
+def write_index() -> None:
+    cards = []
+    for role, opts in CANDIDATES.items():
+        cards.append(f"<h2>{role}</h2><p class='line'>{LINES[role]}</p>")
+        for letter, slug, engine, voice, a, b, label in opts:
+            name = filename(role, letter, slug)
+            cards.append(
+                f"<section><h3>{letter} · {label}</h3>"
+                f"<p class='meta'>{engine} · {voice} · {a} / {b}</p>"
+                f"<audio controls src='{name}'></audio></section>"
+            )
+    html = f"""<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"/>
+<title>Voice listen · Lesson 7</title>
+<style>
+body {{ font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; background: #fff9f0; }}
+section {{ background: #fff; border-radius: 12px; padding: 0.8rem 1rem; margin: 0.6rem 0; }}
+.meta, .line {{ color: #555; }}
+audio {{ width: 100%; }}
+</style></head><body>
+<h1>Lesson 7 聲線試聽（未發佈）</h1>
+{''.join(cards)}
+</body></html>
+"""
+    (OUT / "index.html").write_text(html, encoding="utf-8")
 
 
 if __name__ == "__main__":

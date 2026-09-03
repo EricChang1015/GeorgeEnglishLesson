@@ -11,7 +11,7 @@ Do not generate lesson art from a one-line story beat. Lock the cast and places 
 ## Read first
 
 1. `docs/family-refs.md` — 家人臉選圖地圖（Lesson 7 跑篇後補齊）
-2. `docs/cast-bible.md` — 全專案角色鎖；篇章 bible（如 `docs/big-eye-chapter.md`、`docs/lesson-07-proposals/bible-locked.md`）— 該章比例、服裝、場景、Zone
+2. `docs/cast-bible.md` — Pip and Ember 角色鎖；篇章 bible（如 `docs/big-eye-chapter.md`、`docs/wild-things-bible.md`）— 該章比例、服裝、場景、Zone
 3. Matching `CATALOG.md` under `lessons/assets/refs/{george,sylvia,mummy,daddy}/` — then **Read** the photos named in the bible（家人頁必 Read solo primary，不准只讀萬聖節合照）
 4. `.cursor/rules/character-refs.mdc` — family photo rules
 
