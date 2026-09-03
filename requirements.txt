@@ -1,0 +1,13 @@
+# Python tooling for the George English Lessons pipeline.
+# Install: pip install -r requirements.txt
+#
+# edge-tts  -> free Microsoft Edge TTS used by scripts/generate_lesson_audio.py
+# Pillow    -> PNG -> WebP optimization in scripts/optimize_lesson_images.py
+# mutagen   -> accurate MP3 duration checks in scripts/check_lesson_audio.py
+#
+# Note: MiniMax voices and AI video (scripts/poe_media.py, sample_minimax_speech.py)
+# talk to the Poe API over stdlib urllib and additionally need a POE_API_KEY in
+# .env.local; no extra pip package is required for them.
+edge-tts==7.2.8
+Pillow==12.3.0
+mutagen==1.48.1
