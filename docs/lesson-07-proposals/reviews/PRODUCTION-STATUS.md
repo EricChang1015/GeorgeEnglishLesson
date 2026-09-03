@@ -1,24 +1,22 @@
-# Lesson 7 Sol 產線進度（2026-09-03）
+# Lesson 7 Sol 產線（2026-09-03）
 
-音檔已過。島圖 p7–p18 已四審 PASS 並 copy 進 `lessons/assets/lesson-07/story-07.png`–`story-18.png` + WebP。p1–6、p19 沿用現有睡衣／熱晚餐稿。
+整課圖已進 `lessons/assets/lesson-07/story-01.png`–`story-19.png` + WebP。音檔 136 clips 已過閘。GATE 3 見 `GATE3-SUMMARY.md`。
 
-## 放行檔
-
-| 頁 | 檔 | Sol | 4.6 | 4.5 | Composer |
-|----|----|-----|-----|-----|----------|
-| p7 | `l7-p07-blocked-shore-v2.png` → `story-07` | PASS | PASS | PASS | PASS |
-| p8 | `l7-p08-three-warnings-v10.png` → `story-08` | PASS | PASS | PASS | PASS |
-| p9 | `l7-p09-steady-stare-v6.png` → `story-09` | PASS | PASS | PASS | PASS |
-| p10 | `l7-p10-vine-bridge-v9.png` → `story-10` | PASS | PASS | PASS | PASS |
-| p11 | `l7-p11-crown-vines-v5.png` → `story-11` | PASS | PASS | PASS | PASS |
-| p12 | `l7-p12-stomping-parade-v15.png` → `story-12` | PASS | PASS | PASS | PASS |
-| p13 | `l7-p13-moonlit-swirls.png` → `story-13` | PASS | PASS | PASS | PASS |
-| p14 | `l7-p14-kings-rules-v2.png` → `story-14` | PASS | PASS | PASS | PASS |
-| p15 | `l7-p15-king-for-a-while-v3.png` → `story-15` | PASS | PASS | PASS | PASS |
-| p16 | `l7-p16-heavy-crown-v3.png` → `story-16` | PASS | PASS | PASS | PASS |
-| p17 | `l7-p17-chooses-home-v6.png` → `story-17` | PASS | PASS | PASS | PASS |
-| p18 | `l7-p18-homeward-light-v6.png` → `story-18` | PASS | PASS | PASS | PASS |
-| p19 | 既有熱晚餐 `story-19` | （沿用） | | | |
-
-p8 v9 被 4.5 FAIL「是柵欄不是藤橋」→ 只重畫橋面為 v10，四審 PASS。
-p12 用「p9 下一格、George 留左側」才把比例鎖住。
+| 頁 | 課件檔 | 來源 |
+|----|--------|------|
+| p1–4 | story-01–04 | family-shoes 睡衣／赤腳稿 |
+| p5 | story-05 | `l7-p05-boat-fork-shoes.png`（叉留床、鞋在船） |
+| p6 | story-06 | `l7-p06-island-shapes.png`（遠島三剪影） |
+| p7 | story-07 | `l7-p07-blocked-shore-v2.png` |
+| p8 | story-08 | `l7-p08-three-warnings-v10.png` |
+| p9 | story-09 | `l7-p09-steady-stare-v6.png` |
+| p10 | story-10 | `l7-p10-vine-bridge-v9.png` |
+| p11 | story-11 | `l7-p11-crown-vines-v5.png` |
+| p12 | story-12 | `l7-p12-stomping-parade-v16.png`（清地無船） |
+| p13 | story-13 | `l7-p13-moonlit-swirls.png` |
+| p14 | story-14 | `l7-p14-kings-rules-v2.png` |
+| p15 | story-15 | `l7-p15-king-for-a-while-v3.png` |
+| p16 | story-16 | `l7-p16-heavy-crown-v3.png` |
+| p17 | story-17 | `l7-p17-chooses-home-v6.png` |
+| p18 | story-18 | `l7-p18-homeward-light-v6.png` |
+| p19 | story-19 | family-shoes 熱晚餐（襪＋眼鏡） |
