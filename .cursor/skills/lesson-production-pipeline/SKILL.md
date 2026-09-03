@@ -7,7 +7,8 @@ description: Staged, gated pipeline for producing a new lesson (story, art, audi
 
 Lesson 4 的教訓：**劇情沒簽核就出全套圖＋音，之後每次改文都連鎖重工**（61→35→39 句三次重錄、6～7 輪重繪、改文保舊圖造成圖文脫節）。本流程用「閘門」擋住這件事。
 
-核心原則：**上游未凍結，下游不開工。** 圖與音是最貴的產物，永遠最後做。
+核心原則：**上游未凍結，下游不開工。** 圖與音是最貴的產物，永遠最後做。  
+文件地圖：`docs/README.md`。`lessons/` 只放課件 HTML。
 
 ---
 
@@ -47,7 +48,7 @@ Stage 3 出圖（逐頁 QA）──► Stage 4 音檔 ──► Stage 5 組裝
 
 ### Stage 1 — 劇本＋分鏡（只有文字，成本最低，改到滿意為止）
 
-寫進 `docs/<chapter>.md`（格式參考 `docs/big-eye-chapter.md`），每頁一張表：
+寫進 `docs/<chapter>.md`（格式參考 `docs/big-eye-chapter.md` 或 `docs/wild-things-storyboard.md`），每頁一張表：
 
 | 欄位 | 內容 |
 |------|------|

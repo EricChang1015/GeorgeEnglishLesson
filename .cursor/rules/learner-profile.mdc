@@ -32,7 +32,7 @@ alwaysApply: true
 - Keep language warm, encouraging, and age-appropriate (no scary or violent content)
 
 ## Project workflow
-- Lessons live under `lessons/` (HTML data + shared `lessons/js/lesson-player.js`)
+- Docs map: `docs/README.md`. Lessons live under `lessons/` (HTML data + shared `lessons/js/lesson-player.js`). **Do not put test HTML in `lessons/`.**
 - Images under `lessons/assets/lesson-XX/` — keep original PNG; **pages load `.webp` only** (see `docs/lesson-player.md`)
 - Audio under `lessons/assets/lesson-XX/audio/`
 - **Character AI voices:** fixed per role in `scripts/voices.json` — see `docs/character-voices.md`

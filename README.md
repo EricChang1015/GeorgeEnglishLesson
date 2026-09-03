@@ -4,7 +4,15 @@ Interactive HTML reading lessons for George (born 2021-06-23), targeting Oxford 
 
 ## Lessons
 
-Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts **Mike Dreams**. **Lesson 5** starts **George's Real Adventures** (real family trips). Homepage grouping, a slightly harder vocab bar, line emotion, a cast/scene bible, and 5-question quiz sampling are recorded in [`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) (not all built yet). Visual locks: [`docs/cast-bible.md`](docs/cast-bible.md). Mike chapter: [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md). Real adventures: [`docs/real-adventures-chapter.md`](docs/real-adventures-chapter.md).
+Docs map: [`docs/README.md`](docs/README.md).
+
+| Chapter | Lessons | Locks |
+|---------|---------|-------|
+| Pip and Ember | 1–3 | [`docs/cast-bible.md`](docs/cast-bible.md)、[`docs/lesson-01-03-review.md`](docs/lesson-01-03-review.md) |
+| Mike Dreams | 4 | [`docs/big-eye-chapter.md`](docs/big-eye-chapter.md) |
+| George's Real Adventures | 5 | [`docs/real-adventures-chapter.md`](docs/real-adventures-chapter.md) |
+| George's Song Adventures | 6 | [`docs/song-adventures-chapter.md`](docs/song-adventures-chapter.md) |
+| George and the Wild Things | 7 | [`docs/wild-things-chapter.md`](docs/wild-things-chapter.md) |
 
 ### Lesson 1 — `lessons/lesson-01.html`
 **George and the Little Dragon** (ORT Level 6): George meets Pip and finds a red egg.
@@ -21,7 +29,13 @@ Lessons 1–3 are one story chapter (**Pip and Ember**). **Lesson 4** starts **M
 ### Lesson 5 — `lessons/lesson-05.html`
 **George's Big Cave Adventure** (ORT Level 6, **George's Real Adventures** ch.1): Sansheng Cave with Coach Jojo — muddy puddles, via ferrata, stone forest of stalactites, cave paddle board, hotel ending. See [`docs/real-adventures-chapter.md`](docs/real-adventures-chapter.md).
 
-Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz with A/B/C voice, Auto read, swipe / jump-to-page, tutor notes.
+### Lesson 6 — `lessons/lesson-06.html` + `lessons/lesson-06-slideshow.html`
+**George and the Wellerman** (**George's Song Adventures**): song words, then one picture per lyric line, then the full song. See [`docs/song-adventures-chapter.md`](docs/song-adventures-chapter.md).
+
+### Lesson 7 — `lessons/lesson-07.html`
+**George and the Wild Parade** (**George and the Wild Things**): T-rex play, Billy o' Tea, Horn / Beak / Goat, supper still hot. See [`docs/wild-things-chapter.md`](docs/wild-things-chapter.md).
+
+Features: vocabulary (word + example sentence), dialogue story, AI line audio, quiz with A/B/C voice, Auto read, swipe / jump-to-page, tutor notes. `lessons/` 只放課件 HTML；聲線試聽腳本寫到 gitignored 的 `voice-tests/`（[`tools/README.md`](tools/README.md)）。
 
 Pages load **WebP** one screen at a time (original PNGs stay in the folder but are not fetched). Player how-to: [`docs/lesson-player.md`](docs/lesson-player.md).
 
@@ -44,6 +58,7 @@ python scripts/generate_lesson_audio.py --story scripts/lesson02_story.json --ou
 python scripts/generate_lesson_audio.py --story scripts/lesson03_story.json --out lessons/assets/lesson-03/audio
 python scripts/generate_lesson_audio.py --story scripts/lesson04_story.json --out lessons/assets/lesson-04/audio
 python scripts/generate_lesson_audio.py --story scripts/lesson05_story.json --out lessons/assets/lesson-05/audio
+python scripts/generate_lesson_audio.py --story scripts/lesson07_story.json --out lessons/assets/lesson-07/audio
 ```
 
 Vocab entries may include `example` + `example_audio`; the generator speaks the word, then the example sentence (narrator voice). Quiz A/B/C clips are generated from the `quiz` block (`--quiz-only` to refresh those only).
@@ -90,6 +105,8 @@ npx --yes serve .
 - Lesson 3: https://george.macau-tech.com/lessons/lesson-03.html
 - Lesson 4: https://george.macau-tech.com/lessons/lesson-04.html
 - Lesson 5: https://george.macau-tech.com/lessons/lesson-05.html
+- Lesson 6: https://george.macau-tech.com/lessons/lesson-06.html
+- Lesson 7: https://george.macau-tech.com/lessons/lesson-07.html
 - Repo: https://github.com/EricChang1015/GeorgeEnglishLesson
 
 Legacy GitHub Pages URL (still works): https://ericchang1015.github.io/GeorgeEnglishLesson/

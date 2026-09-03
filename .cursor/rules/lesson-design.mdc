@@ -57,3 +57,4 @@ alwaysApply: false
 
 ## Index
 - Root `index.html` groups related lessons into **chapters**. Lessons 1–3 are one chapter (Pip and Ember), not three equal top-level cards
+- `lessons/` HTML is lessons only (`lesson-XX.html` plus Lesson 6 slideshow). Voice listen pages belong in gitignored `voice-tests/` via `scripts/sample_*.py`

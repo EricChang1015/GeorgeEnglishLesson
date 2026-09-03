@@ -72,23 +72,22 @@ When a new family member speaks for the first time: agree voice with parent → 
 
 ---
 
-## Line emotion (not yet in the generator)
+## Line emotion
 
-Parent review (Lessons 1–3): role voices are stable, but **speed / tone / feeling often miss the beat**. Picture-book lines need a clear emotion.
+Role `{ voice, rate, pitch }` stays fixed. Each spoken line in `scripts/lessonXX_story.json` must have an `emotion` that matches the beat (`wonder`, `worried`, `whisper`, `happy`, …). Flat, same-mood delivery is a defect.
 
-- Plan: add per-line `emotion` in each `scripts/lessonXX_story.json` (`wonder`, `worried`, `whisper`, `happy`, …).
-- **Lesson 3 George:** MiniMax `cute_boy` F2 · baseline speed **1.30×** + optional per-line `delivery`. Use **`delivery.segments`** for clause-level speed (intonation); keep **pitch at ±1–2** only. Whisper/tense = fearful + slightly lower volume, not deep pitch.
-- **Lesson 4 George:** same MiniMax `cute_boy` F2 lock, baseline speed **1.50×** in `scripts/lesson04_story.json` (L3 stays 1.30×). The generator scales per-line delivery speed from this baseline.
+- **Lesson 3 George:** MiniMax `cute_boy` F2 · baseline speed **1.30×** + optional per-line `delivery`. Use **`delivery.segments`** for clause-level speed; keep **pitch at ±1–2** only. Whisper/tense = fearful + slightly lower volume, not deep pitch.
+- **Lesson 4 George:** same MiniMax lock, baseline **1.50×** in `scripts/lesson04_story.json`. The generator scales per-line delivery from this baseline.
 - Edge TTS has no usable custom `express-as` SSML.
 
-Full notes: `docs/lesson-01-03-review.md`.
+教學理由見 [`lesson-01-03-review.md`](lesson-01-03-review.md)。
 
 ---
 
 ## Changing a voice
 
-1. Generate samples (see `scripts/sample_boy_voice.py` or a new sample script).
-2. Parent picks a option.
+1. Run a sample script under `scripts/sample_*.py`. Clips and a listen page land in `lessons/assets/lesson-XX/voice-tests/`（gitignored，見 `tools/README.md`）。
+2. Parent picks an option.
 3. Update `scripts/voices.json`, this doc, `.cursor/rules/character-voices.mdc`, and **regenerate all lessons** where that character speaks.
 
 ---
