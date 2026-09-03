@@ -138,7 +138,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| horn | "Who brings that tiny boat onto our enormous island?" | fierce |
+| horn | "Who brought that tiny boat onto our enormous island?" | fierce |
 | beak | "Turn your leaf sail around before we show our claws!" | challenging |
 | goat | "Go back, little boat. This island is ours." | warning |
 | george | "I will not run away. I came to meet you." | brave |
@@ -170,7 +170,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 | george | "Look at me. I am not afraid of you." | brave |
 | narrator | George stood tall and looked into their yellow eyes. | calm |
 | horn | "His knees stayed still. Lower your claws, wild friends." | awed |
-| goat | "Courage like that may cross our guarded bridge." | respectful |
+| goat | "With courage like that, you may cross our bridge." | respectful |
 
 ### Page 10 — Into the Island（WildIsland → WildClearing）
 
@@ -257,7 +257,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| narrator | The kinder parade rolled through three more moonlit rounds. | warm |
+| narrator | They marched kindly through three more moonlit rounds. | warm |
 | horn | "King George, your rules make wild games last longer!" | delighted |
 | george | "One final march, then everyone takes a quiet rest." | content |
 | narrator | The last bow ended, and George's empty tummy growled. | soft |

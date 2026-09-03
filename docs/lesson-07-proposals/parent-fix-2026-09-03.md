@@ -37,3 +37,14 @@ p8 George 舊句「You are noisy…」刪：三獸示威自成一頁，勇氣回
 ## 燈鎖
 
 `refs/cast/mike-nibble-sheet.png` 的 **Lamp**：圓黃小雞、小橘喙、短黃翅、會發光。禁止太陽、小屋窗燈、產品檯燈、Mike／Nibble。
+
+## 換檔（互檢後）
+
+| 頁 | 課件 | 依據 |
+|---:|------|------|
+| 6 | `l7-p06-island-lamp-v5` | 去獸；燈在船後遠處（v2 太近被 4.6 FAIL） |
+| 8 | **保舊** `story-08` | 三審：舊圖已有沙洞＋拔樹；新圖比例／橋較差 |
+| 9 | `l7-p09-look-at-me-v2` | 三審 REPLACE |
+| 14 | `l7-p14-after-bump-v2` | 分開坐＋葉椅／鼓／種莢背景 |
+| 16 | `l7-p16-lamp-v3` | 遠海 Lamp；頭套吻部＋冠 |
+| 18 | `l7-p18-lamp-v2` | 前方 Lamp＋補回月亮 |

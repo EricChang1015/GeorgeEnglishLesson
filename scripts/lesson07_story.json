@@ -326,7 +326,7 @@
       "lines": [
         {
           "role": "horn",
-          "text": "Who brings that tiny boat onto our enormous island?",
+          "text": "Who brought that tiny boat onto our enormous island?",
           "audio": "p07-01.mp3",
           "emotion": "fierce"
         },
@@ -398,7 +398,7 @@
         },
         {
           "role": "goat",
-          "text": "Courage like that may cross our guarded bridge.",
+          "text": "With courage like that, you may cross our bridge.",
           "audio": "p09-04.mp3",
           "emotion": "respectful"
         }
@@ -560,7 +560,7 @@
       "lines": [
         {
           "role": "narrator",
-          "text": "The kinder parade rolled through three more moonlit rounds.",
+          "text": "They marched kindly through three more moonlit rounds.",
           "audio": "p15-01.mp3",
           "emotion": "warm"
         },
