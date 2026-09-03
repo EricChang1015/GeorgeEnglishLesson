@@ -1,71 +1,55 @@
-# Four-way gate — p8 v5, p9 v5, p12 v9
+# Four-way gate — p8 v7, p9 v6, p12 (latest)
 
-Locks only. Do **not** use producer prompts. Do **not** use the old 12-page map in `docs/wild-things-chapter.md`.
+Do **not** generate images. Do **not** checkout another branch.
+Do **not** use the old 12-page map. Do **not** invent extra props.
 
-**Storyboard (19-page Sol):** `docs/lesson-07-proposals/plot-working.md` pages 8, 9, 12  
-**Scale / cast bible:** `docs/lesson-07-proposals/bible-locked.md`  
-**Reviewer must Read the real PNGs** (full frame). Pixel-measure scale on a shared ground line.
+**Storyboard only:** `docs/lesson-07-proposals/plot-working.md` pages 8, 9, 12  
+**Scale bible:** `docs/lesson-07-proposals/bible-locked.md`
 
 | Page | Path |
 |------|------|
-| p8 | `/workspace/docs/lesson-07-proposals/gen/l7-p08-three-warnings-v5.png` |
-| p9 | `/workspace/docs/lesson-07-proposals/gen/l7-p09-steady-stare-v5.png` |
-| p12 | `/workspace/docs/lesson-07-proposals/gen/l7-p12-stomping-parade-v9.png` |
+| p8 | `/workspace/docs/lesson-07-proposals/gen/l7-p08-three-warnings-v7.png` |
+| p9 | `/workspace/docs/lesson-07-proposals/gen/l7-p09-steady-stare-v6.png` |
+| p12 | latest stomping file named in the review prompt |
 
-## Shared hard FAILs (any page)
+Canvas is **1536×1024**. Valid y is **0–1023**.  
+George height = **T-rex hood top** (or vine-crown top on p12) → **navy sneaker sole**.  
+Do **not** measure the boat sail, Horn’s shoulder, or the moon as George.  
+If your George height comes out **> 300 px**, you have the wrong landmark — re-find the boy’s hood.
 
-- T-rex hood off
-- Any beast < 2× George on the **same ground line** (no depth-shrink cheat)
-- 4th beast / 6th person
-- On-image English
-- Fighting, blood, weapons, wooden fork
-- Photoreal / 3D
+## Shared hard FAIL
 
-## Scale lock (same mud/sand line; feet in one y-band)
+- Hood off
+- Any beast < 2× George on the **same sole y-band**
+- 4th beast / English / fight / blood / fork / photoreal
 
-| Beast | Ratio vs George | Body anchor |
-|-------|-----------------|-------------|
-| Horn | ≥ 3.0× | hood/crown top ≈ Horn **knee** |
-| Beak | ≥ 2.2× | hood/crown top ≈ Beak **waist** |
-| Goat | ≥ 2.6× | hood/crown top ≈ Goat **mid-thigh** |
+## Scale lock (same sole y-band)
 
-If soles are not in one band, score scale FAIL even if the figure looks big.
+| Beast | Ratio | Body anchor (MINIMUM size picture) |
+|-------|-------|-------------|
+| Horn | ≥ 3.0× | hood/crown ≈ Horn **knee** |
+| Beak | ≥ 2.2× | hood/crown ≈ Beak **waist** |
+| Goat | ≥ 2.6× | hood/crown ≈ Goat **mid-thigh** |
 
-**p8 exception:** Goat must **block the vine bridge**. His soles may stand on the **sand at the bridge mouth**. A low beach-level walkway is OK. A raised pier that shrinks Goat is not.
+The body anchor is the **floor**, not a ceiling. If a beast is **taller** than the lock, the hood will sit **below** that joint (e.g. Beak 3× → hood at thigh). That is **PASS** as long as the ratio still meets the floor and soles share one y-band. FAIL only when the beast is **too short** (hood above the joint, or ratio under the floor).
 
-## p8 — Three Wild Warnings
+p8: Goat may stand on sand at the **bridge mouth**. A low beach walkway is OK. A high pier that shrinks Goat is FAIL.
 
-1. Horn hoof makes a **sand pit** but does not touch George
-2. Beak claws leave marks on **dead wood** only
-3. Goat arms block a **readable vine bridge** into the island
-4. George stands **steady, empty-handed**
-5. Billy o' Tea behind George
-6. Beasts meet scale lock; George / Horn / Beak on one shore line
-7. No crown yet
+## p8 must-haves
 
-## p9 — The Steady Stare
+Horn sand-pit (no touch); Beak claws on **dead wood**; Goat blocks a **readable vine bridge**; George empty-handed; boat behind; **no crown**.
 
-1. George looks into the three yellow eyes (stare)
-2. **Horn lowers first** (face/claws) but body stays giant (hood at knee, ≥3×)
-3. Beak claws in; Goat arms no longer blocking
-4. No crown; no contact / no magic glow
-5. Moonlit night; leaf-sail boat still at shore
-6. Scale lock on one sand line
+## p9 must-haves (ONLY these)
 
-## p12 — Stomping Parade
+Stare into three yellow eyes; Horn lowers face/claws first but stays giant; Beak claws in; Goat arms **down** (not blocking); **no crown**; no contact; moon + leaf-sail boat.  
+**NOT required:** vine bridge, leaf chair, drum, crown. Do not FAIL p9 for missing those.
 
-1. Vine crown **on** the T-rex hood (hood stays on)
-2. George **stomping**; four happy figures
-3. Horn plays the **wooden drum**
-4. Goat spinning; Beak wings/beat
-5. Footprint rings (pressed prints, not zen-raked grooves)
-6. Scale lock on **one clearing mud line**
-7. Roster = George + Horn + Beak + Goat only
-8. Happy; claws visible; no harm
-9. Silver seedpods + moon OK as continuity
+## p12 must-haves (ONLY these)
+
+Vine crown **on** hood; George stomping; Horn wooden drum; Goat spinning; Beak wings; pressed footprint rings; four figures; happy; moon/seedpods OK.  
+**NOT required:** leaf chair, boat, vine bridge.
 
 ## Output
 
-For each page: table of check / PASS|FAIL / one-sentence pixel evidence.  
-Then **VERDICT: PASS** or **VERDICT: FAIL** per page.  
-If FAIL, name the exact miss (do not majority-vote past written FAIL).
+Per page: check / PASS|FAIL / one-sentence pixel evidence.  
+**VERDICT: PASS** or **VERDICT: FAIL**. Written FAIL cannot be majority-voted away.

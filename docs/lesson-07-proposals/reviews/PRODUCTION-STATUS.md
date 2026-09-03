@@ -1,30 +1,24 @@
-# Lesson 7 Sol 產線進度（2026-09-02 續）
+# Lesson 7 Sol 產線進度（2026-09-03）
 
-不用家長再決定。音檔已過；島圖仍在暫存，**未覆寫課件 story-***。
+音檔已過。島圖 p7–p18 已四審 PASS 並 copy 進 `lessons/assets/lesson-07/story-07.png`–`story-18.png` + WebP。p1–6、p19 沿用現有睡衣／熱晚餐稿。
 
-## 音檔
+## 放行檔
 
-Grok 4.6 / 4.5 / Composer + `check_lesson_audio.py`：**PASS**（已在 `lessons/assets/lesson-07/audio/`）
+| 頁 | 檔 | Sol | 4.6 | 4.5 | Composer |
+|----|----|-----|-----|-----|----------|
+| p7 | `l7-p07-blocked-shore-v2.png` → `story-07` | PASS | PASS | PASS | PASS |
+| p8 | `l7-p08-three-warnings-v10.png` → `story-08` | PASS | PASS | PASS | PASS |
+| p9 | `l7-p09-steady-stare-v6.png` → `story-09` | PASS | PASS | PASS | PASS |
+| p10 | `l7-p10-vine-bridge-v9.png` → `story-10` | PASS | PASS | PASS | PASS |
+| p11 | `l7-p11-crown-vines-v5.png` → `story-11` | PASS | PASS | PASS | PASS |
+| p12 | `l7-p12-stomping-parade-v15.png` → `story-12` | PASS | PASS | PASS | PASS |
+| p13 | `l7-p13-moonlit-swirls.png` → `story-13` | PASS | PASS | PASS | PASS |
+| p14 | `l7-p14-kings-rules-v2.png` → `story-14` | PASS | PASS | PASS | PASS |
+| p15 | `l7-p15-king-for-a-while-v3.png` → `story-15` | PASS | PASS | PASS | PASS |
+| p16 | `l7-p16-heavy-crown-v3.png` → `story-16` | PASS | PASS | PASS | PASS |
+| p17 | `l7-p17-chooses-home-v6.png` → `story-17` | PASS | PASS | PASS | PASS |
+| p18 | `l7-p18-homeward-light-v6.png` → `story-18` | PASS | PASS | PASS | PASS |
+| p19 | 既有熱晚餐 `story-19` | （沿用） | | | |
 
-## 插圖暫存（`docs/lesson-07-proposals/gen/`）
-
-| 頁 | 候選檔 | Sol | 4.6 | 4.5 | Composer | 放行 |
-|----|--------|-----|-----|-----|----------|------|
-| p7 | `l7-p07-blocked-shore-v2.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p8 | `l7-p08-three-warnings-v6.png` | PASS | FAIL 膝／腰錨 | PASS | FAIL 比例 | **否** |
-| p9 | `l7-p09-steady-stare-v5.png` | FAIL（誤加藤橋／葉椅） | PASS | PASS | FAIL 比例 | **否** |
-| p10 | `l7-p10-vine-bridge-v9.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p11 | `l7-p11-crown-vines-v5.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p12 | `l7-p12-stomping-parade-v10.png` | FAIL 比例 | FAIL 比例 | PASS | FAIL 比例 | **否** |
-| p13 | `l7-p13-moonlit-swirls.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p14 | `l7-p14-kings-rules-v2.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p15 | `l7-p15-king-for-a-while-v3.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p16 | `l7-p16-heavy-crown-v3.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p17 | `l7-p17-chooses-home-v6.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-| p18 | `l7-p18-homeward-light-v6.png` | PASS | PASS | PASS | PASS | 是（未 copy） |
-
-**硬閘：** p8／p9／p12 尚未四審同時 PASS，整包不准 copy 進 `lessons/assets/lesson-07/story-*.png`。
-
-**測量爭議：** Composer 連續把 George 量成 350–470 px（半張畫），4.6／4.5／Sol 量 p9 George 約 205–235 px。Sol 對 p9 的 FAIL 引用「藤橋 Zone 錨／葉椅」——那是 p8／p10–11 的證據，不是 p9 必見項。
-
-**下一刀：** 只重畫 p8 膝／腰錨與 p12 比例（George 再縮小到與 p9 同一像素高）。p9 待 Sol 用正確必見項複審。過關後才整包進課件 + GATE 3。
+p8 v9 被 4.5 FAIL「是柵欄不是藤橋」→ 只重畫橋面為 v10，四審 PASS。
+p12 用「p9 下一格、George 留左側」才把比例鎖住。
