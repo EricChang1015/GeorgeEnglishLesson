@@ -51,6 +51,7 @@ MINIMAX_DELIVERY = {
     "tender": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.86},
     "wistful": {"minimax_emotion": "fearful", "speed": 1.14, "pitch": -1, "volume": 0.84},
     "annoyed": {"minimax_emotion": "angry", "speed": 1.28, "pitch": 1, "volume": 0.95},
+    "angry": {"minimax_emotion": "angry", "speed": 1.46, "pitch": 2, "volume": 1.15},
     "teasing": {"minimax_emotion": "happy", "speed": 1.32, "pitch": 1, "volume": 1.0},
     "gentle": {"minimax_emotion": "calm", "speed": 1.16, "pitch": 0, "volume": 0.88},
     "fierce": {"minimax_emotion": "angry", "speed": 1.20, "pitch": -1, "volume": 1.0},

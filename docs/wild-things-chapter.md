@@ -68,7 +68,7 @@ George：全課 T-rex（頭套不脫）。臉與裝見 `lessons/assets/refs/geor
 
 ## 詞彙方向
 
-wild thing；wooden fork；jungle；stare；crown；parade；still hot
+stare；crown；parade；wildness；lavender；fearless；stomp；supper
 
 ---
 

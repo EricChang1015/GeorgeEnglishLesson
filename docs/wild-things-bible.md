@@ -94,7 +94,7 @@ RealBedroom＝L4：米色軟墊床頭、素奶油牆、奶油被、淡藍床單�
 布局：`mike-plush-bedroom-bed-scattered.jpg`（不畫 Mike）。  
 **燈（家長 2026-09-03）：** 用 `lessons/assets/refs/cast/mike-nibble-sheet.png` 的 **Lamp**（圓黃小雞夜燈），不用產品檯燈、不用太陽、不用遠方小屋窗黃點。p6 在船後方縮小；p16 遠海發光；p18 前方更近更亮。
 
-Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Captain／crew／鯨。p19 船與獸皆消失。
+Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Captain／crew／鯨。p19 船與獸皆消失；晚飯改在家中亮面木餐檯，留一個空位給 George。
 
 ---
 
@@ -104,7 +104,7 @@ Billy o' Tea：茶棕木身、茶色帆、茶葉圖徽、無英文字；無 Capt
 
 ## Zone（與 storyboard 相同）
 
-LivingRoom p1–2｜RealBedroom p3–4、p19｜Threshold p5｜OpenSea p6、p18｜WildIsland p7–9｜WildClearing p10–17
+LivingRoom p1–2｜RealBedroom p3–4｜Threshold p5｜OpenSea p6、p18｜WildIsland p7–9｜WildClearing p10–17｜DiningTable p19
 
 ---
 

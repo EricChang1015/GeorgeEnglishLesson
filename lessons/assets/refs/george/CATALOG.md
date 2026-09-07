@@ -227,6 +227,20 @@ Height order in story art: **Daddy tallest → Sylvia → Mummy → George small
 - **use_for:** Lesson 7 family likeness + George in T-rex hood with family; home-clothes hints (not cave gear)
 - **notes:** George center in orange-brown dino hood, excited hands. Sylvia (teen, long dark wavy hair, gold headband, dark dress with gold trim) making a playful face. Mummy behind George, glasses, dark long sleeves, smile. Daddy far left, glasses, navy tee with colorful animal icons. Use faces and George costume; do not copy the lobby sign or exact party clothes into every page.
 
+#### george-sylvia-indoor-dining-table-corn.jpg
+- **priority:** high
+- **people:** george, sylvia
+- **tags:** family, dining-table, indoors, home, supper, sit, table-setting
+- **use_for:** Lesson 7 p19 dining-table furniture and seating; home meal layout
+- **notes:** Polished medium-brown wooden dining table in the living/dining area. Sylvia left eating corn; George right with a small bowl. Use table shape, wood color, chairs, and casual meal spacing only. Do not copy corn, macaron, thermos, or photo clothes into story art.
+
+#### george-daddy-mummy-sylvia-indoor-dining-table-birthday.jpg
+- **priority:** high
+- **people:** george, daddy, mummy, sylvia
+- **tags:** family, full-cast, dining-table, indoors, home, supper, gather
+- **use_for:** Lesson 7 p19 family gathered around the same wooden dining table
+- **notes:** Low angle at the glossy brown table; all four lean in. Use table surface, close gathering, and who sits where. Do NOT copy the yellow paper birthday crown, floral crown, tongue-out pose, or photoreal faces. Story p19: George wears the T-rex hood, no paper crown.
+
 ### Family group — partial (3 or fewer)
 
 #### george-daddy-mummy-indoor-closeup.jpg

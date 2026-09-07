@@ -34,7 +34,7 @@
 
 ## 詞彙方向
 
-wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；still hot
+stare；crown；parade；wildness；lavender；fearless；stomp；supper
 
 ---
 
@@ -140,7 +140,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 |------|------|---------|
 | horn | "Who brought that tiny boat onto our enormous island?" | fierce |
 | beak | "Turn your leaf sail around before we show our claws!" | challenging |
-| goat | "Go back, little boat. This island is ours." | warning |
+| goat | "Go back, little boy. This island is ours." | warning |
 | george | "I will not run away. I came to meet you." | brave |
 
 ### Page 8 — Three Wild Warnings（WildIsland）
@@ -168,8 +168,8 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 | Role | Line | Emotion |
 |------|------|---------|
 | george | "Look at me. I am not afraid of you." | brave |
-| narrator | George stood tall and looked into their yellow eyes. | calm |
-| horn | "His knees stayed still. Lower your claws, wild friends." | awed |
+| narrator | George's knees stayed still. | calm |
+| horn | "Lower your claws, wild friends." | awed |
 | goat | "With courage like that, you may cross our bridge." | respectful |
 
 ### Page 10 — Into the Island（WildIsland → WildClearing）
@@ -198,9 +198,9 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 | Role | Line | Emotion |
 |------|------|---------|
 | beak | "Wear this vine crown, George. You are the king of this island." | proud |
-| horn | "You faced our wildness without becoming cruel or afraid." | loyal |
-| goat | "A good king listens before making the island roar." | wise |
-| george | "I will be a wild king who keeps everyone safe." | honoured |
+| horn | "You faced our wildness, and you were fearless." | loyal |
+| goat | "A good king listens first, then lets everyone roar." | wise |
+| george | "I will be a wild king who lets everyone play free." | honoured |
 
 ### Page 12 — Stomping Parade（WildClearing）
 
@@ -212,8 +212,8 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| goat | "Our wild parade begins with four enormous stamping beats!" | joyful |
-| george | "Stomp together, then spin when Horn strikes the drum!" | gleeful |
+| goat | "Our wild parade begins with four enormous stomping beats!" | joyful |
+| george | "Stomp together, then spin when Horn beats the drum!" | gleeful |
 | narrator | Four happy sets of feet thundered around the clearing. | lively |
 | horn | "Keep stomping! Our wild parade is getting louder!" | excited |
 
@@ -227,7 +227,7 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | Role | Line | Emotion |
 |------|------|---------|
-| beak | "Follow my wings beneath the bright and bumpy moon!" | delighted |
+| beak | "Follow me under the bright, bumpy moon!" | delighted |
 | george | "Swirl around with me, then roar and bow together!" | gleeful |
 | narrator | Their shadows wheeled around the trees for another merry round. | warm |
 | horn | "Watch out! We are going to bump into each other!" | surprised |
@@ -304,16 +304,16 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 |------|------|---------|
 | narrator | Billy o' Tea turned from the island toward the warm glow. | calm |
 | george | "Goodbye, wild friends! Keep bowing after every happy roar!" | wistful |
-| narrator | The three beasts waved until moonlit waves hid the shore. | tender |
+| narrator | They waved and waved, until George could not see them. | tender |
 | george | "The bird lamp is brighter now. Home must be close." | hopeful |
 
-### Page 19 — Supper Still Hot（RealBedroom）
+### Page 19 — Supper Still Hot（DiningTable）
 
-**敘事功能：** 因為 George 選擇回家，所以叢林退回熟悉房間；家人仍等他一起吃，完成「被管教仍被愛」的回收。  
+**敘事功能：** 因為 George 選擇回家，所以他走到熟悉餐檯；家人留了位子與熱晚飯，完成「被管教仍被愛」的回收。  
 **翻頁鉤子：** （終）George 放下野性但保留勇氣，以擁抱代替追逐。  
-**圖上必見證據：** 同一 L4 床、光鳥燈、灰簾、床頭左實牆；只餘幾片退去的葉；無船、無獸、無冠；George 仍穿完整 T-rex 連身裝與頭套，室內赤腳／襪子；深藍鞋不在腳上；Mummy 藕粉睡衣、Sylvia 墨綠成套睡衣與黑方框眼鏡、Daddy 灰／海軍藍插肩睡衣；全家四人與冒蒸氣熱晚餐；木叉安放在 tray 旁。  
+**圖上必見證據：** 家中亮面木餐檯＋四張椅；George 的位子空著、椅已拉开、盤上熱晚飯冒蒸氣（saved seat）；無床上 tray；無船、無獸、無冠；George 仍穿完整 T-rex 連身裝與頭套，室內赤腳／襪子；深藍鞋不在腳上；Mummy 藕粉睡衣、Sylvia 墨綠成套睡衣與黑方框眼鏡、Daddy 灰／海軍藍插肩睡衣；全家四人。木叉可放在他座位旁。  
 **在場：** george, mummy, sylvia, daddy  
-**禁止：** 缺任一家人、叢林未退、船／獸／冠、脫頭套、室內穿鞋、任何人說做夢。
+**禁止：** 缺任一家人、叢林、船／獸／冠、脫頭套、室內穿鞋、生日紙冠、任何人說做夢。
 
 | Role | Line | Emotion |
 |------|------|---------|
@@ -328,19 +328,20 @@ wild thing；wooden fork；jungle；stare；crown；parade；rule；homeward；s
 
 | 道具 | 軌跡 |
 |------|------|
-| 木叉 | p1–2 George 手中玩鬧 → p3 放床邊 → p4–5 留在房內 → p6–18 不出現 → p19 安放 tray 旁 |
-| 深藍運動鞋 | p1–4 室內不穿 → p5 收在船內 → p6–18 海上／島上穿 → p19 回房後不穿 |
+| 木叉 | p1–2 George 手中玩鬧 → p3 放床邊 → p4–5 留在房內 → p6–18 不出現 → p19 可放在餐檯他座位旁 |
+| 深藍運動鞋 | p1–4 室內不穿 → p5 收在船內 → p6–18 海上／島上穿 → p19 室內不穿 |
 | Billy o' Tea | p5 床側 → p6 長航 → p7–9 淺灘 → p10、p16 岸邊遠景 → p17 登船 → p18 回航 → p19 無 |
 | 葉藤冠 | p10 遠見未完成 → p11 Beak 戴上 → p12–16 George 戴著／扶著 → p17 交 Horn → p18 Horn 岸上舉著 → p19 無 |
 | 空木鼓／銀色種莢 | p11 鼓在清地 → p12 Horn 擊鼓、種莢回響 → p13 月下種莢帶節奏 → p15 遊行結束仍留原位 |
-| 床／光鳥燈 | p3–5 同一 RealBedroom → p6 遠方暖點 → p16 引出家中香氣 → p18 導航 → p19 回到同一位置 |
+| 床／光鳥燈 | p3–5 同一 RealBedroom → p6 遠方暖點 → p16 引出家中香氣 → p18 導航 → p19 改在餐檯，燈不必上桌 |
 
 ## Zone
 
 | Zone | 頁 | 必須 | 禁止 |
 |------|----|------|------|
 | LivingRoom | 1–2 | 同一客廳、沙發、暖燈、木叉玩鬧；全員室內無鞋 | L4 床、叢林、船、野獸 |
-| RealBedroom | 3–4, 19 | L4 床、光鳥燈、灰簾、床頭左實牆 | 星燈、檯燈、脫頭套；p19 船／獸／冠 |
+| RealBedroom | 3–4 | L4 床、光鳥燈、灰簾、床頭左實牆 | 星燈、檯燈、脫頭套、餐檯 |
+| DiningTable | 19 | 亮面木餐檯、四椅、空位＋熱晚飯、家人睡衣 | 床上 tray、船／獸／冠、脫頭套、室內穿鞋、生日紙冠 |
 | Threshold | 5 | 床＋燈＋小 Billy o' Tea；鞋收船內、木叉留房 | crew、鯨、換徽、帶木叉 |
 | OpenSea | 6, 18 | 同一艘小船、George 獨駕、鳥燈方向線 | 鯨、第二艘船、crew |
 | WildIsland | 7–10, 17 | 同一沙岸、藤橋、Billy o' Tea 泊位；只有三獸 | 第四隻野獸、打鬥、電影名、比例縮小 |

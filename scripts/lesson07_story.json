@@ -6,9 +6,9 @@
   "learning": {
     "summary_zh": "George 穿 T-rex 裝在客廳拿木叉追姐姐，被罰回房不准吃晚飯。房間長出叢林，Billy o' Tea 載他到野獸島。他拒退、對視馴服三獸，當王跳 wild parade、頒兩條王規後自願留冠回家，晚飯還熱。",
     "focus_en": [
-      "Story words: wild thing, jungle, stare, crown, parade, rule",
-      "Home words: wooden fork, living room, supper, homeward",
-      "Feeling: lonely, homesick, still hot",
+      "Story words: stare, crown, parade, wildness, lavender, fearless, stomp",
+      "Home words: supper",
+      "Feeling: lonely, homesick",
       "Key phrases: Look at me. First royal rule. I choose home."
     ],
     "tutor_prompts_zh": [
@@ -75,30 +75,6 @@
   },
   "vocab": [
     {
-      "word": "wild thing",
-      "example": "Mummy said wild things still need kind brothers.",
-      "img": "story-02.png",
-      "alt": "Mummy calling George wild in the living room",
-      "audio": "vocab-wild-thing.mp3",
-      "example_audio": "vocab-wild-thing-ex.mp3"
-    },
-    {
-      "word": "wooden fork",
-      "example": "Sylvia asked George to leave the wooden fork behind.",
-      "img": "story-01.png",
-      "alt": "George chasing Sylvia with a wooden play fork",
-      "audio": "vocab-wooden-fork.mp3",
-      "example_audio": "vocab-wooden-fork-ex.mp3"
-    },
-    {
-      "word": "jungle",
-      "example": "Green vines turned his room into a jungle.",
-      "img": "story-04.png",
-      "alt": "vines growing in George's bedroom",
-      "audio": "vocab-jungle.mp3",
-      "example_audio": "vocab-jungle-ex.mp3"
-    },
-    {
       "word": "stare",
       "example": "George stared into their yellow eyes without fear.",
       "img": "story-09.png",
@@ -109,34 +85,58 @@
     {
       "word": "crown",
       "example": "Beak placed a vine crown on George's dinosaur hood.",
-      "img": "story-11.png",
-      "alt": "a leafy vine crown on George's hood",
+      "img": "vocab-crown.png",
+      "alt": "Beak placing a leafy vine crown on George's hood",
       "audio": "vocab-crown.mp3",
       "example_audio": "vocab-crown-ex.mp3"
     },
     {
       "word": "parade",
-      "example": "Their wild parade began with four enormous stamping beats.",
+      "example": "Their wild parade began with four enormous stomping beats.",
       "img": "story-12.png",
       "alt": "George and wild things stomping in a parade",
       "audio": "vocab-parade.mp3",
       "example_audio": "vocab-parade-ex.mp3"
     },
     {
-      "word": "rule",
-      "example": "First royal rule: big feet wait for smaller feet.",
-      "img": "story-14.png",
-      "alt": "George announcing two royal rules",
-      "audio": "vocab-rule.mp3",
-      "example_audio": "vocab-rule-ex.mp3"
+      "word": "wildness",
+      "example": "George faced their wildness, and he was fearless.",
+      "img": "vocab-wildness.png",
+      "alt": "three wild things roaring and waving their claws",
+      "audio": "vocab-wildness.mp3",
+      "example_audio": "vocab-wildness-ex.mp3"
     },
     {
-      "word": "still hot",
-      "example": "His supper was still hot when he came home.",
+      "word": "lavender",
+      "example": "Billy o' Tea sailed under wide lavender skies.",
+      "img": "vocab-lavender.png",
+      "alt": "purple lavender flowers against a lavender sky",
+      "audio": "vocab-lavender.mp3",
+      "example_audio": "vocab-lavender-ex.mp3"
+    },
+    {
+      "word": "fearless",
+      "example": "A fearless boy looks, and he does not run away.",
+      "img": "story-09.png",
+      "alt": "George standing tall and unafraid before the wild things",
+      "audio": "vocab-fearless.mp3",
+      "example_audio": "vocab-fearless-ex.mp3"
+    },
+    {
+      "word": "stomp",
+      "example": "Horn stomps a big hole in the sand.",
+      "img": "vocab-stomp.png",
+      "alt": "a huge clawed foot stomping a hole in the sand",
+      "audio": "vocab-stomp.mp3",
+      "example_audio": "vocab-stomp-ex.mp3"
+    },
+    {
+      "word": "supper",
+      "example": "Your supper is still hot, and we saved your seat.",
       "img": "story-19.png",
-      "alt": "steaming supper tray with the family",
-      "audio": "vocab-still-hot.mp3",
-      "example_audio": "vocab-still-hot-ex.mp3"
+      "alt": "steaming supper at the family dining table",
+      "audio": "vocab-supper.mp3",
+      "example_audio": "vocab-supper-ex.mp3"
     }
   ],
   "pages": [
@@ -214,7 +214,13 @@
           "role": "george",
           "text": "Fine! I do not want any supper tonight anyway.",
           "audio": "p03-02.mp3",
-          "emotion": "sulky"
+          "emotion": "angry",
+          "delivery": {
+            "minimax_emotion": "angry",
+            "speed": 1.50,
+            "volume": 1.20,
+            "pitch": 2
+          }
         },
         {
           "role": "narrator",
@@ -338,7 +344,7 @@
         },
         {
           "role": "goat",
-          "text": "Go back, little boat. This island is ours.",
+          "text": "Go back, little boy. This island is ours.",
           "audio": "p07-03.mp3",
           "emotion": "warning"
         },
@@ -386,13 +392,13 @@
         },
         {
           "role": "narrator",
-          "text": "George stood tall and looked into their yellow eyes.",
+          "text": "George's knees stayed still.",
           "audio": "p09-02.mp3",
           "emotion": "calm"
         },
         {
           "role": "horn",
-          "text": "His knees stayed still. Lower your claws, wild friends.",
+          "text": "Lower your claws, wild friends.",
           "audio": "p09-03.mp3",
           "emotion": "awed"
         },
@@ -446,19 +452,19 @@
         },
         {
           "role": "horn",
-          "text": "You faced our wildness without becoming cruel or afraid.",
+          "text": "You faced our wildness, and you were fearless.",
           "audio": "p11-02.mp3",
           "emotion": "loyal"
         },
         {
           "role": "goat",
-          "text": "A good king listens before making the island roar.",
+          "text": "A good king listens first, then lets everyone roar.",
           "audio": "p11-03.mp3",
           "emotion": "wise"
         },
         {
           "role": "george",
-          "text": "I will be a wild king who keeps everyone safe.",
+          "text": "I will be a wild king who lets everyone play free.",
           "audio": "p11-04.mp3",
           "emotion": "honoured"
         }
@@ -470,13 +476,13 @@
       "lines": [
         {
           "role": "goat",
-          "text": "Our wild parade begins with four enormous stamping beats!",
+          "text": "Our wild parade begins with four enormous stomping beats!",
           "audio": "p12-01.mp3",
           "emotion": "joyful"
         },
         {
           "role": "george",
-          "text": "Stomp together, then spin when Horn strikes the drum!",
+          "text": "Stomp together, then spin when Horn beats the drum!",
           "audio": "p12-02.mp3",
           "emotion": "gleeful"
         },
@@ -500,7 +506,7 @@
       "lines": [
         {
           "role": "beak",
-          "text": "Follow my wings beneath the bright and bumpy moon!",
+          "text": "Follow me under the bright, bumpy moon!",
           "audio": "p13-01.mp3",
           "emotion": "delighted"
         },
@@ -662,7 +668,7 @@
         },
         {
           "role": "narrator",
-          "text": "The three beasts waved until moonlit waves hid the shore.",
+          "text": "They waved and waved, until George could not see them.",
           "audio": "p18-03.mp3",
           "emotion": "tender"
         },
@@ -676,7 +682,7 @@
     },
     {
       "img": "story-19.png",
-      "alt": "Family in pajamas waits with steaming supper in George's bedroom; George still wears the T-rex hood",
+      "alt": "Family in pajamas waits at the wooden dining table; an empty chair and steaming supper are saved for George in his T-rex hood",
       "lines": [
         {
           "role": "george",
@@ -779,7 +785,7 @@
       "answer": 2
     },
     {
-      "q": "What was waiting in his room?",
+      "q": "What was waiting at the table?",
       "options": [
         "A cold sandwich",
         "Supper that was still hot",

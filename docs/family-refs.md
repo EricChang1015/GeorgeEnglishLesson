@@ -58,4 +58,4 @@
 |----|--------|------------|
 | p1 | George、Sylvia | Sylvia graduation smile |
 | p2 | George、Mummy、Sylvia | Mummy indoor smile + Sylvia graduation |
-| p12 | 全家四人 | 上列三張 + Daddy vehicle neutral + sofa group |
+| p12 / p19 | 全家四人 | 上列三張 + Daddy vehicle neutral + sofa group；p19 餐檯用 `george-sylvia-indoor-dining-table-corn.jpg` 與 `george-daddy-mummy-sylvia-indoor-dining-table-birthday.jpg`（只借桌子／圍坐，不抄生日紙冠） |
