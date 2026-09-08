@@ -1,0 +1,11 @@
+{
+  "name": "George English Lessons",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 3000"
+    }
+  ],
+  "ports": [3000]
+}
